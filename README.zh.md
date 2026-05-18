@@ -1,8 +1,47 @@
 # ai-shortfilm-prompts · AI 短片提示词方法论
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/jnMetaCode/ai-shortfilm-prompts?style=social)](https://github.com/jnMetaCode/ai-shortfilm-prompts)
+[![X Post](https://img.shields.io/badge/PJ_Ace_tweet-13.4M_views-1DA1F2?logo=x)](https://x.com/PJaccetturo/status/2053475534965965067)
+
 > AI 短片提示词写作的开源方法库 + 案例集 + Claude Code Skill。
-> 首发版本基于 Mx-Shell《丧尸清道夫》拆解（让好莱坞导演 PJ Ace 称为"近年最佳短片之一"的作品）。
+> 首发版本基于 Mx-Shell《丧尸清道夫》(Zombie Scavenger) 拆解 ——
+> **让好莱坞导演 PJ Ace 评为"近年来最佳短片之一"** 的作品。
 > 后续计划收录更多 AI 短片创作者的方法。
+
+---
+
+## 🎬 PJ Ace 那条引爆的推文
+
+> *"这是我近年来看过最好的短片之一。"*
+> *"很快，我们将不再称其为'AI 电影'，而直接称其为电影。"*
+>
+> *Film name: Zombie Scavenger by MX-Shell.*
+>
+> —— **PJ Ace** ([@PJaccetturo](https://x.com/PJaccetturo))
+> [2026 年 5 月 10 日](https://x.com/PJaccetturo/status/2053475534965965067)
+
+| 1340 万 浏览 | 82K 点赞 | 7.4K 转发 | 39K 收藏 | 2.3K 评论 |
+|---|---|---|---|---|
+
+本仓库是这部短片背后**完整的工作流** —— Mx-Shell 自己在粉丝群分享了提示词文档，又在抖音直播完整讲了他的方法论。我们做的是结构化整理。
+
+---
+
+## ⚡ 今晚就能抄的一句话
+
+复制到 Sora / Seedance / 可灵 / 即梦 / Veo，替换 `{{...}}`：
+
+```
+变形宽荧幕电影质感。模拟 IMAX 胶片摄影机 + Panavision C 系列镜头
+（焦段 35mm，光圈 f4）。手持拍摄，全程保持极其轻微的、如呼吸般的镜头浮动。
+{{你的场景描述}}。
+不需要配乐，仅保留同期声。
+```
+
+**为什么管用**：写具体摄影机型号 + "呼吸感"运镜，能把 AI 锚定到真电影美学；"电影感"这种空泛词没用。完整拆解见 [方法论](./methodology.zh.md)。
+
+---
 
 ---
 

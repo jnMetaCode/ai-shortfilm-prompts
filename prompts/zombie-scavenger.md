@@ -1,4 +1,4 @@
-# Zombie Cleaner — Original Prompts
+# Zombie Scavenger — Original Prompts
 
 > **Source**: Excerpted from Mx-Shell's publicly shared prompt
 > collection (May 10, 2026 document distributed in his fan group).

@@ -19,7 +19,7 @@
   promotional video for his sister's hotel — Xinping Hilton in Yuxi,
   Yunnan (*"My first AI video was for our family's hotel — my sister's
   hotel — Xinping Hilton in Xinping, Yuxi, Yunnan"*)
-- *Zombie Cleaner* went viral in May 2026
+- *Zombie Scavenger* went viral in May 2026
 
 ---
 
@@ -31,7 +31,7 @@ publicly distributed** via two channels:
 | File | Content | Date |
 |---|---|---|
 | `mx-shell prompt + Q&A (2026.03.15).docx` | 17 troubleshooting items + 10+ complete prompt artifacts | March 15, 2026 |
-| `mx-shell prompt collection + Q&A (2026.05.10).docx` | Kamen Rider variants + two key shots from Zombie Cleaner | May 10, 2026 |
+| `mx-shell prompt collection + Q&A (2026.05.10).docx` | Kamen Rider variants + two key shots from Zombie Scavenger | May 10, 2026 |
 | `Livestream transcript part 1.doc` | First half of his Douyin Q&A | May 12, 2026 |
 | `Livestream transcript part 2.doc` | Second half of his Douyin Q&A | May 12, 2026 |
 | `Livestream clip.mp4` | A 7-minute slice of the original stream | May 12, 2026 |
@@ -109,7 +109,7 @@ From the May 12 livestream:
   SKILL system. The `SKILL.md` frontmatter format + TDD-driven skill-
   writing methodology used in this repo derives from his work.
 - **PJ Ace (@PJaccetturo)** — Hollywood director. First retweeted
-  *Zombie Cleaner* calling it *"one of the best short films in recent
+  *Zombie Scavenger* calling it *"one of the best short films in recent
   years,"* introducing it to English-speaking audiences.
 
 ---
@@ -161,7 +161,7 @@ The [模板/](./模板/) directory contains IP-stripped generalized versions.
 
 Suggested format:
 
-> Methodology derived from Mx-Shell's publicly-shared *Zombie Cleaner*
+> Methodology derived from Mx-Shell's publicly-shared *Zombie Scavenger*
 > materials, organized at:
 > https://github.com/jnMetaCode/ai-shortfilm-prompts
 >

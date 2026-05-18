@@ -22,7 +22,7 @@ Shortfilm" mode.
 
 ### Q: Which model for image generation?
 
-About 80% of *Zombie Cleaner* images were made with **GPT Image**.
+About 80% of *Zombie Scavenger* images were made with **GPT Image**.
 Next most-used: **Midjourney**, then **Krea**, then **Flux Max** for
 material refinement.
 
@@ -77,7 +77,7 @@ portrait quality. Canon EF85mm f/1.2. Aspect 3:4.
 
 Helmets, masks, robots, back-of-head shots, mannequins with big
 sunglasses — all bypass face moderation while still letting you act.
-That's the *real* reason *Zombie Cleaner*'s protagonist is a robot.
+That's the *real* reason *Zombie Scavenger*'s protagonist is a robot.
 
 ### Q: My prompt gets flagged for IP / copyright. What now?
 
@@ -246,7 +246,7 @@ a deterministic recipe.
 **Mx-Shell's per-shot reroll counts:**
 - High: 20+ tries
 - Low: 2–3 tries
-- *Zombie Cleaner* total: ~400 generated images + 200+ video shots
+- *Zombie Scavenger* total: ~400 generated images + 200+ video shots
   to produce the final ~40 clips
 
 ### Q: How do I reproduce *Flame Demon*'s camera move?

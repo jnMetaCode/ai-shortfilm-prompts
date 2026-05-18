@@ -2,7 +2,7 @@
 
 > Source: organized from Mx-Shell's publicly shared prompt materials
 > and Douyin livestream content (March/May 2026). This is the
-> generalized skeleton extracted from *Zombie Cleaner*.
+> generalized skeleton extracted from *Zombie Scavenger*.
 >
 > Best for: edit-style shorts where an event is broken into N shots,
 > each 5–8 seconds, then assembled into a coherent narrative.

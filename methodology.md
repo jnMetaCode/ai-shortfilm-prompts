@@ -1,7 +1,7 @@
 # The Mx-Shell Prompt Methodology
 
 > This document decomposes the 5-stage prompt structure Mx-Shell used
-> repeatedly across *Zombie Cleaner*, the *Kamen Rider* transformation
+> repeatedly across *Zombie Scavenger*, the *Kamen Rider* transformation
 > series, and others.
 >
 > Not a copy-paste cookbook — a system you can adapt to your own ideas.
@@ -190,7 +190,7 @@ Camera: Low-frequency hum approaches from a distance. The camera produces
 
 #### Style B: per-shot slices (multi-shot edited)
 
-Best for narrative shorts like *Zombie Cleaner*.
+Best for narrative shorts like *Zombie Scavenger*.
 
 ```
 Shot 1:
@@ -268,7 +268,7 @@ Restraint reads more elevated than excess.
 
 - [prompts/](./prompts/) — Mx-Shell's complete original prompts
   (Chinese body untouched, English header on each file).
-  Includes *Zombie Cleaner*, *Kamen Rider* (5 variants), *Kai'Sa*
+  Includes *Zombie Scavenger*, *Kamen Rider* (5 variants), *Kai'Sa*
   (15s/20s/5s), *Pacific Rim + Gundam*, *Cyber-Wuxia*, *Metal Gear*.
 - [templates/](./templates/) — IP-stripped reusable skeletons in
   English (organized from Mx-Shell's structure).

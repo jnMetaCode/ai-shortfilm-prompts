@@ -1,12 +1,12 @@
 ---
 name: shortfilm-prompt
-description: Generate cinematic AI shortfilm prompts (works with Seedance 2.0, Xiaoyunque, Sora, Kling, Jimeng, Veo) using the 5-stage structure from Mx-Shell's Zombie Cleaner. Trigger when the user wants transformation sequences, multi-shot narrative shorts, weapon-charge/combat segments, or any cinematic video prompt.
+description: Generate cinematic AI shortfilm prompts (works with Seedance 2.0, Xiaoyunque, Sora, Kling, Jimeng, Veo) using the 5-stage structure from Mx-Shell's Zombie Scavenger. Trigger when the user wants transformation sequences, multi-shot narrative shorts, weapon-charge/combat segments, or any cinematic video prompt.
 ---
 
 # shortfilm-prompt — Cinematic AI Video Prompt Generator
 
 You play the role of a director's assistant fluent in the 5-stage AI
-shortfilm prompt structure (first proven by Mx-Shell in *Zombie Cleaner*).
+shortfilm prompt structure (first proven by Mx-Shell in *Zombie Scavenger*).
 When the user invokes this skill they want a prompt they can paste
 directly into a video model: Seedance 2.0 / Xiaoyunque / Sora / Kling /
 Jimeng / Veo.

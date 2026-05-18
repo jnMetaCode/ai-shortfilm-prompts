@@ -1,38 +1,77 @@
 # ai-shortfilm-prompts
 
-> A methodology + prompt library + Claude Code Skill for writing
-> cinematic AI shortfilm prompts.
->
-> **Organized from materials Mx-Shell himself publicly distributed**:
-> his prompt collection documents (shared in his fan group) and his
-> May 12, 2026 Douyin livestream. The work behind *Zombie Cleaner* —
-> the AI short Hollywood director **PJ Ace** called
-> *"one of the best short films in recent years."*
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/jnMetaCode/ai-shortfilm-prompts?style=social)](https://github.com/jnMetaCode/ai-shortfilm-prompts)
+[![X Post](https://img.shields.io/badge/PJ_Ace_tweet-13.4M_views-1DA1F2?logo=x)](https://x.com/PJaccetturo/status/2053475534965965067)
+
+> The complete methodology + prompt library + Claude Code Skill behind
+> **[*Zombie Scavenger*](https://x.com/PJaccetturo/status/2053475534965965067)**
+> by Mx-Shell — the AI short Hollywood director PJ Ace called
+> *"one of the best short films I've seen in years."*
 
 **[中文版 →](./README.zh.md)**
+
+---
+
+## 🎬 The tweet that started it all
+
+> *"This is one of the best short films I've seen in years.*
+> *Very soon, we'll stop calling it 'AI film' and just call it film."*
+>
+> *Film name: Zombie Scavenger by MX-Shell.*
+>
+> — **PJ Ace** ([@PJaccetturo](https://x.com/PJaccetturo)),
+> [May 10, 2026](https://x.com/PJaccetturo/status/2053475534965965067)
+
+| 13.4M views | 82K likes | 7.4K reposts | 39K bookmarks | 2.3K replies |
+|---|---|---|---|---|
+
+This repository is **the complete workflow behind that film**, made
+available because Mx-Shell himself published his prompt collection
+documents and walked through his entire method on a public Douyin
+livestream.
+
+---
+
+## ⚡ The single-line magic prompt (try it tonight)
+
+Copy this into Sora / Seedance / Kling / Veo. Replace `{{...}}`:
+
+```
+Anamorphic widescreen cinematic. Simulated IMAX film camera +
+Panavision C-series lens (35mm focal, f/4 aperture). Handheld
+shot — extremely subtle, breath-like camera float throughout.
+{{your scene description}}.
+No score. Production audio only.
+```
+
+**Why this works**: real camera bodies + "breath-like float" anchor
+the AI to actual film aesthetics — not the vague "cinematic feel"
+keyword everyone else uses. Full breakdown in
+[methodology.md](./methodology.md).
 
 ---
 
 ## The story
 
 May 2026. A 29-year-old vocational-school graduate from rural Yunnan,
-China — handle **Mx-Shell** — used **10 days** and a few thousand RMB of
-cloud credits to make a 3-minute AI short called *Zombie Cleaner*: an
-atomic-punk robot wanders into a beachfront villa after a zombie
+China — handle **Mx-Shell** — used **10 days** and ~20,000 RMB of
+cloud credits to make a 3-minute AI short called *Zombie Scavenger*:
+an atomic-punk robot wanders into a beachfront villa after a zombie
 apocalypse, meets a confused ostrich, and starts dancing
 1980s-style breakdance moves while kicking a zombie's head across
 the floor.
 
-Hollywood director **PJ Ace (@PJaccetturo)** retweeted the film, calling
-it *"one of the best short films in recent years"* and started a manhunt
-for the author.
+Hollywood director **PJ Ace (@PJaccetturo)** retweeted the film,
+calling it *"one of the best short films in years"* and started a
+search for the author.
 
-A few weeks later Mx-Shell went on a Douyin livestream and **gave away
-his entire workflow** — the prompts, the camera language, the failure
-modes, the rerolls.
+A few weeks later Mx-Shell went on a Douyin livestream and **gave
+away his entire workflow** — the prompts, the camera language, the
+failure modes, the reroll counts.
 
-This repo is the result of digesting 130,000 characters of his materials
-into a structured, reusable system.
+This repo is the result of digesting 130,000 characters of his
+materials into a structured, reusable system.
 
 ---
 
@@ -55,7 +94,7 @@ ai-shortfilm-prompts/
 │                           Body kept in Chinese (his authorial
 │                           voice), with English header on each file.
 │   ├── README.md           Index of all prompt archives
-│   ├── zombie-cleaner.md             *Zombie Cleaner*
+│   ├── zombie-scavenger.md             *Zombie Scavenger*
 │   ├── kamen-rider-transformations.md   Kamen Rider transformation × 5 variants
 │   ├── kaisa-transformation.md       LoL Kai'Sa transformation × 3 versions
 │   ├── pacific-rim-gundam.md         Pacific Rim + Gundam mech-drop

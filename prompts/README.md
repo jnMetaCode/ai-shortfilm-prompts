@@ -18,8 +18,8 @@
 
 ## 1. Narrative (multi-shot edited)
 
-- **[zombie-cleaner.md](./zombie-cleaner.md)** ⭐
-  *Zombie Cleaner* — the work PJ Ace called "one of the best short
+- **[zombie-scavenger.md](./zombie-scavenger.md)** ⭐
+  *Zombie Scavenger* — the work PJ Ace called "one of the best short
   films in recent years." Atompunk robot in a post-apocalyptic
   beachfront villa meets a confused ostrich, dances Michael Jackson
   moves. Two complete shot sequences.
@@ -65,7 +65,7 @@
 
 ## How to use this archive
 
-1. **Beginner**: Start with [zombie-cleaner.md](./zombie-cleaner.md)
+1. **Beginner**: Start with [zombie-scavenger.md](./zombie-scavenger.md)
    alongside [../methodology.md](../methodology.md). See how the
    5-stage template maps to a concrete piece.
 2. **Want to make a transformation**:
