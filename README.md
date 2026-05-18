@@ -63,7 +63,7 @@ apocalypse, meets a confused ostrich, and starts dancing
 the floor.
 
 Hollywood director **PJ Ace (@PJaccetturo)** retweeted the film,
-calling it *"one of the best short films in years"* and started a
+calling it *"one of the best short films I've seen in years"* and started a
 search for the author.
 
 A few weeks later Mx-Shell went on a Douyin livestream and **gave
