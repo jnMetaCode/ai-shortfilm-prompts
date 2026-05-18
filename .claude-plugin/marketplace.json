@@ -10,7 +10,9 @@
       "name": "ai-shortfilm-prompts",
       "description": "AI 短片提示词方法论 + Skill：基于 Mx-Shell 5 段式结构，适用 Seedance / 小云雀 / Sora / 可灵 / 即梦",
       "version": "0.1.0",
-      "source": "./",
+      "source": ".",
+      "homepage": "https://github.com/jnMetaCode/ai-shortfilm-prompts",
+      "license": "MIT",
       "author": {
         "name": "jnMetaCode",
         "url": "https://github.com/jnMetaCode"

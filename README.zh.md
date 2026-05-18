@@ -133,25 +133,32 @@ ai-shortfilm-prompts/
 
 ---
 
-## 安装 Skill（Claude Code 用户）
+## 安装（Claude Code 用户）
 
-三种方式任选：
+四种方式任选，推荐方式 1。
 
-**方式 1：项目内引用**（推荐用于试用）
+**方式 1：Plugin Marketplace** ⭐（一行装好，推荐）
+```
+/plugin marketplace add jnMetaCode/ai-shortfilm-prompts
+/plugin install ai-shortfilm-prompts@ai-shortfilm-prompts
+```
+然后输入 `/ai-shortfilm-prompts:shortfilm-prompt` 即可调用 Skill。
+
+**方式 2：项目内引用**（适合先试用）
 ```bash
 git clone https://github.com/jnMetaCode/ai-shortfilm-prompts.git
 cd ai-shortfilm-prompts
 claude  # 进入 Claude Code 后输入 /shortfilm-prompt
 ```
 
-**方式 2：全局可用**
+**方式 3：全局可用**（手动复制）
 ```bash
 mkdir -p ~/.claude/skills
 cp -r ai-shortfilm-prompts/.claude/skills/shortfilm-prompt ~/.claude/skills/
 # 在任意目录启动 Claude Code 都能用 /shortfilm-prompt
 ```
 
-**方式 3：Git Submodule**（持续追更）
+**方式 4：Git Submodule**（持续追更）
 ```bash
 git submodule add https://github.com/jnMetaCode/ai-shortfilm-prompts.git .claude/skills/_shortfilm
 # 更新：git submodule update --remote

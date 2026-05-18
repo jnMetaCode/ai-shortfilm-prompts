@@ -151,30 +151,45 @@ Full methodology in [methodology.md](./methodology.md).
 
 ---
 
-## Install the Skill (Claude Code users)
+## Install (Claude Code)
 
-```bash
-# Option 1 — Try it inside this repo
-git clone https://github.com/jnMetaCode/ai-shortfilm-prompts.git
-cd ai-shortfilm-prompts
-claude   # then type /shortfilm-prompt
+### Option 1 — Plugin Marketplace ⭐ (one-line install)
 
-# Option 2 — Make it available globally
-mkdir -p ~/.claude/skills
-cp -r ai-shortfilm-prompts/.claude/skills/shortfilm-prompt \
-      ~/.claude/skills/
-
-# Option 3 — As a submodule in your own project
-git submodule add https://github.com/jnMetaCode/ai-shortfilm-prompts.git \
-                  .claude/skills/_shortfilm
+```
+/plugin marketplace add jnMetaCode/ai-shortfilm-prompts
+/plugin install ai-shortfilm-prompts@ai-shortfilm-prompts
 ```
 
 Then in Claude Code:
 
 ```
-/shortfilm-prompt  Help me write a 15-second prompt for a robot
-                   transformation, green color palette, energy core in
-                   the belt buckle, post-apocalyptic jungle background
+/ai-shortfilm-prompts:shortfilm-prompt  Help me write a 15-second prompt for a
+                                        robot transformation, green color palette,
+                                        energy core in the belt buckle,
+                                        post-apocalyptic jungle background
+```
+
+### Option 2 — Try it inside this repo
+
+```bash
+git clone https://github.com/jnMetaCode/ai-shortfilm-prompts.git
+cd ai-shortfilm-prompts
+claude   # then type /shortfilm-prompt
+```
+
+### Option 3 — Make it available globally (manual copy)
+
+```bash
+mkdir -p ~/.claude/skills
+cp -r ai-shortfilm-prompts/.claude/skills/shortfilm-prompt \
+      ~/.claude/skills/
+```
+
+### Option 4 — As a submodule in your own project
+
+```bash
+git submodule add https://github.com/jnMetaCode/ai-shortfilm-prompts.git \
+                  .claude/skills/_shortfilm
 ```
 
 The Skill walks through the 5-stage structure, runs a 10-item self-check,
