@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/jnMetaCode/ai-shortfilm-prompts?style=social)](https://github.com/jnMetaCode/ai-shortfilm-prompts)
 [![X Post](https://img.shields.io/badge/PJ_Ace_tweet-13.4M_views-1DA1F2?logo=x)](https://x.com/PJaccetturo/status/2053475534965965067)
+[![Plugin](https://img.shields.io/badge/Claude_Code-一键安装-blueviolet)](#安装claude-code-用户)
 
 > AI 短片提示词写作的开源方法库 + 案例集 + Claude Code Skill。
 > 首发版本基于 Mx-Shell《丧尸清道夫》(Zombie Scavenger) 拆解 ——

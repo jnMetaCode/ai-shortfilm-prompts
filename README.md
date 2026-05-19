@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/jnMetaCode/ai-shortfilm-prompts?style=social)](https://github.com/jnMetaCode/ai-shortfilm-prompts)
 [![X Post](https://img.shields.io/badge/PJ_Ace_tweet-13.4M_views-1DA1F2?logo=x)](https://x.com/PJaccetturo/status/2053475534965965067)
+[![Plugin](https://img.shields.io/badge/Claude_Code-plugin_install-blueviolet)](#install-claude-code)
 
 > The complete methodology + prompt library + Claude Code Skill behind
 > **[*Zombie Scavenger*](https://x.com/PJaccetturo/status/2053475534965965067)**
