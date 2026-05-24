@@ -54,12 +54,12 @@ What this repo **does** do:
 - Consolidates [faq.md](./faq.md) — his 17 troubleshooting items plus
   scattered Q&A
 - Converts the docx/doc files into structured markdown
-  (`原始提示词/`)
-- Extracts the [model templates](./模板/) — IP-stripped reusable bones
+  (`prompts/`)
+- Extracts the [model templates](./templates/) — IP-stripped reusable bones
 - Provides a [Claude Code Skill](./.claude/skills/shortfilm-prompt/) so
   Claude can produce prompts following his methodology
 
-Every `原始提示词/` file marks its source document and date.
+Every `prompts/` file marks its source document and date.
 
 ---
 
@@ -153,7 +153,7 @@ When using them:
 3. Personal learning / non-commercial use is lower risk but still
    advisable to substitute with style descriptions
 
-The [模板/](./模板/) directory contains IP-stripped generalized versions.
+The [templates/](./templates/) directory contains IP-stripped generalized versions.
 
 ---
 
