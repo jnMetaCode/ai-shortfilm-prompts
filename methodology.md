@@ -242,8 +242,8 @@ these "flaws" are the core source of Mx-Shell's signature texture.
 ### 3. Rerolls are normal. Leave the ending empty.
 
 Across the film, 200+ video generations produced ~40 final clips.
-Each shot averaged 5–10 rerolls; some 20+. **Don't aim for first-try
-perfection.**
+Each shot took anywhere from 2–3 rerolls to 20+. **Don't aim for
+first-try perfection.**
 
 And don't pile on FX at the end:
 

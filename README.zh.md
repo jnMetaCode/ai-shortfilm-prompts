@@ -146,7 +146,7 @@ ai-shortfilm-prompts/
 ├── .claude/skills/shortfilm-prompt/ ← Claude Code Skill
 │   ├── SKILL.md                     ← /shortfilm-prompt 调用后自动生成提示词
 │   ├── TESTING.md                   ← 如何在另一个 Claude 窗口做严格测试
-│   └── examples/                    ← 5 个测试用例 + 期望输出
+│   └── examples/                    ← 4 个测试用例（5 个文件）+ 期望输出
 │
 └── .claude-plugin/                  ← plugin 元数据（plugin.json + marketplace.json）
 ```

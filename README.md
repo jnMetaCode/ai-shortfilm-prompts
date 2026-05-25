@@ -117,6 +117,11 @@ apocalypse, meets a confused ostrich, and starts dancing
 1980s-style breakdance moves while kicking a zombie's head across
 the floor.
 
+> On the cost: the widely-quoted "3,000 RMB" figure came from Mx-Shell
+> himself, but on livestream he later revised it to "tens of thousands /
+> 20k+." The real spend was likely well above 3,000 — still far below a
+> comparable live-action shoot.
+
 Hollywood director **PJ Ace (@PJaccetturo)** retweeted the film,
 calling it *"one of the best short films I've seen in years"* and started a
 search for the author.
@@ -166,7 +171,7 @@ ai-shortfilm-prompts/
 ├── .claude/skills/shortfilm-prompt/   Claude Code Skill
 │   ├── SKILL.md            How Claude should generate prompts (7 hard rules + 10-item checklist)
 │   ├── TESTING.md          How to run rigorous skill tests in another Claude window
-│   └── examples/           5 test cases with expected outputs
+│   └── examples/           4 test cases (5 files) with expected outputs
 │
 └── .claude-plugin/         Plugin metadata (plugin.json + marketplace.json)
 ```
