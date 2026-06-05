@@ -1,25 +1,18 @@
 # ai-shortfilm-prompts
 
-<!-- ════════════════════════════════════════════════════════════════════
-     README HERO DEMO — drop in the 15s clip here.
-     The clip is generated from ./assets/demo-prompt.md (written by the Skill).
-
-     To enable, produce the clip in Seedance, then EITHER:
-
-     (A) mp4 — drag demo.mp4 into any GitHub issue/PR comment, copy the
-         generated https://user-images.githubusercontent.com/... URL,
-         then uncomment and paste it here:
-     <p align="center">
-       <video src="PASTE_GITHUB_VIDEO_URL_HERE" width="720" autoplay loop muted playsinline></video>
-       <br><sub>▶ 15s demo — generated from a prompt this repo's Skill wrote (<a href="./assets/demo-prompt.md">prompt</a>)</sub>
-     </p>
-
-     (B) gif — commit assets/demo.gif, then uncomment:
-     <p align="center">
-       <img src="./assets/demo.gif" alt="15s demo generated with the 5-stage method" width="720">
-       <br><sub>▶ 15s demo — generated from a prompt this repo's Skill wrote (<a href="./assets/demo-prompt.md">prompt</a>)</sub>
-     </p>
-════════════════════════════════════════════════════════════════════ -->
+<!-- ═══ HERO DEMO SLOT — publish your rendered 15s clip in 2 steps:
+     1. Drag your demo.mp4 into any GitHub issue/PR comment box; copy the
+        https://user-images.githubusercontent.com/... URL it generates.
+     2. In the block right below, remove the surrounding comment markers and
+        put that URL in place of PASTE_VIDEO_URL_HERE.
+     Prompt that generates this clip: ./assets/demo-prompt.md
+     (gif instead of mp4? swap the video line for: <img src="./assets/demo.gif" width="720">) ═══ -->
+<!--
+<p align="center">
+  <video src="PASTE_VIDEO_URL_HERE" width="720" autoplay loop muted playsinline></video>
+  <br><sub>▶ 15s demo — generated from a prompt this repo's Skill wrote (<a href="./assets/demo-prompt.md">prompt</a>)</sub>
+</p>
+-->
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/jnMetaCode/ai-shortfilm-prompts?style=social)](https://github.com/jnMetaCode/ai-shortfilm-prompts)
