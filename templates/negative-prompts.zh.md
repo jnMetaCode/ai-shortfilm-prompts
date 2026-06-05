@@ -114,7 +114,7 @@ warping background geometry, flickering distant detail, melting architecture, re
 
 ## 另见
 
-- [`../.claude/skills/shortfilm-prompt/SKILL.md`](../.claude/skills/shortfilm-prompt/SKILL.md)
+- [`../skills/shortfilm-prompt/SKILL.md`](../skills/shortfilm-prompt/SKILL.md)
   —— 组装完整提示词的 Skill；当目标模型有负面字段时它会取用这个骨架。
 - [`../methodology.zh.md`](../methodology.zh.md) —— 这些负面词嵌入的
   5 段式结构（反穿帮清单属于画质/氛围那一段）。

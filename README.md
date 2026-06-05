@@ -106,7 +106,7 @@ Ending: no dialogue, no light burst — just rain vaporizing on the shield, a li
 
 Real camera/lens names + physical reactions + battle damage + an empty
 ending = visceral realism. Full sample with the 10-item self-check:
-[examples/02-skill-output-sample.md](./.claude/skills/shortfilm-prompt/examples/02-skill-output-sample.md).
+[examples/02-skill-output-sample.md](./skills/shortfilm-prompt/examples/02-skill-output-sample.md).
 
 ---
 
@@ -182,7 +182,7 @@ ai-shortfilm-prompts/
 │   ├── demo-prompt.md       Copy-paste 15s prompt the Skill wrote (hero slot)
 │   └── 5-stage-structure.svg  The structure diagram
 │
-├── .claude/skills/shortfilm-prompt/   Claude Code Skill
+├── skills/shortfilm-prompt/   Claude Code Skill
 │   ├── SKILL.md            How Claude should generate prompts (7 hard rules + 10-item checklist)
 │   ├── TESTING.md          How to run rigorous skill tests in another Claude window
 │   └── examples/           4 test cases (5 files) with expected outputs
@@ -252,14 +252,14 @@ Then in Claude Code:
 ```bash
 git clone https://github.com/jnMetaCode/ai-shortfilm-prompts.git
 cd ai-shortfilm-prompts
-claude   # then type /shortfilm-prompt
+claude --plugin-dir .   # then: /ai-shortfilm-prompts:shortfilm-prompt
 ```
 
 ### Option 3 — Make it available globally (manual copy)
 
 ```bash
 mkdir -p ~/.claude/skills
-cp -r ai-shortfilm-prompts/.claude/skills/shortfilm-prompt \
+cp -r ai-shortfilm-prompts/skills/shortfilm-prompt \
       ~/.claude/skills/
 ```
 
@@ -267,7 +267,8 @@ cp -r ai-shortfilm-prompts/.claude/skills/shortfilm-prompt \
 
 ```bash
 git submodule add https://github.com/jnMetaCode/ai-shortfilm-prompts.git \
-                  .claude/skills/_shortfilm
+                  vendor/ai-shortfilm-prompts
+claude --plugin-dir vendor/ai-shortfilm-prompts   # loads the plugin + skill
 ```
 
 The Skill walks through the 5-stage structure, runs a 10-item self-check,

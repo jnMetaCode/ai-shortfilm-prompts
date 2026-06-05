@@ -1,7 +1,7 @@
 # Cheatsheet — One-Page Quick Reference
 
 > Keep this open while you write. Full version: [methodology.md](./methodology.md)
-> · Skill: [SKILL.md](./.claude/skills/shortfilm-prompt/SKILL.md)
+> · Skill: [SKILL.md](./skills/shortfilm-prompt/SKILL.md)
 >
 > **[中文版 →](./cheatsheet.zh.md)**
 

@@ -22,6 +22,10 @@ method. Pure docs + one Skill — no build, no tests to run.
 3. **The Skill: `SKILL.md` (English) is what Claude Code loads and executes.**
    `SKILL.zh.md` is a human reference translation — keep it at parity when you
    change the rules, but the English file is canonical.
+   **The skill lives at `skills/shortfilm-prompt/` (plugin root), NOT
+   `.claude/skills/`.** A Claude Code plugin only discovers skills under
+   `<plugin-root>/skills/`; the old `.claude/skills/` path made the marketplace
+   install ship an empty plugin (fixed in v0.3.1). Don't move it back.
 
 4. **After editing any internal link, run a dead-link check** across all
    `*.md` before committing. This has bitten us repeatedly.
@@ -50,4 +54,4 @@ ships only structured, original documentation.
 ## Releasing
 
 Bump `version` in both `.claude-plugin/plugin.json` and
-`.claude-plugin/marketplace.json`, then tag + `gh release create`. Current: v0.3.0.
+`.claude-plugin/marketplace.json`, then tag + `gh release create`. Current: v0.3.1.

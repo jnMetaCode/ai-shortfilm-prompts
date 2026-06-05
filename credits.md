@@ -56,7 +56,7 @@ What this repo **does** do:
 - Converts the docx/doc files into structured markdown
   (`prompts/`)
 - Extracts the [model templates](./templates/) — IP-stripped reusable bones
-- Provides a [Claude Code Skill](./.claude/skills/shortfilm-prompt/) so
+- Provides a [Claude Code Skill](./skills/shortfilm-prompt/) so
   Claude can produce prompts following his methodology
 
 Every `prompts/` file marks its source document and date.

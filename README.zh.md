@@ -102,7 +102,7 @@
 结尾：没有台词、没有炫光 —— 只有雨水打在护盾上汽化，远处一道闪电照亮码头。
 ```
 
-真实摄影机/镜头型号 + 物理反馈 + 战损细节 + 留白结尾 = 那种"真"的质感。完整样本（含 10 条自检）见 [examples/02-skill-output-sample.md](./.claude/skills/shortfilm-prompt/examples/02-skill-output-sample.md)。
+真实摄影机/镜头型号 + 物理反馈 + 战损细节 + 留白结尾 = 那种"真"的质感。完整样本（含 10 条自检）见 [examples/02-skill-output-sample.md](./skills/shortfilm-prompt/examples/02-skill-output-sample.md)。
 
 ---
 
@@ -155,7 +155,7 @@ ai-shortfilm-prompts/
 │   ├── demo-prompt.md               ← Skill 写的可复制 15 秒提示词（顶部片位）
 │   └── 5-stage-structure.svg        ← 5 段式结构图
 │
-├── .claude/skills/shortfilm-prompt/ ← Claude Code Skill
+├── skills/shortfilm-prompt/ ← Claude Code Skill
 │   ├── SKILL.md                     ← /shortfilm-prompt 调用后自动生成提示词
 │   ├── TESTING.md                   ← 如何在另一个 Claude 窗口做严格测试
 │   └── examples/                    ← 4 个测试用例（5 个文件）+ 期望输出
@@ -179,7 +179,7 @@ ai-shortfilm-prompts/
 4. 翻 [实战 FAQ](./faq.zh.md) 看遇到具体问题怎么处理
 
 **如果你用 Claude Code**：
-把 `.claude/skills/shortfilm-prompt/` 拷到你的工作目录（或 `~/.claude/skills/` 全局可用），然后输入 `/shortfilm-prompt` —— Skill 会问你几个问题然后帮你写提示词。
+把 `skills/shortfilm-prompt/` 拷到你的工作目录（或 `~/.claude/skills/` 全局可用），然后输入 `/shortfilm-prompt` —— Skill 会问你几个问题然后帮你写提示词。
 
 ---
 
@@ -220,7 +220,7 @@ claude  # 进入 Claude Code 后输入 /shortfilm-prompt
 **方式 3：全局可用**（手动复制）
 ```bash
 mkdir -p ~/.claude/skills
-cp -r ai-shortfilm-prompts/.claude/skills/shortfilm-prompt ~/.claude/skills/
+cp -r ai-shortfilm-prompts/skills/shortfilm-prompt ~/.claude/skills/
 # 在任意目录启动 Claude Code 都能用 /shortfilm-prompt
 ```
 

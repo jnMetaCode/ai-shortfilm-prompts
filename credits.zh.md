@@ -43,7 +43,7 @@
 - 把分散的 17 条 FAQ + 直播 Q&A 整合成 [实战 FAQ](./faq.zh.md)
 - 把 doc/docx 转换并清理为分类的 [原始提示词](./prompts/) 文件
 - 抽出去 IP 的通用 [模板](./templates/)
-- 写了一个 [Claude Code Skill](./.claude/skills/shortfilm-prompt/)（`/shortfilm-prompt`），让 Claude 能按这套方法生成提示词
+- 写了一个 [Claude Code Skill](./skills/shortfilm-prompt/)（`/shortfilm-prompt`），让 Claude 能按这套方法生成提示词
 
 每一份原始提示词的开头都标注了来源文档和日期。
 

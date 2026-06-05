@@ -1,7 +1,7 @@
 # 速查表 —— 一页纸快速参考
 
 > 写提示词时开着它。完整版：[methodology.zh.md](./methodology.zh.md)
-> · Skill：[SKILL.md](./.claude/skills/shortfilm-prompt/SKILL.md)
+> · Skill：[SKILL.md](./skills/shortfilm-prompt/SKILL.md)
 >
 > **[English →](./cheatsheet.md)**
 
