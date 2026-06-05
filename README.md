@@ -28,10 +28,13 @@
 
 > The complete methodology + prompt library + Claude Code Skill behind
 > **[*Zombie Scavenger*](https://x.com/aibuzhiyu/status/2056426660577288645)**
-> by Mx-Shell — the AI short Hollywood director PJ Ace called
+> by Mx-Shell — the AI short that Hollywood director PJ Ace called
 > *"one of the best short films I've seen in years."*
 
 **[中文版 →](./README.zh.md)**
+
+> ⚡ **Quick start:** [one-page cheat sheet](./cheatsheet.md) ·
+> [failure→fix gallery](./cases.md)
 
 ---
 
@@ -141,12 +144,18 @@ materials into a structured, reusable system.
 ai-shortfilm-prompts/
 ├── README.md              You're here. English entry point.
 ├── README.zh.md           Chinese version.
+├── cheatsheet.md          One-page cheat sheet (the whole method at a glance).
+├── cheatsheet.zh.md       Chinese version.
+├── cases.md               Failure→fix gallery: common bad output and the fix.
+├── cases.zh.md            Chinese version.
 ├── methodology.md         The 5-stage prompt structure, explained.
 ├── methodology.zh.md      Chinese version.
 ├── faq.md                 Q&A: tools, failures, costs, edge cases.
 ├── faq.zh.md              Chinese version.
 ├── credits.md             Sources & attribution.
 ├── credits.zh.md          Chinese version.
+├── showcase.md            Things people made with the method.
+├── CONTRIBUTING.md        Submission template & rules for new prompts.
 ├── LICENSE                MIT (this work)
 ├── NOTICE                 Attribution + Mx-Shell ARR details (dual-licensing)
 │
@@ -154,19 +163,24 @@ ai-shortfilm-prompts/
 │                           Body kept in Chinese (his authorial
 │                           voice), with English header on each file.
 │   ├── README.md           Index of all prompt archives
+│   ├── index.json          Machine-readable index of every prompt
 │   ├── zombie-scavenger.md             *Zombie Scavenger*
-│   ├── kamen-rider-transformations.md   Kamen Rider transformation × 5 variants
+│   ├── kamen-rider-transformations.md   Kamen Rider transformation × 6 (5 riders + flight)
 │   ├── kaisa-transformation.md       LoL Kai'Sa transformation × 3 versions
 │   ├── pacific-rim-gundam.md         Pacific Rim + Gundam mech-drop
 │   ├── cyber-wuxia.md                Shaw Brothers + steampunk wuxia template
 │   └── metal-gear-charge-combat.md   Weapon-charge + combat composite
 │
-├── templates/              IP-stripped generalized templates (English).
+├── templates/              IP-stripped generalized templates (EN + .zh.md siblings).
 │                           Authored by jnMetaCode based on Mx-Shell's structure.
 │   ├── 15s-transformation.md         15-second transformation
 │   ├── multi-shot-narrative.md       Multi-shot edited narrative
-│   └── atmosphere-prefabs.md         8 reusable atmosphere/look prefabs
-│   ├── *.zh.md             Chinese versions of the above
+│   ├── atmosphere-prefabs.md         8 reusable atmosphere/look prefabs
+│   └── negative-prompts.md           Reusable negative-prompt prefab (per-model)
+│
+├── assets/                 Diagrams + the README hero-demo prompt.
+│   ├── demo-prompt.md       Copy-paste 15s prompt the Skill wrote (hero slot)
+│   └── 5-stage-structure.svg  The structure diagram
 │
 ├── .claude/skills/shortfilm-prompt/   Claude Code Skill
 │   ├── SKILL.md            How Claude should generate prompts (7 hard rules + 10-item checklist)
@@ -263,15 +277,27 @@ and warns you about IP names that may be blocked by Seedance 2.0.
 
 ## Compatible video models
 
-The 5-stage structure is **model-agnostic**. Verified to work well with:
+The 5-stage structure is **model-agnostic**. Here's how the major 2026
+engines compare — single-shot ceiling, negative-prompt support, IP filter,
+preferred prompt language, and the one gotcha that trips people up:
 
-| Model | Notes |
-|---|---|
-| Seedance 2.0 (Doubao Xiaoyunque, 沉浸式短片) | Mx-Shell's primary engine. **Avoid the "Fast" variant** — quality drops. Strict IP-name filter. |
-| Sora | Prefers concise prompts. Keep 5 stages but trim per-section length. |
-| Kling (可灵) | More permissive on IP names. Needs *more* explicit motion description. |
-| Jimeng (即梦) | Strong 3D feel — emphasize "no game-CG feel" extra hard. |
-| Veo | Works well; English prompts preferred. |
+| Model | Max single shot | Negative prompt | IP filter | Lang | Notes / gotcha |
+|---|---|---|---|---|---|
+| **Seedance 2.0** (Doubao / Jimeng-Xiaoyunque, ByteDance) — *Mx-Shell's primary engine* | ~10–15s — but the **Doubao app is locked to 5s/10s preset buttons**; the full 4–15s range only on Jimeng/Dreamina web + VolcEngine console | Partial — no reliable dedicated field in the consumer app; negate by describing what you *do* want | Strict — domestic platforms aggressively reject named celebrities + branded IP | Either (ZH native, EN works) | Duration depends entirely on the front-end. Don't promise 15s if the user is on the Doubao app. Native synced audio-video is its standout strength. |
+| **Veo 3 / 3.1** (Google) | 8s per clip (4/6/8s); Extend adds 7s hops up to ~148s, but quality degrades after 4–5 extensions | Yes — dedicated field. List unwanted elements as plain nouns (`extra limbs, glitch morphs`); **no `no`/`don't` command phrasing** | Strict — rejects public figures, brands, voice/likeness; scans prompt *and* frames | EN | The negative field wants descriptive phrases, not commands — `no rain` style instructions can backfire. Best-in-class native audio + realism. |
+| **Kling 2.x / 3.0** (Kuaishou) | 2.5: 5–10s (Pro ~12s); **3.0: up to ~15s single-prompt** multi-shot | Yes — dedicated field. Use for stability artifacts (sliding feet, extra fingers, morphing), not generic "quality" words | Strict — a pre-gen banned-word filter rejects the **whole prompt** on one match; hypersensitive | Either (ZH native, EN strong; 3.0 multilingual dialogue) | The banned-word filter is notoriously over-sensitive — a benign body/contact word can block a clean prompt. Sanitize wording first. Excellent action/motion realism. |
+| **Hailuo / MiniMax** (02 / 2.3) | ~6–10s — 1080p caps ~6s, 768p extends ~10s | Yes — but vendor guidance says use sparingly, for specific artifacts not as a primary lever | Moderate — more permissive than Sora/Veo, still blocks named celebs + overt IP | Either (ZH native, EN solid) | Resolution and duration trade off — you can't get max of both. Pick the axis that matters per shot. Strong motion at low cost. |
+| **Wan 2.x** (Alibaba, open-source) | 2.2: ~3–8s @ 24–30fps; 2.5/2.6 extend ~10–15s by mode | Yes — robust field; defaults like `morphing, warping, face deformation, flickering` | Lenient — open-weights/self-hostable, so **no enforced filter when run locally** (hosted APIs may add their own) | Native ZH (both, but ZH-trained) | Leans Chinese — first/last-frame mode especially; EN-only prompts can underperform, add ZH for tricky shots. Self-hostable, full ComfyUI control, renders legible ZH/EN on-screen text. |
+| **Runway Gen-4 / 4.5** | 5s or 10s per generation | **No — does NOT support negatives.** `avoid X / no X` can produce the opposite. Describe only what *should* appear | Strict — blocks celebs, real people, copyrighted characters/brands | EN | Negative prompts are actively harmful here — `no distorted hands` can summon distorted hands. The single biggest mistake when porting prompts. Director-grade camera control + mature pro pipeline. |
+| **Pika** (2.2 / 2.5) | Standard + Pikascenes: 5s or 10s; **Pikaframes (keyframe) up to ~25s** | Partial — 2.5 supports negatives (`no morphing, no extra limbs`); 2.2 unclear, verify in-app | Moderate — blocks overt celebs/IP, generally more relaxed than Sora/Veo | EN | Only the Pikaframes keyframe path reaches ~25s — ordinary text/image-to-video is still 5s/10s. Fast, effects/transition-driven, great for stylized short-form. |
+| **Sora 2 / 2 Pro** (OpenAI) | Up to ~25s continuous single-pass on Sora 2 Pro (standard tier shorter) | No dedicated field — negate in-prompt with guardrails like `original characters only, no logos or text` | Strict — triple-layer moderation; blocks named IP **and visual lookalikes** even without the name | EN | The filter catches *descriptions*, not just names — `a spiky-haired ninja in an orange jumpsuit` still trips it (matches Naruto). Avoid recognizable trait-bundles, not only proper nouns. Leading prompt comprehension + world coherence. |
+
+<sub>Durations and negative-prompt mechanics for Veo 3.1, Runway Gen-4, Kling,
+Wan, and Sora are consistent across multiple 2026 vendor/help-doc sources;
+Seedance 2.0 and Hailuo figures lean on third-party guides (treat `~` as
+approximate). "Veo ~148s", "Sora/Pika ~25s" come from extension/keyframe
+features, **not** plain single-shot generation. IP-filter "strictness" labels
+are qualitative.</sub>
 
 ---
 

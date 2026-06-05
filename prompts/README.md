@@ -16,6 +16,27 @@
 
 ---
 
+## Index
+
+At-a-glance table of every prompt in this archive. Machine-readable
+version: [index.json](./index.json).
+
+| Prompt | Type | Duration | Variants | IP-safe | Rerolls |
+|---|---|---|---|---|---|
+| [Zombie Scavenger](./zombie-scavenger.md) ⭐ | multi-shot-narrative | two complete shot sequences | 1 | contains IP names | ~400 images + 200+ shots → ~40 clips (project-wide) |
+| [Kamen Rider / Tokusatsu](./kamen-rider-transformations.md) ⭐ | transformation | 15s per shot (one-take) | 6 | contains IP names | highly variable (2-3 low, 20+ high) |
+| [Kai'Sa (LoL)](./kaisa-transformation.md) | transformation | 15s + 20s + 5s extension | 3 | contains IP names | n/a |
+| [Metal Gear charge + combat](./metal-gear-charge-combat.md) | charge-combat | charge 10-15s + combat 15s | 1 | contains IP names | extremely low one-shot success; assembled in post |
+| [Pacific Rim + Gundam](./pacific-rim-gundam.md) | mech-drop | 15s (one-shot) | 1 | contains IP names | high breakdown rate; instruction non-compliance common |
+| [Cyber Wuxia skeleton](./cyber-wuxia.md) | atmospheric | variable (template only) | 1 | safe | n/a |
+
+> **IP-safe?** "contains IP names" means the original prompt names real
+> franchises/characters that **Seedance 2.0 will block** — see
+> [A note on IP names](#a-note-on-ip-names) below for how to strip them.
+> "safe" means the prompt is already a generalized style skeleton.
+
+---
+
 ## 1. Narrative (multi-shot edited)
 
 - **[zombie-scavenger.md](./zombie-scavenger.md)** ⭐
@@ -27,7 +48,7 @@
 ## 2. Transformations (single-shot, one-take)
 
 - **[kamen-rider-transformations.md](./kamen-rider-transformations.md)** ⭐
-  Five Kamen Rider variants sharing one 5-stage template:
+  Six Kamen Rider variants (five riders + a flight version) sharing one 5-stage template:
   - Cockroach Rider (HENSHIN, dark red crystal)
   - Fire Demon (flame crown horns)
   - Thunder Dragon (AMAZONS, dark blue crystal)
@@ -70,7 +91,7 @@
    5-stage template maps to a concrete piece.
 2. **Want to make a transformation**:
    [kamen-rider-transformations.md](./kamen-rider-transformations.md)
-   shows all five variants at once — it's more illustrative of
+   shows all six variants at once — it's more illustrative of
    "what's a variable vs. what's a constant" than reading the
    template alone.
 3. **Want to make combat / longer pieces**:

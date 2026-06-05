@@ -30,6 +30,9 @@
 > **让好莱坞导演 PJ Ace 评为"近年来最佳短片之一"** 的作品。
 > 后续计划收录更多 AI 短片创作者的方法。
 
+> ⚡ **快速上手：** [一页速查表](./cheatsheet.zh.md) ·
+> [翻车→修正案例集](./cases.zh.md)
+
 ---
 
 ## 🎬 PJ Ace 那条引爆的推文
@@ -123,14 +126,19 @@
 ```
 ai-shortfilm-prompts/
 ├── README.md / README.zh.md         ← 你在看的这一份（中英双语）
+├── cheatsheet.md / .zh.md           ← 一页速查表（整套方法一眼看完）
+├── cases.md / .zh.md                ← 翻车→修正案例集（常见烂输出与改法）
 ├── methodology.md / .zh.md          ← Mx-Shell 的 5 段式提示词模板讲解 ⭐
 ├── faq.md / .zh.md                  ← 整合的 17 条 + 直播 Q&A
 ├── credits.md / .zh.md              ← 来源与致谢
+├── showcase.md                      ← 用这套方法做出来的作品
+├── CONTRIBUTING.md                  ← 投稿模板与规则
 ├── LICENSE                          ← MIT（本仓库整理内容）
 ├── NOTICE / NOTICE.zh               ← 署名 + Mx-Shell 原作版权说明（双授权）
 │
 ├── prompts/                         ← Mx-Shell 公开过的完整原始提示词
 │   ├── README.md                    ← 索引
+│   ├── index.json                   ← 机器可读的提示词索引
 │   ├── zombie-scavenger.md          ← 标志作《丧尸清道夫》
 │   ├── kamen-rider-transformations.md  ← 假面骑士变身 × 5 变体
 │   ├── kaisa-transformation.md      ← LOL 卡莎变身 × 3 版本
@@ -142,6 +150,10 @@ ai-shortfilm-prompts/
 │   ├── 15s-transformation.md        ← 15 秒变身
 │   ├── multi-shot-narrative.md      ← 多分镜叙事
 │   └── atmosphere-prefabs.md        ← 8 个可复用氛围/画质骨架
+│
+├── assets/                          ← 图示 + README 顶部 demo 提示词
+│   ├── demo-prompt.md               ← Skill 写的可复制 15 秒提示词（顶部片位）
+│   └── 5-stage-structure.svg        ← 5 段式结构图
 │
 ├── .claude/skills/shortfilm-prompt/ ← Claude Code Skill
 │   ├── SKILL.md                     ← /shortfilm-prompt 调用后自动生成提示词
@@ -230,6 +242,25 @@ git submodule add https://github.com/jnMetaCode/ai-shortfilm-prompts.git .claude
 - [ai-coding-guide](https://github.com/jnMetaCode/ai-coding-guide) —— Claude Code 技巧速查
 - [shellward](https://github.com/jnMetaCode/shellward) —— AI Agent 安全中间件
 - [ai-coding-trilogy](https://github.com/jnMetaCode/ai-coding-trilogy) —— AI 编程实战三卷书
+
+---
+
+## 兼容的视频模型
+
+5 段式结构**与模型无关**。下面是 2026 年主流引擎的对比 —— 单镜头上限、负向提示词支持、IP 过滤、首选语言，以及最容易踩的那个坑：
+
+| 模型 | 单镜头上限 | 负向提示词 | IP 过滤 | 语言 | 备注 / 坑 |
+|---|---|---|---|---|---|
+| **Seedance 2.0**（豆包 / 即梦-小云雀，字节）—— *Mx-Shell 主力引擎* | ~10–15 秒 —— 但**豆包 App 被锁死在 5 秒/10 秒预设按钮**；完整 4–15 秒范围只在即梦/Dreamina 网页版 + 火山引擎控制台 | 部分 —— 消费端 App 无可靠的专用字段；靠"描述你想要什么"来反向规避 | 严格 —— 国内平台对指名艺人 + 品牌 IP 拒绝很激进 | 都行（中文母语，英文也行） | 时长完全取决于前端。用户在豆包 App 时别承诺 15 秒。原生同期音画是它的杀手锏。 |
+| **Veo 3 / 3.1**（谷歌） | 每条 8 秒（4/6/8 秒）；Extend 以 7 秒一跳叠到 ~148 秒，但 4–5 次扩展后画质明显下降 | 有 —— 专用字段。把不想要的元素列成名词短语（`extra limbs, glitch morphs`）；**不要写 `no`/`don't` 命令式** | 严格 —— 拒绝公众人物、品牌、声音/形象模仿；同时扫描提示词*和*画面 | 英文 | 负向字段要的是描述性短语，不是命令 —— `no rain` 这种写法会适得其反。原生音频 + 真实感一流。 |
+| **可灵 2.x / 3.0**（快手） | 2.5：5–10 秒（Pro ~12 秒）；**3.0：单条提示词最长 ~15 秒**多分镜 | 有 —— 专用字段。用于稳定性瑕疵（滑步、多指、形变），别填空泛"画质"词 | 严格 —— 生成前的违禁词过滤命中一处就拒掉**整条提示词**；极其敏感 | 都行（中文母语，英文强；3.0 多语言对白） | 违禁词过滤臭名昭著地过敏 —— 一个无害的身体/接触词就能毙掉干净提示词。先清洗措辞。动作/运动真实感极佳。 |
+| **海螺 / MiniMax**（02 / 2.3） | ~6–10 秒 —— 1080p 上限 ~6 秒，768p 延到 ~10 秒 | 有 —— 但官方建议少用，用于具体瑕疵而非主控手段 | 中等 —— 比 Sora/Veo 宽松，仍拦指名艺人 + 明显 IP | 都行（中文母语，英文扎实） | 分辨率与时长此消彼长 —— 两者不可兼得，每个镜头取重要的那个轴。低成本下运动强。 |
+| **Wan 万相 2.x**（阿里，开源） | 2.2：~3–8 秒 @ 24–30fps；2.5/2.6 视模式延到 ~10–15 秒 | 有 —— 字段健全；默认词如 `morphing, warping, face deformation, flickering` | 宽松 —— 开源权重/可自托管，**本地运行无强制过滤**（托管 API 可能自加） | 中文母语（双语，但中文训练为主） | 偏中文 —— 尤其首尾帧模式；纯英文提示词可能掉链子，难镜头加中文。可自托管、ComfyUI 全控、能渲清晰中英屏内文字。 |
+| **Runway Gen-4 / 4.5** | 每次生成 5 秒或 10 秒 | **无 —— 不支持负向。** `avoid X / no X` 可能产生相反结果。只描述*应该*出现的东西 | 严格 —— 拦艺人、真人、版权角色/品牌 | 英文 | 负向提示词在这里有害 —— `no distorted hands` 反而会召唤畸形手。从别的工具移植提示词时最大的坑。导演级运镜 + 成熟专业管线。 |
+| **Pika**（2.2 / 2.5） | 标准 + Pikascenes：5 秒或 10 秒；**Pikaframes（关键帧）最长 ~25 秒** | 部分 —— 2.5 支持负向（`no morphing, no extra limbs`）；2.2 不明确，进 App 验证 | 中等 —— 拦明显艺人/IP，整体比 Sora/Veo 宽松 | 英文 | 只有 Pikaframes 关键帧路径能到 ~25 秒 —— 普通文/图生视频仍是 5 秒/10 秒。快、特效/转场驱动，适合风格化短视频。 |
+| **Sora 2 / 2 Pro**（OpenAI） | Sora 2 Pro 单次最长 ~25 秒连续（标准档更短） | 无专用字段 —— 在提示词内用护栏句反向规避，如 `original characters only, no logos or text` | 严格 —— 三层审核；拦指名 IP **和视觉神似**，哪怕不写名字 | 英文 | 过滤抓的是*描述*不只是名字 —— `橙色连体服的尖发忍者` 照样被毙（视觉上匹配火影）。要避开可识别的特征组合，不止专有名词。提示词理解 + 世界一致性领先。 |
+
+<sub>Veo 3.1、Runway Gen-4、可灵、Wan、Sora 的时长与负向机制在 2026 年多个厂商/帮助文档来源中一致；Seedance 2.0 与海螺的数字多来自第三方指南（`~` 视为近似）。"Veo ~148 秒""Sora/Pika ~25 秒"来自扩展/关键帧功能，**并非**普通单镜头生成。IP 过滤"严格度"为定性判断。</sub>
 
 ---
 

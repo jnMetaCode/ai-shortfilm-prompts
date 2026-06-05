@@ -1,0 +1,40 @@
+# Dead-link check for all Markdown in the repo.
+#
+# Internal relative links have broken on us repeatedly (CLAUDE.md rule #4),
+# so this job fails on any broken *internal* link. External social links
+# (x.com / twitter.com) rate-limit and 403 in CI — those are deliberately
+# ignored, not "fixed". See CLAUDE.md rule #5 for why the x.com links stay.
+name: links
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check Markdown links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Scan every Markdown file; verbose so broken internal links are
+          # easy to spot in the log. --no-progress keeps CI output clean.
+          args: >-
+            --no-progress
+            --verbose
+            --exclude-loopback
+            --exclude '^https?://(x\.com|twitter\.com)'
+            './**/*.md'
+            './.github/**/*.md'
+            './.claude/**/*.md'
+            './.claude-plugin/**/*.md'
+          # Fail the job when any (non-excluded) link is broken.
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

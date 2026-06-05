@@ -1,7 +1,7 @@
 {
   "name": "ai-shortfilm-prompts",
-  "description": "AI 短片提示词方法论 + Claude Code Skill。基于 Mx-Shell《丧尸清道夫》5 段式结构，适用于 Seedance 2.0 / 小云雀 / Sora / 可灵 / 即梦等视频模型。",
-  "version": "0.2.0",
+  "description": "AI 短片提示词方法论 + Claude Code Skill。基于 Mx-Shell《丧尸清道夫》5 段式结构，含速查表 / 负向词预制 / 失败案例库，适用于 Seedance 2.0 / 小云雀 / Sora / 可灵 / 即梦等视频模型。",
+  "version": "0.3.0",
   "author": {
     "name": "jnMetaCode",
     "url": "https://github.com/jnMetaCode"
@@ -11,15 +11,21 @@
   "license": "MIT",
   "keywords": [
     "ai-video",
+    "video-prompt",
     "prompt-engineering",
+    "text-to-video",
+    "cinematic-prompts",
     "seedance",
     "sora",
     "kling",
-    "skills",
+    "veo",
+    "jimeng",
+    "hailuo",
+    "doubao",
+    "claude-skill",
     "shortfilm",
-    "chinese",
-    "中文",
     "mx-shell",
-    "丧尸清道夫"
+    "丧尸清道夫",
+    "中文"
   ]
 }

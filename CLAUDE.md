@@ -50,4 +50,4 @@ ships only structured, original documentation.
 ## Releasing
 
 Bump `version` in both `.claude-plugin/plugin.json` and
-`.claude-plugin/marketplace.json`, then tag + `gh release create`. Current: v0.2.0.
+`.claude-plugin/marketplace.json`, then tag + `gh release create`. Current: v0.3.0.

@@ -38,9 +38,9 @@ Use `AskUserQuestion`. Priority order:
 2. **Subject + scene** (decides content)
 3. **Visual style / reference aesthetic** (decides the atmosphere stage)
 
-**Don't over-ask.** Mx-Shell himself worked iteratively — *"I made it
-up as I went."* Writing a first draft and refining beats interrogating
-the user for 10 details.
+**Don't over-ask.** Mx-Shell himself worked iteratively, making it up as
+he went. Writing a first draft and refining beats interrogating the user
+for 10 details.
 
 ### Step 3 — Output a prompt in the 5-stage structure
 
@@ -153,6 +153,32 @@ Shot 2:
 ```
 Four-part formula per shot: Shot size + Composition + Camera move + Action.
 
+### Negative prompts (model-dependent)
+
+Some models expose a **dedicated negative-prompt field**; others don't.
+Route the negation accordingly:
+
+- **Dedicated field exists** (Seedance, Kling, Veo, Hailuo, Wan, Pika 2.5):
+  paste the canonical prefab into that field. Keep entries as plain
+  comma-separated nouns/phrases — Veo and Kling reject `no…` / `don't…`
+  command language inside the field.
+- **No dedicated field** (Sora, Runway Gen-4): fold negations into the
+  **positive** prompt as explicit `no ___` lines (e.g. *"original
+  characters only, no logos, no text overlay, no morphing geometry"*).
+  Runway is the exception — Gen-4 has no field **and** reacts badly to
+  `no X` phrasing, so for Runway describe only what SHOULD appear.
+
+Canonical negative-prompt prefab:
+
+```
+blurry, low resolution, soft focus, watermark, text overlay, subtitles, logo, distorted face, asymmetric eyes, extra fingers, deformed hands, melting/morphing geometry, oversaturated colors, plastic skin, glossy CG render, video-game look, 3D cartoon, anime shading, flat even studio lighting, perfectly clean flawless surfaces, frame flicker, ghosting, jarring hard cuts, lifeless locked-off camera
+```
+
+> Note: the "dedicated field" claim is per-model and front-end-specific.
+> Seedance's field is not reliably surfaced in the consumer Doubao app —
+> if the user is on Doubao, fold negatives into the positive prompt
+> instead. Verify Pika 2.2 in-app (2.5 confirmed, 2.2 ambiguous).
+
 ---
 
 ## Seven hard rules (run a self-check before delivery)
@@ -217,8 +243,8 @@ Candidate phrasings:
 
 **Self-check**: count imperfection words. Less than 2 → add.
 
-Mx-Shell's repeated emphasis: *"Too perfect = fake. The real world has
-imperfections in everything."*
+Mx-Shell's repeated emphasis: *"Too perfect = fake. Keeping imperfections
+is not a bad thing."*
 
 ### Rule 6 — Don't pile FX at the end of single-shot transformations / epic segments
 
@@ -251,11 +277,14 @@ warning line at the end**:
 > it. Consider replacing it or deleting some punctuation."*
 
 **Model-specific advice to include at end of output:**
-- Seedance 2.0 / Xiaoyunque: avoid IP names; single-shot ≤ 15s
-- Sora: prefers concise structure; keep 5 stages but trim per-section length
-- Kling: more lenient on IP names; needs more explicit motion description
-- Jimeng: strong 3D-CG feel — extra emphasis on "no game-CG feel"
-- Veo: works well; English prompts preferred
+- Seedance 2.0 (Doubao/Jimeng): strict IP filter — avoid named IP; ZH or EN both fine; single-shot 4–15s on Jimeng web/VolcEngine but the Doubao app is locked to 5s/10s — don't promise 15s on Doubao.
+- Veo 3 / 3.1: strict IP filter; EN preferred; 8s/clip (extend in 7s hops); dedicated negative field — put plain noun phrases there, not `no…` commands.
+- Kling 2.x / 3.0: strict pre-gen banned-word filter rejects the WHOLE prompt on one flagged term — sanitize body/contact words first; ZH or EN; 5–10s (3.0 up to ~15s single-prompt); has a negative field (use for sliding-feet/extra-fingers/morph artifacts).
+- Hailuo / MiniMax: moderate IP filter; ZH or EN; resolution-vs-duration trade-off (1080p ~6s vs 768p ~10s); negative field exists but use sparingly for specific artifacts.
+- Wan 2.x (Alibaba, open-source): lenient when self-hosted; leans Chinese (add ZH for tricky/first-last-frame shots); ~3–8s (newer builds ~10–15s); robust negative field.
+- Runway Gen-4 / 4.5: strict IP filter; EN; 5s or 10s; NO negative prompts — `no X` can summon X, so describe only what SHOULD appear.
+- Pika 2.2 / 2.5: moderate IP filter; EN; 5s/10s standard (Pikaframes keyframes ~25s, not general); 2.5 supports negatives, verify 2.2 in-app.
+- Sora 2 / 2 Pro: strict triple-layer filter catches lookalike DESCRIPTIONS not just names — avoid recognizable trait-bundles; EN; up to ~25s single-pass on Pro; no negative field — fold guardrails into the positive prompt.
 
 ---
 
@@ -269,6 +298,7 @@ warning line at the end**:
 - [ ] Closing is empty / restrained, no FX pile-up (Rule 6)
 - [ ] No vague praise words: "perfect / stunning / epic / handsome / 4K / texture-rich" (Rule 1)
 - [ ] No IP names, OR if present, warning line added (Rule 7)
+- [ ] Negative prompt included for models that support a dedicated field (Seedance/Kling)
 - [ ] Single-shot ≤ 15s / multi-shot ≤ 8 shots
 - [ ] Closing model-specific advice line included
 

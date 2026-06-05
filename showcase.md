@@ -10,14 +10,18 @@ library — **made something with it? [Submit it](./CONTRIBUTING.md).**
 
 ## 🤖 This repo's own demo · 本仓库自己的 demo
 
-The 15-second clip at the top of the README — *"Scavenger Awakening"*, an
-atom-punk salvage robot powering up in dusk ruins — was generated from a
-prompt **written by this repo's own `/shortfilm-prompt` Skill**. Eating our
-own dog food: [assets/demo-prompt.md](./assets/demo-prompt.md).
+The README's hero slot is wired to *"Scavenger Awakening"* — an atom-punk
+salvage robot powering up in dusk ruins — a complete, copy-paste-runnable
+15-second prompt **written by this repo's own `/shortfilm-prompt` Skill**.
+Eating our own dog food: [assets/demo-prompt.md](./assets/demo-prompt.md).
+The rendered clip is still pending; the slot embeds it the moment it drops.
+For now the runnable prompt is the proof — run it yourself.
 
-> README 顶部那条 15 秒片《拾荒者苏醒》（原子朋克拾荒机器人在废墟黄昏充能），
-> 提示词由**本仓库自带的 `/shortfilm-prompt` Skill** 写出 —— 自己吃自己的狗粮：
-> [assets/demo-prompt.md](./assets/demo-prompt.md)。
+> README 的头图位已接好《拾荒者苏醒》（原子朋克拾荒机器人在废墟黄昏充能）：
+> 一条完整、可直接复制运行的 15 秒提示词，由**本仓库自带的
+> `/shortfilm-prompt` Skill** 写出 —— 自己吃自己的狗粮：
+> [assets/demo-prompt.md](./assets/demo-prompt.md)。成片仍在制作中，落地即嵌入；
+> 眼下这条可运行的提示词就是证明 —— 自己跑一遍就知道。
 
 ---
 

@@ -1,0 +1,64 @@
+{
+  "prompts": [
+    {
+      "file": "prompts/zombie-scavenger.md",
+      "title": "Zombie Scavenger",
+      "type": "multi-shot-narrative",
+      "duration": "two multi-shot sequences (shot 1 = 7 storyboard shots; shot 2 = breakdance + mirror-shot series), edited composite",
+      "variants": 1,
+      "ipSafe": "contains-IP-names",
+      "reroll": "~400 images + 200+ video shots to yield ~40 final clips (project-wide average)",
+      "tags": ["narrative", "multi-shot", "atompunk", "post-apocalyptic", "robot", "edited-composite"]
+    },
+    {
+      "file": "prompts/kamen-rider-transformations.md",
+      "title": "Kamen Rider / Tokusatsu Transformation Series",
+      "type": "transformation",
+      "duration": "15s per shot (single one-take)",
+      "variants": 6,
+      "ipSafe": "contains-IP-names",
+      "reroll": "highly variable (2-3 low, 20+ high); Fire Demon's camera move was accidental",
+      "tags": ["transformation", "tokusatsu", "kamen-rider", "single-shot", "henshin", "text-only"]
+    },
+    {
+      "file": "prompts/kaisa-transformation.md",
+      "title": "Kai'Sa (League of Legends) Transformation Series",
+      "type": "transformation",
+      "duration": "15s + 20s + 5s extension (three variants with different segmentation)",
+      "variants": 3,
+      "ipSafe": "contains-IP-names",
+      "reroll": "n/a",
+      "tags": ["transformation", "kaisa", "league-of-legends", "single-shot", "face-lock", "video-extension"]
+    },
+    {
+      "file": "prompts/metal-gear-charge-combat.md",
+      "title": "Metal Gear-style Weapon Charge + Combat",
+      "type": "charge-combat",
+      "duration": "weapon charge 10-15s + combat 15s (two independent segments, post-edited)",
+      "variants": 1,
+      "ipSafe": "contains-IP-names",
+      "reroll": "extremely low one-shot success; Mx-Shell rerolled many times then assembled in post",
+      "tags": ["charge-combat", "metal-gear", "weapon-charge", "combat", "segmented", "edited-composite"]
+    },
+    {
+      "file": "prompts/pacific-rim-gundam.md",
+      "title": "Pacific Rim + Gundam + Ready Player One Mech Drop",
+      "type": "mech-drop",
+      "duration": "15s (one-shot)",
+      "variants": 1,
+      "ipSafe": "contains-IP-names",
+      "reroll": "high breakdown rate; camera/instruction non-compliance common",
+      "tags": ["mech-drop", "pacific-rim", "gundam", "mecha", "single-shot", "fpv"]
+    },
+    {
+      "file": "prompts/cyber-wuxia.md",
+      "title": "Cyber Wuxia Style Skeleton",
+      "type": "atmospheric",
+      "duration": "variable (defined by user; template only)",
+      "variants": 1,
+      "ipSafe": "safe",
+      "reroll": "n/a",
+      "tags": ["atmospheric", "cyber-wuxia", "steampunk", "style-skeleton", "shaw-brothers", "fill-in-template"]
+    }
+  ]
+}
