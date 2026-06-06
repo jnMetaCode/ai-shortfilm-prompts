@@ -295,6 +295,21 @@ are qualitative.</sub>
 
 ---
 
+## Try these tools · support this open-source project 🙏
+
+This repo is free and open-source. If it helped you, signing up through the
+**invite links** below gets **you free creation credits and the maintainer a
+few too** — a no-cost way to chip in and keep the project updated. Totally
+optional; nothing here depends on it.
+
+- **Kling** (international): [sign up](https://klingai-share.kuaishou.com/h5-app/invitation?code=6BCGZXWZRMA9) · code `6BCGZXWZRMA9` (+50% credits for new members' first month)
+- **Dreamina** (Seedance 2.0, international): [sign up](https://dreamina.onelink.me/yKT4/dw7oxbdd)
+- China-only entries (小云雀 / 即梦) are in the [中文版](./README.zh.md#试用入口--顺手支持下这个开源项目-).
+
+> These are invite links (both sides get credits). Veo (Google) and Sora (OpenAI) have no invite program — just search their official sites.
+
+---
+
 ## Sister projects (by the same author)
 
 This is the video-prompt sibling of the AI-coding ecosystem maintained

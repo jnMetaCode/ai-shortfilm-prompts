@@ -29,7 +29,7 @@ jobs:
             --no-progress
             --verbose
             --exclude-loopback
-            --exclude '^https?://(x\.com|twitter\.com)'
+            --exclude '^https?://(x\.com|twitter\.com|.*\.jianying\.com|.*\.onelink\.me|klingai-share\.kuaishou\.com)'
             './**/*.md'
             './.github/**/*.md'
             './.claude-plugin/**/*.md'

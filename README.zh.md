@@ -258,6 +258,20 @@ git submodule add https://github.com/jnMetaCode/ai-shortfilm-prompts.git .claude
 
 ---
 
+## 试用入口 · 顺手支持下这个开源项目 🙏
+
+这个仓库免费开源。如果它帮到你，欢迎用下面的**邀请链接**注册这些工具——
+**你能拿到新人免费创作积分，我也会得到一点**，等于互相赞助、让项目继续更新。纯自愿，不用也完全不影响任何内容。
+
+- **小云雀**（Seedance 2.0，本方法主力引擎）：[注册领免费积分](https://xiaoyunque.jianying.com/s/ufhQBHB9CHg/) · 邀请码 `SQ0350`
+- **即梦 Dreamina（国际版）**：[注册入口](https://dreamina.onelink.me/yKT4/dw7oxbdd)
+- **即梦 Jimeng（国内版）**：[注册入口](https://m.jimeng.jianying.com/s/YL5yewFHKwA/?t=0) · 邀请码 `BA6819`
+- **可灵 Kling**：[注册入口](https://klingai-share.kuaishou.com/h5-app/invitation?code=6BCGZXWZRMA9) · 邀请码 `6BCGZXWZRMA9`（新会员首月 +50% 创作积分）
+
+> 以上为邀请链接（注册双方都得积分）。Veo（谷歌）、Sora（OpenAI）无邀请计划，搜官网即可。
+
+---
+
 ## 常用工具
 
 Mx-Shell 自述他用的工具栈（数据来自直播 + 文档）：
