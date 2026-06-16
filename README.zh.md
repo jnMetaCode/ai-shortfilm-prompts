@@ -145,6 +145,7 @@ ai-shortfilm-prompts/
 │   ├── atmosphere-prefabs.md        ← 8 个可复用氛围/画质骨架
 │   ├── negative-prompts.md          ← 负向提示词预制件（按模型）
 │   ├── genre-camera-sop.md          ← 五大类型片运镜 SOP
+│   ├── camera-move-library.md       ← 五大技法模块 50 式运镜库
 │   └── pet-lifetime-narrative.md    ← 实战范例：萌宠亲情情感叙事
 │
 ├── assets/                          ← 图示 + README 顶部 demo 提示词

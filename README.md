@@ -171,6 +171,7 @@ ai-shortfilm-prompts/
 │   ├── atmosphere-prefabs.md         8 reusable atmosphere/look prefabs
 │   ├── negative-prompts.md           Reusable negative-prompt prefab (per-model)
 │   ├── genre-camera-sop.md           Camera-movement SOP for 5 film genres
+│   ├── camera-move-library.md        50 camera moves in 5 technique modules
 │   └── pet-lifetime-narrative.md     Worked example: pet × family emotional narrative
 │
 ├── assets/                 Diagrams + the README hero-demo prompt.
