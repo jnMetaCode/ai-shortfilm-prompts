@@ -185,6 +185,14 @@
   .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
   .toast .dot{color:var(--green);margin-right:7px}
 
+  .follow{margin:0 0 22px}
+  .follow-links{font-size:14px;margin:0 0 16px}
+  .follow-links b{color:var(--txt)}
+  .follow-links .sep{color:var(--line);margin:0 7px}
+  .qr-row{display:flex;gap:22px;flex-wrap:wrap}
+  .qr-row figure{margin:0;text-align:center}
+  .qr-row img{height:150px;width:auto;border-radius:10px;border:1px solid var(--line);display:block}
+  .qr-row figcaption{margin-top:8px;font-size:12px;color:var(--dim)}
   footer{position:relative;z-index:2;border-top:1px solid var(--line);margin-top:54px;padding:34px 0 56px;color:var(--dim);font-size:13px}
   footer .badge.mit{background:rgba(95,208,138,.13);color:var(--green);border:1px solid rgba(95,208,138,.3);
     font-size:11px;padding:1px 8px;border-radius:999px;font-weight:600}
@@ -251,16 +259,20 @@
 <div class="toast" id="toast"><span class="dot">✓</span><span id="toast-t">已复制</span></div>
 
 <footer><div class="wrap">
-  <p style="margin:0 0 14px;font-size:14px"><b style="color:var(--txt)">作者 · 关注</b>
-    <span style="color:var(--line);margin:0 4px">|</span>
-    <a href="https://aiolaola.com/" target="_blank"><b style="color:var(--gold-soft)">aiOlaOla</b> · 免费学 AI 编程</a>
-    <span style="color:var(--line);margin:0 6px">·</span>
-    公众号「<b style="color:var(--txt-2)">AI 不止语</b>」
-    <span style="color:var(--line);margin:0 6px">·</span>
-    <a href="https://x.com/aibuzhiyu" target="_blank">X @aibuzhiyu</a>
-    <span style="color:var(--line);margin:0 6px">·</span>
-    <a href="https://github.com/jnMetaCode" target="_blank">GitHub @jnMetaCode</a>
-  </p>
+  <div class="follow">
+    <p class="follow-links"><b>作者 · 关注</b>
+      <span class="sep">|</span>
+      <a href="https://aiolaola.com/" target="_blank"><b style="color:var(--gold-soft)">aiOlaOla</b> · 免费学 AI 编程</a>
+      <span class="sep">·</span>
+      <a href="https://x.com/jnMetaCode" target="_blank">X @jnMetaCode</a>
+      <span class="sep">·</span>
+      <a href="https://github.com/jnMetaCode" target="_blank">GitHub @jnMetaCode</a>
+    </p>
+    <div class="qr-row">
+      <figure><img src="assets/qr-wechat.jpg" alt="微信公众号 AI 不止语" loading="lazy"><figcaption>微信公众号「AI 不止语」</figcaption></figure>
+      <figure><img src="assets/qr-douyin.jpg" alt="抖音 AI 不止语" loading="lazy"><figcaption>抖音 @AI不止语 · AIBZY</figcaption></figure>
+    </div>
+  </div>
   <p style="margin:0 0 6px"><b style="color:var(--txt-2)">许可</b> · 方法论 / 模板 / Skill 为 jnMetaCode 原创
     <span class="badge mit">MIT</span> 自由使用。</p>
   <p style="margin:0">本页内容随仓库 <code>main</code> 分支自动更新。</p>
