@@ -14,5 +14,9 @@
   {
     "id": "multi-shot-narrative",
     "input": "A multi-shot narrative short: a small salvage robot wanders into an abandoned seaside bar at dusk and is startled by a noise behind the counter."
+  },
+  {
+    "id": "emotional-pet-farewell",
+    "input": "我想做一个催泪的萌宠亲情短片：一只狗从小奶狗陪伴一个孩子长大，直到狗老去。多分镜叙事，要克制不煽情。"
   }
 ]

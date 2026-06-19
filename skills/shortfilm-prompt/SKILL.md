@@ -1,6 +1,6 @@
 ---
 name: shortfilm-prompt
-description: Generate cinematic AI shortfilm prompts (works with Seedance 2.0, Xiaoyunque, Sora, Kling, Jimeng, Veo) using the 5-stage structure from Mx-Shell's Zombie Scavenger. Trigger when the user wants transformation sequences, multi-shot narrative shorts, weapon-charge/combat segments, or any cinematic video prompt.
+description: Generate cinematic AI shortfilm prompts (works with Seedance 2.0, Xiaoyunque, Sora, Kling, Jimeng, Veo) using the 5-stage structure from Mx-Shell's Zombie Scavenger. Trigger when the user wants transformation sequences, multi-shot narrative shorts, weapon-charge/combat segments, emotional family/pet/farewell narratives (催泪/亲情/萌宠/离别), or any cinematic video prompt.
 ---
 
 # shortfilm-prompt — Cinematic AI Video Prompt Generator
@@ -23,8 +23,9 @@ Seedance blocks IP names; etc.).
 If their initial request already includes **all** of the following,
 skip Step 2 and go straight to Step 3:
 
-- Video type (transformation / multi-shot narrative / atmospheric single
-  shot / weapon-charge / combat / static character poster)
+- Video type (transformation / multi-shot narrative / **emotional
+  narrative (family · pet · farewell)** / atmospheric single shot /
+  weapon-charge / combat / static character poster)
 - Duration (5s / 10s / 15s / 20s / multi-shot edited)
 - Subject base setup (person / robot / mech)
 - Scene (location + time + atmosphere)
@@ -43,6 +44,11 @@ he went. Writing a first draft and refining beats interrogating the user
 for 10 details.
 
 ### Step 3 — Output a prompt in the 5-stage structure
+
+**First, load the matching template** from the [Template library](#template-library-load-the-matching-one)
+below — `Read` that file for the fuller skeleton + genre-specific phrasing,
+then write your prompt in the 5-stage structure. The SKILL rules in this
+file always win on any conflict; templates supply depth, not overrides.
 
 ```
 1. Core theme            ← 3-6 tags separated by |
@@ -66,7 +72,52 @@ tune. Examples:
 
 ---
 
+## Template library (load the matching one)
+
+This repo ships a `templates/` directory with deeper skeletons and
+genre-specific phrasing. Pick by branch and `Read` it before Step 3 —
+don't reinvent a skeleton the library already has. Paths are relative to
+the plugin/repo root.
+
+| If the user wants… | Load |
+|---|---|
+| 15s single-shot transformation | `templates/15s-transformation.md` |
+| Multi-shot edited narrative | `templates/multi-shot-narrative.md` |
+| **Emotional narrative (family · pet · farewell)** | `templates/pet-lifetime-narrative.md` (full worked example) |
+| How the camera should move, by genre | `templates/genre-camera-sop.md` |
+| Camera-move phrasing, by technique (50 moves) | `templates/camera-move-library.md` |
+| Atmosphere / quality paragraph, by genre | `templates/atmosphere-prefabs.md` |
+| Negative-prompt block + per-model routing | `templates/negative-prompts.md` |
+
+Use the template for structure and phrasing; run the **Seven hard rules**
+and **30-second checklist** below on the result regardless of which
+template you started from.
+
+---
+
 ## Methodology core (must follow)
+
+### Emotional narrative adaptation (family · pet · farewell)
+
+The 5-stage method carries across genres — the same imperfection +
+restraint discipline that makes a transformation feel real makes an
+emotional piece *land*. Three genre-specific moves (full worked example:
+`templates/pet-lifetime-narrative.md`):
+
+- **Mark time with season + light, lock ONE grade.** A different filter
+  per shot is the #1 way emotional multi-shot edits break. Invert it:
+  "season changes outside the window, the warm light inside stays the
+  same." Time reads; the edit holds together.
+- **Restraint does the crying (Rule 6, applied to emotion).** No
+  flashback montage, no swelling score, no slow-zoom on tears. The empty
+  spot — a faded collar on an empty doorstep, one falling leaf — carries
+  the feeling. Show the absence, not the reaction to it.
+- **2 imperfection anchors per subject double as the consistency lock.**
+  Worn collar / grey muzzle / muddy paws; scraped knee → faded scar →
+  tired lines. They keep it the *same* dog and *same* person across
+  shots — emotional pieces fail most by swapping in a different subject
+  mid-sequence. Generate the first and last shot first to lock the look.
+
 
 ### Stage 1 · Core theme
 
