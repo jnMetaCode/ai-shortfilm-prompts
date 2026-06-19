@@ -1,16 +1,8 @@
 # ai-shortfilm-prompts
 
-
-
-
-<!-- aiolaola:start -->
-> 📖 **免费配套学习** · [aiOlaOla — 从零学会 AI 编程 →](https://aiolaola.com/?utm_source=github&utm_campaign=shortfilm)
-> 180 节免费实操课 + 《AI 编程实战三卷书》在线读 + 实战社区 + AI 助教 · **永久免费,登录即学。**
->
-> 🌟 **姐妹项目**:[agency-orchestrator ⭐1.4k](https://github.com/jnMetaCode/agency-orchestrator) · [agency-agents-zh ⭐15.2k](https://github.com/jnMetaCode/agency-agents-zh) · [superpowers-zh ⭐5.6k](https://github.com/jnMetaCode/superpowers-zh) · [ai-coding-trilogy](https://github.com/jnMetaCode/ai-coding-trilogy) · [ai-coding-guide ⭐405](https://github.com/jnMetaCode/ai-coding-guide)
-<!-- aiolaola:end -->
-
 > 🌐 **Browse the prompt library online → [prompts.aiolaola.com](https://prompts.aiolaola.com)** — view any template/case and copy it with one click, no install.
+
+> 📖 **免费配套学习** → [从零学会 AI 编程](https://aiolaola.com/)：180 节免费实操课 + 《AI 编程实战三卷书》在线阅读 + 实战社区 · 永久免费
 
 <!-- ═══ HERO DEMO SLOT — publish your rendered 15s clip in 2 steps:
      1. Drag your demo.mp4 into any GitHub issue/PR comment box; copy the
