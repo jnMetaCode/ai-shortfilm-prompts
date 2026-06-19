@@ -10,6 +10,8 @@
 > 🌟 **姐妹项目**:[agency-orchestrator ⭐1.4k](https://github.com/jnMetaCode/agency-orchestrator) · [agency-agents-zh ⭐15.2k](https://github.com/jnMetaCode/agency-agents-zh) · [superpowers-zh ⭐5.6k](https://github.com/jnMetaCode/superpowers-zh) · [ai-coding-trilogy](https://github.com/jnMetaCode/ai-coding-trilogy) · [ai-coding-guide ⭐405](https://github.com/jnMetaCode/ai-coding-guide)
 <!-- aiolaola:end -->
 
+> 🌐 **在线浏览提示词库 → [prompts.aiolaola.com](https://prompts.aiolaola.com)** —— 点开即看任意模板/案例,一键复制,免安装。
+
 <!-- ═══ 顶部 demo 片位 —— 出片后两步发布：
      1. 把你的 demo.mp4 拖进任意 GitHub issue/PR 评论框，复制它生成的
         https://user-images.githubusercontent.com/... 链接。
