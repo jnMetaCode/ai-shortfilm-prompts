@@ -1,0 +1,8 @@
+file 'scene_01_env.mp4'
+file 'scene_02_faceoff.mp4'
+file 'scene_03_hilt.mp4'
+file 'scene_04_draw.mp4'
+file 'scene_05_first_clash.mp4'
+file 'scene_06_feet.mp4'
+file 'scene_07_over_shoulder.mp4'
+file 'scene_08_ending.mp4'
