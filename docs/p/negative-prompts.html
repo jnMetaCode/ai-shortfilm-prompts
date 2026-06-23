@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Negative Prompts — Reusable Anti-Artifact Block | Cinematic AI Video Prompt Library</title>
+<meta name="description" content="Authored by jnMetaCode (MIT). A companion to the atmosphere prefabs: where those describe what you want, this file collects what you want to exclude — t…">
+<link rel="canonical" href="https://prompts.aiolaola.com/p/negative-prompts.html">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="en" href="https://prompts.aiolaola.com/p/negative-prompts.html">
+<link rel="alternate" hreflang="zh-CN" href="https://prompts.aiolaola.com/p/negative-prompts.zh.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="电影感 AI 视频提示词库">
+<meta property="og:title" content="Negative Prompts — Reusable Anti-Artifact Block">
+<meta property="og:description" content="Authored by jnMetaCode (MIT). A companion to the atmosphere prefabs: where those describe what you want, this file collects what you want to exclude — t…">
+<meta property="og:url" content="https://prompts.aiolaola.com/p/negative-prompts.html">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Negative Prompts — Reusable Anti-Artifact Block">
+<meta name="twitter:description" content="Authored by jnMetaCode (MIT). A companion to the atmosphere prefabs: where those describe what you want, this file collects what you want to exclude — t…">
+<link rel="stylesheet" href="./page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Negative Prompts — Reusable Anti-Artifact Block",
+  "description": "Authored by jnMetaCode (MIT). A companion to the atmosphere prefabs: where those describe what you want, this file collects what you want to exclude — t…",
+  "inLanguage": "en",
+  "url": "https://prompts.aiolaola.com/p/negative-prompts.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "电影感 AI 视频提示词库",
+    "url": "https://prompts.aiolaola.com/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "jnMetaCode",
+    "url": "https://github.com/jnMetaCode"
+  },
+  "license": "https://opensource.org/licenses/MIT"
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7LBJRDWYYW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7LBJRDWYYW');</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="back" href="../">← 提示词库</a>
+  <a class="ghlink" href="https://github.com/jnMetaCode/ai-shortfilm-prompts/blob/main/templates/negative-prompts.md" target="_blank" rel="noopener">在 GitHub 查看源文件 ↗</a>
+</header>
+<main class="doc">
+  <div class="doc-actions">
+    <button id="copyPrompt">⧉ 复制提示词</button>
+    <button id="copyAll">复制全文</button>
+    <a class="langsw" href="./negative-prompts.zh.html">中文</a>
+  </div>
+  <article class="md">
+<h1>Negative Prompts — Reusable Anti-Artifact Block</h1>
+<blockquote><p>Authored by jnMetaCode (MIT). A companion to the <a href="atmosphere-prefabs.html">atmosphere prefabs</a>: where those describe what you <em>want</em>, this file collects what you want to <em>exclude</em> — the recurring failure modes of AI video (melting hands, plastic skin, frame flicker, the "video-game look") and how to suppress them per model.</p>
+<p><strong>How to use</strong>: drop the canonical block below into your model's negative field if it has one; otherwise read the compatibility table — several tools need positive-only phrasing instead, and a couple will summon the very thing you list if you write "no ___".</p>
+<p><strong><a href="negative-prompts.zh.html">中文版 →</a></strong></p></blockquote>
+<hr>
+<h2>The canonical negative prefab</h2>
+<p>Copy-paste this as your default. It targets resolution/sharpness defects, overlay junk, anatomy breakage, the over-stylized CG/anime look, and dead camera work — the artifacts that read as "AI" at a glance.</p>
+<pre><code>blurry, low resolution, soft focus, watermark, text overlay, subtitles, logo, distorted face, asymmetric eyes, extra fingers, deformed hands, melting/morphing geometry, oversaturated colors, plastic skin, glossy CG render, video-game look, 3D cartoon, anime shading, flat even studio lighting, perfectly clean flawless surfaces, frame flicker, ghosting, jarring hard cuts, lifeless locked-off camera</code></pre>
+<p>It is written as a <strong>plain comma list of unwanted nouns/phrases</strong> on purpose — that is the format the dedicated negative fields (Veo, Kling, Wan, Hailuo) expect. Do <strong>not</strong> prefix items with "no" or "don't" when you paste into a dedicated field. For tools without a field, see the in-prompt negation guidance below.</p>
+<hr>
+<h2>Which models take a negative field — and how to feed it</h2>
+<p>Mechanics differ more than people expect. Some tools have a dedicated box, some need the negatives folded into the positive prompt as guardrail phrases, and <strong>two (Runway Gen-4, and to a degree Seedance's consumer app) do not reliably support negation at all</strong> — on Runway, "no X" can actively summon X.</p>
+<table><thead><tr><th>Model</th><th>Dedicated negative field?</th><th>How to negate</th><th>Single-shot max</th><th>IP filter</th><th>Lang</th></tr></thead><tbody><tr><td><strong>Seedance 2.0</strong> (Doubao / Jimeng-Xiaoyunque, ByteDance)</td><td>Partial — no reliable field in the consumer app</td><td>Describe what you DO want; fold avoidance phrasing in-prompt</td><td>~10–15s (Doubao app locked to 5s/10s buttons; Jimeng web &amp; VolcEngine console expose 4–15s)</td><td>Strict (domestic ByteDance is harsher than most Western tools)</td><td>Either (native ZH safest)</td></tr><tr><td><strong>Veo 3 / 3.1</strong> (Google)</td><td><strong>Yes</strong></td><td>Plain noun/phrase list in the field — <strong>no "no/don't" commands</strong></td><td>8s (4/6/8s); Extend stacks 7s hops up to ~148s, quality drops after 4–5</td><td>Strict</td><td>EN</td></tr><tr><td><strong>Kling 2.x / 3.0</strong> (Kuaishou)</td><td><strong>Yes</strong></td><td>Best for stability artifacts (sliding feet, extra fingers, morphing), not generic "quality" words</td><td>2.5: 5–10s (Pro ~12s); 3.0: ~15s single-prompt</td><td>Strict (banned-word filter rejects the WHOLE prompt on one match)</td><td>Either</td></tr><tr><td><strong>Hailuo / MiniMax</strong> (Hailuo 02 / 2.3)</td><td><strong>Yes</strong></td><td>Use sparingly — boundary-setting for specific artifacts, not a primary lever</td><td>~6–10s (1080p ~6s; 768p ~10s)</td><td>Moderate</td><td>Either</td></tr><tr><td><strong>Wan 2.x</strong> (Alibaba, open-source)</td><td><strong>Yes</strong> (robust)</td><td>Documented defaults: morphing, warping, face deformation, flickering, jittering, inconsistent lighting</td><td>2.2: ~3–8s; 2.5/2.6: ~10–15s</td><td>Lenient when self-hosted</td><td>Native ZH (EN-only can underperform)</td></tr><tr><td><strong>Runway Gen-4 / 4.5</strong></td><td><strong>No</strong></td><td>Positive-only — describe only what SHOULD appear; "no X" can produce the opposite</td><td>5s or 10s</td><td>Strict</td><td>EN</td></tr><tr><td><strong>Pika (2.2 / 2.5)</strong></td><td>Partial — yes on 2.5, unclear on 2.2</td><td>2.5 accepts "no morphing, no extra limbs…"; verify in-app on 2.2</td><td>5s/10s; Pikaframes keyframes up to ~25s</td><td>Moderate</td><td>EN</td></tr><tr><td><strong>Sora 2 / 2 Pro</strong> (OpenAI)</td><td><strong>No</strong> dedicated box</td><td>Negate in-prompt with guardrail phrases ("original characters only, no logos or text")</td><td>Up to ~25s on Pro (standard tier shorter)</td><td>Strict (triple-layer; catches lookalikes, not just names)</td><td>EN</td></tr></tbody></table>
+<p><strong>Three rules that trip people up:</strong></p>
+<ol><li><strong>Runway Gen-4 is positive-only.</strong> Porting <code>no distorted hands</code> into a Runway prompt is the single most common cross-tool mistake — it can <em>summon</em> distorted hands. Rephrase the whole intent positively ("clean five-fingered hands, anatomically correct").</li><li><strong>Dedicated fields take descriptions, not commands.</strong> In Veo/Kling/Wan, put <code>extra limbs, glitch morphs, text overlays</code> — never <code>no extra limbs</code>. The "no" wastes a token and can confuse the parser.</li><li><strong>Seedance's consumer Doubao app has no surfaced negative field and is locked to 5s/10s buttons.</strong> Don't promise 15s or a negative box there; the full 4–15s range and finer control live on Jimeng web / VolcEngine.</li></ol>
+<blockquote><p>Confidence: durations and negative-prompt mechanics are medium-high for Veo 3.1, Runway Gen-4, Kling, Wan, and Sora (consistent across 2026 vendor/help docs); medium for Seedance 2.0 and Hailuo (mostly third-party guides). Veo's ~148s and Sora/Pika's ~25s come from extension/keyframe features, <strong>not</strong> plain single-shot generation. IP-filter "strictness" labels are qualitative judgments, not formal vendor classifications.</p></blockquote>
+<hr>
+<h2>Scenario-tuned variants</h2>
+<p>Append the relevant line to the canonical block for the genre you're shooting. These target failure modes specific to each scenario rather than generic quality.</p>
+<h3>Transformation sequences</h3>
+<pre><code>premature full transformation, symmetrical clean armor, instant costume swap, no in-between morph stages, untextured smooth plating, transformation happening off a single cut</code></pre>
+<p>Why: transformation shots fail by <em>skipping the middle</em> — the model jumps straight to the finished suit, or renders it factory-clean. You want staged, asymmetric, battle-worn growth. Pair with the <strong>Dark Tokusatsu</strong> atmosphere prefab.</p>
+<h3>Combat / impact</h3>
+<pre><code>weightless floaty motion, no impact, soft contact, characters phasing through each other, missing follow-through, slow-motion drift on every hit, no debris or dust on impact</code></pre>
+<p>Why: AI combat reads as <em>weightless</em> — punches that don't land, bodies that don't recoil. Negate the floatiness and demand impact/weight. Pair with the <strong>Hollywood Teal-and-Orange</strong> or <strong>Heavy Mech</strong> prefab.</p>
+<h3>Dialogue / talking head</h3>
+<pre><code>lip-sync drift, mouth out of sync with audio, frozen dead eyes, mannequin stillness, uncanny face warp on speech, teeth merging, plastic lip texture</code></pre>
+<p>Why: close-up dialogue exposes lip-sync drift and the "frozen eyes" uncanny look. Pair with the <strong>Commercial Portrait</strong> reference workflow so the face is locked before motion.</p>
+<h3>Environment / wide establishing</h3>
+<pre><code>warping background geometry, flickering distant detail, melting architecture, repeating tiled textures, impossible perspective, crowd faces smearing, signage gibberish text</code></pre>
+<p>Why: wide shots break in the <em>background</em> — smearing crowds, gibberish signage, architecture that boils between frames. Hold the geometry stable.</p>
+<hr>
+<h2>See also</h2>
+<ul><li><a href="skill.html"><code>../skills/shortfilm-prompt/SKILL.md</code></a> — the Skill that assembles full prompts; it pulls from this block when a target model has a negative field.</li><li><a href="methodology.html"><code>../methodology.md</code></a> — the 5-stage structure these negatives plug into (the anti-artifact list belongs in the quality/ atmosphere stage).</li><li><a href="atmosphere-prefabs.html"><code>./atmosphere-prefabs.md</code></a> — the positive counterpart: what you <em>want</em> the shot to look like.</li></ul>
+  </article>
+  <footer class="doc-foot">
+    <p>许可 · <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT · 可自由使用</a></p>
+    <p><a href="../">← 回提示词库</a> · <a href="https://www.aiolaola.com/?utm_source=prompts.aiolaola.com&amp;utm_medium=referral&amp;utm_campaign=docpage" target="_blank" rel="noopener">aiOlaOla 学 AI 编程</a></p>
+  </footer>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const RAW = "# Negative Prompts — Reusable Anti-Artifact Block\n\n> Authored by jnMetaCode (MIT). A companion to the\n> [atmosphere prefabs](./atmosphere-prefabs.md): where those describe what\n> you *want*, this file collects what you want to *exclude* — the recurring\n> failure modes of AI video (melting hands, plastic skin, frame flicker,\n> the \"video-game look\") and how to suppress them per model.\n>\n> **How to use**: drop the canonical block below into your model's negative\n> field if it has one; otherwise read the compatibility table — several\n> tools need positive-only phrasing instead, and a couple will summon the\n> very thing you list if you write \"no ___\".\n>\n> **[中文版 →](./negative-prompts.zh.md)**\n\n---\n\n## The canonical negative prefab\n\nCopy-paste this as your default. It targets resolution/sharpness defects,\noverlay junk, anatomy breakage, the over-stylized CG/anime look, and dead\ncamera work — the artifacts that read as \"AI\" at a glance.\n\n```\nblurry, low resolution, soft focus, watermark, text overlay, subtitles, logo, distorted face, asymmetric eyes, extra fingers, deformed hands, melting/morphing geometry, oversaturated colors, plastic skin, glossy CG render, video-game look, 3D cartoon, anime shading, flat even studio lighting, perfectly clean flawless surfaces, frame flicker, ghosting, jarring hard cuts, lifeless locked-off camera\n```\n\nIt is written as a **plain comma list of unwanted nouns/phrases** on\npurpose — that is the format the dedicated negative fields (Veo, Kling,\nWan, Hailuo) expect. Do **not** prefix items with \"no\" or \"don't\" when\nyou paste into a dedicated field. For tools without a field, see the\nin-prompt negation guidance below.\n\n---\n\n## Which models take a negative field — and how to feed it\n\nMechanics differ more than people expect. Some tools have a dedicated box,\nsome need the negatives folded into the positive prompt as guardrail\nphrases, and **two (Runway Gen-4, and to a degree Seedance's consumer app)\ndo not reliably support negation at all** — on Runway, \"no X\" can actively\nsummon X.\n\n| Model | Dedicated negative field? | How to negate | Single-shot max | IP filter | Lang |\n|---|---|---|---|---|---|\n| **Seedance 2.0** (Doubao / Jimeng-Xiaoyunque, ByteDance) | Partial — no reliable field in the consumer app | Describe what you DO want; fold avoidance phrasing in-prompt | ~10–15s (Doubao app locked to 5s/10s buttons; Jimeng web & VolcEngine console expose 4–15s) | Strict (domestic ByteDance is harsher than most Western tools) | Either (native ZH safest) |\n| **Veo 3 / 3.1** (Google) | **Yes** | Plain noun/phrase list in the field — **no \"no/don't\" commands** | 8s (4/6/8s); Extend stacks 7s hops up to ~148s, quality drops after 4–5 | Strict | EN |\n| **Kling 2.x / 3.0** (Kuaishou) | **Yes** | Best for stability artifacts (sliding feet, extra fingers, morphing), not generic \"quality\" words | 2.5: 5–10s (Pro ~12s); 3.0: ~15s single-prompt | Strict (banned-word filter rejects the WHOLE prompt on one match) | Either |\n| **Hailuo / MiniMax** (Hailuo 02 / 2.3) | **Yes** | Use sparingly — boundary-setting for specific artifacts, not a primary lever | ~6–10s (1080p ~6s; 768p ~10s) | Moderate | Either |\n| **Wan 2.x** (Alibaba, open-source) | **Yes** (robust) | Documented defaults: morphing, warping, face deformation, flickering, jittering, inconsistent lighting | 2.2: ~3–8s; 2.5/2.6: ~10–15s | Lenient when self-hosted | Native ZH (EN-only can underperform) |\n| **Runway Gen-4 / 4.5** | **No** | Positive-only — describe only what SHOULD appear; \"no X\" can produce the opposite | 5s or 10s | Strict | EN |\n| **Pika (2.2 / 2.5)** | Partial — yes on 2.5, unclear on 2.2 | 2.5 accepts \"no morphing, no extra limbs…\"; verify in-app on 2.2 | 5s/10s; Pikaframes keyframes up to ~25s | Moderate | EN |\n| **Sora 2 / 2 Pro** (OpenAI) | **No** dedicated box | Negate in-prompt with guardrail phrases (\"original characters only, no logos or text\") | Up to ~25s on Pro (standard tier shorter) | Strict (triple-layer; catches lookalikes, not just names) | EN |\n\n**Three rules that trip people up:**\n\n1. **Runway Gen-4 is positive-only.** Porting `no distorted hands` into a\n   Runway prompt is the single most common cross-tool mistake — it can\n   *summon* distorted hands. Rephrase the whole intent positively\n   (\"clean five-fingered hands, anatomically correct\").\n2. **Dedicated fields take descriptions, not commands.** In Veo/Kling/Wan,\n   put `extra limbs, glitch morphs, text overlays` — never\n   `no extra limbs`. The \"no\" wastes a token and can confuse the parser.\n3. **Seedance's consumer Doubao app has no surfaced negative field and is\n   locked to 5s/10s buttons.** Don't promise 15s or a negative box there;\n   the full 4–15s range and finer control live on Jimeng web / VolcEngine.\n\n> Confidence: durations and negative-prompt mechanics are medium-high for\n> Veo 3.1, Runway Gen-4, Kling, Wan, and Sora (consistent across 2026\n> vendor/help docs); medium for Seedance 2.0 and Hailuo (mostly third-party\n> guides). Veo's ~148s and Sora/Pika's ~25s come from extension/keyframe\n> features, **not** plain single-shot generation. IP-filter \"strictness\"\n> labels are qualitative judgments, not formal vendor classifications.\n\n---\n\n## Scenario-tuned variants\n\nAppend the relevant line to the canonical block for the genre you're\nshooting. These target failure modes specific to each scenario rather than\ngeneric quality.\n\n### Transformation sequences\n\n```\npremature full transformation, symmetrical clean armor, instant costume swap, no in-between morph stages, untextured smooth plating, transformation happening off a single cut\n```\n\nWhy: transformation shots fail by *skipping the middle* — the model jumps\nstraight to the finished suit, or renders it factory-clean. You want\nstaged, asymmetric, battle-worn growth. Pair with the **Dark Tokusatsu**\natmosphere prefab.\n\n### Combat / impact\n\n```\nweightless floaty motion, no impact, soft contact, characters phasing through each other, missing follow-through, slow-motion drift on every hit, no debris or dust on impact\n```\n\nWhy: AI combat reads as *weightless* — punches that don't land, bodies\nthat don't recoil. Negate the floatiness and demand impact/weight. Pair\nwith the **Hollywood Teal-and-Orange** or **Heavy Mech** prefab.\n\n### Dialogue / talking head\n\n```\nlip-sync drift, mouth out of sync with audio, frozen dead eyes, mannequin stillness, uncanny face warp on speech, teeth merging, plastic lip texture\n```\n\nWhy: close-up dialogue exposes lip-sync drift and the \"frozen eyes\"\nuncanny look. Pair with the **Commercial Portrait** reference workflow so\nthe face is locked before motion.\n\n### Environment / wide establishing\n\n```\nwarping background geometry, flickering distant detail, melting architecture, repeating tiled textures, impossible perspective, crowd faces smearing, signage gibberish text\n```\n\nWhy: wide shots break in the *background* — smearing crowds, gibberish\nsignage, architecture that boils between frames. Hold the geometry stable.\n\n---\n\n## See also\n\n- [`../skills/shortfilm-prompt/SKILL.md`](../skills/shortfilm-prompt/SKILL.md)\n  — the Skill that assembles full prompts; it pulls from this block when a\n  target model has a negative field.\n- [`../methodology.md`](../methodology.md) — the 5-stage structure these\n  negatives plug into (the anti-artifact list belongs in the quality/\n  atmosphere stage).\n- [`./atmosphere-prefabs.md`](./atmosphere-prefabs.md) — the positive\n  counterpart: what you *want* the shot to look like.\n";
+function extractPrompt(md){
+  const lines=md.split("\n");
+  const re=/^#{1,4}\s.*(完整提示词|complete prompt|copy-paste|可直接复制)/i;
+  let s=-1; for(let i=0;i<lines.length;i++){if(re.test(lines[i])){s=i+1;break;}}
+  if(s>=0){let e=lines.length;for(let i=s;i<lines.length;i++){if(/^##\s/.test(lines[i])){e=i;break;}}
+    const r=lines.slice(s,e).join("\n").replace(/^\s*-{3,}\s*$/gm,"").trim();if(r)return r;}
+  const b=[...md.matchAll(/```[^\n]*\n([\s\S]*?)```/g)].map(m=>m[1].trim());
+  return b.length?b.join("\n\n"):md.trim();
+}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('show');
+  clearTimeout(toast._t);toast._t=setTimeout(()=>e.classList.remove('show'),1700);}
+async function cp(t,msg){try{await navigator.clipboard.writeText(t);toast(msg);}catch(e){toast('复制失败');}}
+document.getElementById('copyPrompt').onclick=()=>cp(extractPrompt(RAW),'提示词已复制 · 可直接粘进视频模型');
+document.getElementById('copyAll').onclick=()=>cp(RAW,'全文已复制');
+</script>
+</body>
+</html>

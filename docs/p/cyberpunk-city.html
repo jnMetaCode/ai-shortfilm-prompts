@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worked Example — Cyberpunk City Roam (atmospheric, environment-led) | Cinematic AI Video Prompt Library</title>
+<meta name="description" content="Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to an atmospheric environment piece where the city is the subject, not a char…">
+<link rel="canonical" href="https://prompts.aiolaola.com/p/cyberpunk-city.html">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="en" href="https://prompts.aiolaola.com/p/cyberpunk-city.html">
+<link rel="alternate" hreflang="zh-CN" href="https://prompts.aiolaola.com/p/cyberpunk-city.zh.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="电影感 AI 视频提示词库">
+<meta property="og:title" content="Worked Example — Cyberpunk City Roam (atmospheric, environment-led)">
+<meta property="og:description" content="Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to an atmospheric environment piece where the city is the subject, not a char…">
+<meta property="og:url" content="https://prompts.aiolaola.com/p/cyberpunk-city.html">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Worked Example — Cyberpunk City Roam (atmospheric, environment-led)">
+<meta name="twitter:description" content="Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to an atmospheric environment piece where the city is the subject, not a char…">
+<link rel="stylesheet" href="./page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Worked Example — Cyberpunk City Roam (atmospheric, environment-led)",
+  "description": "Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to an atmospheric environment piece where the city is the subject, not a char…",
+  "inLanguage": "en",
+  "url": "https://prompts.aiolaola.com/p/cyberpunk-city.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "电影感 AI 视频提示词库",
+    "url": "https://prompts.aiolaola.com/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "jnMetaCode",
+    "url": "https://github.com/jnMetaCode"
+  },
+  "license": "https://opensource.org/licenses/MIT"
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7LBJRDWYYW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7LBJRDWYYW');</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="back" href="../">← 提示词库</a>
+  <a class="ghlink" href="https://github.com/jnMetaCode/ai-shortfilm-prompts/blob/main/templates/cyberpunk-city.md" target="_blank" rel="noopener">在 GitHub 查看源文件 ↗</a>
+</header>
+<main class="doc">
+  <div class="doc-actions">
+    <button id="copyPrompt">⧉ 复制提示词</button>
+    <button id="copyAll">复制全文</button>
+    <a class="langsw" href="./cyberpunk-city.zh.html">中文</a>
+  </div>
+  <article class="md">
+<h1>Worked Example — Cyberpunk City Roam (atmospheric, environment-led)</h1>
+<blockquote><p>Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to an <strong>atmospheric environment piece</strong> where the <em>city</em> is the subject, not a character. Completes the cyber set alongside <a href="cyber-wuxia.html">cyber-wuxia</a>. Teaches the gritty-cyber camera combo (Sony Venice + Canon K-35) and "active environment = atmosphere."</p>
+<p>Concept: a slow night roam through a rain-soaked neon megacity, one lone figure dissolving into the crowd. Swap the city's flavour, keep the atmosphere discipline.</p>
+<p><em>Further reading (inspiration, not copied — all rewritten in our structure): cyberpunk/cinematic-city scenes surveyed in <a href="https://github.com/hr98w/awesome-sora-prompts" target="_blank" rel="noopener">hr98w/awesome-sora-prompts</a> (CC0) and <a href="https://github.com/geekjourneyx/awesome-ai-video-prompts" target="_blank" rel="noopener">geekjourneyx/awesome-ai-video-prompts</a> (MIT).</em></p>
+<p><strong><a href="cyberpunk-city.zh.html">中文版 →</a></strong></p></blockquote>
+<hr>
+<h2>Variables you need to define first</h2>
+<table><thead><tr><th>Variable</th><th>This example</th><th>Swap for…</th></tr></thead><tbody><tr><td><code>{{city_flavour}}</code></td><td>dense East-Asian neon street market</td><td>brutalist corporate canyon / flooded back-alleys</td></tr><tr><td><code>{{weather}}</code></td><td>steady cold rain, volumetric haze</td><td>drifting acid fog / falling ash</td></tr><tr><td><code>{{neon_palette}}</code></td><td>magenta + cyan over teal base</td><td>sodium-orange + green / cold blue + red</td></tr><tr><td><code>{{figure}}</code></td><td>a lone hooded figure</td><td>a courier on a bike / no figure at all</td></tr><tr><td><code>{{move}}</code></td><td>slow forward dolly down the street</td><td>a descending drone / a static long hold</td></tr></tbody></table>
+<hr>
+<h2>The complete prompt (copy-paste ready)</h2>
+<h3>1 · Core theme</h3>
+<p><code>neon cyberpunk metropolis | rain-soaked night roam | volumetric haze | low-saturation teal base + neon accents | atmospheric realism, no game-CG city, no clean render</code></p>
+<h3>2 · Character &amp; scene</h3>
+<p><strong>Subject (the city itself):</strong> {{city_flavour}} at night, {{weather}}. The environment is <em>active</em>, which is what makes it atmosphere and not a matte painting: rain falling and pooling, steam from vents, a {{neon_palette}} sign flickering with one dead tube, reflections rippling in puddles, people passing as soft silhouettes. Grime, wear, wet surfaces everywhere — imperfection is the realism.</p>
+<p><strong>Figure (optional, secondary):</strong> {{figure}}, small in the frame, never the focus — it gives the city scale, then disappears into it.</p>
+<h3>3 · Atmosphere &amp; quality</h3>
+<p>Shot on Sony Venice + Canon K-35 series (the gritty hard-sci-fi combo), anamorphic widescreen, horizontal lens flares from the neon. Low-saturation teal base with {{neon_palette}} accents punching through the haze. Volumetric light shafts, organic film grain, true reflective highlights on wet ground (not blown-out CG bloom).</p>
+<h3>4 · Camera rules</h3>
+<p>{{move}} — slow and deliberate; the city should drift past, not race.</p>
+<ul><li><em>Breathing:</em> "Handheld shot. Throughout, maintain an extremely subtle, breath-like camera float to enhance presence."</li><li><em>Sound:</em> No score. Production / ambient audio only — steady rain, distant traffic and sirens, the electric buzz of neon, fragments of crowd chatter, a low city hum. A synth drone is allowed only as faint ambient texture, not a music track.</li></ul>
+<h3>5 · Storyboard (per-second, ~10s single roam)</h3>
+<pre><code>0–3s · Enter
+Action: The roam begins — {{move}} into the {{city_flavour}}, rain
+        streaking the frame, neon smearing in the wet lens.
+Camera: Slow, low. Reflections lead the eye down the street.
+Sound:  Rain + distant traffic establish; neon buzz close.
+
+3–7s · Through
+Action: Pass the flickering {{neon_palette}} sign (one dead tube),
+        steam crossing the frame, {{figure}} passing as a silhouette.
+Camera: Hold the drift; a puddle reflection ripples as something passes.
+Detail: Grime and wear catch the light — the lived-in texture.
+
+7–10s · Dissolve
+Action: {{figure}} merges into the moving crowd and is gone; the street
+        continues without them.
+Camera: Keep drifting, breath-float, do not stop on the figure.
+Close:  No reveal, no hero turn, no title. Just the sign flickering once
+        more and the rain continuing down the empty-feeling street.</code></pre>
+<h3>Negative prompt (Seedance / Kling — paste into the dedicated field)</h3>
+<pre><code>blurry, low resolution, soft focus, watermark, text overlay, subtitles, logo, oversaturated colors, plastic skin, glossy CG render, video-game look, clean render, 3D cartoon render, flat even studio lighting, perfectly clean dry surfaces, dead static matte-painting city, blown-out neon bloom, melting/morphing geometry, warped signage text, frame flicker, ghosting, jarring hard cuts, lifeless locked-off camera, cheesy lens flare</code></pre>
+<hr>
+<h2>Why it's built this way</h2>
+<ul><li><strong>Active environment = atmosphere (Stage 2 discipline).</strong> A static city reads as a matte painting. Rain pooling, steam, a flickering dead tube, rippling reflections, passing silhouettes — motion in the environment is what makes it feel real and inhabited.</li><li><strong>The gritty-cyber camera combo (Rule 2).</strong> "Sony Venice + Canon K-35" anchors the model to hard-sci-fi cinematography. "Cyberpunk city, neon, 4K" gives you a game cutscene instead.</li><li><strong>Imperfection as realism (Rule 5).</strong> Grime, wear, wet surfaces, a dead neon tube. Clean = CG. The wear is the point.</li><li><strong>The figure dissolves (Rule 6).</strong> No hero reveal, no title card. Letting the figure vanish into the crowd keeps it atmospheric and stops the model turning it into a character beat.</li></ul>
+<p><strong>Usage:</strong> generate the <em>3–7s "through"</em> beat first — if the wet reflections, neon smear and haze read as real there, the rest holds. Keep it one slow continuous move; this genre dies when the camera races.</p>
+<p><strong>Model:</strong> Kling and Seedance 2.0 handle wet-neon motion and reflections well; Veo 3 gives the cleanest volumetric light and native ambient sound. Watch for warped on-screen sign text — put "warped signage text" in the negative field, or keep signs abstract/non-textual.</p>
+  </article>
+  <footer class="doc-foot">
+    <p>许可 · <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT · 可自由使用</a></p>
+    <p><a href="../">← 回提示词库</a> · <a href="https://www.aiolaola.com/?utm_source=prompts.aiolaola.com&amp;utm_medium=referral&amp;utm_campaign=docpage" target="_blank" rel="noopener">aiOlaOla 学 AI 编程</a></p>
+  </footer>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const RAW = "# Worked Example — Cyberpunk City Roam (atmospheric, environment-led)\n\n> Original worked example by jnMetaCode (MIT). Applies the 5-stage\n> structure to an **atmospheric environment piece** where the *city* is\n> the subject, not a character. Completes the cyber set alongside\n> [cyber-wuxia](../prompts/cyber-wuxia.md). Teaches the gritty-cyber\n> camera combo (Sony Venice + Canon K-35) and \"active environment =\n> atmosphere.\"\n>\n> Concept: a slow night roam through a rain-soaked neon megacity, one\n> lone figure dissolving into the crowd. Swap the city's flavour, keep\n> the atmosphere discipline.\n>\n> *Further reading (inspiration, not copied — all rewritten in our\n> structure): cyberpunk/cinematic-city scenes surveyed in\n> [hr98w/awesome-sora-prompts](https://github.com/hr98w/awesome-sora-prompts)\n> (CC0) and [geekjourneyx/awesome-ai-video-prompts](https://github.com/geekjourneyx/awesome-ai-video-prompts)\n> (MIT).*\n>\n> **[中文版 →](./cyberpunk-city.zh.md)**\n\n---\n\n## Variables you need to define first\n\n| Variable | This example | Swap for… |\n|---|---|---|\n| `{{city_flavour}}` | dense East-Asian neon street market | brutalist corporate canyon / flooded back-alleys |\n| `{{weather}}` | steady cold rain, volumetric haze | drifting acid fog / falling ash |\n| `{{neon_palette}}` | magenta + cyan over teal base | sodium-orange + green / cold blue + red |\n| `{{figure}}` | a lone hooded figure | a courier on a bike / no figure at all |\n| `{{move}}` | slow forward dolly down the street | a descending drone / a static long hold |\n\n---\n\n## The complete prompt (copy-paste ready)\n\n### 1 · Core theme\n`neon cyberpunk metropolis | rain-soaked night roam | volumetric haze | low-saturation teal base + neon accents | atmospheric realism, no game-CG city, no clean render`\n\n### 2 · Character & scene\n\n**Subject (the city itself):** {{city_flavour}} at night, {{weather}}.\nThe environment is *active*, which is what makes it atmosphere and not a\nmatte painting: rain falling and pooling, steam from vents, a {{neon_palette}}\nsign flickering with one dead tube, reflections rippling in puddles,\npeople passing as soft silhouettes. Grime, wear, wet surfaces everywhere\n— imperfection is the realism.\n\n**Figure (optional, secondary):** {{figure}}, small in the frame, never\nthe focus — it gives the city scale, then disappears into it.\n\n### 3 · Atmosphere & quality\nShot on Sony Venice + Canon K-35 series (the gritty hard-sci-fi combo),\nanamorphic widescreen, horizontal lens flares from the neon. Low-saturation\nteal base with {{neon_palette}} accents punching through the haze.\nVolumetric light shafts, organic film grain, true reflective highlights\non wet ground (not blown-out CG bloom).\n\n### 4 · Camera rules\n{{move}} — slow and deliberate; the city should drift past, not race.\n- *Breathing:* \"Handheld shot. Throughout, maintain an extremely subtle,\n  breath-like camera float to enhance presence.\"\n- *Sound:* No score. Production / ambient audio only — steady rain,\n  distant traffic and sirens, the electric buzz of neon, fragments of\n  crowd chatter, a low city hum. A synth drone is allowed only as faint\n  ambient texture, not a music track.\n\n### 5 · Storyboard (per-second, ~10s single roam)\n\n```\n0–3s · Enter\nAction: The roam begins — {{move}} into the {{city_flavour}}, rain\n        streaking the frame, neon smearing in the wet lens.\nCamera: Slow, low. Reflections lead the eye down the street.\nSound:  Rain + distant traffic establish; neon buzz close.\n\n3–7s · Through\nAction: Pass the flickering {{neon_palette}} sign (one dead tube),\n        steam crossing the frame, {{figure}} passing as a silhouette.\nCamera: Hold the drift; a puddle reflection ripples as something passes.\nDetail: Grime and wear catch the light — the lived-in texture.\n\n7–10s · Dissolve\nAction: {{figure}} merges into the moving crowd and is gone; the street\n        continues without them.\nCamera: Keep drifting, breath-float, do not stop on the figure.\nClose:  No reveal, no hero turn, no title. Just the sign flickering once\n        more and the rain continuing down the empty-feeling street.\n```\n\n### Negative prompt (Seedance / Kling — paste into the dedicated field)\n```\nblurry, low resolution, soft focus, watermark, text overlay, subtitles, logo, oversaturated colors, plastic skin, glossy CG render, video-game look, clean render, 3D cartoon render, flat even studio lighting, perfectly clean dry surfaces, dead static matte-painting city, blown-out neon bloom, melting/morphing geometry, warped signage text, frame flicker, ghosting, jarring hard cuts, lifeless locked-off camera, cheesy lens flare\n```\n\n---\n\n## Why it's built this way\n\n- **Active environment = atmosphere (Stage 2 discipline).** A static city\n  reads as a matte painting. Rain pooling, steam, a flickering dead tube,\n  rippling reflections, passing silhouettes — motion in the environment is\n  what makes it feel real and inhabited.\n- **The gritty-cyber camera combo (Rule 2).** \"Sony Venice + Canon K-35\"\n  anchors the model to hard-sci-fi cinematography. \"Cyberpunk city, neon,\n  4K\" gives you a game cutscene instead.\n- **Imperfection as realism (Rule 5).** Grime, wear, wet surfaces, a dead\n  neon tube. Clean = CG. The wear is the point.\n- **The figure dissolves (Rule 6).** No hero reveal, no title card. Letting\n  the figure vanish into the crowd keeps it atmospheric and stops the model\n  turning it into a character beat.\n\n**Usage:** generate the *3–7s \"through\"* beat first — if the wet\nreflections, neon smear and haze read as real there, the rest holds.\nKeep it one slow continuous move; this genre dies when the camera races.\n\n**Model:** Kling and Seedance 2.0 handle wet-neon motion and reflections\nwell; Veo 3 gives the cleanest volumetric light and native ambient sound.\nWatch for warped on-screen sign text — put \"warped signage text\" in the\nnegative field, or keep signs abstract/non-textual.\n";
+function extractPrompt(md){
+  const lines=md.split("\n");
+  const re=/^#{1,4}\s.*(完整提示词|complete prompt|copy-paste|可直接复制)/i;
+  let s=-1; for(let i=0;i<lines.length;i++){if(re.test(lines[i])){s=i+1;break;}}
+  if(s>=0){let e=lines.length;for(let i=s;i<lines.length;i++){if(/^##\s/.test(lines[i])){e=i;break;}}
+    const r=lines.slice(s,e).join("\n").replace(/^\s*-{3,}\s*$/gm,"").trim();if(r)return r;}
+  const b=[...md.matchAll(/```[^\n]*\n([\s\S]*?)```/g)].map(m=>m[1].trim());
+  return b.length?b.join("\n\n"):md.trim();
+}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('show');
+  clearTimeout(toast._t);toast._t=setTimeout(()=>e.classList.remove('show'),1700);}
+async function cp(t,msg){try{await navigator.clipboard.writeText(t);toast(msg);}catch(e){toast('复制失败');}}
+document.getElementById('copyPrompt').onclick=()=>cp(extractPrompt(RAW),'提示词已复制 · 可直接粘进视频模型');
+document.getElementById('copyAll').onclick=()=>cp(RAW,'全文已复制');
+</script>
+</body>
+</html>

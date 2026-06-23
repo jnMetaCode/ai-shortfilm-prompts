@@ -84,6 +84,12 @@ the plugin/repo root.
 | 15s single-shot transformation | `templates/15s-transformation.md` |
 | Multi-shot edited narrative | `templates/multi-shot-narrative.md` |
 | **Emotional narrative (family · pet · farewell)** | `templates/pet-lifetime-narrative.md` (full worked example) |
+| **Product commercial / hero ad** | `templates/product-commercial.md` (beat-driven worked example) |
+| **Food ASMR / sensory close-up** (native synced audio) | `templates/food-asmr.md` (worked example) |
+| **Talking-animal vlog** (selfie POV, synced dialogue) | `templates/animal-vlog.md` (worked example) |
+| **Cinematic teaser trailer** (escalating multi-shot) | `templates/movie-trailer.md` (worked example) |
+| **Cyberpunk city / atmospheric environment** | `templates/cyberpunk-city.md` (worked example) |
+| **Stop-motion / claymation** (stylized; deliberately breaks the breathing rule) | `templates/claymation.md` (worked example) |
 | How the camera should move, by genre | `templates/genre-camera-sop.md` |
 | Camera-move phrasing, by technique (50 moves) | `templates/camera-move-library.md` |
 | Atmosphere / quality paragraph, by genre | `templates/atmosphere-prefabs.md` |

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mx-Shell 提示词方法论｜电影感 AI 视频提示词库</title>
+<meta name="description" content="这份文档把 Mx-Shell 在《丧尸清道夫》《假面骑士战衣》系列里反复使用的写法拆开讲。 不是模板复制说明书 —— 是让你自己能写出同等质量提示词的思路。">
+<link rel="canonical" href="https://prompts.aiolaola.com/p/methodology.zh.html">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="zh-CN" href="https://prompts.aiolaola.com/p/methodology.zh.html">
+<link rel="alternate" hreflang="en" href="https://prompts.aiolaola.com/p/methodology.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="电影感 AI 视频提示词库">
+<meta property="og:title" content="Mx-Shell 提示词方法论">
+<meta property="og:description" content="这份文档把 Mx-Shell 在《丧尸清道夫》《假面骑士战衣》系列里反复使用的写法拆开讲。 不是模板复制说明书 —— 是让你自己能写出同等质量提示词的思路。">
+<meta property="og:url" content="https://prompts.aiolaola.com/p/methodology.zh.html">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mx-Shell 提示词方法论">
+<meta name="twitter:description" content="这份文档把 Mx-Shell 在《丧尸清道夫》《假面骑士战衣》系列里反复使用的写法拆开讲。 不是模板复制说明书 —— 是让你自己能写出同等质量提示词的思路。">
+<link rel="stylesheet" href="./page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Mx-Shell 提示词方法论",
+  "description": "这份文档把 Mx-Shell 在《丧尸清道夫》《假面骑士战衣》系列里反复使用的写法拆开讲。 不是模板复制说明书 —— 是让你自己能写出同等质量提示词的思路。",
+  "inLanguage": "zh-CN",
+  "url": "https://prompts.aiolaola.com/p/methodology.zh.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "电影感 AI 视频提示词库",
+    "url": "https://prompts.aiolaola.com/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "jnMetaCode",
+    "url": "https://github.com/jnMetaCode"
+  },
+  "license": "https://opensource.org/licenses/MIT"
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7LBJRDWYYW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7LBJRDWYYW');</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="back" href="../">← 提示词库</a>
+  <a class="ghlink" href="https://github.com/jnMetaCode/ai-shortfilm-prompts/blob/main/methodology.zh.md" target="_blank" rel="noopener">在 GitHub 查看源文件 ↗</a>
+</header>
+<main class="doc">
+  <div class="doc-actions">
+    <button id="copyPrompt">⧉ 复制提示词</button>
+    <button id="copyAll">复制全文</button>
+    <a class="langsw" href="./methodology.html">EN</a>
+  </div>
+  <article class="md">
+<h1>Mx-Shell 提示词方法论</h1>
+<blockquote><p>这份文档把 Mx-Shell 在《丧尸清道夫》《假面骑士战衣》系列里反复使用的写法拆开讲。 不是模板复制说明书 —— 是让你自己能写出同等质量提示词的思路。</p></blockquote>
+<hr>
+<h2>一句话总结</h2>
+<p><strong>像写分镜脚本一样写提示词，而不是像写文学描述。</strong> 把场景按时间切片，每一秒钟分别交代「动作 / 镜头 / 特效 / 声音」这四件事。</p>
+<hr>
+<h2>5 段式结构</h2>
+<p>所有 Mx-Shell 的视频提示词都遵循这 5 段。顺序不要乱：</p>
+<pre><code>1. 核心主题       ← 给 AI 定调子（一行 tag）
+2. 人物与基础设定 ← Who &amp; What is wearing
+3. 氛围与画质     ← How it looks
+4. 运镜规则       ← How the camera moves
+5. 分镜（时间轴） ← 按秒/按镜头展开剧情</code></pre>
+<h3>段 1 · 核心主题</h3>
+<p>一行风格标签，用 <code>|</code> 或 <code>丨</code> 分隔。给 AI 一个总体审美锚点。</p>
+<p><strong>写法：3-6 个标签，从"画面类型"到"题材"到"美学风格"层层递进。</strong></p>
+<pre><code>核心主题：写实暗黑特摄 | BLACK SUN美学 | 破碎肉身 | 战损变身 | 末日战场
+核心主题：原子朋克 | 末日丧尸 | 电影级质感 | 超写实 | 杜绝游戏 CG 感
+核心主题：写实科技感 | 科幻机甲 | 磅礴史诗 | 重工业机械美学 | 真人演绎</code></pre>
+<p><strong>关键词清单</strong>（凑标签时可以挑）：</p>
+<table><thead><tr><th>类型</th><th>例</th></tr></thead><tbody><tr><td>真实感锚点</td><td>电影级质感、超写实、真人实景拍摄、杜绝游戏 CG 感、变形宽荧幕电影质感</td></tr><tr><td>美学定调</td><td>暗黑写实、原子朋克、蒸汽朋克、赛博朋克、废土工业、复古港风</td></tr><tr><td>题材</td><td>特摄剧、末日生存、孤胆英雄、机械武侠、重型机甲</td></tr><tr><td>情绪</td><td>破碎肉身、战损变身、肃杀、磅礴史诗、压抑沉重</td></tr></tbody></table>
+<hr>
+<h3>段 2 · 人物与基础设定</h3>
+<p>回答"画面里有谁、穿什么、站在哪"。三行：<strong>面部 / 服装 / 场景</strong>。</p>
+<pre><code>【人物与基础设定】
+面部：参照上传图片，五官、脸型、发型百分百还原，杜绝美化。
+      面部伤口，纱布，血渍保持一致。刘海覆额，表情全程阴郁。
+      变身瞬间，眉心仅轻微蹙起，拒绝昂扬斗志与眼神高光，保持压抑感。
+服装：哑光黑色皮质长风衣，金属腰带为哑光质地，腰带核心为暗红色水晶。
+场景：末日战场，微风，硝烟弥漫，阴天荒野，灰蓝色调天空。
+      天空中划过带有火焰与浓烟的陨石。</code></pre>
+<p><strong>几个反直觉但 Mx-Shell 反复强调的要点：</strong></p>
+<ul><li><strong>"杜绝美化"</strong> — 真实感来自瑕疵。明确写"保留轻微面部瑕疵"比模糊地说"高质量"管用得多。</li><li><strong>"参照上传图片，百分百还原"</strong> — 如果用了参考图，就强制锁定，防 AI 自由发挥。</li><li><strong>服装写质地</strong> —"哑光黑色皮质"比"黑色皮衣"信息量大三倍。</li><li><strong>场景写动态环境</strong> — 微风、硝烟、陨石。静态背景出不了氛围。</li></ul>
+<hr>
+<h3>段 3 · 氛围与画质</h3>
+<p>模拟"真实摄影机 + 镜头"的写法。这一段是 Mx-Shell 最爱用的小技巧。</p>
+<pre><code>【氛围与画质】
+视觉基调：变形宽荧幕电影质感。模拟 IMAX 胶片摄影机，
+        搭配 Panavision C 系列镜头（焦段 35mm，光圈 f4）。
+色彩与影调：低饱和灰蓝主调。暗部信息压缩，保留细节。
+          边缘添加轻微柔焦与适度的胶片颗粒感。
+风格核心：参考《XXX》美学风格。强调生物质感与外星科技的融合，
+        营造压抑、沉重、实拍的肉身痛苦感。</code></pre>
+<p><strong>为什么有效</strong>：AI 训练数据里大量电影摄影描述都和真实摄影机型号绑定。给 AI 一个具体摄影机型号 = 给它一个明确的视觉风格锚点。</p>
+<p><strong>Mx-Shell 常用的摄影机组合</strong>：</p>
+<table><thead><tr><th>风格</th><th>摄影机 + 镜头</th></tr></thead><tbody><tr><td>史诗感 / 大场面</td><td>IMAX 胶片摄影机 + Panavision C 系列镜头（35mm，f4）</td></tr><tr><td>暗调赛博 / 写实硬核</td><td>索尼威尼斯电影机 + 佳能 K-35 系列镜头</td></tr><tr><td>港片 / 武侠</td><td>柯达 35mm 复古胶片，跳过漂白胶片质感</td></tr><tr><td>商业人像</td><td>Canon EF 85mm f/1.2</td></tr></tbody></table>
+<p><strong>色调常用词</strong>：低饱和灰蓝 / 好莱坞青橙色调 / 60 年代复古暖橙 + 海盐蓝 / 暗调低照明高对比度。</p>
+<hr>
+<h3>段 4 · 运镜规则</h3>
+<p>定义镜头怎么动。三行：<strong>单镜头 / 角度 / 呼吸感</strong>。</p>
+<pre><code>【运镜规则】
+单镜头：一镜到底，无剪辑。
+角度：开场仰拍，人物半身左侧面 30 度，聚焦腰部以上部位。
+     开始变身镜头以极缓速度环绕至正面平视上半身。
+     变身完成后环绕至人物右侧面俯拍。
+呼吸感：手持拍摄，全程保持极其轻微的、如呼吸般的镜头浮动，增强临场感。</code></pre>
+<p><strong>关键概念词</strong>（描述镜头运动时往里挑）：</p>
+<ul><li>景别：极近距离特写 / 特写 / 近景 / 中景 / 全景 / 大全景</li><li>角度：仰拍 / 俯拍 / 平视 / 过肩镜头 / 高空垂直俯拍</li><li>运动：极缓向前推进 / 环绕 / 跟随运动拍摄 / 固定机位 / FPV 模式 / 镜头后拉+下降+上摇</li><li>节奏：极缓 / 匀速 / 突然 / 应激性 0.1 秒微颤 / 极慢动作</li></ul>
+<p><strong>"呼吸感"这一行</strong> —— Mx-Shell 几乎每个视频都写。原因：让 AI 加入轻微抖动，避免出 CG 感僵直镜头。</p>
+<hr>
+<h3>段 5 · 分镜（时间轴）</h3>
+<p>整套方法论里<strong>最关键、也最容易被忽略</strong>的部分。</p>
+<p><strong>两种写法</strong>，按场景选：</p>
+<h4>写法 A：按秒切片（适合单镜头一镜到底，比如变身、武器充能）</h4>
+<pre><code>0-3秒 · 凝视
+动作：主角略微低头，目光锁定腰带，脊背紧绷。右手缓慢抬起，握住腰带主体。
+镜头：极缓向前推进，捕捉身体因呼吸产生的微幅起伏。
+特效：整颗眼球骤然亮起白金色光芒，眼眶周围皲裂。
+     眼睛亮起的炫光使画面镜头产生光斑。
+
+3-6秒 · 启动
+声音：低语：「HENSHIN」。
+动作：手掌用力按压腰带核心，水晶核心本体被挤压而开裂，红光伴随晶体的裂纹亮起。
+特效：金属机械装置被暴力唤醒，核心主体沿中线开裂。空气向内塌陷，产生畸变...
+镜头：低频嗡鸣由远及近，镜头随之一同产生应激性的 0.1 秒微颤。
+
+6-9秒 · 撕裂
+[再按需细分：核心 / 身体 / 衣物 / 甲壳 / 面部 / 镜头]</code></pre>
+<p><strong>每一段三件套</strong>：动作 + 镜头 + 特效。再加可选的「声音」「面部」等子项。</p>
+<h4>写法 B：按镜头切片（适合多镜头剪辑，比如《丧尸清道夫》）</h4>
+<pre><code>分镜一：
+景别：中景，拍摄机器人腿部以上位置。
+构图：机器人背影作为前景居中位于画面中心，背景左侧落地窗，右侧吧台。
+运镜手法：跟随运动拍摄。
+画面内容：机器人背对镜头向前方移动，手舞足蹈进入别墅休闲区，
+         潇洒转身作为舞蹈 END 动作，led 显示器保持绿色微笑表情。
+         片刻后画外传来玻璃酒瓶被打碎的声音，机器人受到惊吓，
+         下意识向画面左侧后撤半步，led 显示器瞬间切换至黄色害怕表情。
+
+分镜二：
+景别：全景，平视拍摄吧台全貌。
+构图：空镜平视拍摄吧台全貌，画面下方三分之一处为吧台和吧台椅子，
+     上方为墙面酒柜。
+运镜手法：镜头缓慢前推，渲染氛围。
+画面内容：吧台后方传来悉悉簌簌的声音，像是有什么东西躲在吧台下翻找。</code></pre>
+<p><strong>每个分镜四件套</strong>：景别 + 构图 + 运镜手法 + 画面内容。</p>
+<hr>
+<h2>三个反直觉但有效的原则</h2>
+<h3>1. 不要给 AI 参考图，除非画质够高</h3>
+<blockquote><p>"我的所有假面骑士的战衣造型都是靠描述让 AI 自由发挥的。"</p></blockquote>
+<p>垫图最大的副作用：AI 容易复现参考图的<strong>画风</strong>（包括 CG 感、动漫感），而不是参考它的<strong>设计</strong>。除非参考图本身就是 3D 渲染或高画质实拍，否则纯文案描述效果更好。</p>
+<h3>2. 描述瑕疵 = 描述真实</h3>
+<blockquote><p>"过于完美，就假。适当地保留缺陷不是坏事。"</p></blockquote>
+<p><code>战损痕迹触目惊心</code>、<code>各处磨损掉漆</code>、<code>关节部位的油污</code>、<code>保留轻微面部瑕疵</code>、<code>战衣整体远非平整</code> —— 这些"缺陷"是 Mx-Shell 作品质感的核心来源。</p>
+<h3>3. 抽卡是常态，结尾要留空白</h3>
+<p>200+ 个镜头，每个少则两三次、多则 20+ 次才能挑出能用的。<strong>不要追求一次成型</strong>。</p>
+<p>结尾也别堆特效：</p>
+<blockquote><p>"没有台词。没有爆炸。没有光芒万丈。只有身穿不完整战衣的人站在原地。"</p></blockquote>
+<p>留白比堆砌更显高级感。</p>
+<hr>
+<h2>写完之后</h2>
+<ul><li>用 Seedance 2.0（不是 Fast 版）出视频</li><li>字数超限就上电脑网页版</li><li>涉及版权词（IP 名、角色名）会被拦截，删掉换近义词</li><li>详细 FAQ 见 <a href="faq.zh.html">实战 FAQ</a></li></ul>
+<hr>
+<h2>想看实战案例</h2>
+<p>→ <a href="./prompts/">原始提示词</a> 里有 Mx-Shell 本人写的完整提示词（丧尸清道夫、假面骑士 6 变体、卡莎 15/20/5s、环太平洋+高达、赛博江湖、合金装备）。 → <a href="./templates/">模板</a> 里是去掉 IP 的可套用骨架。</p>
+  </article>
+  <footer class="doc-foot">
+    <p>许可 · <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT · 可自由使用</a></p>
+    <p><a href="../">← 回提示词库</a> · <a href="https://www.aiolaola.com/?utm_source=prompts.aiolaola.com&amp;utm_medium=referral&amp;utm_campaign=docpage" target="_blank" rel="noopener">aiOlaOla 学 AI 编程</a></p>
+  </footer>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const RAW = "# Mx-Shell 提示词方法论\n\n> 这份文档把 Mx-Shell 在《丧尸清道夫》《假面骑士战衣》系列里反复使用的写法拆开讲。\n> 不是模板复制说明书 —— 是让你自己能写出同等质量提示词的思路。\n\n---\n\n## 一句话总结\n\n**像写分镜脚本一样写提示词，而不是像写文学描述。** 把场景按时间切片，每一秒钟分别交代「动作 / 镜头 / 特效 / 声音」这四件事。\n\n---\n\n## 5 段式结构\n\n所有 Mx-Shell 的视频提示词都遵循这 5 段。顺序不要乱：\n\n```\n1. 核心主题       ← 给 AI 定调子（一行 tag）\n2. 人物与基础设定 ← Who & What is wearing\n3. 氛围与画质     ← How it looks\n4. 运镜规则       ← How the camera moves\n5. 分镜（时间轴） ← 按秒/按镜头展开剧情\n```\n\n### 段 1 · 核心主题\n\n一行风格标签，用 `|` 或 `丨` 分隔。给 AI 一个总体审美锚点。\n\n**写法：3-6 个标签，从\"画面类型\"到\"题材\"到\"美学风格\"层层递进。**\n\n```\n核心主题：写实暗黑特摄 | BLACK SUN美学 | 破碎肉身 | 战损变身 | 末日战场\n核心主题：原子朋克 | 末日丧尸 | 电影级质感 | 超写实 | 杜绝游戏 CG 感\n核心主题：写实科技感 | 科幻机甲 | 磅礴史诗 | 重工业机械美学 | 真人演绎\n```\n\n**关键词清单**（凑标签时可以挑）：\n\n| 类型 | 例 |\n|---|---|\n| 真实感锚点 | 电影级质感、超写实、真人实景拍摄、杜绝游戏 CG 感、变形宽荧幕电影质感 |\n| 美学定调 | 暗黑写实、原子朋克、蒸汽朋克、赛博朋克、废土工业、复古港风 |\n| 题材 | 特摄剧、末日生存、孤胆英雄、机械武侠、重型机甲 |\n| 情绪 | 破碎肉身、战损变身、肃杀、磅礴史诗、压抑沉重 |\n\n---\n\n### 段 2 · 人物与基础设定\n\n回答\"画面里有谁、穿什么、站在哪\"。三行：**面部 / 服装 / 场景**。\n\n```\n【人物与基础设定】\n面部：参照上传图片，五官、脸型、发型百分百还原，杜绝美化。\n      面部伤口，纱布，血渍保持一致。刘海覆额，表情全程阴郁。\n      变身瞬间，眉心仅轻微蹙起，拒绝昂扬斗志与眼神高光，保持压抑感。\n服装：哑光黑色皮质长风衣，金属腰带为哑光质地，腰带核心为暗红色水晶。\n场景：末日战场，微风，硝烟弥漫，阴天荒野，灰蓝色调天空。\n      天空中划过带有火焰与浓烟的陨石。\n```\n\n**几个反直觉但 Mx-Shell 反复强调的要点：**\n\n- **\"杜绝美化\"** — 真实感来自瑕疵。明确写\"保留轻微面部瑕疵\"比模糊地说\"高质量\"管用得多。\n- **\"参照上传图片，百分百还原\"** — 如果用了参考图，就强制锁定，防 AI 自由发挥。\n- **服装写质地** —\"哑光黑色皮质\"比\"黑色皮衣\"信息量大三倍。\n- **场景写动态环境** — 微风、硝烟、陨石。静态背景出不了氛围。\n\n---\n\n### 段 3 · 氛围与画质\n\n模拟\"真实摄影机 + 镜头\"的写法。这一段是 Mx-Shell 最爱用的小技巧。\n\n```\n【氛围与画质】\n视觉基调：变形宽荧幕电影质感。模拟 IMAX 胶片摄影机，\n        搭配 Panavision C 系列镜头（焦段 35mm，光圈 f4）。\n色彩与影调：低饱和灰蓝主调。暗部信息压缩，保留细节。\n          边缘添加轻微柔焦与适度的胶片颗粒感。\n风格核心：参考《XXX》美学风格。强调生物质感与外星科技的融合，\n        营造压抑、沉重、实拍的肉身痛苦感。\n```\n\n**为什么有效**：AI 训练数据里大量电影摄影描述都和真实摄影机型号绑定。给 AI 一个具体摄影机型号 = 给它一个明确的视觉风格锚点。\n\n**Mx-Shell 常用的摄影机组合**：\n\n| 风格 | 摄影机 + 镜头 |\n|---|---|\n| 史诗感 / 大场面 | IMAX 胶片摄影机 + Panavision C 系列镜头（35mm，f4） |\n| 暗调赛博 / 写实硬核 | 索尼威尼斯电影机 + 佳能 K-35 系列镜头 |\n| 港片 / 武侠 | 柯达 35mm 复古胶片，跳过漂白胶片质感 |\n| 商业人像 | Canon EF 85mm f/1.2 |\n\n**色调常用词**：低饱和灰蓝 / 好莱坞青橙色调 / 60 年代复古暖橙 + 海盐蓝 / 暗调低照明高对比度。\n\n---\n\n### 段 4 · 运镜规则\n\n定义镜头怎么动。三行：**单镜头 / 角度 / 呼吸感**。\n\n```\n【运镜规则】\n单镜头：一镜到底，无剪辑。\n角度：开场仰拍，人物半身左侧面 30 度，聚焦腰部以上部位。\n     开始变身镜头以极缓速度环绕至正面平视上半身。\n     变身完成后环绕至人物右侧面俯拍。\n呼吸感：手持拍摄，全程保持极其轻微的、如呼吸般的镜头浮动，增强临场感。\n```\n\n**关键概念词**（描述镜头运动时往里挑）：\n\n- 景别：极近距离特写 / 特写 / 近景 / 中景 / 全景 / 大全景\n- 角度：仰拍 / 俯拍 / 平视 / 过肩镜头 / 高空垂直俯拍\n- 运动：极缓向前推进 / 环绕 / 跟随运动拍摄 / 固定机位 / FPV 模式 / 镜头后拉+下降+上摇\n- 节奏：极缓 / 匀速 / 突然 / 应激性 0.1 秒微颤 / 极慢动作\n\n**\"呼吸感\"这一行** —— Mx-Shell 几乎每个视频都写。原因：让 AI 加入轻微抖动，避免出 CG 感僵直镜头。\n\n---\n\n### 段 5 · 分镜（时间轴）\n\n整套方法论里**最关键、也最容易被忽略**的部分。\n\n**两种写法**，按场景选：\n\n#### 写法 A：按秒切片（适合单镜头一镜到底，比如变身、武器充能）\n\n```\n0-3秒 · 凝视\n动作：主角略微低头，目光锁定腰带，脊背紧绷。右手缓慢抬起，握住腰带主体。\n镜头：极缓向前推进，捕捉身体因呼吸产生的微幅起伏。\n特效：整颗眼球骤然亮起白金色光芒，眼眶周围皲裂。\n     眼睛亮起的炫光使画面镜头产生光斑。\n\n3-6秒 · 启动\n声音：低语：「HENSHIN」。\n动作：手掌用力按压腰带核心，水晶核心本体被挤压而开裂，红光伴随晶体的裂纹亮起。\n特效：金属机械装置被暴力唤醒，核心主体沿中线开裂。空气向内塌陷，产生畸变...\n镜头：低频嗡鸣由远及近，镜头随之一同产生应激性的 0.1 秒微颤。\n\n6-9秒 · 撕裂\n[再按需细分：核心 / 身体 / 衣物 / 甲壳 / 面部 / 镜头]\n```\n\n**每一段三件套**：动作 + 镜头 + 特效。再加可选的「声音」「面部」等子项。\n\n#### 写法 B：按镜头切片（适合多镜头剪辑，比如《丧尸清道夫》）\n\n```\n分镜一：\n景别：中景，拍摄机器人腿部以上位置。\n构图：机器人背影作为前景居中位于画面中心，背景左侧落地窗，右侧吧台。\n运镜手法：跟随运动拍摄。\n画面内容：机器人背对镜头向前方移动，手舞足蹈进入别墅休闲区，\n         潇洒转身作为舞蹈 END 动作，led 显示器保持绿色微笑表情。\n         片刻后画外传来玻璃酒瓶被打碎的声音，机器人受到惊吓，\n         下意识向画面左侧后撤半步，led 显示器瞬间切换至黄色害怕表情。\n\n分镜二：\n景别：全景，平视拍摄吧台全貌。\n构图：空镜平视拍摄吧台全貌，画面下方三分之一处为吧台和吧台椅子，\n     上方为墙面酒柜。\n运镜手法：镜头缓慢前推，渲染氛围。\n画面内容：吧台后方传来悉悉簌簌的声音，像是有什么东西躲在吧台下翻找。\n```\n\n**每个分镜四件套**：景别 + 构图 + 运镜手法 + 画面内容。\n\n---\n\n## 三个反直觉但有效的原则\n\n### 1. 不要给 AI 参考图，除非画质够高\n\n> \"我的所有假面骑士的战衣造型都是靠描述让 AI 自由发挥的。\"\n\n垫图最大的副作用：AI 容易复现参考图的**画风**（包括 CG 感、动漫感），而不是参考它的**设计**。除非参考图本身就是 3D 渲染或高画质实拍，否则纯文案描述效果更好。\n\n### 2. 描述瑕疵 = 描述真实\n\n> \"过于完美，就假。适当地保留缺陷不是坏事。\"\n\n`战损痕迹触目惊心`、`各处磨损掉漆`、`关节部位的油污`、`保留轻微面部瑕疵`、`战衣整体远非平整` —— 这些\"缺陷\"是 Mx-Shell 作品质感的核心来源。\n\n### 3. 抽卡是常态，结尾要留空白\n\n200+ 个镜头，每个少则两三次、多则 20+ 次才能挑出能用的。**不要追求一次成型**。\n\n结尾也别堆特效：\n\n> \"没有台词。没有爆炸。没有光芒万丈。只有身穿不完整战衣的人站在原地。\"\n\n留白比堆砌更显高级感。\n\n---\n\n## 写完之后\n\n- 用 Seedance 2.0（不是 Fast 版）出视频\n- 字数超限就上电脑网页版\n- 涉及版权词（IP 名、角色名）会被拦截，删掉换近义词\n- 详细 FAQ 见 [实战 FAQ](./faq.zh.md)\n\n---\n\n## 想看实战案例\n\n→ [原始提示词](./prompts/) 里有 Mx-Shell 本人写的完整提示词（丧尸清道夫、假面骑士 6 变体、卡莎 15/20/5s、环太平洋+高达、赛博江湖、合金装备）。\n→ [模板](./templates/) 里是去掉 IP 的可套用骨架。\n";
+function extractPrompt(md){
+  const lines=md.split("\n");
+  const re=/^#{1,4}\s.*(完整提示词|complete prompt|copy-paste|可直接复制)/i;
+  let s=-1; for(let i=0;i<lines.length;i++){if(re.test(lines[i])){s=i+1;break;}}
+  if(s>=0){let e=lines.length;for(let i=s;i<lines.length;i++){if(/^##\s/.test(lines[i])){e=i;break;}}
+    const r=lines.slice(s,e).join("\n").replace(/^\s*-{3,}\s*$/gm,"").trim();if(r)return r;}
+  const b=[...md.matchAll(/```[^\n]*\n([\s\S]*?)```/g)].map(m=>m[1].trim());
+  return b.length?b.join("\n\n"):md.trim();
+}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('show');
+  clearTimeout(toast._t);toast._t=setTimeout(()=>e.classList.remove('show'),1700);}
+async function cp(t,msg){try{await navigator.clipboard.writeText(t);toast(msg);}catch(e){toast('复制失败');}}
+document.getElementById('copyPrompt').onclick=()=>cp(extractPrompt(RAW),'提示词已复制 · 可直接粘进视频模型');
+document.getElementById('copyAll').onclick=()=>cp(RAW,'全文已复制');
+</script>
+</body>
+</html>

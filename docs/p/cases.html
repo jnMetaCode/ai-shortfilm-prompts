@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Failure → Fix Gallery | Cinematic AI Video Prompt Library</title>
+<meta name="description" content="The 14 most common ways AI-video prompts go wrong — and the exact fix for each. Every case is grounded in faq.md (full Q&amp;A) and methodology.md (the 5-st…">
+<link rel="canonical" href="https://prompts.aiolaola.com/p/cases.html">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="en" href="https://prompts.aiolaola.com/p/cases.html">
+<link rel="alternate" hreflang="zh-CN" href="https://prompts.aiolaola.com/p/cases.zh.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="电影感 AI 视频提示词库">
+<meta property="og:title" content="Failure → Fix Gallery">
+<meta property="og:description" content="The 14 most common ways AI-video prompts go wrong — and the exact fix for each. Every case is grounded in faq.md (full Q&amp;A) and methodology.md (the 5-st…">
+<meta property="og:url" content="https://prompts.aiolaola.com/p/cases.html">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Failure → Fix Gallery">
+<meta name="twitter:description" content="The 14 most common ways AI-video prompts go wrong — and the exact fix for each. Every case is grounded in faq.md (full Q&amp;A) and methodology.md (the 5-st…">
+<link rel="stylesheet" href="./page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Failure → Fix Gallery",
+  "description": "The 14 most common ways AI-video prompts go wrong — and the exact fix for each. Every case is grounded in faq.md (full Q&A) and methodology.md (the 5-st…",
+  "inLanguage": "en",
+  "url": "https://prompts.aiolaola.com/p/cases.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "电影感 AI 视频提示词库",
+    "url": "https://prompts.aiolaola.com/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "jnMetaCode",
+    "url": "https://github.com/jnMetaCode"
+  },
+  "license": "https://opensource.org/licenses/MIT"
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7LBJRDWYYW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7LBJRDWYYW');</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="back" href="../">← 提示词库</a>
+  <a class="ghlink" href="https://github.com/jnMetaCode/ai-shortfilm-prompts/blob/main/cases.md" target="_blank" rel="noopener">在 GitHub 查看源文件 ↗</a>
+</header>
+<main class="doc">
+  <div class="doc-actions">
+    <button id="copyPrompt">⧉ 复制提示词</button>
+    <button id="copyAll">复制全文</button>
+    <a class="langsw" href="./cases.zh.html">中文</a>
+  </div>
+  <article class="md">
+<h1>Failure → Fix Gallery</h1>
+<blockquote><p>The 14 most common ways AI-video prompts go wrong — and the exact fix for each. Every case is grounded in <a href="faq.html">faq.md</a> (full Q&amp;A) and <a href="methodology.html">methodology.md</a> (the 5-stage structure).</p>
+<p>Each card: <strong>❌ Symptom / 🔍 Cause / ✅ Fix</strong> — with a concrete before→after prompt snippet wherever one helps.</p>
+<p><strong><a href="cases.zh.html">中文版 →</a></strong></p></blockquote>
+<hr>
+<h2>How to use this page</h2>
+<p>Skim the symptoms, jump to the one that matches your output, apply the fix. For the <em>why</em> behind each fix, follow the link at the bottom of the card to the relevant FAQ entry or methodology stage.</p>
+<p>Sections:</p>
+<ol><li><a href="#1-faces--ip">Faces &amp; IP</a></li><li><a href="#2-realism--cg-look">Realism &amp; CG-look</a></li><li><a href="#3-motion--timing">Motion &amp; timing</a></li><li><a href="#4-audio">Audio</a></li><li><a href="#5-endings">Endings</a></li></ol>
+<hr>
+<h2>1. Faces &amp; IP</h2>
+<h3>Uploaded face photo gets blocked by moderation</h3>
+<p><strong>❌ Symptom:</strong> Your reference photo is rejected or flagged before generation even starts.</p>
+<p><strong>🔍 Cause:</strong> Face moderation on AI-video platforms keeps tightening. Direct full-face uploads have the highest rejection rate.</p>
+<p><strong>✅ Fix:</strong> In order of escalation —</p>
+<ol><li>Try several different photos.</li><li>Feed the photo to Doubao with the <strong>commercial-portrait describer template</strong> to generate a <em>"photorealistic colored sketch"</em> version, then upload that instead.</li><li>Design the character to <strong>avoid full-face exposure entirely</strong>: helmet, mask, robot, back-of-head shots, mannequins with big sunglasses. (This is the real reason <em>Zombie Scavenger</em>'s lead is a robot.)</li></ol>
+<p>→ <a href="./faq.md#faces--ip--blocked-content">faq.md — Faces / IP / blocked content</a></p>
+<hr>
+<h3>Prompt gets flagged for IP / copyright</h3>
+<p><strong>❌ Symptom:</strong> A prompt naming Kamen Rider, Gundam, Pacific Rim, Iron Man, or Kai'Sa gets blocked by Seedance 2.0.</p>
+<p><strong>🔍 Cause:</strong> Seedance's IP-rights filtering is aggressive and blocks real film / character names.</p>
+<p><strong>✅ Fix:</strong> Strip the names; keep the <em>design language</em> as description.</p>
+<pre><code>- Iron Man red-and-gold armor, repulsor blast
++ atom-punk retro-futurist red-and-gold suit, palm energy burst
+- Black Sun aesthetic, gritty tokusatsu
++ gritty dark battle-damaged aesthetic, gritty tokusatsu</code></pre>
+<p>Also works: delete a few characters or punctuation marks without changing meaning, or swap in synonyms for the same look.</p>
+<p>→ <a href="./faq.md#faces--ip--blocked-content">faq.md — Faces / IP / blocked content</a> · <a href="https://github.com/jnMetaCode/ai-shortfilm-prompts" target="_blank" rel="noopener">prompts/README.md</a></p>
+<hr>
+<h3>Face / identity drifts between shots</h3>
+<p><strong>❌ Symptom:</strong> The character's face shape or expression changes from clip to clip; the same person doesn't read across cuts.</p>
+<p><strong>🔍 Cause:</strong> Weak Stage 2 lock-down. If you don't explicitly pin facial features, the AI drifts.</p>
+<p><strong>✅ Fix:</strong> Lock the face hard in <strong>Stage 2 (Character &amp; scene)</strong>:</p>
+<pre><code>Face: Reference uploaded photo. Features, face shape, hairstyle 100%
+      preserved. No beautification. Maintain [wound / scar / blemish].</code></pre>
+<p>For transformations, go even harder — keep bone structure identical across the change:</p>
+<pre><code>Preserve the same bone structure, jaw geometry, and facial features
+100% identical before and after transformation.</code></pre>
+<p>Give each key visual element (face, expression, key prop) <strong>its own dedicated reference photo</strong> so the AI doesn't blend them.</p>
+<p>→ <a href="./methodology.md#stage-2--character--scene">methodology.md — Stage 2</a></p>
+<hr>
+<h2>2. Realism &amp; CG-look</h2>
+<h3>Output looks like cheap plastic CG, not live-action</h3>
+<p><strong>❌ Symptom:</strong> Faces and surfaces read as glossy, fake, game-render CG instead of film.</p>
+<p><strong>🔍 Cause:</strong> Two usual culprits — (1) over-beautified / filtered reference photos that already look fake, (2) low-quality reference images with no real photoreal or 3D-render texture.</p>
+<p><strong>✅ Fix:</strong> Use clear, large, <strong>un-filtered</strong> headshots — ideally bare-face (no movie puts beauty filters on its actors). Only feed reference images when the source is genuinely high-detail photoreal or a 3D render. For dynamic shots (transformations, combat), drop references entirely and let the AI free-form from <strong>pure text</strong>.</p>
+<p>→ <a href="./faq.md#picture-quality--texture--realism">faq.md — Picture quality / texture / realism</a></p>
+<hr>
+<h3>Reference image leaks its art style into the output</h3>
+<p><strong>❌ Symptom:</strong> Your output picks up the <em>style</em> of the reference (anime, drawn, CG render) instead of just its design.</p>
+<p><strong>🔍 Cause:</strong> AI binds a reference image's texture and style information together — poor reference quality leaks unwanted aesthetics into the result.</p>
+<p><strong>✅ Fix:</strong> Don't attach a reference unless it is genuinely photoreal or a high-quality 3D render. For motion shots, <strong>omit references entirely</strong> — Mx-Shell's Kamen Rider armor came entirely from text, which also made every output uniquely different. Reserve references for character/scene <em>continuity</em> only.</p>
+<p>→ <a href="./methodology.md#1-dont-give-the-ai-reference-images-unless-the-image-quality-is-high">methodology.md — Principle #1</a> · <a href="./faq.md#picture-quality--texture--realism">faq.md — References vs. pure text</a></p>
+<hr>
+<h3>Video feels stiff and game-CG — no "presence"</h3>
+<p><strong>❌ Symptom:</strong> The shot is technically fine but feels artificial and locked-off, like game cinematics rather than a handheld film moment.</p>
+<p><strong>🔍 Cause:</strong> Missing the "breathing" handheld float, and no explicit realism anchors.</p>
+<p><strong>✅ Fix:</strong> Add realism anchors in <strong>Stage 1</strong> (<code>cinematic | hyperreal | no game-CG feel</code>), and in <strong>Stage 4</strong> always include the breathing line:</p>
+<pre><code>Breathing: Handheld shot. Throughout, maintain an extremely subtle,
+           breath-like camera float to enhance presence.</code></pre>
+<p>Name a real camera + lens so the AI has a concrete visual anchor — e.g. IMAX film camera + Panavision C-series (35mm, f/4) for epic shots, or Sony Venice + Canon K-35 for gritty sci-fi.</p>
+<p>→ <a href="./methodology.md#stage-3--atmosphere--look">methodology.md — Stage 3 &amp; 4</a></p>
+<hr>
+<h3>A specific camera move won't execute</h3>
+<p><strong>❌ Symptom:</strong> Wrong focal length, wrong angle, or the orbit goes the wrong direction.</p>
+<p><strong>🔍 Cause:</strong> Vague descriptions like "cinematic" or "dramatic" carry no precision. The AI needs explicit camera models, focal lengths, and movement vocabulary.</p>
+<p><strong>✅ Fix:</strong> Be precise in <strong>Stage 4</strong> — camera + lens, shot size, angle, motion type, and rhythm:</p>
+<pre><code>- Cinematic dramatic camera move around the hero
++ IMAX + Panavision C 35mm. Medium close-up, low-angle 30° from left.
++ Orbit clockwise, very slow, with a 0.1s reactive micro-shake.</code></pre>
+<p>Vocabulary to pull from — shot sizes (wide / medium / close-up), angles (low / high / level / over-shoulder), motions (push-in / orbit / follow / FPV), rhythms (very slow / steady / sudden / reactive).</p>
+<p>→ <a href="./methodology.md#stage-4--camera-rules">methodology.md — Stage 4</a> · <a href="./faq.md#camera--composition">faq.md — Camera &amp; composition</a></p>
+<hr>
+<h3>Color grade falls apart in post (banding, noise)</h3>
+<p><strong>❌ Symptom:</strong> Pushing color correction even a little causes banding and noise.</p>
+<p><strong>🔍 Cause:</strong> AI-generated video has a <strong>low color bitrate</strong> — far less grading headroom than real-camera footage.</p>
+<p><strong>✅ Fix:</strong> Lock your color tone <strong>upstream</strong>, at the image/prompt stage (<strong>Stage 3, Color &amp; tone</strong>), and keep that section consistent across every shot. Make the big aesthetic choice in the prompt (Hollywood teal-orange, grey-blue, retro warm-orange + sea-salt blue…). Do only minor transitions in CapCut — don't try to <em>fix</em> color in post; fix it in the prompt.</p>
+<p>→ <a href="./faq.md#duration--long-videos--editing">faq.md — Duration / long videos / editing</a></p>
+<hr>
+<h2>3. Motion &amp; timing</h2>
+<h3>One-take video collapses past ~15 seconds</h3>
+<p><strong>❌ Symptom:</strong> A transformation or single-shot runs long and quality breaks down mid-sequence.</p>
+<p><strong>🔍 Cause:</strong> Seedance struggles with one-shot generations much longer than 15s. The sweet spot is 5–15s by scene type.</p>
+<p><strong>✅ Fix:</strong> Keep transformations <strong>≤ 15s per shot</strong>. For longer sequences (&gt;15s combat), generate the first 15s, then use Xiaoyunque web client's <strong>"Continue this video"</strong> to extend. This segmented approach beats one 30s+ shot. Mx-Shell built Kai'Sa as a 15s version plus a separate 5s extension.</p>
+<p>→ <a href="./faq.md#duration--long-videos--editing">faq.md — Duration / long videos / editing</a> · <a href="kaisa-transformation.html">prompts/kaisa-transformation.md</a></p>
+<hr>
+<h3>Prompt exceeds the character limit; won't submit</h3>
+<p><strong>❌ Symptom:</strong> A long, detailed multi-shot prompt hits the character ceiling and can't be sent to Seedance 2.0.</p>
+<p><strong>🔍 Cause:</strong> Detailed segmentation and multi-shot scripts run past the mobile client's limit.</p>
+<p><strong>✅ Fix:</strong> Switch from the mobile app to the <strong>Xiaoyunque web client</strong> — it has a higher character ceiling. Still too long? Trim ruthlessly: drop redundant descriptors, merge related clauses, abbreviate Scene lines. (Mx-Shell's Pacific Rim prompt explicitly notes it needs the web client.)</p>
+<p>→ <a href="./faq.md#word-limits--rerolls--non-reproducibility">faq.md — Word limits / rerolls</a> · <a href="pacific-rim-gundam.html">prompts/pacific-rim-gundam.md</a></p>
+<hr>
+<h3>Two clips don't connect — feels like two videos</h3>
+<p><strong>❌ Symptom:</strong> Cut two clips together and it reads as two separate shots, not one continuous action.</p>
+<p><strong>🔍 Cause:</strong> No motion-direction continuity. The audience can't read one action flowing into the next.</p>
+<p><strong>✅ Fix:</strong> Connect by <strong>motion-direction continuity</strong>, not by matching static frames. <em>Zombie Scavenger</em> example: the robot throws a bomb that blasts the horde and pushes him out one side of frame; the next shot, he <strong>enters from that same side</strong>. Design shots with deliberate exit/enter edges to build logical spatial flow.</p>
+<p>→ <a href="./faq.md#duration--long-videos--editing">faq.md — Duration / long videos / editing</a></p>
+<hr>
+<h3>A great shot generated once, then won't reproduce</h3>
+<p><strong>❌ Symptom:</strong> A combat or weapon-charge shot lands beautifully once, then every reroll fails to reproduce the camera work.</p>
+<p><strong>🔍 Cause:</strong> AI generation is non-deterministic. Mx-Shell's <em>Flame Demon</em> camera move was an accident — the AI didn't actually follow the instruction, and he can't reproduce it either.</p>
+<p><strong>✅ Fix:</strong> Accept randomness as part of the process. Treat one prompt as a <strong>ticket to draw</strong>, not a deterministic recipe — invest in reroll <em>selection</em>, not prompt polish. Mx-Shell's typical counts: high-difficulty shots 20+ tries, simple shots 2–3. <em>Zombie Scavenger</em> burned ~400 images</p>
+<ul><li>200+ video shots to land ~40 final clips. **Curate the output; don't</li></ul>
+<p>chase prompt perfection.**</p>
+<p>→ <a href="./faq.md#word-limits--rerolls--non-reproducibility">faq.md — Word limits / rerolls / non-reproducibility</a></p>
+<hr>
+<h2>4. Audio</h2>
+<h3>AI adds background music you didn't ask for</h3>
+<p><strong>❌ Symptom:</strong> The model scores your clip with non-diegetic music when you only wanted production audio.</p>
+<p><strong>🔍 Cause:</strong> Default AI-video models add music unless told otherwise.</p>
+<p><strong>✅ Fix:</strong> Always specify it in <strong>Stage 3 (Atmosphere &amp; look)</strong>:</p>
+<pre><code>Sound: No score. Production audio only.</code></pre>
+<p>Mx-Shell used this formula across every prompt (Zombie Scavenger, Kamen Rider, Kai'Sa, Metal Gear charge-combat, Pacific Rim, Cyber-Wuxia).</p>
+<p>→ <a href="./methodology.md#stage-3--atmosphere--look">methodology.md — Stage 3</a></p>
+<hr>
+<h2>5. Endings</h2>
+<h3>The ending is an FX pile-up and reads cheap</h3>
+<p><strong>❌ Symptom:</strong> Stacked explosions, light bursts, and particle effects at the end overwhelm the frame and read as amateur.</p>
+<p><strong>🔍 Cause:</strong> Excess FX at the climax overstages the moment. Mx-Shell deliberately avoids it.</p>
+<p><strong>✅ Fix:</strong> Practice restraint — <strong>end quietly</strong>. No dialogue, no explosion, no blinding light. Just the character in the moment: standing, breathing, in smoke, with one distant element (a meteor crossing the sky). A restrained ending reads as more elevated than an FX-heavy one.</p>
+<blockquote><p><em>"No dialogue. No explosion. No blinding light. Just a figure standing in the smoke, a meteor crossing the distant sky."</em> — Mx-Shell, <em>Methodology</em> Principle #3</p></blockquote>
+<p>→ <a href="./methodology.md#3-rerolls-are-normal-leave-the-ending-empty">methodology.md — Principle #3</a></p>
+<hr>
+<h2>See also</h2>
+<ul><li><a href="faq.html">faq.md</a> — the full Q&amp;A this gallery distills.</li><li><a href="methodology.html">methodology.md</a> — the 5-stage structure every fix refers to.</li><li><a href="./prompts/">prompts/</a> — Mx-Shell's complete original prompts.</li></ul>
+  </article>
+  <footer class="doc-foot">
+    <p>许可 · <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT · 可自由使用</a></p>
+    <p><a href="../">← 回提示词库</a> · <a href="https://www.aiolaola.com/?utm_source=prompts.aiolaola.com&amp;utm_medium=referral&amp;utm_campaign=docpage" target="_blank" rel="noopener">aiOlaOla 学 AI 编程</a></p>
+  </footer>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const RAW = "# Failure → Fix Gallery\n\n> The 14 most common ways AI-video prompts go wrong — and the exact fix\n> for each. Every case is grounded in [faq.md](./faq.md) (full Q&A) and\n> [methodology.md](./methodology.md) (the 5-stage structure).\n>\n> Each card: **❌ Symptom / 🔍 Cause / ✅ Fix** — with a concrete\n> before→after prompt snippet wherever one helps.\n>\n> **[中文版 →](./cases.zh.md)**\n\n---\n\n## How to use this page\n\nSkim the symptoms, jump to the one that matches your output, apply the\nfix. For the *why* behind each fix, follow the link at the bottom of the\ncard to the relevant FAQ entry or methodology stage.\n\nSections:\n1. [Faces & IP](#1-faces--ip)\n2. [Realism & CG-look](#2-realism--cg-look)\n3. [Motion & timing](#3-motion--timing)\n4. [Audio](#4-audio)\n5. [Endings](#5-endings)\n\n---\n\n## 1. Faces & IP\n\n### Uploaded face photo gets blocked by moderation\n\n**❌ Symptom:** Your reference photo is rejected or flagged before\ngeneration even starts.\n\n**🔍 Cause:** Face moderation on AI-video platforms keeps tightening.\nDirect full-face uploads have the highest rejection rate.\n\n**✅ Fix:** In order of escalation —\n1. Try several different photos.\n2. Feed the photo to Doubao with the **commercial-portrait describer\n   template** to generate a *\"photorealistic colored sketch\"* version,\n   then upload that instead.\n3. Design the character to **avoid full-face exposure entirely**: helmet,\n   mask, robot, back-of-head shots, mannequins with big sunglasses. (This\n   is the real reason *Zombie Scavenger*'s lead is a robot.)\n\n→ [faq.md — Faces / IP / blocked content](./faq.md#faces--ip--blocked-content)\n\n---\n\n### Prompt gets flagged for IP / copyright\n\n**❌ Symptom:** A prompt naming Kamen Rider, Gundam, Pacific Rim, Iron\nMan, or Kai'Sa gets blocked by Seedance 2.0.\n\n**🔍 Cause:** Seedance's IP-rights filtering is aggressive and blocks\nreal film / character names.\n\n**✅ Fix:** Strip the names; keep the *design language* as description.\n\n```diff\n- Iron Man red-and-gold armor, repulsor blast\n+ atom-punk retro-futurist red-and-gold suit, palm energy burst\n- Black Sun aesthetic, gritty tokusatsu\n+ gritty dark battle-damaged aesthetic, gritty tokusatsu\n```\n\nAlso works: delete a few characters or punctuation marks without\nchanging meaning, or swap in synonyms for the same look.\n\n→ [faq.md — Faces / IP / blocked content](./faq.md#faces--ip--blocked-content) ·\n[prompts/README.md](./prompts/README.md)\n\n---\n\n### Face / identity drifts between shots\n\n**❌ Symptom:** The character's face shape or expression changes from clip\nto clip; the same person doesn't read across cuts.\n\n**🔍 Cause:** Weak Stage 2 lock-down. If you don't explicitly pin facial\nfeatures, the AI drifts.\n\n**✅ Fix:** Lock the face hard in **Stage 2 (Character & scene)**:\n\n```text\nFace: Reference uploaded photo. Features, face shape, hairstyle 100%\n      preserved. No beautification. Maintain [wound / scar / blemish].\n```\n\nFor transformations, go even harder — keep bone structure identical\nacross the change:\n\n```text\nPreserve the same bone structure, jaw geometry, and facial features\n100% identical before and after transformation.\n```\n\nGive each key visual element (face, expression, key prop) **its own\ndedicated reference photo** so the AI doesn't blend them.\n\n→ [methodology.md — Stage 2](./methodology.md#stage-2--character--scene)\n\n---\n\n## 2. Realism & CG-look\n\n### Output looks like cheap plastic CG, not live-action\n\n**❌ Symptom:** Faces and surfaces read as glossy, fake, game-render CG\ninstead of film.\n\n**🔍 Cause:** Two usual culprits — (1) over-beautified / filtered\nreference photos that already look fake, (2) low-quality reference images\nwith no real photoreal or 3D-render texture.\n\n**✅ Fix:** Use clear, large, **un-filtered** headshots — ideally bare-face\n(no movie puts beauty filters on its actors). Only feed reference images\nwhen the source is genuinely high-detail photoreal or a 3D render. For\ndynamic shots (transformations, combat), drop references entirely and let\nthe AI free-form from **pure text**.\n\n→ [faq.md — Picture quality / texture / realism](./faq.md#picture-quality--texture--realism)\n\n---\n\n### Reference image leaks its art style into the output\n\n**❌ Symptom:** Your output picks up the *style* of the reference (anime,\ndrawn, CG render) instead of just its design.\n\n**🔍 Cause:** AI binds a reference image's texture and style information\ntogether — poor reference quality leaks unwanted aesthetics into the\nresult.\n\n**✅ Fix:** Don't attach a reference unless it is genuinely photoreal or a\nhigh-quality 3D render. For motion shots, **omit references entirely** —\nMx-Shell's Kamen Rider armor came entirely from text, which also made\nevery output uniquely different. Reserve references for character/scene\n*continuity* only.\n\n→ [methodology.md — Principle #1](./methodology.md#1-dont-give-the-ai-reference-images-unless-the-image-quality-is-high) ·\n[faq.md — References vs. pure text](./faq.md#picture-quality--texture--realism)\n\n---\n\n### Video feels stiff and game-CG — no \"presence\"\n\n**❌ Symptom:** The shot is technically fine but feels artificial and\nlocked-off, like game cinematics rather than a handheld film moment.\n\n**🔍 Cause:** Missing the \"breathing\" handheld float, and no explicit\nrealism anchors.\n\n**✅ Fix:** Add realism anchors in **Stage 1** (`cinematic | hyperreal |\nno game-CG feel`), and in **Stage 4** always include the breathing line:\n\n```text\nBreathing: Handheld shot. Throughout, maintain an extremely subtle,\n           breath-like camera float to enhance presence.\n```\n\nName a real camera + lens so the AI has a concrete visual anchor — e.g.\nIMAX film camera + Panavision C-series (35mm, f/4) for epic shots, or\nSony Venice + Canon K-35 for gritty sci-fi.\n\n→ [methodology.md — Stage 3 & 4](./methodology.md#stage-3--atmosphere--look)\n\n---\n\n### A specific camera move won't execute\n\n**❌ Symptom:** Wrong focal length, wrong angle, or the orbit goes the\nwrong direction.\n\n**🔍 Cause:** Vague descriptions like \"cinematic\" or \"dramatic\" carry no\nprecision. The AI needs explicit camera models, focal lengths, and\nmovement vocabulary.\n\n**✅ Fix:** Be precise in **Stage 4** — camera + lens, shot size, angle,\nmotion type, and rhythm:\n\n```diff\n- Cinematic dramatic camera move around the hero\n+ IMAX + Panavision C 35mm. Medium close-up, low-angle 30° from left.\n+ Orbit clockwise, very slow, with a 0.1s reactive micro-shake.\n```\n\nVocabulary to pull from — shot sizes (wide / medium / close-up), angles\n(low / high / level / over-shoulder), motions (push-in / orbit / follow /\nFPV), rhythms (very slow / steady / sudden / reactive).\n\n→ [methodology.md — Stage 4](./methodology.md#stage-4--camera-rules) ·\n[faq.md — Camera & composition](./faq.md#camera--composition)\n\n---\n\n### Color grade falls apart in post (banding, noise)\n\n**❌ Symptom:** Pushing color correction even a little causes banding and\nnoise.\n\n**🔍 Cause:** AI-generated video has a **low color bitrate** — far less\ngrading headroom than real-camera footage.\n\n**✅ Fix:** Lock your color tone **upstream**, at the image/prompt stage\n(**Stage 3, Color & tone**), and keep that section consistent across every\nshot. Make the big aesthetic choice in the prompt (Hollywood teal-orange,\ngrey-blue, retro warm-orange + sea-salt blue…). Do only minor transitions\nin CapCut — don't try to *fix* color in post; fix it in the prompt.\n\n→ [faq.md — Duration / long videos / editing](./faq.md#duration--long-videos--editing)\n\n---\n\n## 3. Motion & timing\n\n### One-take video collapses past ~15 seconds\n\n**❌ Symptom:** A transformation or single-shot runs long and quality\nbreaks down mid-sequence.\n\n**🔍 Cause:** Seedance struggles with one-shot generations much longer\nthan 15s. The sweet spot is 5–15s by scene type.\n\n**✅ Fix:** Keep transformations **≤ 15s per shot**. For longer sequences\n(>15s combat), generate the first 15s, then use Xiaoyunque web client's\n**\"Continue this video\"** to extend. This segmented approach beats one\n30s+ shot. Mx-Shell built Kai'Sa as a 15s version plus a separate 5s\nextension.\n\n→ [faq.md — Duration / long videos / editing](./faq.md#duration--long-videos--editing) ·\n[prompts/kaisa-transformation.md](./prompts/kaisa-transformation.md)\n\n---\n\n### Prompt exceeds the character limit; won't submit\n\n**❌ Symptom:** A long, detailed multi-shot prompt hits the character\nceiling and can't be sent to Seedance 2.0.\n\n**🔍 Cause:** Detailed segmentation and multi-shot scripts run past the\nmobile client's limit.\n\n**✅ Fix:** Switch from the mobile app to the **Xiaoyunque web client** —\nit has a higher character ceiling. Still too long? Trim ruthlessly: drop\nredundant descriptors, merge related clauses, abbreviate Scene lines.\n(Mx-Shell's Pacific Rim prompt explicitly notes it needs the web client.)\n\n→ [faq.md — Word limits / rerolls](./faq.md#word-limits--rerolls--non-reproducibility) ·\n[prompts/pacific-rim-gundam.md](./prompts/pacific-rim-gundam.md)\n\n---\n\n### Two clips don't connect — feels like two videos\n\n**❌ Symptom:** Cut two clips together and it reads as two separate shots,\nnot one continuous action.\n\n**🔍 Cause:** No motion-direction continuity. The audience can't read one\naction flowing into the next.\n\n**✅ Fix:** Connect by **motion-direction continuity**, not by matching\nstatic frames. *Zombie Scavenger* example: the robot throws a bomb that\nblasts the horde and pushes him out one side of frame; the next shot, he\n**enters from that same side**. Design shots with deliberate exit/enter\nedges to build logical spatial flow.\n\n→ [faq.md — Duration / long videos / editing](./faq.md#duration--long-videos--editing)\n\n---\n\n### A great shot generated once, then won't reproduce\n\n**❌ Symptom:** A combat or weapon-charge shot lands beautifully once,\nthen every reroll fails to reproduce the camera work.\n\n**🔍 Cause:** AI generation is non-deterministic. Mx-Shell's *Flame\nDemon* camera move was an accident — the AI didn't actually follow the\ninstruction, and he can't reproduce it either.\n\n**✅ Fix:** Accept randomness as part of the process. Treat one prompt as\na **ticket to draw**, not a deterministic recipe — invest in reroll\n*selection*, not prompt polish. Mx-Shell's typical counts: high-difficulty\nshots 20+ tries, simple shots 2–3. *Zombie Scavenger* burned ~400 images\n+ 200+ video shots to land ~40 final clips. **Curate the output; don't\nchase prompt perfection.**\n\n→ [faq.md — Word limits / rerolls / non-reproducibility](./faq.md#word-limits--rerolls--non-reproducibility)\n\n---\n\n## 4. Audio\n\n### AI adds background music you didn't ask for\n\n**❌ Symptom:** The model scores your clip with non-diegetic music when\nyou only wanted production audio.\n\n**🔍 Cause:** Default AI-video models add music unless told otherwise.\n\n**✅ Fix:** Always specify it in **Stage 3 (Atmosphere & look)**:\n\n```text\nSound: No score. Production audio only.\n```\n\nMx-Shell used this formula across every prompt (Zombie Scavenger, Kamen\nRider, Kai'Sa, Metal Gear charge-combat, Pacific Rim, Cyber-Wuxia).\n\n→ [methodology.md — Stage 3](./methodology.md#stage-3--atmosphere--look)\n\n---\n\n## 5. Endings\n\n### The ending is an FX pile-up and reads cheap\n\n**❌ Symptom:** Stacked explosions, light bursts, and particle effects at\nthe end overwhelm the frame and read as amateur.\n\n**🔍 Cause:** Excess FX at the climax overstages the moment. Mx-Shell\ndeliberately avoids it.\n\n**✅ Fix:** Practice restraint — **end quietly**. No dialogue, no\nexplosion, no blinding light. Just the character in the moment: standing,\nbreathing, in smoke, with one distant element (a meteor crossing the\nsky). A restrained ending reads as more elevated than an FX-heavy one.\n\n> *\"No dialogue. No explosion. No blinding light. Just a figure standing\n> in the smoke, a meteor crossing the distant sky.\"*\n> — Mx-Shell, *Methodology* Principle #3\n\n→ [methodology.md — Principle #3](./methodology.md#3-rerolls-are-normal-leave-the-ending-empty)\n\n---\n\n## See also\n\n- [faq.md](./faq.md) — the full Q&A this gallery distills.\n- [methodology.md](./methodology.md) — the 5-stage structure every fix\n  refers to.\n- [prompts/](./prompts/) — Mx-Shell's complete original prompts.\n";
+function extractPrompt(md){
+  const lines=md.split("\n");
+  const re=/^#{1,4}\s.*(完整提示词|complete prompt|copy-paste|可直接复制)/i;
+  let s=-1; for(let i=0;i<lines.length;i++){if(re.test(lines[i])){s=i+1;break;}}
+  if(s>=0){let e=lines.length;for(let i=s;i<lines.length;i++){if(/^##\s/.test(lines[i])){e=i;break;}}
+    const r=lines.slice(s,e).join("\n").replace(/^\s*-{3,}\s*$/gm,"").trim();if(r)return r;}
+  const b=[...md.matchAll(/```[^\n]*\n([\s\S]*?)```/g)].map(m=>m[1].trim());
+  return b.length?b.join("\n\n"):md.trim();
+}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('show');
+  clearTimeout(toast._t);toast._t=setTimeout(()=>e.classList.remove('show'),1700);}
+async function cp(t,msg){try{await navigator.clipboard.writeText(t);toast(msg);}catch(e){toast('复制失败');}}
+document.getElementById('copyPrompt').onclick=()=>cp(extractPrompt(RAW),'提示词已复制 · 可直接粘进视频模型');
+document.getElementById('copyAll').onclick=()=>cp(RAW,'全文已复制');
+</script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>实战 FAQ｜电影感 AI 视频提示词库</title>
+<meta name="description" content="整合自 Mx-Shell 03.15 文档里的 17 条问题解决方案 + 两段直播 Q&amp;A。 同一个话题如果两处都提到了，以更详细的那段为准。 引用 Mx-Shell 原话用 标出。">
+<link rel="canonical" href="https://prompts.aiolaola.com/p/faq.zh.html">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="zh-CN" href="https://prompts.aiolaola.com/p/faq.zh.html">
+<link rel="alternate" hreflang="en" href="https://prompts.aiolaola.com/p/faq.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="电影感 AI 视频提示词库">
+<meta property="og:title" content="实战 FAQ">
+<meta property="og:description" content="整合自 Mx-Shell 03.15 文档里的 17 条问题解决方案 + 两段直播 Q&amp;A。 同一个话题如果两处都提到了，以更详细的那段为准。 引用 Mx-Shell 原话用 标出。">
+<meta property="og:url" content="https://prompts.aiolaola.com/p/faq.zh.html">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="实战 FAQ">
+<meta name="twitter:description" content="整合自 Mx-Shell 03.15 文档里的 17 条问题解决方案 + 两段直播 Q&amp;A。 同一个话题如果两处都提到了，以更详细的那段为准。 引用 Mx-Shell 原话用 标出。">
+<link rel="stylesheet" href="./page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "实战 FAQ",
+  "description": "整合自 Mx-Shell 03.15 文档里的 17 条问题解决方案 + 两段直播 Q&A。 同一个话题如果两处都提到了，以更详细的那段为准。 引用 Mx-Shell 原话用 标出。",
+  "inLanguage": "zh-CN",
+  "url": "https://prompts.aiolaola.com/p/faq.zh.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "电影感 AI 视频提示词库",
+    "url": "https://prompts.aiolaola.com/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "jnMetaCode",
+    "url": "https://github.com/jnMetaCode"
+  },
+  "license": "https://opensource.org/licenses/MIT"
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7LBJRDWYYW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7LBJRDWYYW');</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="back" href="../">← 提示词库</a>
+  <a class="ghlink" href="https://github.com/jnMetaCode/ai-shortfilm-prompts/blob/main/faq.zh.md" target="_blank" rel="noopener">在 GitHub 查看源文件 ↗</a>
+</header>
+<main class="doc">
+  <div class="doc-actions">
+    <button id="copyPrompt">⧉ 复制提示词</button>
+    <button id="copyAll">复制全文</button>
+    <a class="langsw" href="./faq.html">EN</a>
+  </div>
+  <article class="md">
+<h1>实战 FAQ</h1>
+<blockquote><p>整合自 Mx-Shell 03.15 文档里的 17 条问题解决方案 + 两段直播 Q&amp;A。 同一个话题如果两处都提到了，以更详细的那段为准。 引用 Mx-Shell 原话用 <code>&gt;</code> 标出。</p></blockquote>
+<hr>
+<h2>工具与模型</h2>
+<h3>Q：用什么平台做视频？</h3>
+<p><strong>小云雀（Xiaoyunque）</strong> 里的 Seedance 2.0「沉浸式短片」功能。</p>
+<blockquote><p>"用 Seedance 2.0 的模型，不要用 Seedance 2.0 Fast。Fast 处理速度快，但是细节把控差点意思。其他乱七八糟的模型就别用了。"</p></blockquote>
+<h3>Q：图用什么模型做？</h3>
+<p>《丧尸清道夫》80% 的图是 <strong>GPT Image</strong> 出的。其次是 Midjourney，再次是 Krea，最后 Flux Max 用来精修材质。</p>
+<pre><code>通常工作流：MJ 或 Seedream 出图 → Flux 优化材质/真实感 → Nanobanana 出三视图</code></pre>
+<p>某一步出的图够用就跳过后面。</p>
+<h3>Q：平台/会员怎么选？</h3>
+<blockquote><p>"其实平台只根据每个人实际的情况来定义，每个平台的价格其实都是有出入的。" "新用户一次就是 30 块两杯奶茶钱，可以自己买一下玩一玩。"</p></blockquote>
+<p>不建议被冲昏头脑，先按预算挑。</p>
+<h3>Q：电脑配置有要求吗？</h3>
+<p>没有。Seedance 是云端算力，能办公的电脑都能用。</p>
+<hr>
+<h2>人脸 / 版权 / 违规</h2>
+<h3>Q：上传人脸照片被拦截怎么办？</h3>
+<p>（注：审核越来越严，下面方法不一定每次都灵。）</p>
+<ol><li>多换几张照片试试</li><li>忽略系统提示直接生成（可能不像本人）</li><li>接受失真：把照片丢给豆包，让它生成"写实风格的彩色素描画"再用</li><li>用商业人像描述法（详见下条）</li></ol>
+<h3>Q：商业人像描述模板</h3>
+<p>把照片+下面这段丢给豆包：</p>
+<pre><code>帮我生成图片：图片风格为「人像摄影」，参考上传图片，
+生成 22-25 岁年轻东亚男性的超写实商业人像摄影，近景，
+五官、脸型与参考照片保持 100% 一致；保留轻微面部瑕疵；
+带有少量自然碎发以营造慵懒松弛的氛围；无任何配饰；
+服装深黑色 T 恤；背景设定为浅白色的模糊渐变质感背景，
+光线采用柔和的侧光，以此突出面部的立体感，
+皮肤呈现暖调健康肤色并带有自然细腻的光泽感，
+细节增强度调至 100%，关闭过度磨皮功能，
+色彩风格设定为高级柔和的暖色调，
+最终输出具有细腻质感的商业级精修人像画质，
+Canon EF85mm f/1.2。比例「3:4」</code></pre>
+<h3>Q：避免人脸审核的另一种思路</h3>
+<blockquote><p>"不是任何的故事非要有人脸才能创作。我近两期的作品就是这样。"</p></blockquote>
+<p>戴头盔、面具、机器人、背影、戴大眼镜的假人模特 —— 没有人脸照样能拍。</p>
+<h3>Q：版权词被拦怎么办？</h3>
+<blockquote><p>"Seedance 模型的版权纠纷问题闹得沸沸扬扬，限制比较严重。"</p></blockquote>
+<ul><li>替换提示词里<strong>影视作品名</strong>和<strong>角色名</strong></li><li>删一些字眼或标点符号，保留大致意思</li><li>用近义词重述设计语言（"参考钢铁侠风格"→"原子朋克未来主义复古风格"）</li></ul>
+<h3>Q：提示生成失败怎么办？</h3>
+<p>直接重新生成。这是常态。</p>
+<hr>
+<h2>画质 / 质感 / 真实感</h2>
+<h3>Q：为什么我做出来很五毛特效感？</h3>
+<p><strong>两个核心原因</strong>：</p>
+<ol><li><strong>照片美颜过度</strong>。 &gt; "尽量使用面部清晰的大头照，不要过度美颜的那种。有自信的兄弟直接用素颜照（你看哪部电影是有美颜的）。过于完美，就假。"</li></ol>
+<ol><li><strong>垫图垫错了</strong>。 &gt; "尽量不要给 AI 参考图（除非你的参考图本身画质就很高，贴近真实，细节拉满，或者是 3D 建模渲染的）。"</li></ol>
+<h3>Q：垫图 vs 纯文案，哪个好？</h3>
+<blockquote><p>"我所有假面骑士的战衣造型都是靠描述让 AI 自由发挥的。" "现在百花齐放，每个人的假面战衣都不一样，等于是专属于自己的，不好吗？"</p></blockquote>
+<p>激烈打斗、变身这类有动态的镜头<strong>建议不用首尾帧</strong>； 人物/场景一致性强需求才用参考图。</p>
+<h3>Q：怎么让金属/瓷砖/光线更真实？</h3>
+<p>让 AI 帮你写材质描述。例：</p>
+<blockquote><p>"瓷砖的纹理光滑度、抛光处理还是磨砂处理、岩石的冰冷感..." "你可以直接让 AI 告诉你瓷砖表面质感的提示词。"</p></blockquote>
+<p>也可以用 <strong>Flux 模型</strong>单独过一遍图，专门强化金属反光、划痕、光散射等物理细节。</p>
+<h3>Q：分辨率要做多高？</h3>
+<blockquote><p>"我的视频基本都是 720p。"</p></blockquote>
+<p>发国内平台 720p 足够，平台会再压缩一次。不上电影院没必要做 4K。</p>
+<hr>
+<h2>镜头与构图</h2>
+<h3>Q：运镜怎么写？</h3>
+<blockquote><p>"运镜其实我基本上都是用文案控制。"</p></blockquote>
+<p>脑子里得先有画面。然后翻译成：</p>
+<ul><li>景别（中景 / 特写 / 全景）</li><li>角度（仰拍 / 俯拍 / 平视）</li><li>运动（前推 / 环绕 / 跟随 / 固定机位）</li><li>节奏（极缓 / 匀速 / 0.1 秒微颤）</li></ul>
+<p>详见 <a href="./methodology.zh.md#段-4--运镜规则">方法论 - 段 4 · 运镜规则</a>。</p>
+<h3>Q：构图怎么描述？</h3>
+<blockquote><p>"你可以描述构图，然后要知道什么是中心线、九宫格三分线。"</p></blockquote>
+<p>例：</p>
+<pre><code>模特背影占据画面中心线左侧位置，右手手肘叉腰形成框景，
+框住视觉主体的机器人。机器人面对镜头，模特背对镜头，
+机器人为近景，模特为前景，吧台为中景，背景为环境背景。</code></pre>
+<p>按景层（前景 / 中景 / 背景）分别交代，比直接说"X 站在 Y 旁边"清晰得多。</p>
+<h3>Q：要不要画手绘分镜稿？</h3>
+<p>看个人。Mx-Shell 几乎没用过分镜图。<strong>只在最后那个长镜头</strong>（飞船特写后拉至全景）用了一次。</p>
+<p>手绘稿的好处是节省 AI 算力，让它把更多算力用在动作上； 坏处是 AI 可能把参考图里手绘风格的"黑白线条"带进生成结果（出现局部画风崩坏）。</p>
+<p>可以丢张图给豆包/GPT 让它"转为黑白手稿用作分镜参考"，一句话的事。</p>
+<hr>
+<h2>时长 / 长视频 / 剪辑</h2>
+<h3>Q：一次生成多少秒合适？</h3>
+<p>看场景需要多少秒。Mx-Shell 习惯：</p>
+<ul><li>开场/变身：15 秒</li><li>一般镜头：5-10 秒</li><li>短动作（眨眼、看一眼）：4-5 秒</li></ul>
+<h3>Q：怎么做长视频（超过 15 秒）？</h3>
+<p>小云雀网页端的「生成视频后续」功能。打斗这类动作戏要靠它接。</p>
+<p>打斗段提示词不会写？</p>
+<blockquote><p>"打斗的提示词自己写，我不喜欢做打斗的我懒得写，可以让豆包帮你写了以后自己细化一下。"</p></blockquote>
+<h3>Q：两个片段怎么衔接？</h3>
+<p>靠<strong>运动方向</strong>接。</p>
+<blockquote><p>"机器人丢了一个炸弹，炸飞了后面的尸潮，自己被推出画面一侧 —— 下个镜头就要从那一侧接进来。"</p></blockquote>
+<p>视觉上才会觉得是同一个运动延续。</p>
+<h3>Q：剪辑用什么？</h3>
+<p><strong>剪映</strong>。没用复杂工具。</p>
+<h3>Q：后期要不要调色？</h3>
+<p>有些要。但 AI 出的视频文件<strong>色彩比特率很低</strong>，调色空间小。</p>
+<blockquote><p>"你调得太过，画面会脏、断层、乱码。不像现实中的相机拍出来可以调得很离谱。"</p></blockquote>
+<p>最佳策略：在场景图阶段就把色调定准，视频生成时尽量沿用，后期只做微调过渡。</p>
+<hr>
+<h2>字数 / 抽卡 / 复刻</h2>
+<h3>Q：提示词超字数了？</h3>
+<ul><li>手机端做不了 → 切电脑网页版</li><li>还是超 → 自己删减</li></ul>
+<h3>Q：用同样的提示词为什么做不出和你一样的？</h3>
+<blockquote><p>"我自己用同样的提示词生成出来的两个视频都会有很大区别。"</p></blockquote>
+<p>AI 生成本身有随机性。把同一段提示词当作<strong>抽卡的入场券</strong>，不是一锤定音。</p>
+<p>Mx-Shell 单镜头抽卡数：</p>
+<ul><li>多的可能 20 次</li><li>少的两三次</li><li>整个《丧尸清道夫》生成了<strong>400 张图片 + 200+ 个视频镜头</strong></li></ul>
+<h3>Q：《火焰恶魔》那个运镜怎么复刻？</h3>
+<blockquote><p>"那个运镜属于意外惊喜，提示词就是这个版本，属于 AI 没有依照我的指令的接过，瞎猫碰上死耗子，我也无法复刻出来。"</p></blockquote>
+<p>接受随机性，挑卡比磨提示词更重要。</p>
+<hr>
+<h2>音乐 / 音效</h2>
+<h3>Q：音乐是你做的吗？</h3>
+<p><strong>不是</strong>。音乐是有版权的现成音乐，来自 <strong>Artlist.io</strong>。</p>
+<h3>Q：音效呢？</h3>
+<blockquote><p>"音效是 Seedance 沉浸式短片自带的。"</p></blockquote>
+<p>它生成视频时会自动配同期声、玻璃碎裂、开枪等环境音。 <strong>特殊音效要在提示词里写明</strong>，比如：</p>
+<pre><code>机器人面部表情切换带有科幻感音效</code></pre>
+<h3>Q：配音怎么搞？</h3>
+<blockquote><p>"全剧只有一句配音。"</p></blockquote>
+<p>如果只有一两句台词，没必要追求声音一致性，让小云雀自己选音色就行。 小云雀近期上线了<strong>声音参考</strong>功能，需要统一音色可以用那个。</p>
+<hr>
+<h2>灵感 / 学习</h2>
+<h3>Q：故事灵感哪来的？</h3>
+<blockquote><p>"我的故事创意灵感来自机器人总动员。"</p></blockquote>
+<p>观影、生活、小说、电视剧都行 ——</p>
+<blockquote><p>"你得有生活，才能有创造力。"</p></blockquote>
+<h3>Q：写到一半没思路了？</h3>
+<blockquote><p>"我做这部片子之前都没有完整的剧本。我都是跟朋友聊了一下，简单的拍做了两个镜头看到这个质感好像还 OK，才开始想要以什么开场。我边做边想边改。"</p></blockquote>
+<p><strong>先做两个镜头试质感，再边做边写</strong>。比闭门写完整剧本再开干更适合 AI 创作。</p>
+<h3>Q：怎么入门 AI 短片？</h3>
+<p>Mx-Shell 自己是从 2026 年 1 月开始接触，自学摸索：</p>
+<blockquote><p>"我这里讲的东西可能很潦草，是因为我也是自学，没系统学习过。"</p></blockquote>
+<h3>Q：要不要学剪辑？</h3>
+<p><strong>要</strong>。原因：</p>
+<blockquote><p>"AI 生成的视频不一定是完美的，可能某些片段你截一下，靠转场和特效拼起来，可以弥补 —— 同时也节约你的钱包。"</p></blockquote>
+<hr>
+<h2>成本 / 周期</h2>
+<h3>实测数据（Mx-Shell 自述）</h3>
+<table><thead><tr><th>项目</th><th>数据</th></tr></thead><tbody><tr><td>总周期</td><td>10 天</td></tr><tr><td>总花费</td><td><strong>网传 ~3000 RMB，但本人直播改口称几万 / 两万多块</strong></td></tr><tr><td>图片生成数</td><td>约 400 张</td></tr><tr><td>视频镜头数</td><td>约 200+ 个</td></tr><tr><td>提示词手写比例</td><td>95%（只有打斗戏让豆包写的）</td></tr><tr><td>有没有完整剧本</td><td>没有，边做边想</td></tr></tbody></table>
+<blockquote><p>"3000 美金怎么可能？3000 人民币。" "几万块了吧？是按 G2 两万多块钱了吧？" "怎么去的 3000 美金啊？3000 块钱人民币。"</p></blockquote>
+<p>⚠️ <strong>关于成本的实际情况</strong>：Mx-Shell 在同一段直播里对成本的说法前后不一致 —— 先确认是"3000 RMB"，然后又改口为"几万 / 两万多 RMB"。 合理解释是：<strong>作品本身消耗的 token / 算力价值约 3000 RMB</strong>（这是他对外宣传的口径），但<strong>实际购买额度算上抽卡损耗可能达 2 万 +</strong>。 真正花费比"10 天 3000 元"传播口径要高。但即便按 2 万 RMB 算，也仍然远低于真人拍摄的 3 分钟短片成本。</p>
+<hr>
+<h2>杂项</h2>
+<h3>Q：基础服装怎么定？</h3>
+<p>建议贴合战斗风格。</p>
+<blockquote><p>"哪有人穿着高跟鞋去打架的，添加的基础服装最好是贴合战斗风格的，沉浸感才会更强。"</p></blockquote>
+<h3>Q：你的提示词里有错别字？</h3>
+<p>对。</p>
+<blockquote><p>"我的提示词好像有些错别字，大家拿到手可以自己检查一下。"</p></blockquote>
+<h3>Q：你是什么专业的？</h3>
+<p>中专。摄影是他的副业兼爱好。</p>
+<h3>Q：会出新提示词吗？</h3>
+<p>看心情。</p>
+<blockquote><p>"博主还有正式工作和其他兴趣爱好，我也很享受原有的生活方式。"</p></blockquote>
+  </article>
+  <footer class="doc-foot">
+    <p>许可 · <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT · 可自由使用</a></p>
+    <p><a href="../">← 回提示词库</a> · <a href="https://www.aiolaola.com/?utm_source=prompts.aiolaola.com&amp;utm_medium=referral&amp;utm_campaign=docpage" target="_blank" rel="noopener">aiOlaOla 学 AI 编程</a></p>
+  </footer>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const RAW = "# 实战 FAQ\n\n> 整合自 Mx-Shell 03.15 文档里的 17 条问题解决方案 + 两段直播 Q&A。\n> 同一个话题如果两处都提到了，以更详细的那段为准。\n> 引用 Mx-Shell 原话用 `>` 标出。\n\n---\n\n## 工具与模型\n\n### Q：用什么平台做视频？\n**小云雀（Xiaoyunque）** 里的 Seedance 2.0「沉浸式短片」功能。\n\n> \"用 Seedance 2.0 的模型，不要用 Seedance 2.0 Fast。Fast 处理速度快，但是细节把控差点意思。其他乱七八糟的模型就别用了。\"\n\n### Q：图用什么模型做？\n《丧尸清道夫》80% 的图是 **GPT Image** 出的。其次是 Midjourney，再次是 Krea，最后 Flux Max 用来精修材质。\n\n```\n通常工作流：MJ 或 Seedream 出图 → Flux 优化材质/真实感 → Nanobanana 出三视图\n```\n\n某一步出的图够用就跳过后面。\n\n### Q：平台/会员怎么选？\n> \"其实平台只根据每个人实际的情况来定义，每个平台的价格其实都是有出入的。\"\n> \"新用户一次就是 30 块两杯奶茶钱，可以自己买一下玩一玩。\"\n\n不建议被冲昏头脑，先按预算挑。\n\n### Q：电脑配置有要求吗？\n没有。Seedance 是云端算力，能办公的电脑都能用。\n\n---\n\n## 人脸 / 版权 / 违规\n\n### Q：上传人脸照片被拦截怎么办？\n（注：审核越来越严，下面方法不一定每次都灵。）\n\n1. 多换几张照片试试\n2. 忽略系统提示直接生成（可能不像本人）\n3. 接受失真：把照片丢给豆包，让它生成\"写实风格的彩色素描画\"再用\n4. 用商业人像描述法（详见下条）\n\n### Q：商业人像描述模板\n把照片+下面这段丢给豆包：\n\n```\n帮我生成图片：图片风格为「人像摄影」，参考上传图片，\n生成 22-25 岁年轻东亚男性的超写实商业人像摄影，近景，\n五官、脸型与参考照片保持 100% 一致；保留轻微面部瑕疵；\n带有少量自然碎发以营造慵懒松弛的氛围；无任何配饰；\n服装深黑色 T 恤；背景设定为浅白色的模糊渐变质感背景，\n光线采用柔和的侧光，以此突出面部的立体感，\n皮肤呈现暖调健康肤色并带有自然细腻的光泽感，\n细节增强度调至 100%，关闭过度磨皮功能，\n色彩风格设定为高级柔和的暖色调，\n最终输出具有细腻质感的商业级精修人像画质，\nCanon EF85mm f/1.2。比例「3:4」\n```\n\n### Q：避免人脸审核的另一种思路\n> \"不是任何的故事非要有人脸才能创作。我近两期的作品就是这样。\"\n\n戴头盔、面具、机器人、背影、戴大眼镜的假人模特 —— 没有人脸照样能拍。\n\n### Q：版权词被拦怎么办？\n> \"Seedance 模型的版权纠纷问题闹得沸沸扬扬，限制比较严重。\"\n\n- 替换提示词里**影视作品名**和**角色名**\n- 删一些字眼或标点符号，保留大致意思\n- 用近义词重述设计语言（\"参考钢铁侠风格\"→\"原子朋克未来主义复古风格\"）\n\n### Q：提示生成失败怎么办？\n直接重新生成。这是常态。\n\n---\n\n## 画质 / 质感 / 真实感\n\n### Q：为什么我做出来很五毛特效感？\n**两个核心原因**：\n\n1. **照片美颜过度**。\n   > \"尽量使用面部清晰的大头照，不要过度美颜的那种。有自信的兄弟直接用素颜照（你看哪部电影是有美颜的）。过于完美，就假。\"\n\n2. **垫图垫错了**。\n   > \"尽量不要给 AI 参考图（除非你的参考图本身画质就很高，贴近真实，细节拉满，或者是 3D 建模渲染的）。\"\n\n### Q：垫图 vs 纯文案，哪个好？\n> \"我所有假面骑士的战衣造型都是靠描述让 AI 自由发挥的。\"\n> \"现在百花齐放，每个人的假面战衣都不一样，等于是专属于自己的，不好吗？\"\n\n激烈打斗、变身这类有动态的镜头**建议不用首尾帧**；\n人物/场景一致性强需求才用参考图。\n\n### Q：怎么让金属/瓷砖/光线更真实？\n让 AI 帮你写材质描述。例：\n> \"瓷砖的纹理光滑度、抛光处理还是磨砂处理、岩石的冰冷感...\"\n> \"你可以直接让 AI 告诉你瓷砖表面质感的提示词。\"\n\n也可以用 **Flux 模型**单独过一遍图，专门强化金属反光、划痕、光散射等物理细节。\n\n### Q：分辨率要做多高？\n> \"我的视频基本都是 720p。\"\n\n发国内平台 720p 足够，平台会再压缩一次。不上电影院没必要做 4K。\n\n---\n\n## 镜头与构图\n\n### Q：运镜怎么写？\n> \"运镜其实我基本上都是用文案控制。\"\n\n脑子里得先有画面。然后翻译成：\n- 景别（中景 / 特写 / 全景）\n- 角度（仰拍 / 俯拍 / 平视）\n- 运动（前推 / 环绕 / 跟随 / 固定机位）\n- 节奏（极缓 / 匀速 / 0.1 秒微颤）\n\n详见 [方法论 - 段 4 · 运镜规则](./methodology.zh.md#段-4--运镜规则)。\n\n### Q：构图怎么描述？\n> \"你可以描述构图，然后要知道什么是中心线、九宫格三分线。\"\n\n例：\n```\n模特背影占据画面中心线左侧位置，右手手肘叉腰形成框景，\n框住视觉主体的机器人。机器人面对镜头，模特背对镜头，\n机器人为近景，模特为前景，吧台为中景，背景为环境背景。\n```\n\n按景层（前景 / 中景 / 背景）分别交代，比直接说\"X 站在 Y 旁边\"清晰得多。\n\n### Q：要不要画手绘分镜稿？\n看个人。Mx-Shell 几乎没用过分镜图。**只在最后那个长镜头**（飞船特写后拉至全景）用了一次。\n\n手绘稿的好处是节省 AI 算力，让它把更多算力用在动作上；\n坏处是 AI 可能把参考图里手绘风格的\"黑白线条\"带进生成结果（出现局部画风崩坏）。\n\n可以丢张图给豆包/GPT 让它\"转为黑白手稿用作分镜参考\"，一句话的事。\n\n---\n\n## 时长 / 长视频 / 剪辑\n\n### Q：一次生成多少秒合适？\n看场景需要多少秒。Mx-Shell 习惯：\n- 开场/变身：15 秒\n- 一般镜头：5-10 秒\n- 短动作（眨眼、看一眼）：4-5 秒\n\n### Q：怎么做长视频（超过 15 秒）？\n小云雀网页端的「生成视频后续」功能。打斗这类动作戏要靠它接。\n\n打斗段提示词不会写？\n> \"打斗的提示词自己写，我不喜欢做打斗的我懒得写，可以让豆包帮你写了以后自己细化一下。\"\n\n### Q：两个片段怎么衔接？\n靠**运动方向**接。\n> \"机器人丢了一个炸弹，炸飞了后面的尸潮，自己被推出画面一侧 —— 下个镜头就要从那一侧接进来。\"\n\n视觉上才会觉得是同一个运动延续。\n\n### Q：剪辑用什么？\n**剪映**。没用复杂工具。\n\n### Q：后期要不要调色？\n有些要。但 AI 出的视频文件**色彩比特率很低**，调色空间小。\n> \"你调得太过，画面会脏、断层、乱码。不像现实中的相机拍出来可以调得很离谱。\"\n\n最佳策略：在场景图阶段就把色调定准，视频生成时尽量沿用，后期只做微调过渡。\n\n---\n\n## 字数 / 抽卡 / 复刻\n\n### Q：提示词超字数了？\n- 手机端做不了 → 切电脑网页版\n- 还是超 → 自己删减\n\n### Q：用同样的提示词为什么做不出和你一样的？\n> \"我自己用同样的提示词生成出来的两个视频都会有很大区别。\"\n\nAI 生成本身有随机性。把同一段提示词当作**抽卡的入场券**，不是一锤定音。\n\nMx-Shell 单镜头抽卡数：\n- 多的可能 20 次\n- 少的两三次\n- 整个《丧尸清道夫》生成了**400 张图片 + 200+ 个视频镜头**\n\n### Q：《火焰恶魔》那个运镜怎么复刻？\n> \"那个运镜属于意外惊喜，提示词就是这个版本，属于 AI 没有依照我的指令的接过，瞎猫碰上死耗子，我也无法复刻出来。\"\n\n接受随机性，挑卡比磨提示词更重要。\n\n---\n\n## 音乐 / 音效\n\n### Q：音乐是你做的吗？\n**不是**。音乐是有版权的现成音乐，来自 **Artlist.io**。\n\n### Q：音效呢？\n> \"音效是 Seedance 沉浸式短片自带的。\"\n\n它生成视频时会自动配同期声、玻璃碎裂、开枪等环境音。\n**特殊音效要在提示词里写明**，比如：\n```\n机器人面部表情切换带有科幻感音效\n```\n\n### Q：配音怎么搞？\n> \"全剧只有一句配音。\"\n\n如果只有一两句台词，没必要追求声音一致性，让小云雀自己选音色就行。\n小云雀近期上线了**声音参考**功能，需要统一音色可以用那个。\n\n---\n\n## 灵感 / 学习\n\n### Q：故事灵感哪来的？\n> \"我的故事创意灵感来自机器人总动员。\"\n\n观影、生活、小说、电视剧都行 ——\n> \"你得有生活，才能有创造力。\"\n\n### Q：写到一半没思路了？\n> \"我做这部片子之前都没有完整的剧本。我都是跟朋友聊了一下，简单的拍做了两个镜头看到这个质感好像还 OK，才开始想要以什么开场。我边做边想边改。\"\n\n**先做两个镜头试质感，再边做边写**。比闭门写完整剧本再开干更适合 AI 创作。\n\n### Q：怎么入门 AI 短片？\nMx-Shell 自己是从 2026 年 1 月开始接触，自学摸索：\n\n> \"我这里讲的东西可能很潦草，是因为我也是自学，没系统学习过。\"\n\n### Q：要不要学剪辑？\n**要**。原因：\n> \"AI 生成的视频不一定是完美的，可能某些片段你截一下，靠转场和特效拼起来，可以弥补 —— 同时也节约你的钱包。\"\n\n---\n\n## 成本 / 周期\n\n### 实测数据（Mx-Shell 自述）\n\n| 项目 | 数据 |\n|---|---|\n| 总周期 | 10 天 |\n| 总花费 | **网传 ~3000 RMB，但本人直播改口称几万 / 两万多块** |\n| 图片生成数 | 约 400 张 |\n| 视频镜头数 | 约 200+ 个 |\n| 提示词手写比例 | 95%（只有打斗戏让豆包写的） |\n| 有没有完整剧本 | 没有，边做边想 |\n\n> \"3000 美金怎么可能？3000 人民币。\"\n> \"几万块了吧？是按 G2 两万多块钱了吧？\"\n> \"怎么去的 3000 美金啊？3000 块钱人民币。\"\n\n⚠️ **关于成本的实际情况**：Mx-Shell 在同一段直播里对成本的说法前后不一致 —— 先确认是\"3000 RMB\"，然后又改口为\"几万 / 两万多 RMB\"。\n合理解释是：**作品本身消耗的 token / 算力价值约 3000 RMB**（这是他对外宣传的口径），但**实际购买额度算上抽卡损耗可能达 2 万 +**。\n真正花费比\"10 天 3000 元\"传播口径要高。但即便按 2 万 RMB 算，也仍然远低于真人拍摄的 3 分钟短片成本。\n\n---\n\n## 杂项\n\n### Q：基础服装怎么定？\n建议贴合战斗风格。\n> \"哪有人穿着高跟鞋去打架的，添加的基础服装最好是贴合战斗风格的，沉浸感才会更强。\"\n\n### Q：你的提示词里有错别字？\n对。\n> \"我的提示词好像有些错别字，大家拿到手可以自己检查一下。\"\n\n### Q：你是什么专业的？\n中专。摄影是他的副业兼爱好。\n\n### Q：会出新提示词吗？\n看心情。\n> \"博主还有正式工作和其他兴趣爱好，我也很享受原有的生活方式。\"\n";
+function extractPrompt(md){
+  const lines=md.split("\n");
+  const re=/^#{1,4}\s.*(完整提示词|complete prompt|copy-paste|可直接复制)/i;
+  let s=-1; for(let i=0;i<lines.length;i++){if(re.test(lines[i])){s=i+1;break;}}
+  if(s>=0){let e=lines.length;for(let i=s;i<lines.length;i++){if(/^##\s/.test(lines[i])){e=i;break;}}
+    const r=lines.slice(s,e).join("\n").replace(/^\s*-{3,}\s*$/gm,"").trim();if(r)return r;}
+  const b=[...md.matchAll(/```[^\n]*\n([\s\S]*?)```/g)].map(m=>m[1].trim());
+  return b.length?b.join("\n\n"):md.trim();
+}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('show');
+  clearTimeout(toast._t);toast._t=setTimeout(()=>e.classList.remove('show'),1700);}
+async function cp(t,msg){try{await navigator.clipboard.writeText(t);toast(msg);}catch(e){toast('复制失败');}}
+document.getElementById('copyPrompt').onclick=()=>cp(extractPrompt(RAW),'提示词已复制 · 可直接粘进视频模型');
+document.getElementById('copyAll').onclick=()=>cp(RAW,'全文已复制');
+</script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worked Example — Cinematic Teaser Trailer (escalating multi-shot) | Cinematic AI Video Prompt Library</title>
+<meta name="description" content="Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to a teaser trailer — an escalating multi-shot montage that has to imply a wh…">
+<link rel="canonical" href="https://prompts.aiolaola.com/p/movie-trailer.html">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="en" href="https://prompts.aiolaola.com/p/movie-trailer.html">
+<link rel="alternate" hreflang="zh-CN" href="https://prompts.aiolaola.com/p/movie-trailer.zh.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="电影感 AI 视频提示词库">
+<meta property="og:title" content="Worked Example — Cinematic Teaser Trailer (escalating multi-shot)">
+<meta property="og:description" content="Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to a teaser trailer — an escalating multi-shot montage that has to imply a wh…">
+<meta property="og:url" content="https://prompts.aiolaola.com/p/movie-trailer.html">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Worked Example — Cinematic Teaser Trailer (escalating multi-shot)">
+<meta name="twitter:description" content="Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to a teaser trailer — an escalating multi-shot montage that has to imply a wh…">
+<link rel="stylesheet" href="./page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Worked Example — Cinematic Teaser Trailer (escalating multi-shot)",
+  "description": "Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to a teaser trailer — an escalating multi-shot montage that has to imply a wh…",
+  "inLanguage": "en",
+  "url": "https://prompts.aiolaola.com/p/movie-trailer.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "电影感 AI 视频提示词库",
+    "url": "https://prompts.aiolaola.com/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "jnMetaCode",
+    "url": "https://github.com/jnMetaCode"
+  },
+  "license": "https://opensource.org/licenses/MIT"
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7LBJRDWYYW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7LBJRDWYYW');</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="back" href="../">← 提示词库</a>
+  <a class="ghlink" href="https://github.com/jnMetaCode/ai-shortfilm-prompts/blob/main/templates/movie-trailer.md" target="_blank" rel="noopener">在 GitHub 查看源文件 ↗</a>
+</header>
+<main class="doc">
+  <div class="doc-actions">
+    <button id="copyPrompt">⧉ 复制提示词</button>
+    <button id="copyAll">复制全文</button>
+    <a class="langsw" href="./movie-trailer.zh.html">中文</a>
+  </div>
+  <article class="md">
+<h1>Worked Example — Cinematic Teaser Trailer (escalating multi-shot)</h1>
+<blockquote><p>Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to a <strong>teaser trailer</strong> — an escalating multi-shot montage that has to imply a whole world in ~15s. Builds on <a href="multi-shot-narrative.html">multi-shot-narrative.md</a> and the Epic block of <a href="genre-camera-sop.html">genre-camera-sop.md</a>. Teaches the one thing trailers live on: <strong>designed sound + escalating rhythm</strong>.</p>
+<p>Concept: a sci-fi thriller teaser — quiet establishing, an inciting beat, escalation cuts, a smash to black, one title beat. Swap the world, keep the rhythm.</p>
+<p><em>Further reading (inspiration, not copied — all rewritten in our structure): cinematic/marketing trailer categories in <a href="https://github.com/snubroot/Veo-3-Prompting-Guide" target="_blank" rel="noopener">snubroot/Veo-3-Prompting-Guide</a> (structure only) and <a href="https://github.com/zhangchenchen/awesome_sora2_prompt" target="_blank" rel="noopener">zhangchenchen/awesome_sora2_prompt</a> (MIT).</em></p>
+<p><strong><a href="movie-trailer.zh.html">中文版 →</a></strong></p></blockquote>
+<hr>
+<h2>Variables you need to define first</h2>
+<table><thead><tr><th>Variable</th><th>This example</th><th>Swap for…</th></tr></thead><tbody><tr><td><code>{{world}}</code></td><td>a drowned near-future coastal city</td><td>a frozen frontier colony / a war-torn capital</td></tr><tr><td><code>{{protagonist}}</code></td><td>a lone diver-engineer</td><td>a tired detective / a child with a strange device</td></tr><tr><td><code>{{threat}}</code></td><td>something vast moving under the water</td><td>a spreading blackout / an approaching storm wall</td></tr><tr><td><code>{{title_word}}</code></td><td>one-word made-up title, e.g. "TIDEBREAK"</td><td>your project's title</td></tr><tr><td><code>{{grade}}</code></td><td>desaturated steel-blue</td><td>amber dust / sickly green</td></tr></tbody></table>
+<hr>
+<h2>The complete prompt (copy-paste ready)</h2>
+<h3>1 · Core theme</h3>
+<p><code>cinematic teaser trailer | escalating multi-shot montage | one locked filmic grade | sound-design driven | restrained reveal, no cheesy voiceover, no rapid strobe cuts</code></p>
+<h3>2 · Character &amp; scene</h3>
+<p><strong>Protagonist:</strong> {{protagonist}}. Reference uploaded photo, features 100% preserved, no beautification. Imperfections: rain/sweat on the face, a scar or tired eyes, worn practical gear (not a clean costume). Appears in only 2–3 shots — a teaser implies, it doesn't explain.</p>
+<p><strong>World ({{world}}):</strong> the real subject. Built from texture, not exposition — wet concrete, flickering signage, debris, weather. {{threat}} is felt, never fully shown.</p>
+<h3>3 · Atmosphere &amp; quality</h3>
+<p>Shot on simulated IMAX film camera + Panavision C-series (35mm, f/4) for the wide world beats; Sony Venice + Canon K-35 for the close character beats. <strong>Lock ONE grade across every shot: {{grade}}, low contrast, organic film grain.</strong> A trailer that changes look per cut falls apart — the grade is the glue.</p>
+<h3>4 · Camera rules</h3>
+<p>Edited multi-shot, <strong>escalating rhythm</strong>: long holds early, cuts get shorter as tension rises, then one held beat of stillness before the end.</p>
+<ul><li><em>Breathing:</em> "Handheld shot. Throughout, maintain an extremely subtle, breath-like camera float to enhance presence."</li><li><em>Sound (designed, not a song):</em> No fabricated pop track. Production audio + deliberate trailer sound design — low sub-bass rises under the escalation, one hard impact ("braam") on a key cut, then a beat of near silence before the title. Enumerate the sound per beat; do NOT let the model invent a generic music bed.</li></ul>
+<h3>5 · Storyboard (6 shots, ~15s)</h3>
+<pre><code>Shot 1 — Establish (long hold, quiet)
+  Wide of {{world}}, {{grade}} grade, slow push. Almost still. Faint
+  ambient only. The calm before.
+
+Shot 2 — The protagonist (close)
+  Tight on {{protagonist}}'s face, a flicker of unease. A distant low
+  sound begins under the frame.
+
+Shot 3 — The inciting beat (the first sign of {{threat}})
+  Medium shot — something is wrong: water shifts, a light dies, a sensor
+  spikes. The sub-bass rise starts.
+
+Shot 4–5 — Escalation (cuts shorten)
+  A rapid pair of beats: motion, reaction, a glimpse (never the full
+  reveal) of {{threat}}. Camera more active. Rise climbs.
+
+Shot 6 — Smash to black + title
+  One hard impact on the final motion, cut to black. A beat of silence.
+  The single word {{title_word}} fades up, then out.
+  Close: No hero one-liner, no voiceover, no explosion montage. Just the
+  cut to black, one last sound, the title.</code></pre>
+<h3>Negative prompt (Seedance / Kling — paste into the dedicated field)</h3>
+<pre><code>blurry, low resolution, soft focus, watermark, text overlay, subtitles, logo, distorted face, asymmetric eyes, extra fingers, deformed hands, melting/morphing geometry, oversaturated colors, plastic skin, glossy CG render, video-game look, 3D cartoon render, flat even studio lighting, grade shifting between shots, rapid epileptic strobe cuts, cheesy lens flare, frame flicker, ghosting, lifeless locked-off camera, generic stock music feel</code></pre>
+<hr>
+<h2>Why it's built this way</h2>
+<ul><li><strong>One grade is the glue (Rule 1 applied to editing).</strong> The #1 way a multi-shot trailer breaks is a different look per cut. Lock {{grade}} across all 6 shots; let rhythm and sound carry the escalation instead.</li><li><strong>Sound design is described per beat (Rule 4, trailer variant).</strong> A trailer is half sound. We don't say "production audio only" and stop — we script the rise, the impact, and the silence-before-title, so the model doesn't paste a generic music bed.</li><li><strong>Imply, don't explain (Rule 6).</strong> Show {{threat}} in glimpses, never the full reveal; protagonist in 2–3 shots. End on a cut to black + one word, not a hero line. Restraint is what makes a teaser tease.</li><li><strong>Escalating cut rhythm.</strong> Long holds → shortening cuts → one still beat. This rhythm, not flashy VFX, is what reads as "trailer."</li></ul>
+<p><strong>Usage:</strong> generate Shot 1 (establish) and Shot 6 (title beat) first to lock the grade and the ending; build the escalation between them. Keep the whole thing ≤6 shots — teasers fail when they over-explain. Stitch in post and do the sound design on the timeline.</p>
+<p><strong>Model:</strong> Veo 3 and Sora 2 give the strongest world-coherence and native sound for the wide beats; Kling is excellent for the action escalation cuts. Keep each shot ≤8s. On the Doubao app, plan around the 5s/10s preset lock per shot.</p>
+  </article>
+  <footer class="doc-foot">
+    <p>许可 · <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT · 可自由使用</a></p>
+    <p><a href="../">← 回提示词库</a> · <a href="https://www.aiolaola.com/?utm_source=prompts.aiolaola.com&amp;utm_medium=referral&amp;utm_campaign=docpage" target="_blank" rel="noopener">aiOlaOla 学 AI 编程</a></p>
+  </footer>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const RAW = "# Worked Example — Cinematic Teaser Trailer (escalating multi-shot)\n\n> Original worked example by jnMetaCode (MIT). Applies the 5-stage\n> structure to a **teaser trailer** — an escalating multi-shot montage\n> that has to imply a whole world in ~15s. Builds on\n> [multi-shot-narrative.md](./multi-shot-narrative.md) and the Epic block\n> of [genre-camera-sop.md](./genre-camera-sop.md). Teaches the one thing\n> trailers live on: **designed sound + escalating rhythm**.\n>\n> Concept: a sci-fi thriller teaser — quiet establishing, an inciting\n> beat, escalation cuts, a smash to black, one title beat. Swap the world,\n> keep the rhythm.\n>\n> *Further reading (inspiration, not copied — all rewritten in our\n> structure): cinematic/marketing trailer categories in\n> [snubroot/Veo-3-Prompting-Guide](https://github.com/snubroot/Veo-3-Prompting-Guide)\n> (structure only) and [zhangchenchen/awesome_sora2_prompt](https://github.com/zhangchenchen/awesome_sora2_prompt)\n> (MIT).*\n>\n> **[中文版 →](./movie-trailer.zh.md)**\n\n---\n\n## Variables you need to define first\n\n| Variable | This example | Swap for… |\n|---|---|---|\n| `{{world}}` | a drowned near-future coastal city | a frozen frontier colony / a war-torn capital |\n| `{{protagonist}}` | a lone diver-engineer | a tired detective / a child with a strange device |\n| `{{threat}}` | something vast moving under the water | a spreading blackout / an approaching storm wall |\n| `{{title_word}}` | one-word made-up title, e.g. \"TIDEBREAK\" | your project's title |\n| `{{grade}}` | desaturated steel-blue | amber dust / sickly green |\n\n---\n\n## The complete prompt (copy-paste ready)\n\n### 1 · Core theme\n`cinematic teaser trailer | escalating multi-shot montage | one locked filmic grade | sound-design driven | restrained reveal, no cheesy voiceover, no rapid strobe cuts`\n\n### 2 · Character & scene\n\n**Protagonist:** {{protagonist}}. Reference uploaded photo, features\n100% preserved, no beautification. Imperfections: rain/sweat on the face,\na scar or tired eyes, worn practical gear (not a clean costume). Appears\nin only 2–3 shots — a teaser implies, it doesn't explain.\n\n**World ({{world}}):** the real subject. Built from texture, not\nexposition — wet concrete, flickering signage, debris, weather. {{threat}}\nis felt, never fully shown.\n\n### 3 · Atmosphere & quality\nShot on simulated IMAX film camera + Panavision C-series (35mm, f/4) for\nthe wide world beats; Sony Venice + Canon K-35 for the close character\nbeats. **Lock ONE grade across every shot: {{grade}}, low contrast,\norganic film grain.** A trailer that changes look per cut falls apart —\nthe grade is the glue.\n\n### 4 · Camera rules\nEdited multi-shot, **escalating rhythm**: long holds early, cuts get\nshorter as tension rises, then one held beat of stillness before the end.\n- *Breathing:* \"Handheld shot. Throughout, maintain an extremely subtle,\n  breath-like camera float to enhance presence.\"\n- *Sound (designed, not a song):* No fabricated pop track. Production\n  audio + deliberate trailer sound design — low sub-bass rises under the\n  escalation, one hard impact (\"braam\") on a key cut, then a beat of near\n  silence before the title. Enumerate the sound per beat; do NOT let the\n  model invent a generic music bed.\n\n### 5 · Storyboard (6 shots, ~15s)\n\n```\nShot 1 — Establish (long hold, quiet)\n  Wide of {{world}}, {{grade}} grade, slow push. Almost still. Faint\n  ambient only. The calm before.\n\nShot 2 — The protagonist (close)\n  Tight on {{protagonist}}'s face, a flicker of unease. A distant low\n  sound begins under the frame.\n\nShot 3 — The inciting beat (the first sign of {{threat}})\n  Medium shot — something is wrong: water shifts, a light dies, a sensor\n  spikes. The sub-bass rise starts.\n\nShot 4–5 — Escalation (cuts shorten)\n  A rapid pair of beats: motion, reaction, a glimpse (never the full\n  reveal) of {{threat}}. Camera more active. Rise climbs.\n\nShot 6 — Smash to black + title\n  One hard impact on the final motion, cut to black. A beat of silence.\n  The single word {{title_word}} fades up, then out.\n  Close: No hero one-liner, no voiceover, no explosion montage. Just the\n  cut to black, one last sound, the title.\n```\n\n### Negative prompt (Seedance / Kling — paste into the dedicated field)\n```\nblurry, low resolution, soft focus, watermark, text overlay, subtitles, logo, distorted face, asymmetric eyes, extra fingers, deformed hands, melting/morphing geometry, oversaturated colors, plastic skin, glossy CG render, video-game look, 3D cartoon render, flat even studio lighting, grade shifting between shots, rapid epileptic strobe cuts, cheesy lens flare, frame flicker, ghosting, lifeless locked-off camera, generic stock music feel\n```\n\n---\n\n## Why it's built this way\n\n- **One grade is the glue (Rule 1 applied to editing).** The #1 way a\n  multi-shot trailer breaks is a different look per cut. Lock {{grade}}\n  across all 6 shots; let rhythm and sound carry the escalation instead.\n- **Sound design is described per beat (Rule 4, trailer variant).** A\n  trailer is half sound. We don't say \"production audio only\" and stop —\n  we script the rise, the impact, and the silence-before-title, so the\n  model doesn't paste a generic music bed.\n- **Imply, don't explain (Rule 6).** Show {{threat}} in glimpses, never\n  the full reveal; protagonist in 2–3 shots. End on a cut to black + one\n  word, not a hero line. Restraint is what makes a teaser tease.\n- **Escalating cut rhythm.** Long holds → shortening cuts → one still\n  beat. This rhythm, not flashy VFX, is what reads as \"trailer.\"\n\n**Usage:** generate Shot 1 (establish) and Shot 6 (title beat) first to\nlock the grade and the ending; build the escalation between them. Keep\nthe whole thing ≤6 shots — teasers fail when they over-explain. Stitch in\npost and do the sound design on the timeline.\n\n**Model:** Veo 3 and Sora 2 give the strongest world-coherence and native\nsound for the wide beats; Kling is excellent for the action escalation\ncuts. Keep each shot ≤8s. On the Doubao app, plan around the 5s/10s\npreset lock per shot.\n";
+function extractPrompt(md){
+  const lines=md.split("\n");
+  const re=/^#{1,4}\s.*(完整提示词|complete prompt|copy-paste|可直接复制)/i;
+  let s=-1; for(let i=0;i<lines.length;i++){if(re.test(lines[i])){s=i+1;break;}}
+  if(s>=0){let e=lines.length;for(let i=s;i<lines.length;i++){if(/^##\s/.test(lines[i])){e=i;break;}}
+    const r=lines.slice(s,e).join("\n").replace(/^\s*-{3,}\s*$/gm,"").trim();if(r)return r;}
+  const b=[...md.matchAll(/```[^\n]*\n([\s\S]*?)```/g)].map(m=>m[1].trim());
+  return b.length?b.join("\n\n"):md.trim();
+}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('show');
+  clearTimeout(toast._t);toast._t=setTimeout(()=>e.classList.remove('show'),1700);}
+async function cp(t,msg){try{await navigator.clipboard.writeText(t);toast(msg);}catch(e){toast('复制失败');}}
+document.getElementById('copyPrompt').onclick=()=>cp(extractPrompt(RAW),'提示词已复制 · 可直接粘进视频模型');
+document.getElementById('copyAll').onclick=()=>cp(RAW,'全文已复制');
+</script>
+</body>
+</html>

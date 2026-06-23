@@ -160,7 +160,13 @@ ai-shortfilm-prompts/
 │   ├── camera-move-library.md       ← 五大技法模块 50 式运镜库
 │   ├── pet-lifetime-narrative.md    ← 实战范例：萌宠亲情情感叙事
 │   ├── family-recipe-farewell.md    ← 实战范例：妈妈的菜谱·传承
-│   └── elderly-cat-companion.md     ← 实战范例：奶奶与猫·留守陪伴
+│   ├── elderly-cat-companion.md     ← 实战范例：奶奶与猫·留守陪伴
+│   ├── product-commercial.md        ← 实战范例：分秒 beat 产品带货硬广
+│   ├── food-asmr.md                 ← 实战范例：食物 ASMR·原生同步音效
+│   ├── animal-vlog.md               ← 实战范例：拟人动物自拍 VLog
+│   ├── movie-trailer.md             ← 实战范例：递进式电影预告片
+│   ├── cyberpunk-city.md            ← 实战范例：赛博霓虹城市漫游氛围片
+│   └── claymation.md                ← 实战范例：12fps 定格 / 黏土动画
 │
 ├── assets/                          ← 图示 + README 顶部 demo 提示词
 │   ├── demo-prompt.md               ← Skill 写的可复制 15 秒提示词（顶部片位）

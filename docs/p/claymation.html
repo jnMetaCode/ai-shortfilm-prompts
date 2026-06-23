@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worked Example — Stop-Motion / Claymation (style-driven) | Cinematic AI Video Prompt Library</title>
+<meta name="description" content="Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to handmade stop-motion / claymation — a style where the imperfections are th…">
+<link rel="canonical" href="https://prompts.aiolaola.com/p/claymation.html">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="en" href="https://prompts.aiolaola.com/p/claymation.html">
+<link rel="alternate" hreflang="zh-CN" href="https://prompts.aiolaola.com/p/claymation.zh.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="电影感 AI 视频提示词库">
+<meta property="og:title" content="Worked Example — Stop-Motion / Claymation (style-driven)">
+<meta property="og:description" content="Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to handmade stop-motion / claymation — a style where the imperfections are th…">
+<meta property="og:url" content="https://prompts.aiolaola.com/p/claymation.html">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Worked Example — Stop-Motion / Claymation (style-driven)">
+<meta name="twitter:description" content="Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to handmade stop-motion / claymation — a style where the imperfections are th…">
+<link rel="stylesheet" href="./page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Worked Example — Stop-Motion / Claymation (style-driven)",
+  "description": "Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to handmade stop-motion / claymation — a style where the imperfections are th…",
+  "inLanguage": "en",
+  "url": "https://prompts.aiolaola.com/p/claymation.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "电影感 AI 视频提示词库",
+    "url": "https://prompts.aiolaola.com/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "jnMetaCode",
+    "url": "https://github.com/jnMetaCode"
+  },
+  "license": "https://opensource.org/licenses/MIT"
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7LBJRDWYYW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7LBJRDWYYW');</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="back" href="../">← 提示词库</a>
+  <a class="ghlink" href="https://github.com/jnMetaCode/ai-shortfilm-prompts/blob/main/templates/claymation.md" target="_blank" rel="noopener">在 GitHub 查看源文件 ↗</a>
+</header>
+<main class="doc">
+  <div class="doc-actions">
+    <button id="copyPrompt">⧉ 复制提示词</button>
+    <button id="copyAll">复制全文</button>
+    <a class="langsw" href="./claymation.zh.html">中文</a>
+  </div>
+  <article class="md">
+<h1>Worked Example — Stop-Motion / Claymation (style-driven)</h1>
+<blockquote><p>Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to <strong>handmade stop-motion / claymation</strong> — a style where the imperfections <em>are</em> the aesthetic. Teaches the most important lesson in this library: <strong>know when to BREAK a rule.</strong> Here we deliberately drop the breath-float (Rule 3) — stop-motion is stepped and locked-off, a handheld sway would destroy the look.</p>
+<p>Concept: a small clay creature tiptoes across a handmade set. Swap the character and set, keep the 12fps stepped discipline.</p>
+<p><em>Further reading (inspiration, not copied — all rewritten in our structure): claymation / stop-motion patterns in <a href="https://github.com/songguoxs/awesome-video-prompts" target="_blank" rel="noopener">songguoxs/awesome-video-prompts</a> and <a href="https://github.com/zhangchenchen/awesome_sora2_prompt" target="_blank" rel="noopener">zhangchenchen/awesome_sora2_prompt</a> (MIT).</em></p>
+<p><strong><a href="claymation.zh.html">中文版 →</a></strong></p></blockquote>
+<hr>
+<h2>Variables you need to define first</h2>
+<table><thead><tr><th>Variable</th><th>This example</th><th>Swap for…</th></tr></thead><tbody><tr><td><code>{{character}}</code></td><td>a round-bellied clay creature</td><td>a felt fox / a wire-and-clay robot</td></tr><tr><td><code>{{set}}</code></td><td>a miniature mossy forest floor</td><td>a tiny kitchen / a cardboard city</td></tr><tr><td><code>{{action}}</code></td><td>tiptoes across, then freezes, startled</td><td>bakes a lopsided cake / chases a bug</td></tr><tr><td><code>{{material}}</code></td><td>matte plasticine with visible fingerprints</td><td>wool felt / painted clay over wire</td></tr><tr><td><code>{{lighting}}</code></td><td>warm practical desk lamp, soft shadow</td><td>cool window light / tiny string lights</td></tr></tbody></table>
+<hr>
+<h2>The complete prompt (copy-paste ready)</h2>
+<h3>1 · Core theme</h3>
+<p><code>handmade claymation | 12fps stepped stop-motion | tactile fingerprint texture | warm practical lighting | charming imperfection, no smooth CG 3D, no motion blur</code></p>
+<h3>2 · Character &amp; scene</h3>
+<p><strong>Character:</strong> {{character}}, made of {{material}}. The imperfections are the style, not flaws to hide: visible thumbprints and tool marks in the {{material}}, faint seams where parts join, tiny surface lumps, a subtle wobble and "boil" between frames. Expressive, simple, handmade.</p>
+<p><strong>Set:</strong> {{set}} — a real miniature, built by hand: visible craft, a bit of glue sheen, slightly uneven scenery, dust on the surfaces. A tabletop diorama, not a render.</p>
+<h3>3 · Atmosphere &amp; quality</h3>
+<p>Shot like a real stop-motion set: macro-leaning lens over a tabletop diorama, shallow depth of field, {{lighting}} (practical lamps, soft falloff). <strong>12fps stepped animation</strong> — movement advances in small discrete steps with a faint frame-to-frame "boil," exactly like hand-posed animation. Warm, slightly imperfect exposure.</p>
+<h3>4 · Camera rules</h3>
+<p><strong>Locked-off or stepped moves only — deliberately NO breath-float.</strong> This is the rule break: stop-motion cameras are on rigs, not handheld. Use a static lock-off, or a slow incremental dolly/pan that itself steps frame by frame. A smooth breathing handheld float here reads as CG and kills the handmade illusion.</p>
+<ul><li><em>Sound:</em> No score (or a simple toy-like motif if you must). Production / foley audio — soft fabric/clay shuffles, tiny footsteps, a little squeak, the muffled room tone of a quiet workshop.</li></ul>
+<h3>5 · Storyboard (3 beats, ~8–10s)</h3>
+<pre><code>0–3s · Enter (stepped)
+Action: {{character}} {{action}} — movement advances in small 12fps
+        steps, surface boiling faintly.
+Camera: Locked-off wide of the {{set}}, {{lighting}} from one side.
+Texture: Thumbprints and seams catch the lamp light.
+
+3–6s · Beat (the little moment)
+Action: A pause, a simple expressive reaction — a blink (eyelids posed
+        shut then open over 2 steps), a head tilt.
+Camera: Slow stepped push-in (no smooth move).
+Sound:  Tiny foley — a shuffle, a squeak.
+
+6–10s · Settle (restrained)
+Action: {{character}} settles / completes the small action.
+Camera: Hold, locked-off.
+Close:  No big finale, no sparkle, no smooth swoop. Just the creature
+        still, the set quiet, one last faint frame-boil.</code></pre>
+<h3>Negative prompt (Seedance / Kling — paste into the dedicated field)</h3>
+<pre><code>blurry, low resolution, watermark, text overlay, subtitles, logo, smooth CG 3D render, Pixar-style smooth animation, motion blur, fluid 60fps motion, photorealistic skin, glossy plastic perfection, perfectly clean flawless surfaces, handheld camera shake, breathing camera float, melting/morphing geometry, oversaturated colors, video-game look, frame flicker, ghosting, jarring hard cuts</code></pre>
+<hr>
+<h2>Why it's built this way</h2>
+<ul><li><strong>Break the breathing rule on purpose (Rule 3 exception).</strong> Stop-motion lives on a locked rig and stepped frames. The breath-float that anchors every other template here would betray the handmade look — so we drop it and negate "handheld camera shake / breathing camera float" explicitly. <em>The rules serve the genre, not the reverse.</em></li><li><strong>Imperfection IS the aesthetic (Rule 5, taken further).</strong> Thumbprints, seams, surface lumps, the frame-to-frame "boil." In other genres flaws add realism; here they ARE the medium. Smooth = wrong.</li><li><strong>"12fps stepped" is the load-bearing anchor (Rule 2 analogue).</strong> Just as "ARRI + Panavision" anchors live-action, "12fps stepped stop-motion, frame boil" anchors the model to real claymation, not smooth CG.</li><li><strong>Restrained close (Rule 6).</strong> No sparkle finale, no swoop. The creature going still keeps the handmade charm intact.</li></ul>
+<p><strong>Usage:</strong> generate the <em>0–3s enter</em> beat first to confirm the 12fps stepped motion and the clay texture read correctly — if it comes out smooth/CG, strengthen "12fps stepped, frame boil, no motion blur" and re-roll. Keep moves locked-off.</p>
+<p><strong>Model:</strong> Kling and Seedance 2.0 handle stylized stepped motion well; Veo 3 can do it but watch for it defaulting to smooth interpolation — lean hard on the negative field ("smooth CG, motion blur, 60fps"). Pika is also strong for stylized short-form animation.</p>
+  </article>
+  <footer class="doc-foot">
+    <p>许可 · <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT · 可自由使用</a></p>
+    <p><a href="../">← 回提示词库</a> · <a href="https://www.aiolaola.com/?utm_source=prompts.aiolaola.com&amp;utm_medium=referral&amp;utm_campaign=docpage" target="_blank" rel="noopener">aiOlaOla 学 AI 编程</a></p>
+  </footer>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const RAW = "# Worked Example — Stop-Motion / Claymation (style-driven)\n\n> Original worked example by jnMetaCode (MIT). Applies the 5-stage\n> structure to **handmade stop-motion / claymation** — a style where the\n> imperfections *are* the aesthetic. Teaches the most important lesson in\n> this library: **know when to BREAK a rule.** Here we deliberately drop\n> the breath-float (Rule 3) — stop-motion is stepped and locked-off, a\n> handheld sway would destroy the look.\n>\n> Concept: a small clay creature tiptoes across a handmade set. Swap the\n> character and set, keep the 12fps stepped discipline.\n>\n> *Further reading (inspiration, not copied — all rewritten in our\n> structure): claymation / stop-motion patterns in\n> [songguoxs/awesome-video-prompts](https://github.com/songguoxs/awesome-video-prompts)\n> and [zhangchenchen/awesome_sora2_prompt](https://github.com/zhangchenchen/awesome_sora2_prompt)\n> (MIT).*\n>\n> **[中文版 →](./claymation.zh.md)**\n\n---\n\n## Variables you need to define first\n\n| Variable | This example | Swap for… |\n|---|---|---|\n| `{{character}}` | a round-bellied clay creature | a felt fox / a wire-and-clay robot |\n| `{{set}}` | a miniature mossy forest floor | a tiny kitchen / a cardboard city |\n| `{{action}}` | tiptoes across, then freezes, startled | bakes a lopsided cake / chases a bug |\n| `{{material}}` | matte plasticine with visible fingerprints | wool felt / painted clay over wire |\n| `{{lighting}}` | warm practical desk lamp, soft shadow | cool window light / tiny string lights |\n\n---\n\n## The complete prompt (copy-paste ready)\n\n### 1 · Core theme\n`handmade claymation | 12fps stepped stop-motion | tactile fingerprint texture | warm practical lighting | charming imperfection, no smooth CG 3D, no motion blur`\n\n### 2 · Character & scene\n\n**Character:** {{character}}, made of {{material}}. The imperfections are\nthe style, not flaws to hide: visible thumbprints and tool marks in the\n{{material}}, faint seams where parts join, tiny surface lumps, a subtle\nwobble and \"boil\" between frames. Expressive, simple, handmade.\n\n**Set:** {{set}} — a real miniature, built by hand: visible craft, a bit\nof glue sheen, slightly uneven scenery, dust on the surfaces. A tabletop\ndiorama, not a render.\n\n### 3 · Atmosphere & quality\nShot like a real stop-motion set: macro-leaning lens over a tabletop\ndiorama, shallow depth of field, {{lighting}} (practical lamps, soft\nfalloff). **12fps stepped animation** — movement advances in small\ndiscrete steps with a faint frame-to-frame \"boil,\" exactly like hand-posed\nanimation. Warm, slightly imperfect exposure.\n\n### 4 · Camera rules\n**Locked-off or stepped moves only — deliberately NO breath-float.** This\nis the rule break: stop-motion cameras are on rigs, not handheld. Use a\nstatic lock-off, or a slow incremental dolly/pan that itself steps frame\nby frame. A smooth breathing handheld float here reads as CG and kills the\nhandmade illusion.\n- *Sound:* No score (or a simple toy-like motif if you must). Production /\n  foley audio — soft fabric/clay shuffles, tiny footsteps, a little\n  squeak, the muffled room tone of a quiet workshop.\n\n### 5 · Storyboard (3 beats, ~8–10s)\n\n```\n0–3s · Enter (stepped)\nAction: {{character}} {{action}} — movement advances in small 12fps\n        steps, surface boiling faintly.\nCamera: Locked-off wide of the {{set}}, {{lighting}} from one side.\nTexture: Thumbprints and seams catch the lamp light.\n\n3–6s · Beat (the little moment)\nAction: A pause, a simple expressive reaction — a blink (eyelids posed\n        shut then open over 2 steps), a head tilt.\nCamera: Slow stepped push-in (no smooth move).\nSound:  Tiny foley — a shuffle, a squeak.\n\n6–10s · Settle (restrained)\nAction: {{character}} settles / completes the small action.\nCamera: Hold, locked-off.\nClose:  No big finale, no sparkle, no smooth swoop. Just the creature\n        still, the set quiet, one last faint frame-boil.\n```\n\n### Negative prompt (Seedance / Kling — paste into the dedicated field)\n```\nblurry, low resolution, watermark, text overlay, subtitles, logo, smooth CG 3D render, Pixar-style smooth animation, motion blur, fluid 60fps motion, photorealistic skin, glossy plastic perfection, perfectly clean flawless surfaces, handheld camera shake, breathing camera float, melting/morphing geometry, oversaturated colors, video-game look, frame flicker, ghosting, jarring hard cuts\n```\n\n---\n\n## Why it's built this way\n\n- **Break the breathing rule on purpose (Rule 3 exception).** Stop-motion\n  lives on a locked rig and stepped frames. The breath-float that anchors\n  every other template here would betray the handmade look — so we drop it\n  and negate \"handheld camera shake / breathing camera float\" explicitly.\n  *The rules serve the genre, not the reverse.*\n- **Imperfection IS the aesthetic (Rule 5, taken further).** Thumbprints,\n  seams, surface lumps, the frame-to-frame \"boil.\" In other genres flaws\n  add realism; here they ARE the medium. Smooth = wrong.\n- **\"12fps stepped\" is the load-bearing anchor (Rule 2 analogue).** Just as\n  \"ARRI + Panavision\" anchors live-action, \"12fps stepped stop-motion,\n  frame boil\" anchors the model to real claymation, not smooth CG.\n- **Restrained close (Rule 6).** No sparkle finale, no swoop. The creature\n  going still keeps the handmade charm intact.\n\n**Usage:** generate the *0–3s enter* beat first to confirm the 12fps\nstepped motion and the clay texture read correctly — if it comes out\nsmooth/CG, strengthen \"12fps stepped, frame boil, no motion blur\" and\nre-roll. Keep moves locked-off.\n\n**Model:** Kling and Seedance 2.0 handle stylized stepped motion well;\nVeo 3 can do it but watch for it defaulting to smooth interpolation —\nlean hard on the negative field (\"smooth CG, motion blur, 60fps\").\nPika is also strong for stylized short-form animation.\n";
+function extractPrompt(md){
+  const lines=md.split("\n");
+  const re=/^#{1,4}\s.*(完整提示词|complete prompt|copy-paste|可直接复制)/i;
+  let s=-1; for(let i=0;i<lines.length;i++){if(re.test(lines[i])){s=i+1;break;}}
+  if(s>=0){let e=lines.length;for(let i=s;i<lines.length;i++){if(/^##\s/.test(lines[i])){e=i;break;}}
+    const r=lines.slice(s,e).join("\n").replace(/^\s*-{3,}\s*$/gm,"").trim();if(r)return r;}
+  const b=[...md.matchAll(/```[^\n]*\n([\s\S]*?)```/g)].map(m=>m[1].trim());
+  return b.length?b.join("\n\n"):md.trim();
+}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('show');
+  clearTimeout(toast._t);toast._t=setTimeout(()=>e.classList.remove('show'),1700);}
+async function cp(t,msg){try{await navigator.clipboard.writeText(t);toast(msg);}catch(e){toast('复制失败');}}
+document.getElementById('copyPrompt').onclick=()=>cp(extractPrompt(RAW),'提示词已复制 · 可直接粘进视频模型');
+document.getElementById('copyAll').onclick=()=>cp(RAW,'全文已复制');
+</script>
+</body>
+</html>

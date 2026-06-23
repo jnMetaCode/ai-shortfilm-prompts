@@ -178,7 +178,13 @@ ai-shortfilm-prompts/
 │   ├── camera-move-library.md        50 camera moves in 5 technique modules
 │   ├── pet-lifetime-narrative.md     Worked example: pet × family emotional narrative
 │   ├── family-recipe-farewell.md     Worked example: a mother's recipe handed down
-│   └── elderly-cat-companion.md      Worked example: grandmother & cat, empty-nest
+│   ├── elderly-cat-companion.md      Worked example: grandmother & cat, empty-nest
+│   ├── product-commercial.md         Worked example: beat-driven product hero ad
+│   ├── food-asmr.md                  Worked example: food ASMR / native synced audio
+│   ├── animal-vlog.md                Worked example: talking-animal selfie vlog
+│   ├── movie-trailer.md              Worked example: escalating teaser trailer
+│   ├── cyberpunk-city.md             Worked example: atmospheric neon-city roam
+│   └── claymation.md                 Worked example: 12fps stop-motion / claymation
 │
 ├── assets/                 Diagrams + the README hero-demo prompt.
 │   ├── demo-prompt.md       Copy-paste 15s prompt the Skill wrote (hero slot)

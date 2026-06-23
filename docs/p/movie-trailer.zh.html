@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>实战范例 — 电影感预告片(层层升级的多镜剪辑)｜电影感 AI 视频提示词库</title>
+<meta name="description" content="jnMetaCode 原创实战范例(MIT)。把 5 段式结构用在预告片上—— 一段层层升级的多镜蒙太奇,要在约 15 秒内暗示出一整个世界。建立在 multi-shot-narrative.zh.md 与 genre-camera-sop.zh.md 的「史诗」运镜块之上。 教会你预告片赖以为生的那一…">
+<link rel="canonical" href="https://prompts.aiolaola.com/p/movie-trailer.zh.html">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="zh-CN" href="https://prompts.aiolaola.com/p/movie-trailer.zh.html">
+<link rel="alternate" hreflang="en" href="https://prompts.aiolaola.com/p/movie-trailer.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="电影感 AI 视频提示词库">
+<meta property="og:title" content="实战范例 — 电影感预告片(层层升级的多镜剪辑)">
+<meta property="og:description" content="jnMetaCode 原创实战范例(MIT)。把 5 段式结构用在预告片上—— 一段层层升级的多镜蒙太奇,要在约 15 秒内暗示出一整个世界。建立在 multi-shot-narrative.zh.md 与 genre-camera-sop.zh.md 的「史诗」运镜块之上。 教会你预告片赖以为生的那一…">
+<meta property="og:url" content="https://prompts.aiolaola.com/p/movie-trailer.zh.html">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="实战范例 — 电影感预告片(层层升级的多镜剪辑)">
+<meta name="twitter:description" content="jnMetaCode 原创实战范例(MIT)。把 5 段式结构用在预告片上—— 一段层层升级的多镜蒙太奇,要在约 15 秒内暗示出一整个世界。建立在 multi-shot-narrative.zh.md 与 genre-camera-sop.zh.md 的「史诗」运镜块之上。 教会你预告片赖以为生的那一…">
+<link rel="stylesheet" href="./page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "实战范例 — 电影感预告片(层层升级的多镜剪辑)",
+  "description": "jnMetaCode 原创实战范例(MIT)。把 5 段式结构用在预告片上—— 一段层层升级的多镜蒙太奇,要在约 15 秒内暗示出一整个世界。建立在 multi-shot-narrative.zh.md 与 genre-camera-sop.zh.md 的「史诗」运镜块之上。 教会你预告片赖以为生的那一…",
+  "inLanguage": "zh-CN",
+  "url": "https://prompts.aiolaola.com/p/movie-trailer.zh.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "电影感 AI 视频提示词库",
+    "url": "https://prompts.aiolaola.com/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "jnMetaCode",
+    "url": "https://github.com/jnMetaCode"
+  },
+  "license": "https://opensource.org/licenses/MIT"
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7LBJRDWYYW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7LBJRDWYYW');</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="back" href="../">← 提示词库</a>
+  <a class="ghlink" href="https://github.com/jnMetaCode/ai-shortfilm-prompts/blob/main/templates/movie-trailer.zh.md" target="_blank" rel="noopener">在 GitHub 查看源文件 ↗</a>
+</header>
+<main class="doc">
+  <div class="doc-actions">
+    <button id="copyPrompt">⧉ 复制提示词</button>
+    <button id="copyAll">复制全文</button>
+    <a class="langsw" href="./movie-trailer.html">EN</a>
+  </div>
+  <article class="md">
+<h1>实战范例 — 电影感预告片(层层升级的多镜剪辑)</h1>
+<blockquote><p>jnMetaCode 原创实战范例(MIT)。把 5 段式结构用在<strong>预告片</strong>上—— 一段层层升级的多镜蒙太奇,要在约 15 秒内暗示出一整个世界。建立在 <a href="multi-shot-narrative.zh.html">multi-shot-narrative.zh.md</a> 与 <a href="genre-camera-sop.zh.html">genre-camera-sop.zh.md</a> 的「史诗」运镜块之上。 教会你预告片赖以为生的那一件事:<strong>刻意设计的声音 + 层层升级的节奏</strong>。</p>
+<p>概念:一支科幻惊悚预告片——安静的建场、一个引爆点、层层升级的快切、 一记硬切黑场、一拍标题。换掉世界,保住节奏。</p>
+<p><em>延伸阅读(只取灵感,未照搬——全部用我们的结构重写): <a href="https://github.com/snubroot/Veo-3-Prompting-Guide" target="_blank" rel="noopener">snubroot/Veo-3-Prompting-Guide</a> 里的电影感/营销预告片分类(只取结构)以及 <a href="https://github.com/zhangchenchen/awesome_sora2_prompt" target="_blank" rel="noopener">zhangchenchen/awesome_sora2_prompt</a> (MIT)。</em></p>
+<p><strong><a href="movie-trailer.html">English →</a></strong></p></blockquote>
+<hr>
+<h2>开拍前要先定义的变量</h2>
+<table><thead><tr><th>变量</th><th>本例取值</th><th>可替换为…</th></tr></thead><tbody><tr><td><code>{{world}}</code></td><td>一座被海水淹没的近未来沿海城市</td><td>一处冰封的边境殖民地 / 一座饱受战火的首都</td></tr><tr><td><code>{{protagonist}}</code></td><td>一名孤身的潜水工程师</td><td>一个疲惫的侦探 / 一个拿着奇怪装置的孩子</td></tr><tr><td><code>{{threat}}</code></td><td>水下某个庞然之物正在移动</td><td>不断蔓延的大停电 / 逼近的风暴墙</td></tr><tr><td><code>{{title_word}}</code></td><td>一个自造的单词标题,例如 "TIDEBREAK"</td><td>你项目的标题</td></tr><tr><td><code>{{grade}}</code></td><td>去饱和的钢蓝调</td><td>琥珀尘黄 / 病态绿</td></tr></tbody></table>
+<hr>
+<h2>完整提示词(可直接复制)</h2>
+<h3>1 · 核心主题</h3>
+<p><code>电影感预告片 | 层层升级的多镜蒙太奇 | 全片锁定一种胶片色 | 由声音设计驱动 | 克制的揭示,无俗套旁白,无快速频闪硬切</code></p>
+<h3>2 · 人物与场景</h3>
+<p><strong>人物(主角):</strong> {{protagonist}}。参考上传照片,五官 100% 保留, 不做美颜。带瑕疵:脸上的雨/汗、一道疤或疲惫的眼神、磨旧的实用装备 (不是干净的戏服)。只出现在 2–3 个镜头里——预告片是暗示,不是解释。</p>
+<p><strong>世界({{world}}):</strong> 真正的主角。靠质感堆出来,而不是靠交代说明—— 湿混凝土、明灭的招牌、残骸、天气。{{threat}} 只能被感觉到,绝不完全 现身。</p>
+<h3>3 · 氛围与画质</h3>
+<p>宽景世界镜头用模拟 IMAX 胶片摄影机 + Panavision C-series(35mm,f/4); 人物近景用 Sony Venice + Canon K-35。<strong>全片每个镜头锁定同一种胶片色: {{grade}},低对比,有机胶片颗粒。</strong> 一支每切一刀就换个观感的预告片会 散架——色调就是把它黏成一体的胶水。</p>
+<h3>4 · 运镜规则</h3>
+<p>多镜头剪辑,<strong>层层升级的节奏</strong>:开头长镜久持,随着张力上升切点越来越 短,然后在结尾前留一拍静止。</p>
+<ul><li><em>呼吸感:</em> "Handheld shot. Throughout, maintain an extremely subtle, breath-like camera float to enhance presence."</li><li><em>声音(刻意设计的,不是套一首歌):</em> 不要硬塞一段流行配乐。用现场同期 声 + 刻意设计的预告片声音——在升级段下方铺一层低频次声逐渐抬升,在 某个关键切点上来一记硬冲击("braam"),然后在标题前留一拍近乎静默。 逐拍把声音写清楚;不要让模型自己脑补一段通用的配乐垫底。</li></ul>
+<h3>5 · 分镜(6 镜,约 15 秒)</h3>
+<pre><code>Shot 1 — 建场(长镜久持,安静)
+  {{world}} 的宽景,{{grade}} 色调,缓慢推进。几近静止。只有微弱环境
+  音。暴风雨前的平静。
+
+Shot 2 — 主角(近景)
+  紧贴 {{protagonist}} 的脸,一闪而过的不安。画面下方一个遥远的低沉
+  声音开始响起。
+
+Shot 3 — 引爆点(第一个 {{threat}} 的迹象)
+  中景——有什么不对劲:水面晃动、一盏灯熄灭、一个传感器读数飙升。次
+  声抬升从这里开始。
+
+Shot 4–5 — 升级(切点变短)
+  一对急促的快拍:运动、反应、{{threat}} 的惊鸿一瞥(绝不完整揭示)。
+  镜头更躁动。抬升继续爬升。
+
+Shot 6 — 硬切黑场 + 标题
+  在最后一个动作上来一记硬冲击,切到黑场。一拍静默。单个单词
+  {{title_word}} 淡入,再淡出。
+  收尾:没有主角金句,没有旁白,没有爆炸蒙太奇。只有切黑、最后一记声
+  音、还有标题。</code></pre>
+<h3>负面提示词(Seedance / Kling——粘进独立负面框)</h3>
+<pre><code>blurry, low resolution, soft focus, watermark, text overlay, subtitles, logo, distorted face, asymmetric eyes, extra fingers, deformed hands, melting/morphing geometry, oversaturated colors, plastic skin, glossy CG render, video-game look, 3D cartoon render, flat even studio lighting, grade shifting between shots, rapid epileptic strobe cuts, cheesy lens flare, frame flicker, ghosting, lifeless locked-off camera, generic stock music feel</code></pre>
+<hr>
+<h2>为什么这么搭</h2>
+<ul><li><strong>一种色调就是把它黏成一体的胶水(把 Rule 1 用在剪辑上)。</strong> 多镜预告 片翻车的头号原因,就是每切一刀换一个观感。全片 6 镜锁死 {{grade}}; 让节奏和声音去扛升级,而不是靠换色调。</li><li><strong>声音设计逐拍写清楚(Rule 4 的预告片变体)。</strong> 预告片有一半是声音。 我们不会只说一句「只用同期声」就完事——而是把抬升、冲击、标题前的静 默都写成脚本,这样模型才不会贴一段通用配乐垫底。</li><li><strong>暗示,别解释(Rule 6)。</strong> {{threat}} 只给惊鸿一瞥,绝不完整揭示; 主角只出现在 2–3 镜。结尾落在切黑 + 一个单词上,而不是一句主角台词。 正是这份克制,才让预告片有「悬」的味道。</li><li><strong>层层升级的切点节奏。</strong> 长镜久持 → 切点收短 → 一拍静止。读起来像 「预告片」的,是这套节奏,而不是花哨的特效。</li></ul>
+<p><strong>用法</strong>:先跑 Shot 1(建场)和 Shot 6(标题拍),把色调和结尾定死,再 在两者之间搭升级段。整支控制在 ≤6 镜以内——预告片一旦解释过多就废了。 后期拼接,在时间线上做声音设计。</p>
+<p><strong>模型</strong>:宽景拍用 Veo 3 和 Sora 2,世界一致性和原生声音最强;Kling 对动作升级的快切非常出色。每镜控制在 ≤8s。在豆包 app 上,按每镜 5s/10s 的预设锁来规划。</p>
+  </article>
+  <footer class="doc-foot">
+    <p>许可 · <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT · 可自由使用</a></p>
+    <p><a href="../">← 回提示词库</a> · <a href="https://www.aiolaola.com/?utm_source=prompts.aiolaola.com&amp;utm_medium=referral&amp;utm_campaign=docpage" target="_blank" rel="noopener">aiOlaOla 学 AI 编程</a></p>
+  </footer>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const RAW = "# 实战范例 — 电影感预告片(层层升级的多镜剪辑)\n\n> jnMetaCode 原创实战范例(MIT)。把 5 段式结构用在**预告片**上——\n> 一段层层升级的多镜蒙太奇,要在约 15 秒内暗示出一整个世界。建立在\n> [multi-shot-narrative.zh.md](./multi-shot-narrative.zh.md) 与\n> [genre-camera-sop.zh.md](./genre-camera-sop.zh.md) 的「史诗」运镜块之上。\n> 教会你预告片赖以为生的那一件事:**刻意设计的声音 + 层层升级的节奏**。\n>\n> 概念:一支科幻惊悚预告片——安静的建场、一个引爆点、层层升级的快切、\n> 一记硬切黑场、一拍标题。换掉世界,保住节奏。\n>\n> *延伸阅读(只取灵感,未照搬——全部用我们的结构重写):\n> [snubroot/Veo-3-Prompting-Guide](https://github.com/snubroot/Veo-3-Prompting-Guide)\n> 里的电影感/营销预告片分类(只取结构)以及\n> [zhangchenchen/awesome_sora2_prompt](https://github.com/zhangchenchen/awesome_sora2_prompt)\n> (MIT)。*\n>\n> **[English →](./movie-trailer.md)**\n\n---\n\n## 开拍前要先定义的变量\n\n| 变量 | 本例取值 | 可替换为… |\n|---|---|---|\n| `{{world}}` | 一座被海水淹没的近未来沿海城市 | 一处冰封的边境殖民地 / 一座饱受战火的首都 |\n| `{{protagonist}}` | 一名孤身的潜水工程师 | 一个疲惫的侦探 / 一个拿着奇怪装置的孩子 |\n| `{{threat}}` | 水下某个庞然之物正在移动 | 不断蔓延的大停电 / 逼近的风暴墙 |\n| `{{title_word}}` | 一个自造的单词标题,例如 \"TIDEBREAK\" | 你项目的标题 |\n| `{{grade}}` | 去饱和的钢蓝调 | 琥珀尘黄 / 病态绿 |\n\n---\n\n## 完整提示词(可直接复制)\n\n### 1 · 核心主题\n`电影感预告片 | 层层升级的多镜蒙太奇 | 全片锁定一种胶片色 | 由声音设计驱动 | 克制的揭示,无俗套旁白,无快速频闪硬切`\n\n### 2 · 人物与场景\n\n**人物(主角):** {{protagonist}}。参考上传照片,五官 100% 保留,\n不做美颜。带瑕疵:脸上的雨/汗、一道疤或疲惫的眼神、磨旧的实用装备\n(不是干净的戏服)。只出现在 2–3 个镜头里——预告片是暗示,不是解释。\n\n**世界({{world}}):** 真正的主角。靠质感堆出来,而不是靠交代说明——\n湿混凝土、明灭的招牌、残骸、天气。{{threat}} 只能被感觉到,绝不完全\n现身。\n\n### 3 · 氛围与画质\n宽景世界镜头用模拟 IMAX 胶片摄影机 + Panavision C-series(35mm,f/4);\n人物近景用 Sony Venice + Canon K-35。**全片每个镜头锁定同一种胶片色:\n{{grade}},低对比,有机胶片颗粒。** 一支每切一刀就换个观感的预告片会\n散架——色调就是把它黏成一体的胶水。\n\n### 4 · 运镜规则\n多镜头剪辑,**层层升级的节奏**:开头长镜久持,随着张力上升切点越来越\n短,然后在结尾前留一拍静止。\n- *呼吸感:* \"Handheld shot. Throughout, maintain an extremely subtle,\n  breath-like camera float to enhance presence.\"\n- *声音(刻意设计的,不是套一首歌):* 不要硬塞一段流行配乐。用现场同期\n  声 + 刻意设计的预告片声音——在升级段下方铺一层低频次声逐渐抬升,在\n  某个关键切点上来一记硬冲击(\"braam\"),然后在标题前留一拍近乎静默。\n  逐拍把声音写清楚;不要让模型自己脑补一段通用的配乐垫底。\n\n### 5 · 分镜(6 镜,约 15 秒)\n\n```\nShot 1 — 建场(长镜久持,安静)\n  {{world}} 的宽景,{{grade}} 色调,缓慢推进。几近静止。只有微弱环境\n  音。暴风雨前的平静。\n\nShot 2 — 主角(近景)\n  紧贴 {{protagonist}} 的脸,一闪而过的不安。画面下方一个遥远的低沉\n  声音开始响起。\n\nShot 3 — 引爆点(第一个 {{threat}} 的迹象)\n  中景——有什么不对劲:水面晃动、一盏灯熄灭、一个传感器读数飙升。次\n  声抬升从这里开始。\n\nShot 4–5 — 升级(切点变短)\n  一对急促的快拍:运动、反应、{{threat}} 的惊鸿一瞥(绝不完整揭示)。\n  镜头更躁动。抬升继续爬升。\n\nShot 6 — 硬切黑场 + 标题\n  在最后一个动作上来一记硬冲击,切到黑场。一拍静默。单个单词\n  {{title_word}} 淡入,再淡出。\n  收尾:没有主角金句,没有旁白,没有爆炸蒙太奇。只有切黑、最后一记声\n  音、还有标题。\n```\n\n### 负面提示词(Seedance / Kling——粘进独立负面框)\n```\nblurry, low resolution, soft focus, watermark, text overlay, subtitles, logo, distorted face, asymmetric eyes, extra fingers, deformed hands, melting/morphing geometry, oversaturated colors, plastic skin, glossy CG render, video-game look, 3D cartoon render, flat even studio lighting, grade shifting between shots, rapid epileptic strobe cuts, cheesy lens flare, frame flicker, ghosting, lifeless locked-off camera, generic stock music feel\n```\n\n---\n\n## 为什么这么搭\n\n- **一种色调就是把它黏成一体的胶水(把 Rule 1 用在剪辑上)。** 多镜预告\n  片翻车的头号原因,就是每切一刀换一个观感。全片 6 镜锁死 {{grade}};\n  让节奏和声音去扛升级,而不是靠换色调。\n- **声音设计逐拍写清楚(Rule 4 的预告片变体)。** 预告片有一半是声音。\n  我们不会只说一句「只用同期声」就完事——而是把抬升、冲击、标题前的静\n  默都写成脚本,这样模型才不会贴一段通用配乐垫底。\n- **暗示,别解释(Rule 6)。** {{threat}} 只给惊鸿一瞥,绝不完整揭示;\n  主角只出现在 2–3 镜。结尾落在切黑 + 一个单词上,而不是一句主角台词。\n  正是这份克制,才让预告片有「悬」的味道。\n- **层层升级的切点节奏。** 长镜久持 → 切点收短 → 一拍静止。读起来像\n  「预告片」的,是这套节奏,而不是花哨的特效。\n\n**用法**:先跑 Shot 1(建场)和 Shot 6(标题拍),把色调和结尾定死,再\n在两者之间搭升级段。整支控制在 ≤6 镜以内——预告片一旦解释过多就废了。\n后期拼接,在时间线上做声音设计。\n\n**模型**:宽景拍用 Veo 3 和 Sora 2,世界一致性和原生声音最强;Kling\n对动作升级的快切非常出色。每镜控制在 ≤8s。在豆包 app 上,按每镜\n5s/10s 的预设锁来规划。\n";
+function extractPrompt(md){
+  const lines=md.split("\n");
+  const re=/^#{1,4}\s.*(完整提示词|complete prompt|copy-paste|可直接复制)/i;
+  let s=-1; for(let i=0;i<lines.length;i++){if(re.test(lines[i])){s=i+1;break;}}
+  if(s>=0){let e=lines.length;for(let i=s;i<lines.length;i++){if(/^##\s/.test(lines[i])){e=i;break;}}
+    const r=lines.slice(s,e).join("\n").replace(/^\s*-{3,}\s*$/gm,"").trim();if(r)return r;}
+  const b=[...md.matchAll(/```[^\n]*\n([\s\S]*?)```/g)].map(m=>m[1].trim());
+  return b.length?b.join("\n\n"):md.trim();
+}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('show');
+  clearTimeout(toast._t);toast._t=setTimeout(()=>e.classList.remove('show'),1700);}
+async function cp(t,msg){try{await navigator.clipboard.writeText(t);toast(msg);}catch(e){toast('复制失败');}}
+document.getElementById('copyPrompt').onclick=()=>cp(extractPrompt(RAW),'提示词已复制 · 可直接粘进视频模型');
+document.getElementById('copyAll').onclick=()=>cp(RAW,'全文已复制');
+</script>
+</body>
+</html>

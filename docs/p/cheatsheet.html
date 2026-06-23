@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cheatsheet — One-Page Quick Reference | Cinematic AI Video Prompt Library</title>
+<meta name="description" content="Keep this open while you write. Full version: methodology.md · Skill: SKILL.md 中文版 →">
+<link rel="canonical" href="https://prompts.aiolaola.com/p/cheatsheet.html">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="en" href="https://prompts.aiolaola.com/p/cheatsheet.html">
+<link rel="alternate" hreflang="zh-CN" href="https://prompts.aiolaola.com/p/cheatsheet.zh.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="电影感 AI 视频提示词库">
+<meta property="og:title" content="Cheatsheet — One-Page Quick Reference">
+<meta property="og:description" content="Keep this open while you write. Full version: methodology.md · Skill: SKILL.md 中文版 →">
+<meta property="og:url" content="https://prompts.aiolaola.com/p/cheatsheet.html">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cheatsheet — One-Page Quick Reference">
+<meta name="twitter:description" content="Keep this open while you write. Full version: methodology.md · Skill: SKILL.md 中文版 →">
+<link rel="stylesheet" href="./page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Cheatsheet — One-Page Quick Reference",
+  "description": "Keep this open while you write. Full version: methodology.md · Skill: SKILL.md 中文版 →",
+  "inLanguage": "en",
+  "url": "https://prompts.aiolaola.com/p/cheatsheet.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "电影感 AI 视频提示词库",
+    "url": "https://prompts.aiolaola.com/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "jnMetaCode",
+    "url": "https://github.com/jnMetaCode"
+  },
+  "license": "https://opensource.org/licenses/MIT"
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7LBJRDWYYW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7LBJRDWYYW');</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="back" href="../">← 提示词库</a>
+  <a class="ghlink" href="https://github.com/jnMetaCode/ai-shortfilm-prompts/blob/main/cheatsheet.md" target="_blank" rel="noopener">在 GitHub 查看源文件 ↗</a>
+</header>
+<main class="doc">
+  <div class="doc-actions">
+    <button id="copyPrompt">⧉ 复制提示词</button>
+    <button id="copyAll">复制全文</button>
+    <a class="langsw" href="./cheatsheet.zh.html">中文</a>
+  </div>
+  <article class="md">
+<h1>Cheatsheet — One-Page Quick Reference</h1>
+<blockquote><p>Keep this open while you write. Full version: <a href="methodology.html">methodology.md</a> · Skill: <a href="skill.html">SKILL.md</a></p>
+<p><strong><a href="cheatsheet.zh.html">中文版 →</a></strong></p></blockquote>
+<hr>
+<h2>The 5-stage skeleton</h2>
+<pre><code>1. Core theme           3-6 style tags, | -separated. Shot type → genre → aesthetic.
+2. Character &amp; scene     Face / Clothing / Scene. "No beautification." Material first. Moving background.
+3. Atmosphere &amp; look     Real camera + lens model. Color tone. Style core. Sound line.
+4. Camera rules          Single-shot / Angle (size+angle+motion) / Breathing line.
+5. Storyboard            Per-second slices (one-take) OR per-shot slices (multi-shot edit).</code></pre>
+<ul><li><strong>Style A · per-second</strong> (transformation, weapon-charge, one-take): <code>Action + Camera + VFX</code> per slice. Add-ons: Sound, Face.</li><li><strong>Style B · per-shot</strong> (narrative, MV): <code>Shot size + Composition + Camera move + Action</code> per shot.</li></ul>
+<hr>
+<h2>3 counter-intuitive rules</h2>
+<ol><li><strong>No reference image unless it's high-quality.</strong> AI mimics the reference's <em>art style</em> (CG/anime look), not its <em>design</em>. Free-form from text descriptions. Exception: photoreal 3D renders / true live-action photos.</li><li><strong>Describe flaws = describe reality.</strong> Too perfect = fake. <code>battle damage</code> / <code>paint worn off</code> / <code>oil in joints</code> / <code>preserve minor facial blemishes</code>. Need <strong>≥2</strong> imperfections per character/equipment block.</li><li><strong>Rerolls are normal — leave the ending empty.</strong> 2-3 to 20+ rerolls per shot is expected. Don't aim for first-try perfection. Don't pile FX on the close.</li></ol>
+<hr>
+<h2>Camera + lens lookup</h2>
+<table><thead><tr><th>Aesthetic</th><th>Camera + lens</th></tr></thead><tbody><tr><td>Epic / big-scene</td><td>IMAX film camera + Panavision C-series (35mm, f/4)</td></tr><tr><td>Gritty cyber / hard sci-fi</td><td>Sony Venice + Canon K-35 series</td></tr><tr><td>Hong Kong noir / wuxia</td><td>Kodak 35mm vintage film, bleach-bypass</td></tr><tr><td>Commercial portrait</td><td>Canon EF 85mm f/1.2</td></tr></tbody></table>
+<p><strong>Color phrases:</strong> low-saturation grey-blue · Hollywood teal-and-orange · 60s warm-orange + sea-salt blue · low-light high-contrast.</p>
+<hr>
+<h2>Two lines to paste verbatim</h2>
+<p><strong>Breathing</strong> (almost every prompt — both qualifiers are essential, or the AI reads it as heavy shake):</p>
+<blockquote><p>Handheld shot. Throughout, maintain an extremely subtle, breath-like camera float to enhance presence.</p></blockquote>
+<p><strong>Sound</strong> (or the AI fabricates music):</p>
+<pre><code>Sound: No score. Production audio only.</code></pre>
+<p>For scenes with signature ambient sound, enumerate it (rain, thunder, metal scrape, low-frequency hum). Don't make the AI guess.</p>
+<hr>
+<h2>Empty-ending template</h2>
+<p>Don't write: blinding light / explosion / victory pose / leap into sky / camera blow-out. Restraint reads more elevated than excess.</p>
+<blockquote><p>No dialogue. No explosion. No blinding light. Just {{subject}} {{action}}, {{environment detail}}.</p></blockquote>
+<p>Example: <em>"Just a figure in unfinished battle-armor standing in place. Wind carries battlefield smoke. A meteor crosses the distant sky."</em></p>
+<hr>
+<h2>Pre-delivery checklist</h2>
+<ul><li>[ ] All 5 stages present</li><li>[ ] Camera + lens model named</li><li>[ ] Full "breath-like float" sentence verbatim</li><li>[ ] <code>Sound: No score. Production audio only.</code></li><li>[ ] ≥2 imperfection descriptions</li><li>[ ] Closing is empty / restrained — no FX pile-up</li><li>[ ] No vague praise words (perfect / stunning / epic / handsome / 4K / texture-rich)</li><li>[ ] No IP names (or warning line added)</li><li>[ ] Single-shot ≤ 15s · multi-shot ≤ 8 shots</li><li>[ ] Model advice line included (Seedance/Xiaoyunque: no IP names + strict filter; Sora: concise prompts; Kling: strict banned-word filter — sanitize IP terms first, needs explicit motion; Veo: English preferred)</li></ul>
+  </article>
+  <footer class="doc-foot">
+    <p>许可 · <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT · 可自由使用</a></p>
+    <p><a href="../">← 回提示词库</a> · <a href="https://www.aiolaola.com/?utm_source=prompts.aiolaola.com&amp;utm_medium=referral&amp;utm_campaign=docpage" target="_blank" rel="noopener">aiOlaOla 学 AI 编程</a></p>
+  </footer>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const RAW = "# Cheatsheet — One-Page Quick Reference\n\n> Keep this open while you write. Full version: [methodology.md](./methodology.md)\n> · Skill: [SKILL.md](./skills/shortfilm-prompt/SKILL.md)\n>\n> **[中文版 →](./cheatsheet.zh.md)**\n\n---\n\n## The 5-stage skeleton\n\n```\n1. Core theme           3-6 style tags, | -separated. Shot type → genre → aesthetic.\n2. Character & scene     Face / Clothing / Scene. \"No beautification.\" Material first. Moving background.\n3. Atmosphere & look     Real camera + lens model. Color tone. Style core. Sound line.\n4. Camera rules          Single-shot / Angle (size+angle+motion) / Breathing line.\n5. Storyboard            Per-second slices (one-take) OR per-shot slices (multi-shot edit).\n```\n\n- **Style A · per-second** (transformation, weapon-charge, one-take): `Action + Camera + VFX` per slice. Add-ons: Sound, Face.\n- **Style B · per-shot** (narrative, MV): `Shot size + Composition + Camera move + Action` per shot.\n\n---\n\n## 3 counter-intuitive rules\n\n1. **No reference image unless it's high-quality.** AI mimics the reference's *art style* (CG/anime look), not its *design*. Free-form from text descriptions. Exception: photoreal 3D renders / true live-action photos.\n2. **Describe flaws = describe reality.** Too perfect = fake. `battle damage` / `paint worn off` / `oil in joints` / `preserve minor facial blemishes`. Need **≥2** imperfections per character/equipment block.\n3. **Rerolls are normal — leave the ending empty.** 2-3 to 20+ rerolls per shot is expected. Don't aim for first-try perfection. Don't pile FX on the close.\n\n---\n\n## Camera + lens lookup\n\n| Aesthetic | Camera + lens |\n|---|---|\n| Epic / big-scene | IMAX film camera + Panavision C-series (35mm, f/4) |\n| Gritty cyber / hard sci-fi | Sony Venice + Canon K-35 series |\n| Hong Kong noir / wuxia | Kodak 35mm vintage film, bleach-bypass |\n| Commercial portrait | Canon EF 85mm f/1.2 |\n\n**Color phrases:** low-saturation grey-blue · Hollywood teal-and-orange · 60s warm-orange + sea-salt blue · low-light high-contrast.\n\n---\n\n## Two lines to paste verbatim\n\n**Breathing** (almost every prompt — both qualifiers are essential, or the AI reads it as heavy shake):\n\n> Handheld shot. Throughout, maintain an extremely subtle, breath-like camera float to enhance presence.\n\n**Sound** (or the AI fabricates music):\n\n```\nSound: No score. Production audio only.\n```\n\nFor scenes with signature ambient sound, enumerate it (rain, thunder, metal scrape, low-frequency hum). Don't make the AI guess.\n\n---\n\n## Empty-ending template\n\nDon't write: blinding light / explosion / victory pose / leap into sky / camera blow-out. Restraint reads more elevated than excess.\n\n> No dialogue. No explosion. No blinding light. Just {{subject}} {{action}}, {{environment detail}}.\n\nExample: *\"Just a figure in unfinished battle-armor standing in place. Wind carries battlefield smoke. A meteor crosses the distant sky.\"*\n\n---\n\n## Pre-delivery checklist\n\n- [ ] All 5 stages present\n- [ ] Camera + lens model named\n- [ ] Full \"breath-like float\" sentence verbatim\n- [ ] `Sound: No score. Production audio only.`\n- [ ] ≥2 imperfection descriptions\n- [ ] Closing is empty / restrained — no FX pile-up\n- [ ] No vague praise words (perfect / stunning / epic / handsome / 4K / texture-rich)\n- [ ] No IP names (or warning line added)\n- [ ] Single-shot ≤ 15s · multi-shot ≤ 8 shots\n- [ ] Model advice line included (Seedance/Xiaoyunque: no IP names + strict filter; Sora: concise prompts; Kling: strict banned-word filter — sanitize IP terms first, needs explicit motion; Veo: English preferred)\n";
+function extractPrompt(md){
+  const lines=md.split("\n");
+  const re=/^#{1,4}\s.*(完整提示词|complete prompt|copy-paste|可直接复制)/i;
+  let s=-1; for(let i=0;i<lines.length;i++){if(re.test(lines[i])){s=i+1;break;}}
+  if(s>=0){let e=lines.length;for(let i=s;i<lines.length;i++){if(/^##\s/.test(lines[i])){e=i;break;}}
+    const r=lines.slice(s,e).join("\n").replace(/^\s*-{3,}\s*$/gm,"").trim();if(r)return r;}
+  const b=[...md.matchAll(/```[^\n]*\n([\s\S]*?)```/g)].map(m=>m[1].trim());
+  return b.length?b.join("\n\n"):md.trim();
+}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('show');
+  clearTimeout(toast._t);toast._t=setTimeout(()=>e.classList.remove('show'),1700);}
+async function cp(t,msg){try{await navigator.clipboard.writeText(t);toast(msg);}catch(e){toast('复制失败');}}
+document.getElementById('copyPrompt').onclick=()=>cp(extractPrompt(RAW),'提示词已复制 · 可直接粘进视频模型');
+document.getElementById('copyAll').onclick=()=>cp(RAW,'全文已复制');
+</script>
+</body>
+</html>

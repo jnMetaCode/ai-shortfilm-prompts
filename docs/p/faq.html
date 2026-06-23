@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ — Tools, Failures, Costs, Edge Cases | Cinematic AI Video Prompt Library</title>
+<meta name="description" content="Consolidated from the 17 troubleshooting items in Mx-Shell's shared document + scattered tips across his two-part livestream Q&amp;A. Direct quotes from Mx-…">
+<link rel="canonical" href="https://prompts.aiolaola.com/p/faq.html">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="en" href="https://prompts.aiolaola.com/p/faq.html">
+<link rel="alternate" hreflang="zh-CN" href="https://prompts.aiolaola.com/p/faq.zh.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="电影感 AI 视频提示词库">
+<meta property="og:title" content="FAQ — Tools, Failures, Costs, Edge Cases">
+<meta property="og:description" content="Consolidated from the 17 troubleshooting items in Mx-Shell's shared document + scattered tips across his two-part livestream Q&amp;A. Direct quotes from Mx-…">
+<meta property="og:url" content="https://prompts.aiolaola.com/p/faq.html">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="FAQ — Tools, Failures, Costs, Edge Cases">
+<meta name="twitter:description" content="Consolidated from the 17 troubleshooting items in Mx-Shell's shared document + scattered tips across his two-part livestream Q&amp;A. Direct quotes from Mx-…">
+<link rel="stylesheet" href="./page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "FAQ — Tools, Failures, Costs, Edge Cases",
+  "description": "Consolidated from the 17 troubleshooting items in Mx-Shell's shared document + scattered tips across his two-part livestream Q&A. Direct quotes from Mx-…",
+  "inLanguage": "en",
+  "url": "https://prompts.aiolaola.com/p/faq.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "电影感 AI 视频提示词库",
+    "url": "https://prompts.aiolaola.com/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "jnMetaCode",
+    "url": "https://github.com/jnMetaCode"
+  },
+  "license": "https://opensource.org/licenses/MIT"
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7LBJRDWYYW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7LBJRDWYYW');</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="back" href="../">← 提示词库</a>
+  <a class="ghlink" href="https://github.com/jnMetaCode/ai-shortfilm-prompts/blob/main/faq.md" target="_blank" rel="noopener">在 GitHub 查看源文件 ↗</a>
+</header>
+<main class="doc">
+  <div class="doc-actions">
+    <button id="copyPrompt">⧉ 复制提示词</button>
+    <button id="copyAll">复制全文</button>
+    <a class="langsw" href="./faq.zh.html">中文</a>
+  </div>
+  <article class="md">
+<h1>FAQ — Tools, Failures, Costs, Edge Cases</h1>
+<blockquote><p>Consolidated from the 17 troubleshooting items in Mx-Shell's shared document + scattered tips across his two-part livestream Q&amp;A.</p>
+<p>Direct quotes from Mx-Shell are in <code>&gt;</code> blocks (his original Chinese with English translation).</p>
+<p><strong><a href="faq.zh.html">中文版 →</a></strong></p></blockquote>
+<hr>
+<h2>Tools &amp; models</h2>
+<h3>Q: Which platform for video generation?</h3>
+<p><strong>Xiaoyunque (小云雀)</strong> — specifically its <strong>Seedance 2.0</strong> "Immersive Shortfilm" mode.</p>
+<blockquote><p><em>"Use the Seedance 2.0 model, not Seedance 2.0 Fast. Fast is quicker but skimps on detail. Don't bother with the other random models."</em></p></blockquote>
+<h3>Q: Which model for image generation?</h3>
+<p>About 80% of <em>Zombie Scavenger</em> images were made with <strong>GPT Image</strong>. Next most-used: <strong>Midjourney</strong>, then <strong>Krea</strong>, then <strong>Flux Max</strong> for material refinement.</p>
+<p>Standard workflow:</p>
+<pre><code>MJ or Seedream  →  Flux (texture / realism polish)  →  Nanobanana (3-views)</code></pre>
+<p>Skip later steps if an earlier one already produced what you need.</p>
+<h3>Q: Hardware requirements?</h3>
+<p>None. Seedance runs on cloud GPUs. Any office-grade machine works.</p>
+<hr>
+<h2>Faces / IP / blocked content</h2>
+<h3>Q: My uploaded face photo gets blocked. What now?</h3>
+<p>(Note: face moderation is tightening. The methods below may not always work.)</p>
+<ol><li>Try several different photos.</li><li>Ignore the warning and let it generate anyway (likeness may drop).</li><li>Accept distortion: feed the photo to Doubao and ask for a <em>"photorealistic colored sketch"</em> — then use that.</li><li>Use the commercial-portrait describer (see next item).</li></ol>
+<h3>Q: Commercial portrait describer template</h3>
+<p>Feed your photo + this prompt to Doubao:</p>
+<pre><code>Generate an image: style = "portrait photography". Reference uploaded
+photo. Generate a hyperreal commercial portrait of a 22-25 year-old
+East Asian male, close shot. Features and face shape 100% match the
+reference. Preserve minor facial blemishes. Light scattered loose
+strands of hair for a relaxed feel. No accessories. Wearing a deep
+black T-shirt. Background: light white blurred gradient. Soft side
+lighting to bring out the dimensionality of the face. Warm healthy
+skin tone with natural fine luster. Detail enhancement at 100%, disable
+over-smoothing. Color: refined warm tones. Edges sharp and clean —
+no blur, jaggies, or ghosting. Final output: commercial retouched
+portrait quality. Canon EF85mm f/1.2. Aspect 3:4.</code></pre>
+<h3>Q: A different approach: don't use a face at all</h3>
+<blockquote><p><em>"Not every story needs a face. My recent two pieces both work this way."</em></p></blockquote>
+<p>Helmets, masks, robots, back-of-head shots, mannequins with big sunglasses — all bypass face moderation while still letting you act. That's the <em>real</em> reason <em>Zombie Scavenger</em>'s protagonist is a robot.</p>
+<h3>Q: My prompt gets flagged for IP / copyright. What now?</h3>
+<blockquote><p><em>"Seedance's IP-rights filtering is aggressive lately. Strip the film/character names from your prompt."</em></p></blockquote>
+<ul><li>Replace film/character names (Iron Man → "atom-punk retro-futurist red-and-gold suit"; <em>Black Sun</em> aesthetic → "gritty dark battle-damaged aesthetic").</li><li>Delete a few characters or punctuation marks without changing the meaning.</li><li>Use synonyms for the same design language.</li></ul>
+<h3>Q: Generation just failed. Now what?</h3>
+<p>Regenerate. Failure is normal.</p>
+<hr>
+<h2>Picture quality / texture / realism</h2>
+<h3>Q: Why does my AI video look like cheap CG?</h3>
+<p>Two main reasons:</p>
+<ol><li><strong>Over-beautified reference photos.</strong> &gt; <em>"Use clear large headshots, not over-filtered ones. If you have &gt; the confidence, shoot bare-face (which movie has filters on its &gt; actors?). Too perfect = fake."</em></li></ol>
+<ol><li><strong>Bad reference image source.</strong> &gt; <em>"Don't feed the AI reference images unless your reference itself &gt; is high-detail photoreal — or a 3D render."</em></li></ol>
+<h3>Q: References vs. pure text — which is better?</h3>
+<blockquote><p><em>"All my Kamen Rider armor designs came from text descriptions — the AI gets to free-form."</em> <em>"Now everyone gets a different armor design. Yours is uniquely yours. Isn't that better?"</em></p></blockquote>
+<p>For dynamic-motion shots (transformation, combat), <strong>don't</strong> use start/end keyframe locking — let the AI generate freely. Save keyframe locking for character/scene continuity needs only.</p>
+<h3>Q: How do I make metal / tile / light feel more real?</h3>
+<p>Ask the AI itself to write the material description for you:</p>
+<blockquote><p><em>"Like — describe the tile's smoothness, polished or matte finish, the cold feeling of stone..."</em></p></blockquote>
+<p>Or run the image through <strong>Flux Max</strong> to specifically enhance metal reflectivity, scratches, and light scattering.</p>
+<h3>Q: What resolution should I output?</h3>
+<blockquote><p><em>"My videos are all 720p."</em></p></blockquote>
+<p>720p is fine for domestic platforms (they recompress anyway). Save the compute budget for more rerolls.</p>
+<hr>
+<h2>Camera &amp; composition</h2>
+<h3>Q: How do I describe camera motion?</h3>
+<blockquote><p><em>"For me, camera control is all in the text."</em></p></blockquote>
+<p>Picture the move in your head first, then translate to:</p>
+<ul><li>Shot size (medium / close-up / wide)</li><li>Angle (low / high / level)</li><li>Motion (push-in / orbit / follow / locked / FPV)</li><li>Rhythm (very slow / steady / 0.1s reactive shake)</li></ul>
+<p>Full vocabulary list in <a href="methodology.html">methodology.md - Stage 4</a>.</p>
+<h3>Q: How do I describe composition?</h3>
+<blockquote><p><em>"Just describe it. Know what 'center line' or '3×3 rule of thirds' means."</em></p></blockquote>
+<p>Example:</p>
+<pre><code>Model's back centered along the left-of-center-line, right elbow akimbo
+forms a framing element, framing the visual subject (the robot).
+Robot faces camera, model has back to camera. Robot = near layer,
+model = front layer, bar counter = middle layer, background environment
+= back layer.</code></pre>
+<p>Describe <strong>layers</strong> (foreground / middle / background) — far more useful than positional hints like <em>"X is next to Y."</em></p>
+<h3>Q: Should I draw storyboard sketches?</h3>
+<p>Optional. Mx-Shell only used a hand-drawn storyboard for <strong>one</strong> shot (the closing long take on the spaceship). Drawing helps save AI compute but can introduce a "hand-drawn line art" leak into the generated output.</p>
+<p>If you want to try: feed any photo to Doubao/GPT and ask it to convert to <em>"black-and-white sketch for storyboard reference."</em> One sentence.</p>
+<hr>
+<h2>Duration / long videos / editing</h2>
+<h3>Q: Optimal generation duration?</h3>
+<p>Depends on the scene. Mx-Shell's habits:</p>
+<ul><li>Opening / transformation: 15s</li><li>General shot: 5–10s</li><li>Brief action (a blink, a glance): 4–5s</li></ul>
+<h3>Q: How do I make a video longer than 15s?</h3>
+<p>Use Xiaoyunque web client's <strong>"Continue this video"</strong> feature. That's how combat sequences extend transformations.</p>
+<p>Don't know how to write a combat prompt?</p>
+<blockquote><p><em>"Write it yourself. I don't enjoy doing combat — get Doubao to draft it and refine."</em></p></blockquote>
+<h3>Q: How do I connect two video clips?</h3>
+<p>By <strong>motion direction continuity</strong>.</p>
+<blockquote><p><em>"My robot throws a bomb that blasts the zombie horde — and he gets pushed out of frame one side. Next shot, he enters from the same side."</em></p></blockquote>
+<p>Visually, the audience reads the motion as one continuous action.</p>
+<h3>Q: What editor?</h3>
+<p><strong>CapCut</strong> (剪映). No fancy software.</p>
+<h3>Q: Color grading?</h3>
+<p>Some. But AI-generated video has <strong>low color bitrate</strong> — grading flexibility is limited:</p>
+<blockquote><p><em>"Push it too far and you get color banding and noise. Not like a real-camera output where you can really push the dial."</em></p></blockquote>
+<p>Best strategy: lock your color tone at the image-generation stage, keep all video prompts' "Color &amp; tone" section consistent, and do only minor transitions in post.</p>
+<hr>
+<h2>Word limits / rerolls / non-reproducibility</h2>
+<h3>Q: Prompt too long?</h3>
+<ul><li>On mobile → switch to the web client.</li><li>Still too long → trim.</li></ul>
+<h3>Q: I used your exact prompt — why doesn't my output look like yours?</h3>
+<blockquote><p><em>"Even I get different outputs running the same prompt twice."</em></p></blockquote>
+<p>AI generation is gacha. Treat one prompt as a <strong>ticket to draw</strong>, not a deterministic recipe.</p>
+<p><strong>Mx-Shell's per-shot reroll counts:</strong></p>
+<ul><li>High: 20+ tries</li><li>Low: 2–3 tries</li><li><em>Zombie Scavenger</em> total: ~400 generated images + 200+ video shots to produce the final ~40 clips</li></ul>
+<h3>Q: How do I reproduce <em>Flame Demon</em>'s camera move?</h3>
+<blockquote><p><em>"That was an accidental beauty. The AI didn't follow my instruction. Blind cat, dead mouse. I can't reproduce it either."</em></p></blockquote>
+<p>Accept randomness. Reroll selection matters more than prompt polish.</p>
+<hr>
+<h2>Music / sound</h2>
+<h3>Q: Did you make the music?</h3>
+<p>No. Licensed music from <strong>Artlist.io</strong>.</p>
+<h3>Q: Sound effects?</h3>
+<p>Seedance generates production audio automatically. Specify any unusual ones in the prompt:</p>
+<pre><code>Expression-switch sound: a sci-fi tonal sweep</code></pre>
+<h3>Q: Voice / dialogue?</h3>
+<blockquote><p><em>"My whole film has exactly one voice line."</em></p></blockquote>
+<p>If you only need one or two lines, don't bother with voice consistency — pick the best Seedance generates. Newer Xiaoyunque versions have a <strong>voice reference</strong> feature for consistency needs.</p>
+<hr>
+<h2>Inspiration / learning</h2>
+<h3>Q: Where did the story come from?</h3>
+<blockquote><p><em>"The inspiration came from Wall-E."</em></p></blockquote>
+<p>Anywhere — films, your own life, novels, TV.</p>
+<blockquote><p><em>"You need to have a life before you can have creativity."</em></p></blockquote>
+<h3>Q: I'm stuck mid-project. What do?</h3>
+<blockquote><p><em>"I didn't have a complete script either. I chatted with a friend, shot two test scenes, saw the texture was OK, then started thinking about the opening. I made it up as I went."</em></p></blockquote>
+<p><strong>Shoot two test scenes first, then plan as you go.</strong> Better than finishing a full script in isolation before any AI iteration.</p>
+<h3>Q: How do I learn AI shortfilm production?</h3>
+<p>Mx-Shell himself started in <strong>January 2026</strong>, self-taught.</p>
+<blockquote><p><em>"What I'm saying may be rough — I'm self-taught too, no systematic training."</em></p></blockquote>
+<h3>Q: Should I learn video editing?</h3>
+<p><strong>Yes.</strong></p>
+<blockquote><p><em>"AI-generated clips aren't always perfect. Trim a piece here, add a transition there, splice. Saves money on rerolls."</em></p></blockquote>
+<hr>
+<h2>Cost / time</h2>
+<h3>Stated numbers (Mx-Shell self-reported)</h3>
+<table><thead><tr><th>Item</th><th>Number</th></tr></thead><tbody><tr><td>Total project duration</td><td>10 days</td></tr><tr><td>Total cost</td><td>Initially stated <strong>~3000 RMB</strong>; later clarified <strong>"actually tens of thousands, maybe 20,000+ RMB"</strong></td></tr><tr><td>Images generated</td><td>~400</td></tr><tr><td>Video shots generated</td><td>200+ (for ~40 final clips)</td></tr><tr><td>Hand-written prompt ratio</td><td>95% (only combat scenes were AI-assisted via Doubao)</td></tr><tr><td>Complete script existed</td><td>No — made up as he went</td></tr></tbody></table>
+<blockquote><p><em>"3000 USD?? It's RMB!"</em> <em>"Hmm — actually tens of thousands by G2, maybe 20k+ RMB."</em> <em>"3000 RMB, yes."</em></p></blockquote>
+<p>⚠️ <strong>Reality check:</strong> the viral "10 days / 3000 RMB" number is the marketing line. The actual outlay was likely <strong>20,000 RMB or more</strong> once you include all the rerolls. Still far below the cost of shooting a real 3-minute short.</p>
+<hr>
+<h2>Miscellaneous</h2>
+<h3>Q: What about base costume for the character?</h3>
+<blockquote><p><em>"Match the combat style. No one fights in stilettos. The base outfit should match the genre, otherwise immersion breaks."</em></p></blockquote>
+<h3>Q: Your prompts have typos.</h3>
+<p>Yes.</p>
+<blockquote><p><em>"My prompts have some typos. Feel free to fix them before using."</em></p></blockquote>
+<h3>Q: What's your background?</h3>
+<p>Vocational school. Photography is a side hobby.</p>
+<h3>Q: Will you keep posting new prompts?</h3>
+<p>Depends.</p>
+<blockquote><p><em>"I have a day job and other hobbies. The Kamen Rider thing was just a whim — I didn't expect this much attention."</em></p></blockquote>
+  </article>
+  <footer class="doc-foot">
+    <p>许可 · <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT · 可自由使用</a></p>
+    <p><a href="../">← 回提示词库</a> · <a href="https://www.aiolaola.com/?utm_source=prompts.aiolaola.com&amp;utm_medium=referral&amp;utm_campaign=docpage" target="_blank" rel="noopener">aiOlaOla 学 AI 编程</a></p>
+  </footer>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const RAW = "# FAQ — Tools, Failures, Costs, Edge Cases\n\n> Consolidated from the 17 troubleshooting items in Mx-Shell's\n> shared document + scattered tips across his two-part livestream Q&A.\n>\n> Direct quotes from Mx-Shell are in `>` blocks (his original Chinese\n> with English translation).\n>\n> **[中文版 →](./faq.zh.md)**\n\n---\n\n## Tools & models\n\n### Q: Which platform for video generation?\n\n**Xiaoyunque (小云雀)** — specifically its **Seedance 2.0** \"Immersive\nShortfilm\" mode.\n\n> *\"Use the Seedance 2.0 model, not Seedance 2.0 Fast. Fast is quicker\n> but skimps on detail. Don't bother with the other random models.\"*\n\n### Q: Which model for image generation?\n\nAbout 80% of *Zombie Scavenger* images were made with **GPT Image**.\nNext most-used: **Midjourney**, then **Krea**, then **Flux Max** for\nmaterial refinement.\n\nStandard workflow:\n```\nMJ or Seedream  →  Flux (texture / realism polish)  →  Nanobanana (3-views)\n```\n\nSkip later steps if an earlier one already produced what you need.\n\n### Q: Hardware requirements?\n\nNone. Seedance runs on cloud GPUs. Any office-grade machine works.\n\n---\n\n## Faces / IP / blocked content\n\n### Q: My uploaded face photo gets blocked. What now?\n\n(Note: face moderation is tightening. The methods below may not always\nwork.)\n\n1. Try several different photos.\n2. Ignore the warning and let it generate anyway (likeness may drop).\n3. Accept distortion: feed the photo to Doubao and ask for a\n   *\"photorealistic colored sketch\"* — then use that.\n4. Use the commercial-portrait describer (see next item).\n\n### Q: Commercial portrait describer template\n\nFeed your photo + this prompt to Doubao:\n\n```\nGenerate an image: style = \"portrait photography\". Reference uploaded\nphoto. Generate a hyperreal commercial portrait of a 22-25 year-old\nEast Asian male, close shot. Features and face shape 100% match the\nreference. Preserve minor facial blemishes. Light scattered loose\nstrands of hair for a relaxed feel. No accessories. Wearing a deep\nblack T-shirt. Background: light white blurred gradient. Soft side\nlighting to bring out the dimensionality of the face. Warm healthy\nskin tone with natural fine luster. Detail enhancement at 100%, disable\nover-smoothing. Color: refined warm tones. Edges sharp and clean —\nno blur, jaggies, or ghosting. Final output: commercial retouched\nportrait quality. Canon EF85mm f/1.2. Aspect 3:4.\n```\n\n### Q: A different approach: don't use a face at all\n\n> *\"Not every story needs a face. My recent two pieces both work this\n> way.\"*\n\nHelmets, masks, robots, back-of-head shots, mannequins with big\nsunglasses — all bypass face moderation while still letting you act.\nThat's the *real* reason *Zombie Scavenger*'s protagonist is a robot.\n\n### Q: My prompt gets flagged for IP / copyright. What now?\n\n> *\"Seedance's IP-rights filtering is aggressive lately. Strip the\n> film/character names from your prompt.\"*\n\n- Replace film/character names (Iron Man → \"atom-punk retro-futurist\n  red-and-gold suit\"; *Black Sun* aesthetic → \"gritty dark battle-damaged\n  aesthetic\").\n- Delete a few characters or punctuation marks without changing the\n  meaning.\n- Use synonyms for the same design language.\n\n### Q: Generation just failed. Now what?\n\nRegenerate. Failure is normal.\n\n---\n\n## Picture quality / texture / realism\n\n### Q: Why does my AI video look like cheap CG?\n\nTwo main reasons:\n\n1. **Over-beautified reference photos.**\n   > *\"Use clear large headshots, not over-filtered ones. If you have\n   > the confidence, shoot bare-face (which movie has filters on its\n   > actors?). Too perfect = fake.\"*\n\n2. **Bad reference image source.**\n   > *\"Don't feed the AI reference images unless your reference itself\n   > is high-detail photoreal — or a 3D render.\"*\n\n### Q: References vs. pure text — which is better?\n\n> *\"All my Kamen Rider armor designs came from text descriptions —\n> the AI gets to free-form.\"*\n> *\"Now everyone gets a different armor design. Yours is uniquely yours.\n> Isn't that better?\"*\n\nFor dynamic-motion shots (transformation, combat), **don't** use\nstart/end keyframe locking — let the AI generate freely. Save keyframe\nlocking for character/scene continuity needs only.\n\n### Q: How do I make metal / tile / light feel more real?\n\nAsk the AI itself to write the material description for you:\n\n> *\"Like — describe the tile's smoothness, polished or matte finish,\n> the cold feeling of stone...\"*\n\nOr run the image through **Flux Max** to specifically enhance metal\nreflectivity, scratches, and light scattering.\n\n### Q: What resolution should I output?\n\n> *\"My videos are all 720p.\"*\n\n720p is fine for domestic platforms (they recompress anyway). Save\nthe compute budget for more rerolls.\n\n---\n\n## Camera & composition\n\n### Q: How do I describe camera motion?\n\n> *\"For me, camera control is all in the text.\"*\n\nPicture the move in your head first, then translate to:\n- Shot size (medium / close-up / wide)\n- Angle (low / high / level)\n- Motion (push-in / orbit / follow / locked / FPV)\n- Rhythm (very slow / steady / 0.1s reactive shake)\n\nFull vocabulary list in [methodology.md - Stage 4](./methodology.md).\n\n### Q: How do I describe composition?\n\n> *\"Just describe it. Know what 'center line' or '3×3 rule of thirds'\n> means.\"*\n\nExample:\n```\nModel's back centered along the left-of-center-line, right elbow akimbo\nforms a framing element, framing the visual subject (the robot).\nRobot faces camera, model has back to camera. Robot = near layer,\nmodel = front layer, bar counter = middle layer, background environment\n= back layer.\n```\n\nDescribe **layers** (foreground / middle / background) — far more useful\nthan positional hints like *\"X is next to Y.\"*\n\n### Q: Should I draw storyboard sketches?\n\nOptional. Mx-Shell only used a hand-drawn storyboard for **one** shot\n(the closing long take on the spaceship). Drawing helps save AI compute\nbut can introduce a \"hand-drawn line art\" leak into the generated output.\n\nIf you want to try: feed any photo to Doubao/GPT and ask it to convert\nto *\"black-and-white sketch for storyboard reference.\"* One sentence.\n\n---\n\n## Duration / long videos / editing\n\n### Q: Optimal generation duration?\n\nDepends on the scene. Mx-Shell's habits:\n- Opening / transformation: 15s\n- General shot: 5–10s\n- Brief action (a blink, a glance): 4–5s\n\n### Q: How do I make a video longer than 15s?\n\nUse Xiaoyunque web client's **\"Continue this video\"** feature. That's how\ncombat sequences extend transformations.\n\nDon't know how to write a combat prompt?\n> *\"Write it yourself. I don't enjoy doing combat — get Doubao to\n> draft it and refine.\"*\n\n### Q: How do I connect two video clips?\n\nBy **motion direction continuity**.\n\n> *\"My robot throws a bomb that blasts the zombie horde — and he gets\n> pushed out of frame one side. Next shot, he enters from the same side.\"*\n\nVisually, the audience reads the motion as one continuous action.\n\n### Q: What editor?\n\n**CapCut** (剪映). No fancy software.\n\n### Q: Color grading?\n\nSome. But AI-generated video has **low color bitrate** — grading\nflexibility is limited:\n\n> *\"Push it too far and you get color banding and noise. Not like a\n> real-camera output where you can really push the dial.\"*\n\nBest strategy: lock your color tone at the image-generation stage,\nkeep all video prompts' \"Color & tone\" section consistent, and do\nonly minor transitions in post.\n\n---\n\n## Word limits / rerolls / non-reproducibility\n\n### Q: Prompt too long?\n\n- On mobile → switch to the web client.\n- Still too long → trim.\n\n### Q: I used your exact prompt — why doesn't my output look like yours?\n\n> *\"Even I get different outputs running the same prompt twice.\"*\n\nAI generation is gacha. Treat one prompt as a **ticket to draw**, not\na deterministic recipe.\n\n**Mx-Shell's per-shot reroll counts:**\n- High: 20+ tries\n- Low: 2–3 tries\n- *Zombie Scavenger* total: ~400 generated images + 200+ video shots\n  to produce the final ~40 clips\n\n### Q: How do I reproduce *Flame Demon*'s camera move?\n\n> *\"That was an accidental beauty. The AI didn't follow my instruction.\n> Blind cat, dead mouse. I can't reproduce it either.\"*\n\nAccept randomness. Reroll selection matters more than prompt polish.\n\n---\n\n## Music / sound\n\n### Q: Did you make the music?\n\nNo. Licensed music from **Artlist.io**.\n\n### Q: Sound effects?\n\nSeedance generates production audio automatically. Specify any unusual\nones in the prompt:\n\n```\nExpression-switch sound: a sci-fi tonal sweep\n```\n\n### Q: Voice / dialogue?\n\n> *\"My whole film has exactly one voice line.\"*\n\nIf you only need one or two lines, don't bother with voice consistency\n— pick the best Seedance generates. Newer Xiaoyunque versions have a\n**voice reference** feature for consistency needs.\n\n---\n\n## Inspiration / learning\n\n### Q: Where did the story come from?\n\n> *\"The inspiration came from Wall-E.\"*\n\nAnywhere — films, your own life, novels, TV.\n> *\"You need to have a life before you can have creativity.\"*\n\n### Q: I'm stuck mid-project. What do?\n\n> *\"I didn't have a complete script either. I chatted with a friend,\n> shot two test scenes, saw the texture was OK, then started thinking\n> about the opening. I made it up as I went.\"*\n\n**Shoot two test scenes first, then plan as you go.** Better than\nfinishing a full script in isolation before any AI iteration.\n\n### Q: How do I learn AI shortfilm production?\n\nMx-Shell himself started in **January 2026**, self-taught.\n> *\"What I'm saying may be rough — I'm self-taught too, no systematic\n> training.\"*\n\n### Q: Should I learn video editing?\n\n**Yes.**\n> *\"AI-generated clips aren't always perfect. Trim a piece here, add\n> a transition there, splice. Saves money on rerolls.\"*\n\n---\n\n## Cost / time\n\n### Stated numbers (Mx-Shell self-reported)\n\n| Item | Number |\n|---|---|\n| Total project duration | 10 days |\n| Total cost | Initially stated **~3000 RMB**; later clarified **\"actually tens of thousands, maybe 20,000+ RMB\"** |\n| Images generated | ~400 |\n| Video shots generated | 200+ (for ~40 final clips) |\n| Hand-written prompt ratio | 95% (only combat scenes were AI-assisted via Doubao) |\n| Complete script existed | No — made up as he went |\n\n> *\"3000 USD?? It's RMB!\"*\n> *\"Hmm — actually tens of thousands by G2, maybe 20k+ RMB.\"*\n> *\"3000 RMB, yes.\"*\n\n⚠️ **Reality check:** the viral \"10 days / 3000 RMB\" number is the\nmarketing line. The actual outlay was likely **20,000 RMB or more**\nonce you include all the rerolls. Still far below the cost of\nshooting a real 3-minute short.\n\n---\n\n## Miscellaneous\n\n### Q: What about base costume for the character?\n\n> *\"Match the combat style. No one fights in stilettos. The base outfit\n> should match the genre, otherwise immersion breaks.\"*\n\n### Q: Your prompts have typos.\n\nYes.\n> *\"My prompts have some typos. Feel free to fix them before using.\"*\n\n### Q: What's your background?\n\nVocational school. Photography is a side hobby.\n\n### Q: Will you keep posting new prompts?\n\nDepends.\n> *\"I have a day job and other hobbies. The Kamen Rider thing was just\n> a whim — I didn't expect this much attention.\"*\n";
+function extractPrompt(md){
+  const lines=md.split("\n");
+  const re=/^#{1,4}\s.*(完整提示词|complete prompt|copy-paste|可直接复制)/i;
+  let s=-1; for(let i=0;i<lines.length;i++){if(re.test(lines[i])){s=i+1;break;}}
+  if(s>=0){let e=lines.length;for(let i=s;i<lines.length;i++){if(/^##\s/.test(lines[i])){e=i;break;}}
+    const r=lines.slice(s,e).join("\n").replace(/^\s*-{3,}\s*$/gm,"").trim();if(r)return r;}
+  const b=[...md.matchAll(/```[^\n]*\n([\s\S]*?)```/g)].map(m=>m[1].trim());
+  return b.length?b.join("\n\n"):md.trim();
+}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('show');
+  clearTimeout(toast._t);toast._t=setTimeout(()=>e.classList.remove('show'),1700);}
+async function cp(t,msg){try{await navigator.clipboard.writeText(t);toast(msg);}catch(e){toast('复制失败');}}
+document.getElementById('copyPrompt').onclick=()=>cp(extractPrompt(RAW),'提示词已复制 · 可直接粘进视频模型');
+document.getElementById('copyAll').onclick=()=>cp(RAW,'全文已复制');
+</script>
+</body>
+</html>

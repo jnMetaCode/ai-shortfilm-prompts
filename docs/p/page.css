@@ -1,0 +1,61 @@
+/* 独立提示词页样式 · 与展示站暗金电影风一致 */
+:root{
+  --bg:#0a0b0e; --panel:#14171d; --panel-2:#1b1f27; --line:#272c36; --line-soft:#1d222b;
+  --txt:#eceef3; --txt-2:#aab2c0; --dim:#7b8494; --gold:#e8b84b; --gold-soft:#f2d488;
+  --blue:#6aa8ff; --green:#5fd08a; --radius:13px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--txt);line-height:1.72;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.topbar{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;
+  gap:12px;padding:12px 22px;background:rgba(10,11,14,.82);backdrop-filter:saturate(140%) blur(12px);
+  border-bottom:1px solid var(--line-soft);font-size:13px}
+.topbar .back{color:var(--gold-soft);font-weight:600}
+.topbar .ghlink{color:var(--dim)}
+
+.doc{max-width:840px;margin:0 auto;padding:26px 22px 70px}
+.doc-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:0 0 22px}
+.doc-actions button,.doc-actions .langsw{padding:8px 15px;border-radius:9px;border:1px solid var(--line);
+  background:var(--panel);color:var(--txt);font-size:13px;cursor:pointer;transition:all .15s}
+#copyPrompt{background:linear-gradient(135deg,var(--gold),#d9a23a);color:#1a1505;border-color:transparent;font-weight:600}
+.doc-actions button:hover,.doc-actions .langsw:hover{border-color:var(--gold);text-decoration:none}
+.langsw{margin-left:auto;color:var(--txt-2)}
+
+/* markdown 正文 */
+.md h1{font-size:27px;line-height:1.3;margin:.2em 0 .5em;letter-spacing:.3px}
+.md h2{font-size:20px;margin:1.7em 0 .5em;padding-top:.5em;border-top:1px solid var(--line-soft)}
+.md h3{font-size:16px;margin:1.4em 0 .4em;color:var(--gold-soft)}
+.md h4{font-size:14px;margin:1.2em 0 .3em;color:var(--txt-2)}
+.md p{margin:.7em 0;color:#dfe3ea}
+.md a{color:var(--blue)}
+.md strong{color:#fff}
+.md ul,.md ol{padding-left:1.4em;margin:.6em 0}
+.md li{margin:.32em 0;color:#dfe3ea}
+.md code{background:var(--panel-2);border:1px solid var(--line);border-radius:5px;padding:1px 6px;
+  font-size:.88em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--gold-soft)}
+.md pre{background:#0e1014;border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;
+  overflow:auto;margin:1em 0}
+.md pre code{background:none;border:none;padding:0;color:#d6dae3;font-size:13px;line-height:1.66;white-space:pre}
+.md blockquote{margin:1em 0;padding:.4em 1.1em;border-left:3px solid var(--gold);background:rgba(232,184,75,.05);
+  border-radius:0 8px 8px 0;color:var(--txt-2)}
+.md blockquote p{color:var(--txt-2)}
+.md hr{border:none;border-top:1px solid var(--line-soft);margin:1.6em 0}
+.md table{width:100%;border-collapse:collapse;margin:1.1em 0;font-size:13.5px;display:block;overflow-x:auto}
+.md th,.md td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+.md th{background:var(--panel-2);color:var(--txt);font-weight:600;white-space:nowrap}
+.md td{color:#dfe3ea}
+
+.doc-foot{margin-top:38px;padding-top:18px;border-top:1px solid var(--line-soft);font-size:12.5px;color:var(--dim)}
+.doc-foot p{margin:.3em 0}
+
+.toast{position:fixed;left:50%;bottom:30px;transform:translateX(-50%) translateY(20px);opacity:0;
+  background:var(--panel-2);border:1px solid var(--line);color:var(--txt);padding:11px 18px;border-radius:10px;
+  font-size:13px;pointer-events:none;transition:all .25s;z-index:50}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+@media(max-width:560px){.doc{padding:20px 16px 60px}.md h1{font-size:23px}}

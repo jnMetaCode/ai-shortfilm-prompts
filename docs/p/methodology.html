@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Mx-Shell Prompt Methodology | Cinematic AI Video Prompt Library</title>
+<meta name="description" content="This document decomposes the 5-stage prompt structure Mx-Shell used repeatedly across Zombie Scavenger, the Kamen Rider transformation series, and other…">
+<link rel="canonical" href="https://prompts.aiolaola.com/p/methodology.html">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="en" href="https://prompts.aiolaola.com/p/methodology.html">
+<link rel="alternate" hreflang="zh-CN" href="https://prompts.aiolaola.com/p/methodology.zh.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="电影感 AI 视频提示词库">
+<meta property="og:title" content="The Mx-Shell Prompt Methodology">
+<meta property="og:description" content="This document decomposes the 5-stage prompt structure Mx-Shell used repeatedly across Zombie Scavenger, the Kamen Rider transformation series, and other…">
+<meta property="og:url" content="https://prompts.aiolaola.com/p/methodology.html">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Mx-Shell Prompt Methodology">
+<meta name="twitter:description" content="This document decomposes the 5-stage prompt structure Mx-Shell used repeatedly across Zombie Scavenger, the Kamen Rider transformation series, and other…">
+<link rel="stylesheet" href="./page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "The Mx-Shell Prompt Methodology",
+  "description": "This document decomposes the 5-stage prompt structure Mx-Shell used repeatedly across Zombie Scavenger, the Kamen Rider transformation series, and other…",
+  "inLanguage": "en",
+  "url": "https://prompts.aiolaola.com/p/methodology.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "电影感 AI 视频提示词库",
+    "url": "https://prompts.aiolaola.com/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "jnMetaCode",
+    "url": "https://github.com/jnMetaCode"
+  },
+  "license": "https://opensource.org/licenses/MIT"
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7LBJRDWYYW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7LBJRDWYYW');</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="back" href="../">← 提示词库</a>
+  <a class="ghlink" href="https://github.com/jnMetaCode/ai-shortfilm-prompts/blob/main/methodology.md" target="_blank" rel="noopener">在 GitHub 查看源文件 ↗</a>
+</header>
+<main class="doc">
+  <div class="doc-actions">
+    <button id="copyPrompt">⧉ 复制提示词</button>
+    <button id="copyAll">复制全文</button>
+    <a class="langsw" href="./methodology.zh.html">中文</a>
+  </div>
+  <article class="md">
+<h1>The Mx-Shell Prompt Methodology</h1>
+<blockquote><p>This document decomposes the 5-stage prompt structure Mx-Shell used repeatedly across <em>Zombie Scavenger</em>, the <em>Kamen Rider</em> transformation series, and others.</p>
+<p>Not a copy-paste cookbook — a system you can adapt to your own ideas.</p>
+<p><strong><a href="methodology.zh.html">中文版 →</a></strong></p></blockquote>
+<hr>
+<h2>One-sentence summary</h2>
+<p><strong>Write prompts the way a director writes a shot list, not the way a copywriter writes a description.</strong> Slice the scene by time, and for each slice specify exactly four things: action / camera / VFX / sound.</p>
+<hr>
+<h2>The 5-stage structure</h2>
+<p>All of Mx-Shell's video prompts follow this order. Don't shuffle it:</p>
+<pre><code>1. Core theme          ← Tone-setter (one line of tags)
+2. Character &amp; scene   ← Who is in it, wearing what
+3. Atmosphere &amp; look   ← How it looks
+4. Camera rules        ← How the camera moves
+5. Storyboard          ← Per-second OR per-shot breakdown</code></pre>
+<h3>Stage 1 · Core theme</h3>
+<p>A single line of style tags separated by <code>|</code> or <code>丨</code>. Gives the AI an overall aesthetic anchor.</p>
+<p><strong>How to write it:</strong> 3–6 tags, ramping from "what kind of shot" to "genre" to "aesthetic reference."</p>
+<pre><code>Core theme: gritty dark tokusatsu | broken flesh | combat-damaged transformation | post-apocalyptic battlefield
+Core theme: atom-punk | post-apocalyptic zombies | cinematic | hyperreal | no game-CG feel
+Core theme: realistic sci-fi | heavy mecha | epic | heavy-industry mechanical aesthetic | live-action performance</code></pre>
+<p><strong>Useful tag vocabulary</strong> (mix and match):</p>
+<table><thead><tr><th>Type</th><th>Examples</th></tr></thead><tbody><tr><td>Realism anchors</td><td>cinematic, hyperreal, live-action, no game-CG feel, anamorphic widescreen cinematic</td></tr><tr><td>Aesthetic schools</td><td>gritty dark, atom-punk, steampunk, cyberpunk, wasteland industrial, retro Hong Kong noir</td></tr><tr><td>Genres</td><td>tokusatsu, post-apocalyptic survival, lone-hero, mecha wuxia, heavy mecha</td></tr><tr><td>Emotional tone</td><td>broken flesh, combat-damaged transformation, somber, epic, oppressive</td></tr></tbody></table>
+<hr>
+<h3>Stage 2 · Character &amp; scene</h3>
+<p>Answers <em>"who is in the frame, what are they wearing, where do they stand."</em> Three lines: <strong>Face / Clothing / Scene</strong>.</p>
+<pre><code>[Character setup]
+Face:    Reference uploaded photo. Features, face shape, hairstyle 100% preserved.
+         No beautification. Maintain facial wound, gauze, bloodstain.
+         Hair covers forehead, expression somber throughout. At the moment
+         of transformation, only a slight furrow of the brow — no heroic
+         spark, no eye-light, keep the oppressive feel.
+Clothing: Matte black leather trench coat, matte metal belt, dark red
+          crystal at the buckle core.
+Scene:    Post-apocalyptic battlefield, light breeze, smoke drifting,
+          overcast wasteland, grey-blue sky. A meteor trailing fire
+          and smoke crosses the sky.</code></pre>
+<p><strong>Counter-intuitive but Mx-Shell-emphasized points:</strong></p>
+<ul><li><strong>"No beautification."</strong> Realism comes from imperfections. Writing <em>"preserve minor facial blemishes"</em> explicitly is more effective than vaguely asking for "high quality."</li><li><strong>"Reference uploaded photo, 100% preserve features"</strong> — if you used a reference image, lock it down. Otherwise the AI will drift.</li><li><strong>Clothing has texture.</strong> <em>"Matte black leather"</em> has 3x the information of <em>"black leather jacket."</em></li><li><strong>Scene has motion.</strong> Wind, smoke, meteor. A static background can't carry atmosphere.</li></ul>
+<hr>
+<h3>Stage 3 · Atmosphere &amp; look</h3>
+<p>The <strong>camera-emulation trick</strong> Mx-Shell uses everywhere.</p>
+<pre><code>[Atmosphere &amp; quality]
+Visual base: Anamorphic widescreen cinematic. Simulated IMAX film
+             camera, paired with Panavision C-series lens (35mm focal,
+             f/4 aperture).
+Color &amp; tone: Low-saturation grey-blue dominant. Shadow info compressed
+              but detail preserved. Subtle edge bloom, moderate film
+              grain.
+Style core:  Reference [aesthetic]. Emphasis on the fusion of biological
+             texture and alien tech. Build an oppressive, heavy, live-
+             action sensation of physical pain.
+Sound: No score. Production audio only.</code></pre>
+<p><strong>Why it works:</strong> AI training data binds huge amounts of real movie imagery to specific camera-and-lens metadata. Giving the AI a real camera model = giving it a concrete visual anchor — orders of magnitude more effective than "cinematic feel."</p>
+<p><strong>Mx-Shell's go-to combinations:</strong></p>
+<table><thead><tr><th>Aesthetic</th><th>Camera + lens</th></tr></thead><tbody><tr><td>Epic / big scenes</td><td><strong>IMAX film camera + Panavision C-series</strong> (35mm, f/4)</td></tr><tr><td>Gritty cyber / hard sci-fi</td><td><strong>Sony Venice + Canon K-35 series</strong></td></tr><tr><td>Hong Kong noir / wuxia</td><td><strong>Kodak 35mm vintage film, bleach-bypass</strong></td></tr><tr><td>Commercial portrait</td><td><strong>Canon EF 85mm f/1.2</strong></td></tr></tbody></table>
+<p><strong>Common color phrases:</strong> low-saturation grey-blue / Hollywood teal-and-orange / 60s retro warm-orange + sea-salt blue / dark-low-light high-contrast.</p>
+<hr>
+<h3>Stage 4 · Camera rules</h3>
+<p>How the camera moves. Three lines: <strong>single-shot / angle / breathing</strong>.</p>
+<pre><code>[Camera rules]
+Single-shot: One continuous take, no editing.
+Angle: Open on a low-angle shot, character at 30° from the left, framed
+       waist-up. As the transformation begins the camera orbits very
+       slowly to a level head-on at the upper body. After transformation
+       completes, orbit to the right side and shift to a high angle.
+Breathing: Handheld shot. Throughout, maintain an *extremely subtle,
+           breath-like camera float* to enhance presence.</code></pre>
+<p><strong>Vocabulary to pull from:</strong></p>
+<ul><li><strong>Shot size</strong>: extreme close-up / close-up / medium close-up / medium / wide / extreme wide</li><li><strong>Angle</strong>: low-angle / high-angle / eye-level / over-the-shoulder / vertical bird's-eye</li><li><strong>Motion</strong>: very slow push-in / orbit / handheld follow / locked-off / FPV / pull-out + drop + tilt-up</li><li><strong>Rhythm</strong>: very slow / steady / sudden / 0.1-second reactive micro-shake / extreme slow motion</li></ul>
+<p><strong>The "breathing" line</strong> — Mx-Shell adds it to almost every prompt. Reason: it forces the AI to add subtle handheld float, avoiding the artificially-static CG-look default.</p>
+<hr>
+<h3>Stage 5 · Storyboard (per-second OR per-shot)</h3>
+<p>The most critical — and most often missed — part of the whole system.</p>
+<p><strong>Two writing styles, pick one based on the scene:</strong></p>
+<h4>Style A: per-second slices (single-shot, one-take)</h4>
+<p>Best for transformations, weapon-charge sequences, anything one-take.</p>
+<pre><code>0–3s · Gaze
+Action: Subject slightly bows head, eyes locked on the belt. Back tense.
+        Right hand slowly rises, grips the belt body.
+Camera: Extremely slow push-in. Capture the subtle rise/fall of breath.
+VFX:    Both eyes suddenly ignite with a platinum glow. Eye sockets
+        crack around the rim. The glare creates lens flares.
+
+3–6s · Activation
+Sound:  Whispered "HENSHIN"
+Action: As the word fades, the palm presses hard against the belt core.
+        The crystal core is compressed and cracks; red light follows
+        the fractures. The hand slowly releases after activation.
+VFX:    The metal mechanism is violently awakened. The core splits down
+        the centerline. Air collapses inward, creating distortion;
+        screen edges stretch slightly. A horizontal pulse wave radiates
+        outward in a spiral, dissipating after 0.3s.
+Camera: Low-frequency hum approaches from a distance. The camera produces
+        a reactive 0.1s micro-tremor.
+
+6–9s · Tearing
+[Then subcategorize: core / body / coat / shell / face / camera]</code></pre>
+<p><strong>Three-part formula per segment</strong>: Action + Camera + VFX. Optional add-ons: Sound, Face/Expression.</p>
+<h4>Style B: per-shot slices (multi-shot edited)</h4>
+<p>Best for narrative shorts like <em>Zombie Scavenger</em>.</p>
+<pre><code>Shot 1:
+Shot size:   Medium. Frame the robot from the waist up.
+Composition: Robot's back centered as foreground.
+             Background-left: floor-to-ceiling window.
+             Background-right: bar counter.
+Camera move: Follow-tracking shot.
+Action:      Robot dances his way into the lounge area with his back
+             to the camera. He spins to face camera as the dance's
+             END pose. The LED face holds the green smiley pixel
+             expression. Off-screen, a glass bottle shatters. The
+             robot startles, takes a half-step back-and-left, hunches
+             slightly. LED face switches instantly to the yellow
+             frightened expression, gaze flicks to the right.
+
+Shot 2:
+Shot size:   Wide. Level pan of the entire bar counter.
+Composition: Empty shot. Bar counter occupies the lower third; back
+             wall of liquor shelves above.
+Camera move: Slow push-in to build atmosphere.
+Action:      A rustling noise comes from behind the counter — something
+             is rummaging beneath it.</code></pre>
+<p><strong>Four-part formula per shot</strong>: Shot size + Composition + Camera move + Action.</p>
+<hr>
+<h2>Three counter-intuitive principles</h2>
+<h3>1. Don't give the AI reference images unless the image quality is high</h3>
+<blockquote><p>"All my Kamen Rider armor designs came from text descriptions — letting the AI free-form."</p></blockquote>
+<p>The worst side effect of reference images: AI mimics the <em>art style</em> of the reference (including CG look, anime look), not the <em>design</em>. Exceptions: photoreal 3D renders or true high-detail live-action photos.</p>
+<h3>2. Describing flaws = describing reality</h3>
+<blockquote><p>"Too perfect = fake. Keeping imperfections is not a bad thing."</p></blockquote>
+<p><code>Battle damage everywhere</code> / <code>paint worn off</code> / <code>oil in the joints</code> / <code>preserve minor facial blemishes</code> / <code>armor never perfectly flat</code> — these "flaws" are the core source of Mx-Shell's signature texture.</p>
+<h3>3. Rerolls are normal. Leave the ending empty.</h3>
+<p>Across the film, 200+ video generations produced ~40 final clips. Each shot took anywhere from 2–3 rerolls to 20+. <strong>Don't aim for first-try perfection.</strong></p>
+<p>And don't pile on FX at the end:</p>
+<blockquote><p>"No dialogue. No explosion. No blinding light. Just a figure standing in the smoke, a meteor crossing the distant sky."</p></blockquote>
+<p>Restraint reads more elevated than excess.</p>
+<hr>
+<h2>After you finish writing</h2>
+<ul><li>Use <strong>Seedance 2.0</strong> (not the Fast variant).</li><li>If the prompt exceeds the character limit, switch to the web client.</li><li>IP names (real brands, real character names) get blocked — substitute with style descriptions.</li><li>Full FAQ: <a href="faq.html">faq.md</a>.</li></ul>
+<hr>
+<h2>Want real examples?</h2>
+<ul><li><a href="./prompts/">prompts/</a> — Mx-Shell's complete original prompts (Chinese body untouched, English header on each file). Includes <em>Zombie Scavenger</em>, <em>Kamen Rider</em> (6 variants), <em>Kai'Sa</em> (15s/20s/5s), <em>Pacific Rim + Gundam</em>, <em>Cyber-Wuxia</em>, <em>Metal Gear</em>.</li><li><a href="./templates/">templates/</a> — IP-stripped reusable skeletons in English (organized from Mx-Shell's structure).</li></ul>
+  </article>
+  <footer class="doc-foot">
+    <p>许可 · <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT · 可自由使用</a></p>
+    <p><a href="../">← 回提示词库</a> · <a href="https://www.aiolaola.com/?utm_source=prompts.aiolaola.com&amp;utm_medium=referral&amp;utm_campaign=docpage" target="_blank" rel="noopener">aiOlaOla 学 AI 编程</a></p>
+  </footer>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const RAW = "# The Mx-Shell Prompt Methodology\n\n> This document decomposes the 5-stage prompt structure Mx-Shell used\n> repeatedly across *Zombie Scavenger*, the *Kamen Rider* transformation\n> series, and others.\n>\n> Not a copy-paste cookbook — a system you can adapt to your own ideas.\n>\n> **[中文版 →](./methodology.zh.md)**\n\n---\n\n## One-sentence summary\n\n**Write prompts the way a director writes a shot list, not the way a\ncopywriter writes a description.** Slice the scene by time, and for\neach slice specify exactly four things: action / camera / VFX / sound.\n\n---\n\n## The 5-stage structure\n\nAll of Mx-Shell's video prompts follow this order. Don't shuffle it:\n\n```\n1. Core theme          ← Tone-setter (one line of tags)\n2. Character & scene   ← Who is in it, wearing what\n3. Atmosphere & look   ← How it looks\n4. Camera rules        ← How the camera moves\n5. Storyboard          ← Per-second OR per-shot breakdown\n```\n\n### Stage 1 · Core theme\n\nA single line of style tags separated by `|` or `丨`. Gives the AI an\noverall aesthetic anchor.\n\n**How to write it:** 3–6 tags, ramping from \"what kind of shot\" to\n\"genre\" to \"aesthetic reference.\"\n\n```\nCore theme: gritty dark tokusatsu | broken flesh | combat-damaged transformation | post-apocalyptic battlefield\nCore theme: atom-punk | post-apocalyptic zombies | cinematic | hyperreal | no game-CG feel\nCore theme: realistic sci-fi | heavy mecha | epic | heavy-industry mechanical aesthetic | live-action performance\n```\n\n**Useful tag vocabulary** (mix and match):\n\n| Type | Examples |\n|---|---|\n| Realism anchors | cinematic, hyperreal, live-action, no game-CG feel, anamorphic widescreen cinematic |\n| Aesthetic schools | gritty dark, atom-punk, steampunk, cyberpunk, wasteland industrial, retro Hong Kong noir |\n| Genres | tokusatsu, post-apocalyptic survival, lone-hero, mecha wuxia, heavy mecha |\n| Emotional tone | broken flesh, combat-damaged transformation, somber, epic, oppressive |\n\n---\n\n### Stage 2 · Character & scene\n\nAnswers *\"who is in the frame, what are they wearing, where do they\nstand.\"* Three lines: **Face / Clothing / Scene**.\n\n```\n[Character setup]\nFace:    Reference uploaded photo. Features, face shape, hairstyle 100% preserved.\n         No beautification. Maintain facial wound, gauze, bloodstain.\n         Hair covers forehead, expression somber throughout. At the moment\n         of transformation, only a slight furrow of the brow — no heroic\n         spark, no eye-light, keep the oppressive feel.\nClothing: Matte black leather trench coat, matte metal belt, dark red\n          crystal at the buckle core.\nScene:    Post-apocalyptic battlefield, light breeze, smoke drifting,\n          overcast wasteland, grey-blue sky. A meteor trailing fire\n          and smoke crosses the sky.\n```\n\n**Counter-intuitive but Mx-Shell-emphasized points:**\n\n- **\"No beautification.\"** Realism comes from imperfections. Writing\n  *\"preserve minor facial blemishes\"* explicitly is more effective than\n  vaguely asking for \"high quality.\"\n- **\"Reference uploaded photo, 100% preserve features\"** — if you used a\n  reference image, lock it down. Otherwise the AI will drift.\n- **Clothing has texture.** *\"Matte black leather\"* has 3x the\n  information of *\"black leather jacket.\"*\n- **Scene has motion.** Wind, smoke, meteor. A static background can't\n  carry atmosphere.\n\n---\n\n### Stage 3 · Atmosphere & look\n\nThe **camera-emulation trick** Mx-Shell uses everywhere.\n\n```\n[Atmosphere & quality]\nVisual base: Anamorphic widescreen cinematic. Simulated IMAX film\n             camera, paired with Panavision C-series lens (35mm focal,\n             f/4 aperture).\nColor & tone: Low-saturation grey-blue dominant. Shadow info compressed\n              but detail preserved. Subtle edge bloom, moderate film\n              grain.\nStyle core:  Reference [aesthetic]. Emphasis on the fusion of biological\n             texture and alien tech. Build an oppressive, heavy, live-\n             action sensation of physical pain.\nSound: No score. Production audio only.\n```\n\n**Why it works:** AI training data binds huge amounts of real movie\nimagery to specific camera-and-lens metadata. Giving the AI a real\ncamera model = giving it a concrete visual anchor — orders of magnitude\nmore effective than \"cinematic feel.\"\n\n**Mx-Shell's go-to combinations:**\n\n| Aesthetic | Camera + lens |\n|---|---|\n| Epic / big scenes | **IMAX film camera + Panavision C-series** (35mm, f/4) |\n| Gritty cyber / hard sci-fi | **Sony Venice + Canon K-35 series** |\n| Hong Kong noir / wuxia | **Kodak 35mm vintage film, bleach-bypass** |\n| Commercial portrait | **Canon EF 85mm f/1.2** |\n\n**Common color phrases:** low-saturation grey-blue / Hollywood teal-and-orange / 60s retro warm-orange + sea-salt blue / dark-low-light high-contrast.\n\n---\n\n### Stage 4 · Camera rules\n\nHow the camera moves. Three lines: **single-shot / angle / breathing**.\n\n```\n[Camera rules]\nSingle-shot: One continuous take, no editing.\nAngle: Open on a low-angle shot, character at 30° from the left, framed\n       waist-up. As the transformation begins the camera orbits very\n       slowly to a level head-on at the upper body. After transformation\n       completes, orbit to the right side and shift to a high angle.\nBreathing: Handheld shot. Throughout, maintain an *extremely subtle,\n           breath-like camera float* to enhance presence.\n```\n\n**Vocabulary to pull from:**\n\n- **Shot size**: extreme close-up / close-up / medium close-up / medium / wide / extreme wide\n- **Angle**: low-angle / high-angle / eye-level / over-the-shoulder / vertical bird's-eye\n- **Motion**: very slow push-in / orbit / handheld follow / locked-off / FPV / pull-out + drop + tilt-up\n- **Rhythm**: very slow / steady / sudden / 0.1-second reactive micro-shake / extreme slow motion\n\n**The \"breathing\" line** — Mx-Shell adds it to almost every prompt.\nReason: it forces the AI to add subtle handheld float, avoiding the\nartificially-static CG-look default.\n\n---\n\n### Stage 5 · Storyboard (per-second OR per-shot)\n\nThe most critical — and most often missed — part of the whole system.\n\n**Two writing styles, pick one based on the scene:**\n\n#### Style A: per-second slices (single-shot, one-take)\n\nBest for transformations, weapon-charge sequences, anything one-take.\n\n```\n0–3s · Gaze\nAction: Subject slightly bows head, eyes locked on the belt. Back tense.\n        Right hand slowly rises, grips the belt body.\nCamera: Extremely slow push-in. Capture the subtle rise/fall of breath.\nVFX:    Both eyes suddenly ignite with a platinum glow. Eye sockets\n        crack around the rim. The glare creates lens flares.\n\n3–6s · Activation\nSound:  Whispered \"HENSHIN\"\nAction: As the word fades, the palm presses hard against the belt core.\n        The crystal core is compressed and cracks; red light follows\n        the fractures. The hand slowly releases after activation.\nVFX:    The metal mechanism is violently awakened. The core splits down\n        the centerline. Air collapses inward, creating distortion;\n        screen edges stretch slightly. A horizontal pulse wave radiates\n        outward in a spiral, dissipating after 0.3s.\nCamera: Low-frequency hum approaches from a distance. The camera produces\n        a reactive 0.1s micro-tremor.\n\n6–9s · Tearing\n[Then subcategorize: core / body / coat / shell / face / camera]\n```\n\n**Three-part formula per segment**: Action + Camera + VFX. Optional add-ons: Sound, Face/Expression.\n\n#### Style B: per-shot slices (multi-shot edited)\n\nBest for narrative shorts like *Zombie Scavenger*.\n\n```\nShot 1:\nShot size:   Medium. Frame the robot from the waist up.\nComposition: Robot's back centered as foreground.\n             Background-left: floor-to-ceiling window.\n             Background-right: bar counter.\nCamera move: Follow-tracking shot.\nAction:      Robot dances his way into the lounge area with his back\n             to the camera. He spins to face camera as the dance's\n             END pose. The LED face holds the green smiley pixel\n             expression. Off-screen, a glass bottle shatters. The\n             robot startles, takes a half-step back-and-left, hunches\n             slightly. LED face switches instantly to the yellow\n             frightened expression, gaze flicks to the right.\n\nShot 2:\nShot size:   Wide. Level pan of the entire bar counter.\nComposition: Empty shot. Bar counter occupies the lower third; back\n             wall of liquor shelves above.\nCamera move: Slow push-in to build atmosphere.\nAction:      A rustling noise comes from behind the counter — something\n             is rummaging beneath it.\n```\n\n**Four-part formula per shot**: Shot size + Composition + Camera move + Action.\n\n---\n\n## Three counter-intuitive principles\n\n### 1. Don't give the AI reference images unless the image quality is high\n\n> \"All my Kamen Rider armor designs came from text descriptions —\n> letting the AI free-form.\"\n\nThe worst side effect of reference images: AI mimics the *art style*\nof the reference (including CG look, anime look), not the *design*.\nExceptions: photoreal 3D renders or true high-detail live-action photos.\n\n### 2. Describing flaws = describing reality\n\n> \"Too perfect = fake. Keeping imperfections is not a bad thing.\"\n\n`Battle damage everywhere` / `paint worn off` / `oil in the joints`\n/ `preserve minor facial blemishes` / `armor never perfectly flat` —\nthese \"flaws\" are the core source of Mx-Shell's signature texture.\n\n### 3. Rerolls are normal. Leave the ending empty.\n\nAcross the film, 200+ video generations produced ~40 final clips.\nEach shot took anywhere from 2–3 rerolls to 20+. **Don't aim for\nfirst-try perfection.**\n\nAnd don't pile on FX at the end:\n\n> \"No dialogue. No explosion. No blinding light. Just a figure\n> standing in the smoke, a meteor crossing the distant sky.\"\n\nRestraint reads more elevated than excess.\n\n---\n\n## After you finish writing\n\n- Use **Seedance 2.0** (not the Fast variant).\n- If the prompt exceeds the character limit, switch to the web client.\n- IP names (real brands, real character names) get blocked — substitute\n  with style descriptions.\n- Full FAQ: [faq.md](./faq.md).\n\n---\n\n## Want real examples?\n\n- [prompts/](./prompts/) — Mx-Shell's complete original prompts\n  (Chinese body untouched, English header on each file).\n  Includes *Zombie Scavenger*, *Kamen Rider* (6 variants), *Kai'Sa*\n  (15s/20s/5s), *Pacific Rim + Gundam*, *Cyber-Wuxia*, *Metal Gear*.\n- [templates/](./templates/) — IP-stripped reusable skeletons in\n  English (organized from Mx-Shell's structure).\n";
+function extractPrompt(md){
+  const lines=md.split("\n");
+  const re=/^#{1,4}\s.*(完整提示词|complete prompt|copy-paste|可直接复制)/i;
+  let s=-1; for(let i=0;i<lines.length;i++){if(re.test(lines[i])){s=i+1;break;}}
+  if(s>=0){let e=lines.length;for(let i=s;i<lines.length;i++){if(/^##\s/.test(lines[i])){e=i;break;}}
+    const r=lines.slice(s,e).join("\n").replace(/^\s*-{3,}\s*$/gm,"").trim();if(r)return r;}
+  const b=[...md.matchAll(/```[^\n]*\n([\s\S]*?)```/g)].map(m=>m[1].trim());
+  return b.length?b.join("\n\n"):md.trim();
+}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('show');
+  clearTimeout(toast._t);toast._t=setTimeout(()=>e.classList.remove('show'),1700);}
+async function cp(t,msg){try{await navigator.clipboard.writeText(t);toast(msg);}catch(e){toast('复制失败');}}
+document.getElementById('copyPrompt').onclick=()=>cp(extractPrompt(RAW),'提示词已复制 · 可直接粘进视频模型');
+document.getElementById('copyAll').onclick=()=>cp(RAW,'全文已复制');
+</script>
+</body>
+</html>
