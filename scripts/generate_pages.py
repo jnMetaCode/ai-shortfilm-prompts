@@ -197,14 +197,14 @@ PAGE = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title_seo}</title>
 <meta name="description" content="{desc}">
-<link rel="canonical" href="{site}/p/{slug}.html">
+<link rel="canonical" href="{site}/p/{slug}">
 <meta name="robots" content="index, follow">
 {hreflang}
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="电影感 AI 视频提示词库">
 <meta property="og:title" content="{title_og}">
 <meta property="og:description" content="{desc}">
-<meta property="og:url" content="{site}/p/{slug}.html">
+<meta property="og:url" content="{site}/p/{slug}">
 <meta property="og:locale" content="{locale}">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{title_og}">
@@ -266,7 +266,7 @@ def jsonld_for(rel, title, desc, slug, lang, lic_url):
         "name": title,
         "description": desc,
         "inLanguage": lang,
-        "url": f"{SITE}/p/{slug}.html",
+        "url": f"{SITE}/p/{slug}",
         "isPartOf": {"@type": "WebSite", "name": "电影感 AI 视频提示词库", "url": SITE + "/"},
         "author": {"@type": "Person", "name": "jnMetaCode", "url": "https://github.com/jnMetaCode"},
     }
@@ -298,8 +298,8 @@ def build():
         hreflang = ""
         if sib in slugs:
             other = "en" if zh else "zh-CN"
-            hreflang = (f'<link rel="alternate" hreflang="{lang}" href="{SITE}/p/{slug}.html">\n'
-                        f'<link rel="alternate" hreflang="{other}" href="{SITE}/p/{sib}.html">')
+            hreflang = (f'<link rel="alternate" hreflang="{lang}" href="{SITE}/p/{slug}">\n'
+                        f'<link rel="alternate" hreflang="{other}" href="{SITE}/p/{sib}">')
         langswitch = (f'<a class="langsw" href="./{sib}.html">{"EN" if zh else "中文"}</a>'
                       if sib in slugs else "")
         article = convert(md)
@@ -368,7 +368,7 @@ def write_sitemap(pages):
     urls = [f"  <url><loc>{SITE}/</loc><lastmod>{BUILD_DATE}</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>",
             f"  <url><loc>{SITE}/p/</loc><lastmod>{BUILD_DATE}</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>"]
     for slug in pages:
-        urls.append(f"  <url><loc>{SITE}/p/{slug}.html</loc><lastmod>{BUILD_DATE}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>")
+        urls.append(f"  <url><loc>{SITE}/p/{slug}</loc><lastmod>{BUILD_DATE}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>")
     xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
            + "\n".join(urls) + "\n</urlset>\n")
