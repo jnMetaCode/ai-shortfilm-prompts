@@ -3,7 +3,7 @@
 > Original worked example by jnMetaCode (MIT). Applies the 5-stage
 > structure to a **travel vlog** — an authentic handheld montage that has
 > to make the viewer *feel a place* in a few shots. Teaches the
-> montage-of-place structure (wide → detail → people → food), authentic
+> montage-of-place structure (wide → detail → people → move), authentic
 > mirrorless-handheld energy, and marking a location through specific
 > sensory details rather than a stock drone cliché.
 >
