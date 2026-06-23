@@ -52,6 +52,14 @@ sheen and stray flyaway hairs, fabric creased and a little worn, a real
 scuff on the {{prop}}, faint sweat. Cosplay looks new and posed; real
 looks lived-in.
 
+**Material-translation checklist (swap each 2D cue for its real-world
+equivalent — this is the core move):**
+- cel-shaded skin → real skin with pores + subsurface scattering
+- flat anime hair → individual strands that move with the air
+- enlarged flat eyes → human-proportioned eyes with real catchlights
+- drawn ink outline → no outline; real depth, shadow and contact
+- flat colour fill → woven fabric with weight, real metal with wear
+
 **Scene:** {{world}}, {{palette}} carried into the real lighting.
 
 ### 3 · Atmosphere & quality

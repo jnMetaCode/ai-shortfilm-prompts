@@ -63,6 +63,10 @@ Shot on Sony Venice with anamorphic primes;在 {{grade}} 里做大胆的风格
 
 ### 5 · 分镜（卡点剪辑，约 12s）
 
+**FORMAT 头——先把节拍数算死：**
+`16:9 | 12s | ~100 BPM | 6 shots | beat-synced` —— 把 tempo + 镜头数写在最前，
+模型才会把每个 cut 落在重拍上、而不是乱飘。收尾踩高潮：BGM 戛然而止、画面定格。
+
 ```
 0–4s · Intro / verse（让它呼吸）
 Action: {{artist}} 置身 {{look}},表演进行中,{{grade}} 立住基调。

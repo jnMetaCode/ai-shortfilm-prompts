@@ -68,6 +68,11 @@ into {{hook_moment}}, a camera move that lands on the downbeat.
 
 ### 5 · Storyboard (beat-synced, ~12s)
 
+**Format header — lock the beat math first:**
+`16:9 | 12s | ~100 BPM | 6 shots | beat-synced` — stating tempo + shot
+count up front makes the model land cuts ON the beat instead of drifting.
+End on the hook: BGM cuts dead, frame freezes.
+
 ```
 0–4s · Intro / verse (let it breathe)
 Action: {{artist}} in {{look}}, mid-performance, {{grade}} establishing.
