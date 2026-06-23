@@ -90,6 +90,10 @@ the plugin/repo root.
 | **Cinematic teaser trailer** (escalating multi-shot) | `templates/movie-trailer.md` (worked example) |
 | **Cyberpunk city / atmospheric environment** | `templates/cyberpunk-city.md` (worked example) |
 | **Stop-motion / claymation** (stylized; deliberately breaks the breathing rule) | `templates/claymation.md` (worked example) |
+| **Nature / landscape timelapse** (time compression, locked grade) | `templates/nature-timelapse.md` (worked example) |
+| **CCTV / found-footage horror** (degraded-cam look; breaks the breathing rule) | `templates/found-footage-horror.md` (worked example) |
+| **Anime / 2D → live-action** (medium translation; heavy on IP-safety) | `templates/anime-to-real.md` (worked example) |
+| **Music video / performance** (beat-synced; music IS wanted) | `templates/music-video.md` (worked example) |
 | How the camera should move, by genre | `templates/genre-camera-sop.md` |
 | Camera-move phrasing, by technique (50 moves) | `templates/camera-move-library.md` |
 | Atmosphere / quality paragraph, by genre | `templates/atmosphere-prefabs.md` |

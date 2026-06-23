@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worked Example — CCTV / Found-Footage Horror | Cinematic AI Video Prompt Library</title>
+<meta name="description" content="Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to found-footage / security-cam horror — a genre where a degraded, cheap came…">
+<link rel="canonical" href="https://prompts.aiolaola.com/p/found-footage-horror">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="en" href="https://prompts.aiolaola.com/p/found-footage-horror">
+<link rel="alternate" hreflang="zh-CN" href="https://prompts.aiolaola.com/p/found-footage-horror.zh">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="电影感 AI 视频提示词库">
+<meta property="og:title" content="Worked Example — CCTV / Found-Footage Horror">
+<meta property="og:description" content="Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to found-footage / security-cam horror — a genre where a degraded, cheap came…">
+<meta property="og:url" content="https://prompts.aiolaola.com/p/found-footage-horror">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Worked Example — CCTV / Found-Footage Horror">
+<meta name="twitter:description" content="Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to found-footage / security-cam horror — a genre where a degraded, cheap came…">
+<link rel="stylesheet" href="./page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Worked Example — CCTV / Found-Footage Horror",
+  "description": "Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to found-footage / security-cam horror — a genre where a degraded, cheap came…",
+  "inLanguage": "en",
+  "url": "https://prompts.aiolaola.com/p/found-footage-horror",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "电影感 AI 视频提示词库",
+    "url": "https://prompts.aiolaola.com/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "jnMetaCode",
+    "url": "https://github.com/jnMetaCode"
+  },
+  "license": "https://opensource.org/licenses/MIT"
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7LBJRDWYYW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7LBJRDWYYW');</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="back" href="../">← 提示词库</a>
+  <a class="ghlink" href="https://github.com/jnMetaCode/ai-shortfilm-prompts/blob/main/templates/found-footage-horror.md" target="_blank" rel="noopener">在 GitHub 查看源文件 ↗</a>
+</header>
+<main class="doc">
+  <div class="doc-actions">
+    <button id="copyPrompt">⧉ 复制提示词</button>
+    <button id="copyAll">复制全文</button>
+    <a class="langsw" href="./found-footage-horror.zh.html">中文</a>
+  </div>
+  <article class="md">
+<h1>Worked Example — CCTV / Found-Footage Horror</h1>
+<blockquote><p>Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to <strong>found-footage / security-cam horror</strong> — a genre where a <em>degraded, cheap camera</em> is the entire aesthetic, and restraint (not gore) creates the dread. Another deliberate rule break: the camera is a fixed mount, so the breath-float is dropped (a CCTV does not move).</p>
+<p>Concept: a fixed security camera on an empty night corridor; something is subtly, wrongly off. Swap the location, keep the discipline.</p>
+<p><em>Further reading (inspiration, not copied — all rewritten in our structure): the Horror / CCTV-style category in <a href="https://github.com/zhangchenchen/awesome_sora2_prompt" target="_blank" rel="noopener">zhangchenchen/awesome_sora2_prompt</a> (MIT).</em></p>
+<p><strong><a href="found-footage-horror.zh.html">中文版 →</a></strong></p></blockquote>
+<hr>
+<h2>Variables you need to define first</h2>
+<table><thead><tr><th>Variable</th><th>This example</th><th>Swap for…</th></tr></thead><tbody><tr><td><code>{{place}}</code></td><td>an empty office corridor at 3 AM</td><td>a parking garage / a stairwell / a back yard</td></tr><tr><td><code>{{wrong_thing}}</code></td><td>a door at the end stands open that was shut</td><td>a figure half-out of frame / lights cutting out one by one</td></tr><tr><td><code>{{cam_type}}</code></td><td>ceiling security camera, wide fisheye</td><td>a doorbell cam / a handheld phone / a baby monitor</td></tr><tr><td><code>{{timestamp}}</code></td><td>03:14:07 AM, top-right</td><td>a date burn-in / a channel label</td></tr><tr><td><code>{{night_mode}}</code></td><td>IR night-vision green-grey</td><td>low-lux colour with heavy noise</td></tr></tbody></table>
+<hr>
+<h2>The complete prompt (copy-paste ready)</h2>
+<h3>1 · Core theme</h3>
+<p><code>found-footage horror | fixed security-cam angle | {{night_mode}} | dread through stillness | no jumpscare gore, no cinematic polish</code></p>
+<h3>2 · Character &amp; scene</h3>
+<p><strong>Subject (the space, and what's wrong with it):</strong> {{place}}, empty and still. The horror is that <em>almost</em> nothing happens — then {{wrong_thing}}. No monster reveal, no blood. The wrongness is quiet and specific.</p>
+<p><strong>The "camera" as a character (this is the look):</strong> {{cam_type}} — {{night_mode}}, low resolution, visible compression blocking in the shadows, faint sensor noise crawling, a slightly warped wide/fisheye edge, a {{timestamp}} burn-in, and an occasional dropped/stuttered frame. These artefacts ARE the aesthetic — not flaws to clean up.</p>
+<h3>3 · Atmosphere &amp; quality</h3>
+<p>Shot to look like real cheap surveillance footage: NOT a cinema camera. Low dynamic range, crushed blacks with noise, green-grey IR or murky low-lux colour, compression artefacts, fixed exposure that can't keep up with the dark. The "ugliness" is the realism — anything that looks graded or filmic breaks the illusion.</p>
+<h3>4 · Camera rules</h3>
+<p><strong>Fixed mount — locked off. Deliberately NO breath-float.</strong> A security camera does not breathe, drift, or reframe; it stares. (This is the rule break: the handheld float that anchors most templates here would instantly read as "a person filming," killing the CCTV illusion.) One fixed wide angle for the whole shot.</p>
+<ul><li><em>Sound:</em> No score. Just room tone — an HVAC hum, a distant unexplained knock, the electrical buzz of a failing light. Silence does the work.</li></ul>
+<h3>5 · Storyboard (3 beats, ~10s)</h3>
+<pre><code>0–4s · Normal (establish the boredom)
+Action: {{place}}, empty, still. {{night_mode}}, noise crawling, the
+        {{timestamp}} ticking. Nothing happens. Hold the boredom — it
+        sets the trap.
+Camera: Fixed wide. Locked.
+Sound:  Room tone, a faint hum.
+
+4–7s · Wrong (the small specific change)
+Action: {{wrong_thing}} — subtle, easy to miss, no music sting. A frame
+        stutters/drops right as it happens.
+Camera: Still fixed. The eye has to find it.
+Sound:  The hum, maybe one distant knock. No stinger.
+
+7–10s · Hold (restrained close)
+Action: Nothing else moves. The wrong thing just… stays. The footage
+        keeps rolling on the empty, now-wrong space.
+Close:  No reveal, no creature, no scream, no cut to black with a bang.
+        Just the timestamp ticking on a corridor that is no longer right.</code></pre>
+<h3>Negative prompt (Seedance / Kling — paste into the dedicated field)</h3>
+<pre><code>cinematic color grade, filmic look, shallow depth of field, smooth handheld motion, breathing camera float, dramatic lighting, lens flare, high resolution clean image, watermark, logo, gore, blood splatter, jumpscare monster reveal, oversaturated colors, 3D cartoon render, video-game look, polished VFX, score music, melting/morphing geometry, warped unreadable timestamp text</code></pre>
+<hr>
+<h2>Why it's built this way</h2>
+<ul><li><strong>The cheap camera IS the genre (deliberate Rule 2 inversion).</strong> Instead of "ARRI + Panavision," we anchor to "security cam, IR night mode, compression noise, timestamp." The degraded look is exactly what sells "this is real footage someone found." A clean cinematic image destroys it.</li><li><strong>Locked-off, no breath-float (Rule 3 exception).</strong> A mounted camera stares. Any drift reads as a human operator and breaks the conceit — so we drop the float and negate "breathing camera float / smooth handheld."</li><li><strong>Restraint is the horror (Rule 6, weaponised).</strong> No monster, no gore, no music sting. One small, specific <em>wrong</em> thing in a boring frame is scarier than any reveal — and it stops the model defaulting to cheap jumpscares.</li><li><strong>Artefacts as imperfection anchors (Rule 5).</strong> Noise, blocking, a dropped frame, a fisheye edge. Here the "flaws" aren't added realism — they're the whole medium.</li></ul>
+<p><strong>Usage:</strong> generate the <em>normal</em> beat first and make sure it reads as genuine cheap footage (noise, timestamp, fixed angle); if it comes out clean/cinematic, lean hard on the negative field. Keep {{wrong_thing}} small — the restraint is the scare.</p>
+<p><strong>Model:</strong> Sora 2 is excellent at the "uncanny real footage" look and holds the fixed frame; Kling and Seedance work but watch that they don't prettify it — push the negative field. Keep any on-screen timestamp short so the model doesn't warp the text.</p>
+  </article>
+  <footer class="doc-foot">
+    <p>许可 · <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT · 可自由使用</a></p>
+    <p><a href="../">← 回提示词库</a> · <a href="https://www.aiolaola.com/?utm_source=prompts.aiolaola.com&amp;utm_medium=referral&amp;utm_campaign=docpage" target="_blank" rel="noopener">aiOlaOla 学 AI 编程</a></p>
+  </footer>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const RAW = "# Worked Example — CCTV / Found-Footage Horror\n\n> Original worked example by jnMetaCode (MIT). Applies the 5-stage\n> structure to **found-footage / security-cam horror** — a genre where a\n> *degraded, cheap camera* is the entire aesthetic, and restraint (not\n> gore) creates the dread. Another deliberate rule break: the camera is a\n> fixed mount, so the breath-float is dropped (a CCTV does not move).\n>\n> Concept: a fixed security camera on an empty night corridor; something\n> is subtly, wrongly off. Swap the location, keep the discipline.\n>\n> *Further reading (inspiration, not copied — all rewritten in our\n> structure): the Horror / CCTV-style category in\n> [zhangchenchen/awesome_sora2_prompt](https://github.com/zhangchenchen/awesome_sora2_prompt)\n> (MIT).*\n>\n> **[中文版 →](./found-footage-horror.zh.md)**\n\n---\n\n## Variables you need to define first\n\n| Variable | This example | Swap for… |\n|---|---|---|\n| `{{place}}` | an empty office corridor at 3 AM | a parking garage / a stairwell / a back yard |\n| `{{wrong_thing}}` | a door at the end stands open that was shut | a figure half-out of frame / lights cutting out one by one |\n| `{{cam_type}}` | ceiling security camera, wide fisheye | a doorbell cam / a handheld phone / a baby monitor |\n| `{{timestamp}}` | 03:14:07 AM, top-right | a date burn-in / a channel label |\n| `{{night_mode}}` | IR night-vision green-grey | low-lux colour with heavy noise |\n\n---\n\n## The complete prompt (copy-paste ready)\n\n### 1 · Core theme\n`found-footage horror | fixed security-cam angle | {{night_mode}} | dread through stillness | no jumpscare gore, no cinematic polish`\n\n### 2 · Character & scene\n\n**Subject (the space, and what's wrong with it):** {{place}}, empty and\nstill. The horror is that *almost* nothing happens — then {{wrong_thing}}.\nNo monster reveal, no blood. The wrongness is quiet and specific.\n\n**The \"camera\" as a character (this is the look):** {{cam_type}} —\n{{night_mode}}, low resolution, visible compression blocking in the\nshadows, faint sensor noise crawling, a slightly warped wide/fisheye\nedge, a {{timestamp}} burn-in, and an occasional dropped/stuttered frame.\nThese artefacts ARE the aesthetic — not flaws to clean up.\n\n### 3 · Atmosphere & quality\nShot to look like real cheap surveillance footage: NOT a cinema camera.\nLow dynamic range, crushed blacks with noise, green-grey IR or murky\nlow-lux colour, compression artefacts, fixed exposure that can't keep up\nwith the dark. The \"ugliness\" is the realism — anything that looks graded\nor filmic breaks the illusion.\n\n### 4 · Camera rules\n**Fixed mount — locked off. Deliberately NO breath-float.** A security\ncamera does not breathe, drift, or reframe; it stares. (This is the rule\nbreak: the handheld float that anchors most templates here would instantly\nread as \"a person filming,\" killing the CCTV illusion.) One fixed wide\nangle for the whole shot.\n- *Sound:* No score. Just room tone — an HVAC hum, a distant unexplained\n  knock, the electrical buzz of a failing light. Silence does the work.\n\n### 5 · Storyboard (3 beats, ~10s)\n\n```\n0–4s · Normal (establish the boredom)\nAction: {{place}}, empty, still. {{night_mode}}, noise crawling, the\n        {{timestamp}} ticking. Nothing happens. Hold the boredom — it\n        sets the trap.\nCamera: Fixed wide. Locked.\nSound:  Room tone, a faint hum.\n\n4–7s · Wrong (the small specific change)\nAction: {{wrong_thing}} — subtle, easy to miss, no music sting. A frame\n        stutters/drops right as it happens.\nCamera: Still fixed. The eye has to find it.\nSound:  The hum, maybe one distant knock. No stinger.\n\n7–10s · Hold (restrained close)\nAction: Nothing else moves. The wrong thing just… stays. The footage\n        keeps rolling on the empty, now-wrong space.\nClose:  No reveal, no creature, no scream, no cut to black with a bang.\n        Just the timestamp ticking on a corridor that is no longer right.\n```\n\n### Negative prompt (Seedance / Kling — paste into the dedicated field)\n```\ncinematic color grade, filmic look, shallow depth of field, smooth handheld motion, breathing camera float, dramatic lighting, lens flare, high resolution clean image, watermark, logo, gore, blood splatter, jumpscare monster reveal, oversaturated colors, 3D cartoon render, video-game look, polished VFX, score music, melting/morphing geometry, warped unreadable timestamp text\n```\n\n---\n\n## Why it's built this way\n\n- **The cheap camera IS the genre (deliberate Rule 2 inversion).** Instead\n  of \"ARRI + Panavision,\" we anchor to \"security cam, IR night mode,\n  compression noise, timestamp.\" The degraded look is exactly what sells\n  \"this is real footage someone found.\" A clean cinematic image destroys it.\n- **Locked-off, no breath-float (Rule 3 exception).** A mounted camera\n  stares. Any drift reads as a human operator and breaks the conceit — so\n  we drop the float and negate \"breathing camera float / smooth handheld.\"\n- **Restraint is the horror (Rule 6, weaponised).** No monster, no gore,\n  no music sting. One small, specific *wrong* thing in a boring frame is\n  scarier than any reveal — and it stops the model defaulting to cheap\n  jumpscares.\n- **Artefacts as imperfection anchors (Rule 5).** Noise, blocking, a\n  dropped frame, a fisheye edge. Here the \"flaws\" aren't added realism —\n  they're the whole medium.\n\n**Usage:** generate the *normal* beat first and make sure it reads as\ngenuine cheap footage (noise, timestamp, fixed angle); if it comes out\nclean/cinematic, lean hard on the negative field. Keep {{wrong_thing}}\nsmall — the restraint is the scare.\n\n**Model:** Sora 2 is excellent at the \"uncanny real footage\" look and\nholds the fixed frame; Kling and Seedance work but watch that they don't\nprettify it — push the negative field. Keep any on-screen timestamp short\nso the model doesn't warp the text.\n";
+function extractPrompt(md){
+  const lines=md.split("\n");
+  const re=/^#{1,4}\s.*(完整提示词|complete prompt|copy-paste|可直接复制)/i;
+  let s=-1; for(let i=0;i<lines.length;i++){if(re.test(lines[i])){s=i+1;break;}}
+  if(s>=0){let e=lines.length;for(let i=s;i<lines.length;i++){if(/^##\s/.test(lines[i])){e=i;break;}}
+    const r=lines.slice(s,e).join("\n").replace(/^\s*-{3,}\s*$/gm,"").trim();if(r)return r;}
+  const b=[...md.matchAll(/```[^\n]*\n([\s\S]*?)```/g)].map(m=>m[1].trim());
+  return b.length?b.join("\n\n"):md.trim();
+}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('show');
+  clearTimeout(toast._t);toast._t=setTimeout(()=>e.classList.remove('show'),1700);}
+async function cp(t,msg){try{await navigator.clipboard.writeText(t);toast(msg);}catch(e){toast('复制失败');}}
+document.getElementById('copyPrompt').onclick=()=>cp(extractPrompt(RAW),'提示词已复制 · 可直接粘进视频模型');
+document.getElementById('copyAll').onclick=()=>cp(RAW,'全文已复制');
+</script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worked Example — Anime / 2D → Live-Action Real | Cinematic AI Video Prompt Library</title>
+<meta name="description" content="Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to the 'anime character as live-action' translation — a hugely searched genre…">
+<link rel="canonical" href="https://prompts.aiolaola.com/p/anime-to-real">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="en" href="https://prompts.aiolaola.com/p/anime-to-real">
+<link rel="alternate" hreflang="zh-CN" href="https://prompts.aiolaola.com/p/anime-to-real.zh">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="电影感 AI 视频提示词库">
+<meta property="og:title" content="Worked Example — Anime / 2D → Live-Action Real">
+<meta property="og:description" content="Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to the 'anime character as live-action' translation — a hugely searched genre…">
+<meta property="og:url" content="https://prompts.aiolaola.com/p/anime-to-real">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Worked Example — Anime / 2D → Live-Action Real">
+<meta name="twitter:description" content="Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to the 'anime character as live-action' translation — a hugely searched genre…">
+<link rel="stylesheet" href="./page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Worked Example — Anime / 2D → Live-Action Real",
+  "description": "Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to the 'anime character as live-action' translation — a hugely searched genre…",
+  "inLanguage": "en",
+  "url": "https://prompts.aiolaola.com/p/anime-to-real",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "电影感 AI 视频提示词库",
+    "url": "https://prompts.aiolaola.com/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "jnMetaCode",
+    "url": "https://github.com/jnMetaCode"
+  },
+  "license": "https://opensource.org/licenses/MIT"
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7LBJRDWYYW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7LBJRDWYYW');</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="back" href="../">← 提示词库</a>
+  <a class="ghlink" href="https://github.com/jnMetaCode/ai-shortfilm-prompts/blob/main/templates/anime-to-real.md" target="_blank" rel="noopener">在 GitHub 查看源文件 ↗</a>
+</header>
+<main class="doc">
+  <div class="doc-actions">
+    <button id="copyPrompt">⧉ 复制提示词</button>
+    <button id="copyAll">复制全文</button>
+    <a class="langsw" href="./anime-to-real.zh.html">中文</a>
+  </div>
+  <article class="md">
+<h1>Worked Example — Anime / 2D → Live-Action Real</h1>
+<blockquote><p>Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to the <strong>"anime character as live-action"</strong> translation — a hugely searched genre that fails in two opposite ways: cheap cosplay, or plastic CG. The trick is translating the <em>medium</em> (cel shading → real materials + physics) while preserving the <em>silhouette</em> that makes the character readable. This template leans hardest on Rule 7 — the recognisable trait-bundle is exactly what IP filters catch.</p>
+<p>Concept: a stylised "wind swordsman" concept rendered as a real person in a real world. Describe traits, never an IP name.</p>
+<p><em>Further reading (inspiration, not copied — all rewritten in our structure): style-transfer / anime categories in <a href="https://github.com/zhangchenchen/awesome_sora2_prompt" target="_blank" rel="noopener">zhangchenchen/awesome_sora2_prompt</a> (MIT).</em></p>
+<p><strong><a href="anime-to-real.zh.html">中文版 →</a></strong></p></blockquote>
+<hr>
+<h2>Variables you need to define first</h2>
+<table><thead><tr><th>Variable</th><th>This example</th><th>Swap for…</th></tr></thead><tbody><tr><td><code>{{silhouette}}</code></td><td>tall, lean, long coat, single shoulder guard</td><td>the readable shape that IDs the character</td></tr><tr><td><code>{{signature}}</code></td><td>a streak of pale-blue hair, a chipped jade pendant</td><td>the 2–3 traits that say "it's them" — no IP name</td></tr><tr><td><code>{{palette}}</code></td><td>indigo + worn steel + pale blue</td><td>the character's colour identity</td></tr><tr><td><code>{{world}}</code></td><td>a rain-wet stone bridge at dusk</td><td>the scene translated to a real location</td></tr><tr><td><code>{{prop}}</code></td><td>a worn, real-steel curved blade</td><td>the iconic item, made physical</td></tr></tbody></table>
+<hr>
+<h2>The complete prompt (copy-paste ready)</h2>
+<h3>1 · Core theme</h3>
+<p><code>anime character reimagined as live-action | photoreal materials and physics | preserved silhouette + signature traits | cinematic grade | no cosplay cheapness, no CG plastic, no cel shading</code></p>
+<h3>2 · Character &amp; scene</h3>
+<p><strong>Character (translate the medium, keep the silhouette):</strong> a real human with the readable {{silhouette}} and {{signature}} that identify the character — but rendered fully real: <strong>real skin with pores and faint texture, real hair (individual strands, not a helmet), real woven fabric with weight and wrinkles, {{prop}} as actual worn metal.</strong> Drop every 2D cue — no cel shading, no flat anime eyes, no impossible hair gravity. Eyes and proportions human, not enlarged.</p>
+<p><strong>Imperfections (this is what separates "real" from "cosplay"):</strong> skin sheen and stray flyaway hairs, fabric creased and a little worn, a real scuff on the {{prop}}, faint sweat. Cosplay looks new and posed; real looks lived-in.</p>
+<p><strong>Scene:</strong> {{world}}, {{palette}} carried into the real lighting.</p>
+<h3>3 · Atmosphere &amp; quality</h3>
+<p>Shot on ARRI Alexa with vintage primes, cinematic grade in {{palette}}. Real-world physics on everything — cloth swings and settles with weight, hair moves with air, light wraps real skin. Filmic grain. The goal is "a still from a live-action film adaptation," not a render or a con photo.</p>
+<h3>4 · Camera rules</h3>
+<p>A slow, deliberate reveal — push or arc that lets the real materials read.</p>
+<ul><li><em>Breathing:</em> "Handheld shot. Throughout, maintain an extremely subtle, breath-like camera float to enhance presence."</li><li><em>Sound:</em> No score. Production audio only — rain on stone, fabric shift, the scrape of {{prop}}, ambient world tone.</li></ul>
+<h3>5 · Storyboard (3 beats, ~10s)</h3>
+<pre><code>0–3s · Detail (sell the realism in close-up)
+Action: Macro on real skin / a flyaway hair / the woven fabric / the
+        scuffed {{prop}} — the textures that say "this is real."
+Camera: Slow push on the detail, shallow focus.
+
+3–7s · The silhouette (now we recognise them)
+Action: Pull to reveal the full {{silhouette}} in {{world}} — the shape
+        and {{signature}} make the character readable, but every surface
+        is real.
+Camera: Slow arc, breath-float, rain and air moving cloth and hair.
+
+7–10s · A held look (restrained close)
+Action: A small, human expression — a breath, a glance, no anime pose.
+Close:  No power-up glow, no logo, no flashy hero stance. Just a real
+        person who happens to be that character, standing in real rain.</code></pre>
+<h3>Negative prompt (Seedance / Kling — paste into the dedicated field)</h3>
+<pre><code>cel shading, anime shading, flat 2D look, cartoon, enlarged anime eyes, impossible hair gravity, plastic CG skin, doll-like face, cosplay wig look, cheap costume, brand-new unworn fabric, oversaturated colors, glossy render, video-game look, watermark, text overlay, logo, distorted face, extra fingers, melting/morphing geometry, frame flicker, jarring hard cuts, lifeless locked-off camera</code></pre>
+<hr>
+<h2>Why it's built this way</h2>
+<ul><li><strong>Translate the medium, keep the silhouette.</strong> The character reads because of <em>shape + 2–3 signature traits</em>, not because of cel shading. Swap every 2D cue for a real-material equivalent (cel → skin pores, flat hair → strands, anime eyes → human eyes) and keep the silhouette — that's the whole craft of "2D → real."</li><li><strong>Imperfection is the cosplay/real divide (Rule 5).</strong> New, clean, posed = cosplay. Worn fabric, scuffed prop, flyaway hair, real skin = live-action film. The wear is what sells it.</li><li><strong>Heavy on Rule 7 — describe traits, never the IP.</strong> A recognisable trait-bundle (the name, the exact iconic outfit) is exactly what Sora's lookalike filter and Seedance's IP filter catch. Use {{silhouette}} + {{signature}} as <em>descriptions</em>, not the character's name.</li><li><strong>Restrained close (Rule 6).</strong> A human breath, not a power-up pose. Keeps it grounded as "film adaptation," not fan-art animation.</li></ul>
+<p><strong>Usage:</strong> generate the <em>detail</em> beat (0–3s) first — if the skin, hair and fabric read as genuinely real there, the full reveal will hold. If it comes out plasticky or cel-shaded, push the negative field hard. <strong>Sanitise any IP-recognisable wording</strong> before running on Seedance/Sora.</p>
+<p><strong>Model:</strong> Veo 3 and Sora 2 give the best photoreal skin/material translation; both have strict lookalike filters, so keep it trait-described, not named. Kling and Seedance also work — Seedance especially will reject a named IP outright, so describe only.</p>
+  </article>
+  <footer class="doc-foot">
+    <p>许可 · <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT · 可自由使用</a></p>
+    <p><a href="../">← 回提示词库</a> · <a href="https://www.aiolaola.com/?utm_source=prompts.aiolaola.com&amp;utm_medium=referral&amp;utm_campaign=docpage" target="_blank" rel="noopener">aiOlaOla 学 AI 编程</a></p>
+  </footer>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const RAW = "# Worked Example — Anime / 2D → Live-Action Real\n\n> Original worked example by jnMetaCode (MIT). Applies the 5-stage\n> structure to the **\"anime character as live-action\"** translation — a\n> hugely searched genre that fails in two opposite ways: cheap cosplay, or\n> plastic CG. The trick is translating the *medium* (cel shading → real\n> materials + physics) while preserving the *silhouette* that makes the\n> character readable. This template leans hardest on Rule 7 — the\n> recognisable trait-bundle is exactly what IP filters catch.\n>\n> Concept: a stylised \"wind swordsman\" concept rendered as a real person\n> in a real world. Describe traits, never an IP name.\n>\n> *Further reading (inspiration, not copied — all rewritten in our\n> structure): style-transfer / anime categories in\n> [zhangchenchen/awesome_sora2_prompt](https://github.com/zhangchenchen/awesome_sora2_prompt)\n> (MIT).*\n>\n> **[中文版 →](./anime-to-real.zh.md)**\n\n---\n\n## Variables you need to define first\n\n| Variable | This example | Swap for… |\n|---|---|---|\n| `{{silhouette}}` | tall, lean, long coat, single shoulder guard | the readable shape that IDs the character |\n| `{{signature}}` | a streak of pale-blue hair, a chipped jade pendant | the 2–3 traits that say \"it's them\" — no IP name |\n| `{{palette}}` | indigo + worn steel + pale blue | the character's colour identity |\n| `{{world}}` | a rain-wet stone bridge at dusk | the scene translated to a real location |\n| `{{prop}}` | a worn, real-steel curved blade | the iconic item, made physical |\n\n---\n\n## The complete prompt (copy-paste ready)\n\n### 1 · Core theme\n`anime character reimagined as live-action | photoreal materials and physics | preserved silhouette + signature traits | cinematic grade | no cosplay cheapness, no CG plastic, no cel shading`\n\n### 2 · Character & scene\n\n**Character (translate the medium, keep the silhouette):** a real human\nwith the readable {{silhouette}} and {{signature}} that identify the\ncharacter — but rendered fully real: **real skin with pores and faint\ntexture, real hair (individual strands, not a helmet), real woven fabric\nwith weight and wrinkles, {{prop}} as actual worn metal.** Drop every 2D\ncue — no cel shading, no flat anime eyes, no impossible hair gravity.\nEyes and proportions human, not enlarged.\n\n**Imperfections (this is what separates \"real\" from \"cosplay\"):** skin\nsheen and stray flyaway hairs, fabric creased and a little worn, a real\nscuff on the {{prop}}, faint sweat. Cosplay looks new and posed; real\nlooks lived-in.\n\n**Scene:** {{world}}, {{palette}} carried into the real lighting.\n\n### 3 · Atmosphere & quality\nShot on ARRI Alexa with vintage primes, cinematic grade in {{palette}}.\nReal-world physics on everything — cloth swings and settles with weight,\nhair moves with air, light wraps real skin. Filmic grain. The goal is\n\"a still from a live-action film adaptation,\" not a render or a con photo.\n\n### 4 · Camera rules\nA slow, deliberate reveal — push or arc that lets the real materials read.\n- *Breathing:* \"Handheld shot. Throughout, maintain an extremely subtle,\n  breath-like camera float to enhance presence.\"\n- *Sound:* No score. Production audio only — rain on stone, fabric shift,\n  the scrape of {{prop}}, ambient world tone.\n\n### 5 · Storyboard (3 beats, ~10s)\n\n```\n0–3s · Detail (sell the realism in close-up)\nAction: Macro on real skin / a flyaway hair / the woven fabric / the\n        scuffed {{prop}} — the textures that say \"this is real.\"\nCamera: Slow push on the detail, shallow focus.\n\n3–7s · The silhouette (now we recognise them)\nAction: Pull to reveal the full {{silhouette}} in {{world}} — the shape\n        and {{signature}} make the character readable, but every surface\n        is real.\nCamera: Slow arc, breath-float, rain and air moving cloth and hair.\n\n7–10s · A held look (restrained close)\nAction: A small, human expression — a breath, a glance, no anime pose.\nClose:  No power-up glow, no logo, no flashy hero stance. Just a real\n        person who happens to be that character, standing in real rain.\n```\n\n### Negative prompt (Seedance / Kling — paste into the dedicated field)\n```\ncel shading, anime shading, flat 2D look, cartoon, enlarged anime eyes, impossible hair gravity, plastic CG skin, doll-like face, cosplay wig look, cheap costume, brand-new unworn fabric, oversaturated colors, glossy render, video-game look, watermark, text overlay, logo, distorted face, extra fingers, melting/morphing geometry, frame flicker, jarring hard cuts, lifeless locked-off camera\n```\n\n---\n\n## Why it's built this way\n\n- **Translate the medium, keep the silhouette.** The character reads\n  because of *shape + 2–3 signature traits*, not because of cel shading.\n  Swap every 2D cue for a real-material equivalent (cel → skin pores,\n  flat hair → strands, anime eyes → human eyes) and keep the silhouette —\n  that's the whole craft of \"2D → real.\"\n- **Imperfection is the cosplay/real divide (Rule 5).** New, clean,\n  posed = cosplay. Worn fabric, scuffed prop, flyaway hair, real skin =\n  live-action film. The wear is what sells it.\n- **Heavy on Rule 7 — describe traits, never the IP.** A recognisable\n  trait-bundle (the name, the exact iconic outfit) is exactly what Sora's\n  lookalike filter and Seedance's IP filter catch. Use {{silhouette}} +\n  {{signature}} as *descriptions*, not the character's name.\n- **Restrained close (Rule 6).** A human breath, not a power-up pose.\n  Keeps it grounded as \"film adaptation,\" not fan-art animation.\n\n**Usage:** generate the *detail* beat (0–3s) first — if the skin, hair and\nfabric read as genuinely real there, the full reveal will hold. If it comes\nout plasticky or cel-shaded, push the negative field hard. **Sanitise any\nIP-recognisable wording** before running on Seedance/Sora.\n\n**Model:** Veo 3 and Sora 2 give the best photoreal skin/material\ntranslation; both have strict lookalike filters, so keep it trait-described,\nnot named. Kling and Seedance also work — Seedance especially will reject a\nnamed IP outright, so describe only.\n";
+function extractPrompt(md){
+  const lines=md.split("\n");
+  const re=/^#{1,4}\s.*(完整提示词|complete prompt|copy-paste|可直接复制)/i;
+  let s=-1; for(let i=0;i<lines.length;i++){if(re.test(lines[i])){s=i+1;break;}}
+  if(s>=0){let e=lines.length;for(let i=s;i<lines.length;i++){if(/^##\s/.test(lines[i])){e=i;break;}}
+    const r=lines.slice(s,e).join("\n").replace(/^\s*-{3,}\s*$/gm,"").trim();if(r)return r;}
+  const b=[...md.matchAll(/```[^\n]*\n([\s\S]*?)```/g)].map(m=>m[1].trim());
+  return b.length?b.join("\n\n"):md.trim();
+}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('show');
+  clearTimeout(toast._t);toast._t=setTimeout(()=>e.classList.remove('show'),1700);}
+async function cp(t,msg){try{await navigator.clipboard.writeText(t);toast(msg);}catch(e){toast('复制失败');}}
+document.getElementById('copyPrompt').onclick=()=>cp(extractPrompt(RAW),'提示词已复制 · 可直接粘进视频模型');
+document.getElementById('copyAll').onclick=()=>cp(RAW,'全文已复制');
+</script>
+</body>
+</html>

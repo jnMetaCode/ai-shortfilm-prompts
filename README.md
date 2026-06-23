@@ -184,7 +184,11 @@ ai-shortfilm-prompts/
 │   ├── animal-vlog.md                Worked example: talking-animal selfie vlog
 │   ├── movie-trailer.md              Worked example: escalating teaser trailer
 │   ├── cyberpunk-city.md             Worked example: atmospheric neon-city roam
-│   └── claymation.md                 Worked example: 12fps stop-motion / claymation
+│   ├── claymation.md                 Worked example: 12fps stop-motion / claymation
+│   ├── nature-timelapse.md           Worked example: landscape timelapse, locked grade
+│   ├── found-footage-horror.md       Worked example: CCTV / security-cam dread
+│   ├── anime-to-real.md              Worked example: 2D character → live-action
+│   └── music-video.md                Worked example: beat-synced performance MV
 │
 ├── assets/                 Diagrams + the README hero-demo prompt.
 │   ├── demo-prompt.md       Copy-paste 15s prompt the Skill wrote (hero slot)

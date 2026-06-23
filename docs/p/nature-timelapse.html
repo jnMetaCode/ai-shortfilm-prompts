@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worked Example — Nature / Landscape Timelapse | Cinematic AI Video Prompt Library</title>
+<meta name="description" content="Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to a landscape timelapse — where the subject is light and time, not a charact…">
+<link rel="canonical" href="https://prompts.aiolaola.com/p/nature-timelapse">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="en" href="https://prompts.aiolaola.com/p/nature-timelapse">
+<link rel="alternate" hreflang="zh-CN" href="https://prompts.aiolaola.com/p/nature-timelapse.zh">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="电影感 AI 视频提示词库">
+<meta property="og:title" content="Worked Example — Nature / Landscape Timelapse">
+<meta property="og:description" content="Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to a landscape timelapse — where the subject is light and time, not a charact…">
+<meta property="og:url" content="https://prompts.aiolaola.com/p/nature-timelapse">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Worked Example — Nature / Landscape Timelapse">
+<meta name="twitter:description" content="Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to a landscape timelapse — where the subject is light and time, not a charact…">
+<link rel="stylesheet" href="./page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Worked Example — Nature / Landscape Timelapse",
+  "description": "Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to a landscape timelapse — where the subject is light and time, not a charact…",
+  "inLanguage": "en",
+  "url": "https://prompts.aiolaola.com/p/nature-timelapse",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "电影感 AI 视频提示词库",
+    "url": "https://prompts.aiolaola.com/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "jnMetaCode",
+    "url": "https://github.com/jnMetaCode"
+  },
+  "license": "https://opensource.org/licenses/MIT"
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7LBJRDWYYW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7LBJRDWYYW');</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="back" href="../">← 提示词库</a>
+  <a class="ghlink" href="https://github.com/jnMetaCode/ai-shortfilm-prompts/blob/main/templates/nature-timelapse.md" target="_blank" rel="noopener">在 GitHub 查看源文件 ↗</a>
+</header>
+<main class="doc">
+  <div class="doc-actions">
+    <button id="copyPrompt">⧉ 复制提示词</button>
+    <button id="copyAll">复制全文</button>
+    <a class="langsw" href="./nature-timelapse.zh.html">中文</a>
+  </div>
+  <article class="md">
+<h1>Worked Example — Nature / Landscape Timelapse</h1>
+<blockquote><p>Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to a <strong>landscape timelapse</strong> — where the subject is <em>light and time</em>, not a character. Reinforces the "lock one grade, mark time by light" discipline (shared with the emotional templates) and the rare case where the breath-float is deliberately minimal (a timelapse rides a locked tripod / motion-control rig, not a handheld).</p>
+<p>Concept: a mountain valley from pre-dawn to night, clouds streaming, shadows sweeping. Swap the location, keep the time-compression rules.</p>
+<p><em>Further reading (inspiration, not copied — all rewritten in our structure): nature/landscape scenes in <a href="https://github.com/hr98w/awesome-sora-prompts" target="_blank" rel="noopener">hr98w/awesome-sora-prompts</a> (CC0) and the camera/grade notes in <a href="https://github.com/khanof89/awesome-video-prompts" target="_blank" rel="noopener">khanof89/awesome-video-prompts</a> (MIT).</em></p>
+<p><strong><a href="nature-timelapse.zh.html">中文版 →</a></strong></p></blockquote>
+<hr>
+<h2>Variables you need to define first</h2>
+<table><thead><tr><th>Variable</th><th>This example</th><th>Swap for…</th></tr></thead><tbody><tr><td><code>{{place}}</code></td><td>a high alpine valley</td><td>a coastal cliff / a desert mesa / a city skyline</td></tr><tr><td><code>{{time_arc}}</code></td><td>pre-dawn → midday → dusk → night</td><td>blue hour → sunrise / storm rolling in</td></tr><tr><td><code>{{motion}}</code></td><td>clouds streaming, shadows sweeping</td><td>tide rising / fog pouring over a ridge</td></tr><tr><td><code>{{grade}}</code></td><td>cool dawn blue warming to gold</td><td>desaturated steel / warm amber</td></tr><tr><td><code>{{foreground}}</code></td><td>a lone wind-bent pine</td><td>a still lake / a winding road</td></tr></tbody></table>
+<hr>
+<h2>The complete prompt (copy-paste ready)</h2>
+<h3>1 · Core theme</h3>
+<p><code>landscape timelapse | natural light cycle | one locked grade across time | grand stillness | photoreal, no HDR oversharpening, no oversaturated postcard look</code></p>
+<h3>2 · Character &amp; scene</h3>
+<p><strong>Subject (light + time over {{place}}):</strong> the landscape is the frame; <em>time</em> is the subject. {{motion}} compressed — clouds and shadows move fast while the land stays solid. A {{foreground}} anchors scale and gives the eye a fixed point as the light changes around it.</p>
+<p><strong>Imperfections (keep it real, not a stock postcard):</strong> a faint lens flare and dust as the sun crests, one bird crossing the frame, haze in the far valley, uneven cloud — nature is never perfectly clean.</p>
+<h3>3 · Atmosphere &amp; quality</h3>
+<p>Shot on a RED / ARRI with a wide anamorphic lens on a motion-control timelapse rig. <strong>Lock ONE grade across the whole arc: {{grade}}</strong> — mark the passage of time <em>only</em> through the changing sun angle, shadow length, and sky colour, never by switching filters. Photoreal, fine natural grain, true dynamic range (no crunchy HDR halos).</p>
+<h3>4 · Camera rules</h3>
+<p>Locked-off, or an extremely slow motion-control push/parallax — a timelapse rides a rig, not a hand.</p>
+<ul><li><em>Breathing:</em> keep it <strong>minimal here</strong> — a tripod-locked timelapse should be rock-steady; at most an imperceptible drift. (This is the rare template where the full breath-float line is dialled almost to zero.)</li><li><em>Sound:</em> No score. Production / ambient audio only — wind over the ridge, distant water, birdsong at dawn, the deep quiet of night.</li></ul>
+<h3>5 · Storyboard (4 beats = one day, ~12s)</h3>
+<pre><code>0–3s · Pre-dawn ({{grade}} at its coolest)
+Action: {{place}} under blue pre-dawn light, {{foreground}} a silhouette.
+        {{motion}} just beginning, slow.
+Camera: Locked wide. The sky lightens at the edge.
+
+3–6s · Sunrise → midday
+Action: Sun crests — a flare and dust catch the lens; shadows shorten and
+        sweep across the land as {{motion}} accelerates.
+Camera: Imperceptible slow push.
+
+6–9s · Afternoon → dusk
+Action: Light warms through the locked grade, shadows lengthen the other
+        way, clouds streaming gold. A bird crosses once.
+
+9–12s · Dusk → night (restrained close)
+Action: Colour drains to deep blue, first stars. {{motion}} slows and
+        settles.
+Close:  No dramatic sun-ray finale, no music swell. Just the valley going
+        quiet under the first stars, {{foreground}} still where it began.</code></pre>
+<h3>Negative prompt (Seedance / Kling — paste into the dedicated field)</h3>
+<pre><code>blurry, low resolution, watermark, text overlay, subtitles, logo, oversaturated colors, HDR halos, crunchy oversharpening, postcard look, fake painted sky, plastic CG terrain, video-game look, 3D render, grade shifting between shots, flickering exposure (timelapse flicker), warping geometry, melting clouds, jarring hard cuts, shaky handheld camera</code></pre>
+<hr>
+<h2>Why it's built this way</h2>
+<ul><li><strong>Lock one grade, mark time by light (shared core discipline).</strong> Same rule that holds emotional multi-shot edits together: don't switch filters to show time passing — let the sun angle, shadow length and sky colour do it. The grade is the constant the eye trusts.</li><li><strong>Tripod, not handheld (deliberate breath-float exception).</strong> A timelapse is shot locked-off on a rig. The breath-float that anchors most templates here is dialled almost to zero — match the camera anchor to how the genre is <em>actually</em> shot.</li><li><strong>Imperfections keep it real (Rule 5).</strong> Lens flare, dust, a crossing bird, haze. The postcard-perfect version reads as a stock render; the small flaws read as a real lens pointed at a real place.</li><li><strong>Restrained close (Rule 6).</strong> Quiet under the first stars, not a god-ray finale. Stops the model piling on a fake dramatic sunburst.</li></ul>
+<p><strong>Usage:</strong> generate the <em>sunrise → midday</em> beat first — if the light transition stays on one grade and doesn't flicker, the full arc will hold. Watch for "timelapse flicker" (exposure jumping frame to frame) — negate it explicitly. Keep the camera locked.</p>
+<p><strong>Model:</strong> Veo 3 and Sora 2 give the best photoreal skies and light transitions; Kling and Seedance handle the motion well but watch for flicker on long light changes. This genre wants real dynamic range — avoid the HDR/oversaturation default.</p>
+  </article>
+  <footer class="doc-foot">
+    <p>许可 · <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT · 可自由使用</a></p>
+    <p><a href="../">← 回提示词库</a> · <a href="https://www.aiolaola.com/?utm_source=prompts.aiolaola.com&amp;utm_medium=referral&amp;utm_campaign=docpage" target="_blank" rel="noopener">aiOlaOla 学 AI 编程</a></p>
+  </footer>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const RAW = "# Worked Example — Nature / Landscape Timelapse\n\n> Original worked example by jnMetaCode (MIT). Applies the 5-stage\n> structure to a **landscape timelapse** — where the subject is *light and\n> time*, not a character. Reinforces the \"lock one grade, mark time by\n> light\" discipline (shared with the emotional templates) and the rare\n> case where the breath-float is deliberately minimal (a timelapse rides a\n> locked tripod / motion-control rig, not a handheld).\n>\n> Concept: a mountain valley from pre-dawn to night, clouds streaming,\n> shadows sweeping. Swap the location, keep the time-compression rules.\n>\n> *Further reading (inspiration, not copied — all rewritten in our\n> structure): nature/landscape scenes in\n> [hr98w/awesome-sora-prompts](https://github.com/hr98w/awesome-sora-prompts)\n> (CC0) and the camera/grade notes in\n> [khanof89/awesome-video-prompts](https://github.com/khanof89/awesome-video-prompts)\n> (MIT).*\n>\n> **[中文版 →](./nature-timelapse.zh.md)**\n\n---\n\n## Variables you need to define first\n\n| Variable | This example | Swap for… |\n|---|---|---|\n| `{{place}}` | a high alpine valley | a coastal cliff / a desert mesa / a city skyline |\n| `{{time_arc}}` | pre-dawn → midday → dusk → night | blue hour → sunrise / storm rolling in |\n| `{{motion}}` | clouds streaming, shadows sweeping | tide rising / fog pouring over a ridge |\n| `{{grade}}` | cool dawn blue warming to gold | desaturated steel / warm amber |\n| `{{foreground}}` | a lone wind-bent pine | a still lake / a winding road |\n\n---\n\n## The complete prompt (copy-paste ready)\n\n### 1 · Core theme\n`landscape timelapse | natural light cycle | one locked grade across time | grand stillness | photoreal, no HDR oversharpening, no oversaturated postcard look`\n\n### 2 · Character & scene\n\n**Subject (light + time over {{place}}):** the landscape is the frame;\n*time* is the subject. {{motion}} compressed — clouds and shadows move\nfast while the land stays solid. A {{foreground}} anchors scale and gives\nthe eye a fixed point as the light changes around it.\n\n**Imperfections (keep it real, not a stock postcard):** a faint lens\nflare and dust as the sun crests, one bird crossing the frame, haze in\nthe far valley, uneven cloud — nature is never perfectly clean.\n\n### 3 · Atmosphere & quality\nShot on a RED / ARRI with a wide anamorphic lens on a motion-control\ntimelapse rig. **Lock ONE grade across the whole arc: {{grade}}** — mark\nthe passage of time *only* through the changing sun angle, shadow length,\nand sky colour, never by switching filters. Photoreal, fine natural grain,\ntrue dynamic range (no crunchy HDR halos).\n\n### 4 · Camera rules\nLocked-off, or an extremely slow motion-control push/parallax — a\ntimelapse rides a rig, not a hand.\n- *Breathing:* keep it **minimal here** — a tripod-locked timelapse should\n  be rock-steady; at most an imperceptible drift. (This is the rare\n  template where the full breath-float line is dialled almost to zero.)\n- *Sound:* No score. Production / ambient audio only — wind over the\n  ridge, distant water, birdsong at dawn, the deep quiet of night.\n\n### 5 · Storyboard (4 beats = one day, ~12s)\n\n```\n0–3s · Pre-dawn ({{grade}} at its coolest)\nAction: {{place}} under blue pre-dawn light, {{foreground}} a silhouette.\n        {{motion}} just beginning, slow.\nCamera: Locked wide. The sky lightens at the edge.\n\n3–6s · Sunrise → midday\nAction: Sun crests — a flare and dust catch the lens; shadows shorten and\n        sweep across the land as {{motion}} accelerates.\nCamera: Imperceptible slow push.\n\n6–9s · Afternoon → dusk\nAction: Light warms through the locked grade, shadows lengthen the other\n        way, clouds streaming gold. A bird crosses once.\n\n9–12s · Dusk → night (restrained close)\nAction: Colour drains to deep blue, first stars. {{motion}} slows and\n        settles.\nClose:  No dramatic sun-ray finale, no music swell. Just the valley going\n        quiet under the first stars, {{foreground}} still where it began.\n```\n\n### Negative prompt (Seedance / Kling — paste into the dedicated field)\n```\nblurry, low resolution, watermark, text overlay, subtitles, logo, oversaturated colors, HDR halos, crunchy oversharpening, postcard look, fake painted sky, plastic CG terrain, video-game look, 3D render, grade shifting between shots, flickering exposure (timelapse flicker), warping geometry, melting clouds, jarring hard cuts, shaky handheld camera\n```\n\n---\n\n## Why it's built this way\n\n- **Lock one grade, mark time by light (shared core discipline).** Same\n  rule that holds emotional multi-shot edits together: don't switch\n  filters to show time passing — let the sun angle, shadow length and sky\n  colour do it. The grade is the constant the eye trusts.\n- **Tripod, not handheld (deliberate breath-float exception).** A\n  timelapse is shot locked-off on a rig. The breath-float that anchors\n  most templates here is dialled almost to zero — match the camera anchor\n  to how the genre is *actually* shot.\n- **Imperfections keep it real (Rule 5).** Lens flare, dust, a crossing\n  bird, haze. The postcard-perfect version reads as a stock render; the\n  small flaws read as a real lens pointed at a real place.\n- **Restrained close (Rule 6).** Quiet under the first stars, not a\n  god-ray finale. Stops the model piling on a fake dramatic sunburst.\n\n**Usage:** generate the *sunrise → midday* beat first — if the light\ntransition stays on one grade and doesn't flicker, the full arc will hold.\nWatch for \"timelapse flicker\" (exposure jumping frame to frame) — negate it\nexplicitly. Keep the camera locked.\n\n**Model:** Veo 3 and Sora 2 give the best photoreal skies and light\ntransitions; Kling and Seedance handle the motion well but watch for\nflicker on long light changes. This genre wants real dynamic range — avoid\nthe HDR/oversaturation default.\n";
+function extractPrompt(md){
+  const lines=md.split("\n");
+  const re=/^#{1,4}\s.*(完整提示词|complete prompt|copy-paste|可直接复制)/i;
+  let s=-1; for(let i=0;i<lines.length;i++){if(re.test(lines[i])){s=i+1;break;}}
+  if(s>=0){let e=lines.length;for(let i=s;i<lines.length;i++){if(/^##\s/.test(lines[i])){e=i;break;}}
+    const r=lines.slice(s,e).join("\n").replace(/^\s*-{3,}\s*$/gm,"").trim();if(r)return r;}
+  const b=[...md.matchAll(/```[^\n]*\n([\s\S]*?)```/g)].map(m=>m[1].trim());
+  return b.length?b.join("\n\n"):md.trim();
+}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('show');
+  clearTimeout(toast._t);toast._t=setTimeout(()=>e.classList.remove('show'),1700);}
+async function cp(t,msg){try{await navigator.clipboard.writeText(t);toast(msg);}catch(e){toast('复制失败');}}
+document.getElementById('copyPrompt').onclick=()=>cp(extractPrompt(RAW),'提示词已复制 · 可直接粘进视频模型');
+document.getElementById('copyAll').onclick=()=>cp(RAW,'全文已复制');
+</script>
+</body>
+</html>

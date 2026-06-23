@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>实战范例 — 动漫 / 2D → 真人实拍｜电影感 AI 视频提示词库</title>
+<meta name="description" content="jnMetaCode 原创实战范例（MIT）。把 5 段式结构用在「动漫角色变真人」 这一题材上——这是搜索量极大、却往往从两个相反方向翻车的类型：要么 廉价 cosplay，要么塑料感 CG。诀窍在于翻译媒介（赛璐珞渲染 → 真实 材质 + 物理）的同时，保留让角色一眼可辨的剪影。本模板最吃 Rule…">
+<link rel="canonical" href="https://prompts.aiolaola.com/p/anime-to-real.zh">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="zh-CN" href="https://prompts.aiolaola.com/p/anime-to-real.zh">
+<link rel="alternate" hreflang="en" href="https://prompts.aiolaola.com/p/anime-to-real">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="电影感 AI 视频提示词库">
+<meta property="og:title" content="实战范例 — 动漫 / 2D → 真人实拍">
+<meta property="og:description" content="jnMetaCode 原创实战范例（MIT）。把 5 段式结构用在「动漫角色变真人」 这一题材上——这是搜索量极大、却往往从两个相反方向翻车的类型：要么 廉价 cosplay，要么塑料感 CG。诀窍在于翻译媒介（赛璐珞渲染 → 真实 材质 + 物理）的同时，保留让角色一眼可辨的剪影。本模板最吃 Rule…">
+<meta property="og:url" content="https://prompts.aiolaola.com/p/anime-to-real.zh">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="实战范例 — 动漫 / 2D → 真人实拍">
+<meta name="twitter:description" content="jnMetaCode 原创实战范例（MIT）。把 5 段式结构用在「动漫角色变真人」 这一题材上——这是搜索量极大、却往往从两个相反方向翻车的类型：要么 廉价 cosplay，要么塑料感 CG。诀窍在于翻译媒介（赛璐珞渲染 → 真实 材质 + 物理）的同时，保留让角色一眼可辨的剪影。本模板最吃 Rule…">
+<link rel="stylesheet" href="./page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "实战范例 — 动漫 / 2D → 真人实拍",
+  "description": "jnMetaCode 原创实战范例（MIT）。把 5 段式结构用在「动漫角色变真人」 这一题材上——这是搜索量极大、却往往从两个相反方向翻车的类型：要么 廉价 cosplay，要么塑料感 CG。诀窍在于翻译媒介（赛璐珞渲染 → 真实 材质 + 物理）的同时，保留让角色一眼可辨的剪影。本模板最吃 Rule…",
+  "inLanguage": "zh-CN",
+  "url": "https://prompts.aiolaola.com/p/anime-to-real.zh",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "电影感 AI 视频提示词库",
+    "url": "https://prompts.aiolaola.com/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "jnMetaCode",
+    "url": "https://github.com/jnMetaCode"
+  },
+  "license": "https://opensource.org/licenses/MIT"
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7LBJRDWYYW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7LBJRDWYYW');</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="back" href="../">← 提示词库</a>
+  <a class="ghlink" href="https://github.com/jnMetaCode/ai-shortfilm-prompts/blob/main/templates/anime-to-real.zh.md" target="_blank" rel="noopener">在 GitHub 查看源文件 ↗</a>
+</header>
+<main class="doc">
+  <div class="doc-actions">
+    <button id="copyPrompt">⧉ 复制提示词</button>
+    <button id="copyAll">复制全文</button>
+    <a class="langsw" href="./anime-to-real.html">EN</a>
+  </div>
+  <article class="md">
+<h1>实战范例 — 动漫 / 2D → 真人实拍</h1>
+<blockquote><p>jnMetaCode 原创实战范例（MIT）。把 5 段式结构用在<strong>「动漫角色变真人」</strong> 这一题材上——这是搜索量极大、却往往从两个相反方向翻车的类型：要么 廉价 cosplay，要么塑料感 CG。诀窍在于<strong>翻译媒介</strong>（赛璐珞渲染 → 真实 材质 + 物理）的同时，<strong>保留让角色一眼可辨的剪影</strong>。本模板最吃 Rule 7 ——那一组可辨识的特征，正是 IP 过滤会拦的东西。</p>
+<p>概念：一个风格化的「驭风剑客」概念，渲染成真实世界里的真人。只描述 特征，绝不写 IP 名字。</p>
+<p><em>延伸阅读（取其灵感，非照搬——全部按我们的结构重写）： <a href="https://github.com/zhangchenchen/awesome_sora2_prompt" target="_blank" rel="noopener">zhangchenchen/awesome_sora2_prompt</a> 里的风格迁移 / 动漫类目（MIT）。</em></p>
+<p><strong><a href="anime-to-real.html">English →</a></strong></p></blockquote>
+<hr>
+<h2>先定义这些变量</h2>
+<table><thead><tr><th>变量</th><th>本例取值</th><th>你可替换为…</th></tr></thead><tbody><tr><td><code>{{silhouette}}</code></td><td>高挑、清瘦、长外套、单侧护肩</td><td>能让人认出这个角色的可辨形状</td></tr><tr><td><code>{{signature}}</code></td><td>一缕淡蓝挑染、一块缺角的玉坠</td><td>那 2–3 个「就是 ta」的标志特征——不写 IP 名</td></tr><tr><td><code>{{palette}}</code></td><td>靛蓝 + 旧钢色 + 浅蓝</td><td>角色的色彩身份</td></tr><tr><td><code>{{world}}</code></td><td>黄昏时分一座被雨打湿的石桥</td><td>翻译成真实地点的场景</td></tr><tr><td><code>{{prop}}</code></td><td>一把磨旧的真钢曲刃刀</td><td>那件标志性道具，做成实体</td></tr></tbody></table>
+<hr>
+<h2>完整提示词（可直接复制）</h2>
+<h3>1 · 核心主题</h3>
+<p><code>anime character reimagined as live-action | 真实材质与物理 | 保留剪影 + 标志特征 | 电影级调色 | 不要廉价 cosplay 感、不要塑料 CG、不要赛璐珞渲染</code></p>
+<h3>2 · 人物与场景</h3>
+<p><strong>人物（翻译媒介，保留剪影）：</strong> 一个真人，带着能识别角色的可辨 {{silhouette}} 与 {{signature}}——但完全渲染成真实的：<strong>真实皮肤，有 毛孔和细微纹理；真实头发（一根根发丝，不是一顶头盔）；真实编织布料， 有重量、有褶皱；{{prop}} 是真正磨旧的金属。</strong> 去掉每一个 2D 线索—— 没有赛璐珞渲染、没有扁平的动漫眼、没有违反重力的头发。眼睛和身体比例 都按真人来，不放大。</p>
+<p><strong>瑕疵（这正是「真」与「cosplay」的分界）：</strong> 皮肤的油光和几缕飞起的 碎发，布料起皱、略带磨旧，{{prop}} 上一道真实的刮痕，淡淡的汗。 cosplay 看起来崭新而摆拍；真人看起来有生活痕迹。</p>
+<p><strong>场景：</strong> {{world}}，把 {{palette}} 带进真实的光照里。</p>
+<h3>3 · 氛围与画质</h3>
+<p>Shot on ARRI Alexa with vintage primes，按 {{palette}} 做电影级调色。 所有东西都遵守真实世界物理——布料带着重量摆动、落定，头发随空气 而动，光裹着真实的皮肤。胶片颗粒。目标是「一部真人改编电影的定格」， 不是渲染图，也不是漫展照片。</p>
+<h3>4 · 运镜规则</h3>
+<p>缓慢、克制的揭示——推或弧线运镜，让真实材质看得清楚。</p>
+<ul><li><em>呼吸感：</em> "Handheld shot. Throughout, maintain an extremely subtle, breath-like camera float to enhance presence."</li><li><em>声音：</em> No score. Production audio only——雨打石面、布料摩挲、 {{prop}} 的刮擦声、环境氛围声。</li></ul>
+<h3>5 · 分镜（3 拍，约 10s）</h3>
+<pre><code>0–3s · 细节（用特写卖出真实感）
+Action: 微距对准真实皮肤 / 一缕飞起的碎发 / 编织布料 / 刮花的
+        {{prop}}——那些说「这是真的」的质感。
+Camera: 缓慢推近细节，浅景深。
+
+3–7s · 剪影（这下认出 ta 了）
+Action: 拉开揭示 {{world}} 里完整的 {{silhouette}}——这个形状和
+        {{signature}} 让角色可辨，但每一个表面都是真实的。
+Camera: 缓慢弧线运镜，呼吸浮动，雨和空气拂动布料与头发。
+
+7–10s · 一个停住的眼神（克制特写）
+Action: 一个微小的、属于人的表情——一次呼吸、一个眼神，没有动漫姿势。
+Close:  没有蓄力光效、没有 logo、没有炫技的英雄站姿。就是一个恰好
+        是那个角色的真人，站在真实的雨里。</code></pre>
+<h3>负面提示词（即梦 / 可灵——粘进独立负面框）</h3>
+<pre><code>cel shading, anime shading, flat 2D look, cartoon, enlarged anime eyes, impossible hair gravity, plastic CG skin, doll-like face, cosplay wig look, cheap costume, brand-new unworn fabric, oversaturated colors, glossy render, video-game look, watermark, text overlay, logo, distorted face, extra fingers, melting/morphing geometry, frame flicker, jarring hard cuts, lifeless locked-off camera</code></pre>
+<hr>
+<h2>为什么这么搭</h2>
+<ul><li><strong>翻译媒介，保留剪影。</strong> 角色之所以认得出，靠的是<em>形状 + 2–3 个标志 特征</em>，而不是赛璐珞渲染。把每个 2D 线索换成真实材质的对应物（赛璐 珞 → 皮肤毛孔，扁平头发 → 一根根发丝，动漫眼 → 真人眼），再保留剪影 ——这就是「2D → 真人」的全部手艺。</li><li><strong>瑕疵是 cosplay / 真人的分界（Rule 5）。</strong> 崭新、干净、摆拍 = cosplay。磨旧的布料、刮花的道具、飞起的碎发、真实的皮肤 = 真人电影。 正是这些磨损卖出了真实。</li><li><strong>最吃 Rule 7——描述特征，绝不写 IP 名字。</strong> 一组可辨识的特征 （名字、那身一模一样的标志性服装）正是 Sora 的相似度过滤和即梦的 IP 过滤会拦的东西。把 {{silhouette}} + {{signature}} 当作<em>描述</em>来用， 不要写角色的名字。</li><li><strong>克制特写（Rule 6）。</strong> 一次属于人的呼吸，而不是蓄力姿势。让它稳稳 落在「电影改编」上，而不是同人动画。</li></ul>
+<p><strong>用法</strong>：先跑细节那一拍（0–3s）——如果皮肤、头发、布料在那里看起来 是真正真实的，完整揭示就稳得住。如果跑出来塑料感或赛璐珞感，把负面框 往狠里加。在即梦 / Sora 上跑之前，<strong>清掉任何能认出 IP 的措辞</strong>。</p>
+<p><strong>模型</strong>：Veo 3 和 Sora 2 的真实皮肤 / 材质翻译最好；两者都有严格的相似 度过滤，所以保持用特征描述、不点名。可灵和即梦也能用——即梦尤其会直接 拒绝点名的 IP，所以只做描述。</p>
+  </article>
+  <footer class="doc-foot">
+    <p>许可 · <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT · 可自由使用</a></p>
+    <p><a href="../">← 回提示词库</a> · <a href="https://www.aiolaola.com/?utm_source=prompts.aiolaola.com&amp;utm_medium=referral&amp;utm_campaign=docpage" target="_blank" rel="noopener">aiOlaOla 学 AI 编程</a></p>
+  </footer>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const RAW = "# 实战范例 — 动漫 / 2D → 真人实拍\n\n> jnMetaCode 原创实战范例（MIT）。把 5 段式结构用在**「动漫角色变真人」**\n> 这一题材上——这是搜索量极大、却往往从两个相反方向翻车的类型：要么\n> 廉价 cosplay，要么塑料感 CG。诀窍在于**翻译媒介**（赛璐珞渲染 → 真实\n> 材质 + 物理）的同时，**保留让角色一眼可辨的剪影**。本模板最吃 Rule 7\n> ——那一组可辨识的特征，正是 IP 过滤会拦的东西。\n>\n> 概念：一个风格化的「驭风剑客」概念，渲染成真实世界里的真人。只描述\n> 特征，绝不写 IP 名字。\n>\n> *延伸阅读（取其灵感，非照搬——全部按我们的结构重写）：\n> [zhangchenchen/awesome_sora2_prompt](https://github.com/zhangchenchen/awesome_sora2_prompt)\n> 里的风格迁移 / 动漫类目（MIT）。*\n>\n> **[English →](./anime-to-real.md)**\n\n---\n\n## 先定义这些变量\n\n| 变量 | 本例取值 | 你可替换为… |\n|---|---|---|\n| `{{silhouette}}` | 高挑、清瘦、长外套、单侧护肩 | 能让人认出这个角色的可辨形状 |\n| `{{signature}}` | 一缕淡蓝挑染、一块缺角的玉坠 | 那 2–3 个「就是 ta」的标志特征——不写 IP 名 |\n| `{{palette}}` | 靛蓝 + 旧钢色 + 浅蓝 | 角色的色彩身份 |\n| `{{world}}` | 黄昏时分一座被雨打湿的石桥 | 翻译成真实地点的场景 |\n| `{{prop}}` | 一把磨旧的真钢曲刃刀 | 那件标志性道具，做成实体 |\n\n---\n\n## 完整提示词（可直接复制）\n\n### 1 · 核心主题\n`anime character reimagined as live-action | 真实材质与物理 | 保留剪影 + 标志特征 | 电影级调色 | 不要廉价 cosplay 感、不要塑料 CG、不要赛璐珞渲染`\n\n### 2 · 人物与场景\n\n**人物（翻译媒介，保留剪影）：** 一个真人，带着能识别角色的可辨\n{{silhouette}} 与 {{signature}}——但完全渲染成真实的：**真实皮肤，有\n毛孔和细微纹理；真实头发（一根根发丝，不是一顶头盔）；真实编织布料，\n有重量、有褶皱；{{prop}} 是真正磨旧的金属。** 去掉每一个 2D 线索——\n没有赛璐珞渲染、没有扁平的动漫眼、没有违反重力的头发。眼睛和身体比例\n都按真人来，不放大。\n\n**瑕疵（这正是「真」与「cosplay」的分界）：** 皮肤的油光和几缕飞起的\n碎发，布料起皱、略带磨旧，{{prop}} 上一道真实的刮痕，淡淡的汗。\ncosplay 看起来崭新而摆拍；真人看起来有生活痕迹。\n\n**场景：** {{world}}，把 {{palette}} 带进真实的光照里。\n\n### 3 · 氛围与画质\nShot on ARRI Alexa with vintage primes，按 {{palette}} 做电影级调色。\n所有东西都遵守真实世界物理——布料带着重量摆动、落定，头发随空气\n而动，光裹着真实的皮肤。胶片颗粒。目标是「一部真人改编电影的定格」，\n不是渲染图，也不是漫展照片。\n\n### 4 · 运镜规则\n缓慢、克制的揭示——推或弧线运镜，让真实材质看得清楚。\n- *呼吸感：* \"Handheld shot. Throughout, maintain an extremely subtle,\n  breath-like camera float to enhance presence.\"\n- *声音：* No score. Production audio only——雨打石面、布料摩挲、\n  {{prop}} 的刮擦声、环境氛围声。\n\n### 5 · 分镜（3 拍，约 10s）\n\n```\n0–3s · 细节（用特写卖出真实感）\nAction: 微距对准真实皮肤 / 一缕飞起的碎发 / 编织布料 / 刮花的\n        {{prop}}——那些说「这是真的」的质感。\nCamera: 缓慢推近细节，浅景深。\n\n3–7s · 剪影（这下认出 ta 了）\nAction: 拉开揭示 {{world}} 里完整的 {{silhouette}}——这个形状和\n        {{signature}} 让角色可辨，但每一个表面都是真实的。\nCamera: 缓慢弧线运镜，呼吸浮动，雨和空气拂动布料与头发。\n\n7–10s · 一个停住的眼神（克制特写）\nAction: 一个微小的、属于人的表情——一次呼吸、一个眼神，没有动漫姿势。\nClose:  没有蓄力光效、没有 logo、没有炫技的英雄站姿。就是一个恰好\n        是那个角色的真人，站在真实的雨里。\n```\n\n### 负面提示词（即梦 / 可灵——粘进独立负面框）\n```\ncel shading, anime shading, flat 2D look, cartoon, enlarged anime eyes, impossible hair gravity, plastic CG skin, doll-like face, cosplay wig look, cheap costume, brand-new unworn fabric, oversaturated colors, glossy render, video-game look, watermark, text overlay, logo, distorted face, extra fingers, melting/morphing geometry, frame flicker, jarring hard cuts, lifeless locked-off camera\n```\n\n---\n\n## 为什么这么搭\n\n- **翻译媒介，保留剪影。** 角色之所以认得出，靠的是*形状 + 2–3 个标志\n  特征*，而不是赛璐珞渲染。把每个 2D 线索换成真实材质的对应物（赛璐\n  珞 → 皮肤毛孔，扁平头发 → 一根根发丝，动漫眼 → 真人眼），再保留剪影\n  ——这就是「2D → 真人」的全部手艺。\n- **瑕疵是 cosplay / 真人的分界（Rule 5）。** 崭新、干净、摆拍 =\n  cosplay。磨旧的布料、刮花的道具、飞起的碎发、真实的皮肤 = 真人电影。\n  正是这些磨损卖出了真实。\n- **最吃 Rule 7——描述特征，绝不写 IP 名字。** 一组可辨识的特征\n  （名字、那身一模一样的标志性服装）正是 Sora 的相似度过滤和即梦的 IP\n  过滤会拦的东西。把 {{silhouette}} + {{signature}} 当作*描述*来用，\n  不要写角色的名字。\n- **克制特写（Rule 6）。** 一次属于人的呼吸，而不是蓄力姿势。让它稳稳\n  落在「电影改编」上，而不是同人动画。\n\n**用法**：先跑细节那一拍（0–3s）——如果皮肤、头发、布料在那里看起来\n是真正真实的，完整揭示就稳得住。如果跑出来塑料感或赛璐珞感，把负面框\n往狠里加。在即梦 / Sora 上跑之前，**清掉任何能认出 IP 的措辞**。\n\n**模型**：Veo 3 和 Sora 2 的真实皮肤 / 材质翻译最好；两者都有严格的相似\n度过滤，所以保持用特征描述、不点名。可灵和即梦也能用——即梦尤其会直接\n拒绝点名的 IP，所以只做描述。\n";
+function extractPrompt(md){
+  const lines=md.split("\n");
+  const re=/^#{1,4}\s.*(完整提示词|complete prompt|copy-paste|可直接复制)/i;
+  let s=-1; for(let i=0;i<lines.length;i++){if(re.test(lines[i])){s=i+1;break;}}
+  if(s>=0){let e=lines.length;for(let i=s;i<lines.length;i++){if(/^##\s/.test(lines[i])){e=i;break;}}
+    const r=lines.slice(s,e).join("\n").replace(/^\s*-{3,}\s*$/gm,"").trim();if(r)return r;}
+  const b=[...md.matchAll(/```[^\n]*\n([\s\S]*?)```/g)].map(m=>m[1].trim());
+  return b.length?b.join("\n\n"):md.trim();
+}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('show');
+  clearTimeout(toast._t);toast._t=setTimeout(()=>e.classList.remove('show'),1700);}
+async function cp(t,msg){try{await navigator.clipboard.writeText(t);toast(msg);}catch(e){toast('复制失败');}}
+document.getElementById('copyPrompt').onclick=()=>cp(extractPrompt(RAW),'提示词已复制 · 可直接粘进视频模型');
+document.getElementById('copyAll').onclick=()=>cp(RAW,'全文已复制');
+</script>
+</body>
+</html>
