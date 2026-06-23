@@ -188,7 +188,11 @@ ai-shortfilm-prompts/
 │   ├── nature-timelapse.md           Worked example: landscape timelapse, locked grade
 │   ├── found-footage-horror.md       Worked example: CCTV / security-cam dread
 │   ├── anime-to-real.md              Worked example: 2D character → live-action
-│   └── music-video.md                Worked example: beat-synced performance MV
+│   ├── music-video.md                Worked example: beat-synced performance MV
+│   ├── sports-slowmo.md              Worked example: high-speed slow-motion sports
+│   ├── fashion-film.md               Worked example: editorial fashion film
+│   ├── travel-vlog.md                Worked example: travel vlog, sense of place
+│   └── drone-fpv.md                  Worked example: FPV/aerial continuous flight
 │
 ├── assets/                 Diagrams + the README hero-demo prompt.
 │   ├── demo-prompt.md       Copy-paste 15s prompt the Skill wrote (hero slot)

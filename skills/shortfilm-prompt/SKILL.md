@@ -94,6 +94,10 @@ the plugin/repo root.
 | **CCTV / found-footage horror** (degraded-cam look; breaks the breathing rule) | `templates/found-footage-horror.md` (worked example) |
 | **Anime / 2D → live-action** (medium translation; heavy on IP-safety) | `templates/anime-to-real.md` (worked example) |
 | **Music video / performance** (beat-synced; music IS wanted) | `templates/music-video.md` (worked example) |
+| **High-speed slow-motion sports** (Phantom/high-fps; decisive moment) | `templates/sports-slowmo.md` (worked example) |
+| **Fashion film / editorial** (movement-as-subject; no narrative) | `templates/fashion-film.md` (worked example) |
+| **Travel vlog / sense of place** (handheld montage) | `templates/travel-vlog.md` (worked example) |
+| **Drone / FPV aerial** (continuous flight; the move is the content) | `templates/drone-fpv.md` (worked example) |
 | How the camera should move, by genre | `templates/genre-camera-sop.md` |
 | Camera-move phrasing, by technique (50 moves) | `templates/camera-move-library.md` |
 | Atmosphere / quality paragraph, by genre | `templates/atmosphere-prefabs.md` |

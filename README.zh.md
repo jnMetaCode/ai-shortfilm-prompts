@@ -170,7 +170,11 @@ ai-shortfilm-prompts/
 │   ├── nature-timelapse.md          ← 实战范例：风景延时·锁一档调色
 │   ├── found-footage-horror.md      ← 实战范例：CCTV/伪纪录恐怖
 │   ├── anime-to-real.md             ← 实战范例：动漫转真人写实
-│   └── music-video.md               ← 实战范例：卡点音乐 MV
+│   ├── music-video.md               ← 实战范例：卡点音乐 MV
+│   ├── sports-slowmo.md             ← 实战范例：运动高速慢镜
+│   ├── fashion-film.md              ← 实战范例：时尚大片
+│   ├── travel-vlog.md               ← 实战范例：旅拍 Vlog
+│   └── drone-fpv.md                 ← 实战范例：无人机 / FPV 航拍
 │
 ├── assets/                          ← 图示 + README 顶部 demo 提示词
 │   ├── demo-prompt.md               ← Skill 写的可复制 15 秒提示词（顶部片位）

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>实战范例 — 无人机 / FPV 航拍｜电影感 AI 视频提示词库</title>
+<meta name="description" content="jnMetaCode 原创实战范例（MIT）。把 5 段式结构用在 FPV / 航拍镜头上——这里运镜本身就是内容：尺度、速度，和 一镜到底的连续飞行。教 FPV/航拍词汇（dive 俯冲、fly-through 穿越、 orbit 环绕、reveal 揭露）和一镜不切的连续拍摄纪律。 概念：一架 FP…">
+<link rel="canonical" href="https://prompts.aiolaola.com/p/drone-fpv.zh">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="zh-CN" href="https://prompts.aiolaola.com/p/drone-fpv.zh">
+<link rel="alternate" hreflang="en" href="https://prompts.aiolaola.com/p/drone-fpv">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="电影感 AI 视频提示词库">
+<meta property="og:title" content="实战范例 — 无人机 / FPV 航拍">
+<meta property="og:description" content="jnMetaCode 原创实战范例（MIT）。把 5 段式结构用在 FPV / 航拍镜头上——这里运镜本身就是内容：尺度、速度，和 一镜到底的连续飞行。教 FPV/航拍词汇（dive 俯冲、fly-through 穿越、 orbit 环绕、reveal 揭露）和一镜不切的连续拍摄纪律。 概念：一架 FP…">
+<meta property="og:url" content="https://prompts.aiolaola.com/p/drone-fpv.zh">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="实战范例 — 无人机 / FPV 航拍">
+<meta name="twitter:description" content="jnMetaCode 原创实战范例（MIT）。把 5 段式结构用在 FPV / 航拍镜头上——这里运镜本身就是内容：尺度、速度，和 一镜到底的连续飞行。教 FPV/航拍词汇（dive 俯冲、fly-through 穿越、 orbit 环绕、reveal 揭露）和一镜不切的连续拍摄纪律。 概念：一架 FP…">
+<link rel="stylesheet" href="./page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "实战范例 — 无人机 / FPV 航拍",
+  "description": "jnMetaCode 原创实战范例（MIT）。把 5 段式结构用在 FPV / 航拍镜头上——这里运镜本身就是内容：尺度、速度，和 一镜到底的连续飞行。教 FPV/航拍词汇（dive 俯冲、fly-through 穿越、 orbit 环绕、reveal 揭露）和一镜不切的连续拍摄纪律。 概念：一架 FP…",
+  "inLanguage": "zh-CN",
+  "url": "https://prompts.aiolaola.com/p/drone-fpv.zh",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "电影感 AI 视频提示词库",
+    "url": "https://prompts.aiolaola.com/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "jnMetaCode",
+    "url": "https://github.com/jnMetaCode"
+  },
+  "license": "https://opensource.org/licenses/MIT"
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7LBJRDWYYW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7LBJRDWYYW');</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="back" href="../">← 提示词库</a>
+  <a class="ghlink" href="https://github.com/jnMetaCode/ai-shortfilm-prompts/blob/main/templates/drone-fpv.zh.md" target="_blank" rel="noopener">在 GitHub 查看源文件 ↗</a>
+</header>
+<main class="doc">
+  <div class="doc-actions">
+    <button id="copyPrompt">⧉ 复制提示词</button>
+    <button id="copyAll">复制全文</button>
+    <a class="langsw" href="./drone-fpv.html">EN</a>
+  </div>
+  <article class="md">
+<h1>实战范例 — 无人机 / FPV 航拍</h1>
+<blockquote><p>jnMetaCode 原创实战范例（MIT）。把 5 段式结构用在 <strong>FPV / 航拍镜头</strong>上——这里<em>运镜本身就是内容</em>：尺度、速度，和 一镜到底的连续飞行。教 FPV/航拍词汇（dive 俯冲、fly-through 穿越、 orbit 环绕、reveal 揭露）和一镜不切的连续拍摄纪律。</p>
+<p>概念：一架 FPV 无人机贴地起飞，俯冲穿过峡谷，再拉升揭露远方全景。 换掉地点，保留连续运镜。</p>
+<p><em>延伸阅读（取灵感，非照搬——全部用我们的结构重写）：航拍/风光场景 见 <a href="https://github.com/hr98w/awesome-sora-prompts" target="_blank" rel="noopener">hr98w/awesome-sora-prompts</a> （CC0）。</em></p>
+<p><strong><a href="drone-fpv.html">English →</a></strong></p></blockquote>
+<hr>
+<h2>先定义这些变量</h2>
+<table><thead><tr><th>变量</th><th>本例取值</th><th>可替换为…</th></tr></thead><tbody><tr><td><code>{{subject}}</code></td><td>一道深红岩峡谷，谷底有河</td><td>海崖小镇 / 摩天楼峡谷 / 林间瀑布</td></tr><tr><td><code>{{move}}</code></td><td>低空俯冲 → 穿越峡谷 → 拉升揭露</td><td>贴身环绕 / power-loop 翻滚 / 移焦推拉揭露</td></tr><tr><td><code>{{gap}}</code></td><td>岩壁间一道狭缝</td><td>一座拱门 / 一段桥跨 / 一排树线</td></tr><tr><td><code>{{reveal}}</code></td><td>日出时豁然展开的辽阔山谷</td><td>城市天际线 / 开阔海面 / 连绵山脉</td></tr><tr><td><code>{{light}}</code></td><td>低角度金色日出，长影，薄雾</td><td>蓝调时刻 / 正午硬光 / 暴风雨光</td></tr></tbody></table>
+<hr>
+<h2>完整提示词（可直接复制）</h2>
+<h3>1 · 核心主题</h3>
+<p><code>FPV drone flight | 航拍尺度与速度 | 自然光 | 一镜到底 | 写实质感，不要游戏引擎穿越感</code></p>
+<h3>2 · 人物与场景</h3>
+<p><strong>主体（被穿越的地点）：</strong> {{subject}}，处在 {{light}} 之下。尺度就是 重点——无人机的速度和贴近让这地方的体量被真切感受到。真实大气让画面 写实：远处薄雾、贴近表面被卷起的尘土或水雾、飞鸟、流水、植被随风晃动。</p>
+<p><strong>瑕疵（保持真实拍摄感，不是渲染）：</strong> 真实大气透视与光线散射、最快段 的轻微运动抖动（motion judder）、真实的表面纹理（岩石颗粒、水、枝叶） ——不是干净的 CG 穿越画面。</p>
+<h3>3 · 氛围与画质</h3>
+<p>用 FPV cinewhoop 无人机配 ultrawide 超广角镜头拍摄（真正的 FPV 观感—— 快、沉浸、带轻微广角畸变），或用电影航拍无人机走更平滑的运镜。 变形宽银幕（anamorphic widescreen），{{light}}，细腻胶片颗粒，真实的 景深薄雾撑出尺度。</p>
+<h3>4 · 运镜规则</h3>
+<p><strong>运镜就是整个镜头——一镜到底。</strong> FPV 词汇：{{move}}——果断、流畅、 不切镜。速度与贴近表面（穿过 {{gap}}）造出那种身临其境的尺度感。</p>
+<ul><li><em>呼吸感：</em> 这里不是常规的手持浮动——无人机本身有它的运动。额外加的 浮动保持极小；让飞行轨迹来带动画面。</li><li><em>声音：</em> No score. 只用现场/环境音——风的呼啸、隐约的桨叶嗡鸣（或高 空近乎静默）、贴近表面处的水声或风声，以及揭露瞬间空间豁然打开的声音。</li></ul>
+<h3>5 · 分镜（一镜连续运镜，约 10s）</h3>
+<pre><code>0–3s · 起飞 / 贴地（先在低空确立尺度）
+动作：无人机贴地、快速掠过 {{subject}}，紧贴表面飞，让速度被读出来。
+运镜：FPV，ultrawide，果断的前向运动。
+
+3–7s · 穿越（身临其境的中段——贴近）
+动作：{{move}}——俯冲并穿越 {{gap}}，岩壁/边缘贴着镜头飞速掠过。
+      这种贴近就是刺激所在。
+运镜：连续，不切镜；轻微广角畸变，最快段带 micro-judder 微抖。
+声音：风声呼啸渐强。
+
+7–10s · 拉升揭露（高潮回报）
+动作：无人机拉升、飞出，揭露 {{reveal}}——尺度一下子全部砸进来。
+运镜：平滑的爬升揭露，世界豁然展开。
+收尾：无片名、无 logo、无转圈炫技环绕。就让全景停住，无人机稳下来，
+      风声向外打开。</code></pre>
+<h3>负面提示词（即梦/可灵——粘进独立负面框）</h3>
+<pre><code>blurry, low resolution, watermark, text overlay, subtitles, logo, oversaturated colors, game-engine flythrough, video-game look, plastic CG terrain, 3D render, fake HDR, flat lifeless lighting, warping/melting geometry, rubber-sheet landscape, jarring hard cuts, stutter, frame flicker, ghosting, cheesy lens flare, obvious CG water</code></pre>
+<hr>
+<h2>为什么这么搭</h2>
+<ul><li><strong>运镜就是内容。</strong> FPV/航拍不是讲一个主体在做什么——讲的是这趟飞行： 尺度、速度、贴近。分镜要当成一段连续运镜来搭（起飞 → 穿越 → 揭露）， 而不是一连串事件。</li><li><strong>FPV 工具 + 词汇（Rule 2）。</strong> "FPV cinewhoop, ultrawide, dive, fly-through" 把模型锚定到真实无人机素材上。"Aerial shot, cinematic" 只会给你一个通用的库存航拍或游戏穿越感。</li><li><strong>大气撑起尺度和真实感（Rule 5）。</strong> 景深薄雾、贴近表面的尘土/水雾、 快段的 micro-judder 微抖。一段完美干净的穿越会被读成游戏引擎；薄雾 和抖动才被读成真实拍摄。</li><li><strong>克制收尾（Rule 6）。</strong> 让揭露停住，不要转圈炫技环绕、不要片名。 全景就是回报；别再往上堆。</li></ul>
+<p><strong>用法</strong>：先跑「穿越」段（3–7s）——贴近和速度才是刺激点；只要穿越读起 来像真 FPV（而不是 CG 穿越），起飞和揭露自然就框住它了。保持一镜连续； 切镜会毁掉 FPV 的感觉。</p>
+<p><strong>模型</strong>：可灵和 Seedance 对快速连续运动处理得好；Veo 3 和 Sora 2 给 出最佳的写实地形、景深薄雾和原生风声。留意快速低空掠过时的「橡皮布 （rubber-sheet）」扭曲——把它写进负面，让表面保持有纹理。</p>
+  </article>
+  <footer class="doc-foot">
+    <p>许可 · <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT · 可自由使用</a></p>
+    <p><a href="../">← 回提示词库</a> · <a href="https://www.aiolaola.com/?utm_source=prompts.aiolaola.com&amp;utm_medium=referral&amp;utm_campaign=docpage" target="_blank" rel="noopener">aiOlaOla 学 AI 编程</a></p>
+  </footer>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const RAW = "# 实战范例 — 无人机 / FPV 航拍\n\n> jnMetaCode 原创实战范例（MIT）。把 5 段式结构用在\n> **FPV / 航拍镜头**上——这里*运镜本身就是内容*：尺度、速度，和\n> 一镜到底的连续飞行。教 FPV/航拍词汇（dive 俯冲、fly-through 穿越、\n> orbit 环绕、reveal 揭露）和一镜不切的连续拍摄纪律。\n>\n> 概念：一架 FPV 无人机贴地起飞，俯冲穿过峡谷，再拉升揭露远方全景。\n> 换掉地点，保留连续运镜。\n>\n> *延伸阅读（取灵感，非照搬——全部用我们的结构重写）：航拍/风光场景\n> 见 [hr98w/awesome-sora-prompts](https://github.com/hr98w/awesome-sora-prompts)\n> （CC0）。*\n>\n> **[English →](./drone-fpv.md)**\n\n---\n\n## 先定义这些变量\n\n| 变量 | 本例取值 | 可替换为… |\n|---|---|---|\n| `{{subject}}` | 一道深红岩峡谷，谷底有河 | 海崖小镇 / 摩天楼峡谷 / 林间瀑布 |\n| `{{move}}` | 低空俯冲 → 穿越峡谷 → 拉升揭露 | 贴身环绕 / power-loop 翻滚 / 移焦推拉揭露 |\n| `{{gap}}` | 岩壁间一道狭缝 | 一座拱门 / 一段桥跨 / 一排树线 |\n| `{{reveal}}` | 日出时豁然展开的辽阔山谷 | 城市天际线 / 开阔海面 / 连绵山脉 |\n| `{{light}}` | 低角度金色日出，长影，薄雾 | 蓝调时刻 / 正午硬光 / 暴风雨光 |\n\n---\n\n## 完整提示词（可直接复制）\n\n### 1 · 核心主题\n`FPV drone flight | 航拍尺度与速度 | 自然光 | 一镜到底 | 写实质感，不要游戏引擎穿越感`\n\n### 2 · 人物与场景\n\n**主体（被穿越的地点）：** {{subject}}，处在 {{light}} 之下。尺度就是\n重点——无人机的速度和贴近让这地方的体量被真切感受到。真实大气让画面\n写实：远处薄雾、贴近表面被卷起的尘土或水雾、飞鸟、流水、植被随风晃动。\n\n**瑕疵（保持真实拍摄感，不是渲染）：** 真实大气透视与光线散射、最快段\n的轻微运动抖动（motion judder）、真实的表面纹理（岩石颗粒、水、枝叶）\n——不是干净的 CG 穿越画面。\n\n### 3 · 氛围与画质\n用 FPV cinewhoop 无人机配 ultrawide 超广角镜头拍摄（真正的 FPV 观感——\n快、沉浸、带轻微广角畸变），或用电影航拍无人机走更平滑的运镜。\n变形宽银幕（anamorphic widescreen），{{light}}，细腻胶片颗粒，真实的\n景深薄雾撑出尺度。\n\n### 4 · 运镜规则\n**运镜就是整个镜头——一镜到底。** FPV 词汇：{{move}}——果断、流畅、\n不切镜。速度与贴近表面（穿过 {{gap}}）造出那种身临其境的尺度感。\n- *呼吸感：* 这里不是常规的手持浮动——无人机本身有它的运动。额外加的\n  浮动保持极小；让飞行轨迹来带动画面。\n- *声音：* No score. 只用现场/环境音——风的呼啸、隐约的桨叶嗡鸣（或高\n  空近乎静默）、贴近表面处的水声或风声，以及揭露瞬间空间豁然打开的声音。\n\n### 5 · 分镜（一镜连续运镜，约 10s）\n\n```\n0–3s · 起飞 / 贴地（先在低空确立尺度）\n动作：无人机贴地、快速掠过 {{subject}}，紧贴表面飞，让速度被读出来。\n运镜：FPV，ultrawide，果断的前向运动。\n\n3–7s · 穿越（身临其境的中段——贴近）\n动作：{{move}}——俯冲并穿越 {{gap}}，岩壁/边缘贴着镜头飞速掠过。\n      这种贴近就是刺激所在。\n运镜：连续，不切镜；轻微广角畸变，最快段带 micro-judder 微抖。\n声音：风声呼啸渐强。\n\n7–10s · 拉升揭露（高潮回报）\n动作：无人机拉升、飞出，揭露 {{reveal}}——尺度一下子全部砸进来。\n运镜：平滑的爬升揭露，世界豁然展开。\n收尾：无片名、无 logo、无转圈炫技环绕。就让全景停住，无人机稳下来，\n      风声向外打开。\n```\n\n### 负面提示词（即梦/可灵——粘进独立负面框）\n```\nblurry, low resolution, watermark, text overlay, subtitles, logo, oversaturated colors, game-engine flythrough, video-game look, plastic CG terrain, 3D render, fake HDR, flat lifeless lighting, warping/melting geometry, rubber-sheet landscape, jarring hard cuts, stutter, frame flicker, ghosting, cheesy lens flare, obvious CG water\n```\n\n---\n\n## 为什么这么搭\n\n- **运镜就是内容。** FPV/航拍不是讲一个主体在做什么——讲的是这趟飞行：\n  尺度、速度、贴近。分镜要当成一段连续运镜来搭（起飞 → 穿越 → 揭露），\n  而不是一连串事件。\n- **FPV 工具 + 词汇（Rule 2）。** \"FPV cinewhoop, ultrawide, dive,\n  fly-through\" 把模型锚定到真实无人机素材上。\"Aerial shot, cinematic\"\n  只会给你一个通用的库存航拍或游戏穿越感。\n- **大气撑起尺度和真实感（Rule 5）。** 景深薄雾、贴近表面的尘土/水雾、\n  快段的 micro-judder 微抖。一段完美干净的穿越会被读成游戏引擎；薄雾\n  和抖动才被读成真实拍摄。\n- **克制收尾（Rule 6）。** 让揭露停住，不要转圈炫技环绕、不要片名。\n  全景就是回报；别再往上堆。\n\n**用法**：先跑「穿越」段（3–7s）——贴近和速度才是刺激点；只要穿越读起\n来像真 FPV（而不是 CG 穿越），起飞和揭露自然就框住它了。保持一镜连续；\n切镜会毁掉 FPV 的感觉。\n\n**模型**：可灵和 Seedance 对快速连续运动处理得好；Veo 3 和 Sora 2 给\n出最佳的写实地形、景深薄雾和原生风声。留意快速低空掠过时的「橡皮布\n（rubber-sheet）」扭曲——把它写进负面，让表面保持有纹理。\n";
+function extractPrompt(md){
+  const lines=md.split("\n");
+  const re=/^#{1,4}\s.*(完整提示词|complete prompt|copy-paste|可直接复制)/i;
+  let s=-1; for(let i=0;i<lines.length;i++){if(re.test(lines[i])){s=i+1;break;}}
+  if(s>=0){let e=lines.length;for(let i=s;i<lines.length;i++){if(/^##\s/.test(lines[i])){e=i;break;}}
+    const r=lines.slice(s,e).join("\n").replace(/^\s*-{3,}\s*$/gm,"").trim();if(r)return r;}
+  const b=[...md.matchAll(/```[^\n]*\n([\s\S]*?)```/g)].map(m=>m[1].trim());
+  return b.length?b.join("\n\n"):md.trim();
+}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('show');
+  clearTimeout(toast._t);toast._t=setTimeout(()=>e.classList.remove('show'),1700);}
+async function cp(t,msg){try{await navigator.clipboard.writeText(t);toast(msg);}catch(e){toast('复制失败');}}
+document.getElementById('copyPrompt').onclick=()=>cp(extractPrompt(RAW),'提示词已复制 · 可直接粘进视频模型');
+document.getElementById('copyAll').onclick=()=>cp(RAW,'全文已复制');
+</script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worked Example — Drone / FPV Aerial | Cinematic AI Video Prompt Library</title>
+<meta name="description" content="Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to an FPV / aerial drone shot — where the camera move itself is the content: …">
+<link rel="canonical" href="https://prompts.aiolaola.com/p/drone-fpv">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="en" href="https://prompts.aiolaola.com/p/drone-fpv">
+<link rel="alternate" hreflang="zh-CN" href="https://prompts.aiolaola.com/p/drone-fpv.zh">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="电影感 AI 视频提示词库">
+<meta property="og:title" content="Worked Example — Drone / FPV Aerial">
+<meta property="og:description" content="Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to an FPV / aerial drone shot — where the camera move itself is the content: …">
+<meta property="og:url" content="https://prompts.aiolaola.com/p/drone-fpv">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Worked Example — Drone / FPV Aerial">
+<meta name="twitter:description" content="Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to an FPV / aerial drone shot — where the camera move itself is the content: …">
+<link rel="stylesheet" href="./page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Worked Example — Drone / FPV Aerial",
+  "description": "Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to an FPV / aerial drone shot — where the camera move itself is the content: …",
+  "inLanguage": "en",
+  "url": "https://prompts.aiolaola.com/p/drone-fpv",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "电影感 AI 视频提示词库",
+    "url": "https://prompts.aiolaola.com/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "jnMetaCode",
+    "url": "https://github.com/jnMetaCode"
+  },
+  "license": "https://opensource.org/licenses/MIT"
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7LBJRDWYYW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7LBJRDWYYW');</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="back" href="../">← 提示词库</a>
+  <a class="ghlink" href="https://github.com/jnMetaCode/ai-shortfilm-prompts/blob/main/templates/drone-fpv.md" target="_blank" rel="noopener">在 GitHub 查看源文件 ↗</a>
+</header>
+<main class="doc">
+  <div class="doc-actions">
+    <button id="copyPrompt">⧉ 复制提示词</button>
+    <button id="copyAll">复制全文</button>
+    <a class="langsw" href="./drone-fpv.zh.html">中文</a>
+  </div>
+  <article class="md">
+<h1>Worked Example — Drone / FPV Aerial</h1>
+<blockquote><p>Original worked example by jnMetaCode (MIT). Applies the 5-stage structure to an <strong>FPV / aerial drone shot</strong> — where the <em>camera move itself</em> is the content: scale, speed, and one continuous flight. Teaches the FPV/aerial vocabulary (dive, fly-through, orbit, reveal) and the continuous one-take discipline.</p>
+<p>Concept: an FPV drone launches low, dives through a canyon, and pulls up to reveal a vista. Swap the location, keep the continuous move.</p>
+<p><em>Further reading (inspiration, not copied — all rewritten in our structure): aerial/landscape scenes in <a href="https://github.com/hr98w/awesome-sora-prompts" target="_blank" rel="noopener">hr98w/awesome-sora-prompts</a> (CC0).</em></p>
+<p><strong><a href="drone-fpv.zh.html">中文版 →</a></strong></p></blockquote>
+<hr>
+<h2>Variables you need to define first</h2>
+<table><thead><tr><th>Variable</th><th>This example</th><th>Swap for…</th></tr></thead><tbody><tr><td><code>{{subject}}</code></td><td>a deep red-rock canyon with a river</td><td>a coastal cliff town / a skyscraper canyon / a forest waterfall</td></tr><tr><td><code>{{move}}</code></td><td>low dive → fly-through the gorge → pull-up reveal</td><td>proximity orbit / power-loop / dolly-zoom reveal</td></tr><tr><td><code>{{gap}}</code></td><td>a narrow slot between rock walls</td><td>an arch / a bridge span / a tree line</td></tr><tr><td><code>{{reveal}}</code></td><td>a vast valley opening at sunrise</td><td>a city skyline / the open sea / a mountain range</td></tr><tr><td><code>{{light}}</code></td><td>low golden sunrise, long shadows, haze</td><td>blue hour / harsh midday / storm light</td></tr></tbody></table>
+<hr>
+<h2>The complete prompt (copy-paste ready)</h2>
+<h3>1 · Core theme</h3>
+<p><code>FPV drone flight | aerial scale and speed | natural light | one continuous take | photoreal, no game-engine flythrough look</code></p>
+<h3>2 · Character &amp; scene</h3>
+<p><strong>Subject (the place, traversed):</strong> {{subject}}, under {{light}}. The scale is the point — the drone's speed and proximity make the size of the place felt. Real atmosphere makes it photoreal: haze in the distance, dust or spray kicked up near surfaces, birds, moving water, wind in vegetation.</p>
+<p><strong>Imperfections (keep it real footage, not a render):</strong> real atmospheric haze and light scatter, tiny motion judder on the fastest moves, true surface texture (rock grain, water, foliage) — not a clean CG flythrough.</p>
+<h3>3 · Atmosphere &amp; quality</h3>
+<p>Shot on an FPV cinewhoop drone with an ultrawide lens (the real FPV look — fast, immersive, slight wide distortion), or a cinematic aerial drone for smoother moves. Anamorphic widescreen, {{light}}, fine film grain, true depth haze for scale.</p>
+<h3>4 · Camera rules</h3>
+<p><strong>The move is the whole shot — one continuous take.</strong> FPV vocabulary: {{move}} — committed, flowing, no cuts. Speed and proximity to surfaces (through {{gap}}) create the visceral scale.</p>
+<ul><li><em>Breathing:</em> not the usual handheld float here — the drone has its own motion. Keep any added float minimal; let the flight path carry it.</li><li><em>Sound:</em> No score. Production / ambient audio only — wind rush, the faint rotor hum (or near-silence at altitude), water or wind at the surfaces, the air opening up on the reveal.</li></ul>
+<h3>5 · Storyboard (one continuous move, ~10s)</h3>
+<pre><code>0–3s · Launch / low (establish scale low to the ground)
+Action: The drone starts low and fast over {{subject}}, close to the
+        surface so speed reads.
+Camera: FPV, ultrawide, committed forward motion.
+
+3–7s · Through (the visceral middle — proximity)
+Action: {{move}} — dive and fly-through {{gap}}, walls/edges rushing past
+        close to the lens. This proximity is the thrill.
+Camera: Continuous, no cut; slight wide distortion, micro-judder on the
+        fastest bit.
+Sound:  Wind rush builds.
+
+7–10s · Pull-up reveal (the payoff)
+Action: The drone pulls up and out to reveal {{reveal}} — the scale lands
+        all at once.
+Camera: Smooth climbing reveal, the world opening.
+Close:  No title, no logo, no spin-around hero orbit. Just the vista
+        holding as the drone settles and the wind opens out.</code></pre>
+<h3>Negative prompt (Seedance / Kling — paste into the dedicated field)</h3>
+<pre><code>blurry, low resolution, watermark, text overlay, subtitles, logo, oversaturated colors, game-engine flythrough, video-game look, plastic CG terrain, 3D render, fake HDR, flat lifeless lighting, warping/melting geometry, rubber-sheet landscape, jarring hard cuts, stutter, frame flicker, ghosting, cheesy lens flare, obvious CG water</code></pre>
+<hr>
+<h2>Why it's built this way</h2>
+<ul><li><strong>The move is the content.</strong> FPV/aerial isn't about a subject doing something — it's about the flight: scale, speed, proximity. Build the storyboard as one continuous move (launch → through → reveal), not as events.</li><li><strong>FPV tool + vocabulary (Rule 2).</strong> "FPV cinewhoop, ultrawide, dive, fly-through" anchors the model to real drone footage. "Aerial shot, cinematic" gives a generic stock flyover or a game flythrough.</li><li><strong>Atmosphere sells the scale and the realism (Rule 5).</strong> Depth haze, dust/spray near surfaces, micro-judder on fast moves. A perfectly clean flythrough reads as a game engine; the haze and judder read as real capture.</li><li><strong>Restrained close (Rule 6).</strong> Let the reveal hold, no spin-around hero orbit or title. The vista is the payoff; don't pile on.</li></ul>
+<p><strong>Usage:</strong> generate the <em>through</em> beat (3–7s) first — proximity and speed are the thrill; if the fly-through reads as real FPV (not a CG flythrough), the launch and reveal frame it. Keep it one continuous move; cuts kill the FPV feel.</p>
+<p><strong>Model:</strong> Kling and Seedance handle fast continuous motion well; Veo 3 and Sora 2 give the best photoreal terrain, depth haze and native wind audio. Watch for "rubber-sheet" warping on fast low passes — negate it and keep surfaces textured.</p>
+  </article>
+  <footer class="doc-foot">
+    <p>许可 · <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT · 可自由使用</a></p>
+    <p><a href="../">← 回提示词库</a> · <a href="https://www.aiolaola.com/?utm_source=prompts.aiolaola.com&amp;utm_medium=referral&amp;utm_campaign=docpage" target="_blank" rel="noopener">aiOlaOla 学 AI 编程</a></p>
+  </footer>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const RAW = "# Worked Example — Drone / FPV Aerial\n\n> Original worked example by jnMetaCode (MIT). Applies the 5-stage\n> structure to an **FPV / aerial drone shot** — where the *camera move\n> itself* is the content: scale, speed, and one continuous flight.\n> Teaches the FPV/aerial vocabulary (dive, fly-through, orbit, reveal)\n> and the continuous one-take discipline.\n>\n> Concept: an FPV drone launches low, dives through a canyon, and pulls\n> up to reveal a vista. Swap the location, keep the continuous move.\n>\n> *Further reading (inspiration, not copied — all rewritten in our\n> structure): aerial/landscape scenes in\n> [hr98w/awesome-sora-prompts](https://github.com/hr98w/awesome-sora-prompts)\n> (CC0).*\n>\n> **[中文版 →](./drone-fpv.zh.md)**\n\n---\n\n## Variables you need to define first\n\n| Variable | This example | Swap for… |\n|---|---|---|\n| `{{subject}}` | a deep red-rock canyon with a river | a coastal cliff town / a skyscraper canyon / a forest waterfall |\n| `{{move}}` | low dive → fly-through the gorge → pull-up reveal | proximity orbit / power-loop / dolly-zoom reveal |\n| `{{gap}}` | a narrow slot between rock walls | an arch / a bridge span / a tree line |\n| `{{reveal}}` | a vast valley opening at sunrise | a city skyline / the open sea / a mountain range |\n| `{{light}}` | low golden sunrise, long shadows, haze | blue hour / harsh midday / storm light |\n\n---\n\n## The complete prompt (copy-paste ready)\n\n### 1 · Core theme\n`FPV drone flight | aerial scale and speed | natural light | one continuous take | photoreal, no game-engine flythrough look`\n\n### 2 · Character & scene\n\n**Subject (the place, traversed):** {{subject}}, under {{light}}. The\nscale is the point — the drone's speed and proximity make the size of the\nplace felt. Real atmosphere makes it photoreal: haze in the distance,\ndust or spray kicked up near surfaces, birds, moving water, wind in\nvegetation.\n\n**Imperfections (keep it real footage, not a render):** real atmospheric\nhaze and light scatter, tiny motion judder on the fastest moves, true\nsurface texture (rock grain, water, foliage) — not a clean CG flythrough.\n\n### 3 · Atmosphere & quality\nShot on an FPV cinewhoop drone with an ultrawide lens (the real FPV look —\nfast, immersive, slight wide distortion), or a cinematic aerial drone for\nsmoother moves. Anamorphic widescreen, {{light}}, fine film grain, true\ndepth haze for scale.\n\n### 4 · Camera rules\n**The move is the whole shot — one continuous take.** FPV vocabulary:\n{{move}} — committed, flowing, no cuts. Speed and proximity to surfaces\n(through {{gap}}) create the visceral scale.\n- *Breathing:* not the usual handheld float here — the drone has its own\n  motion. Keep any added float minimal; let the flight path carry it.\n- *Sound:* No score. Production / ambient audio only — wind rush, the\n  faint rotor hum (or near-silence at altitude), water or wind at the\n  surfaces, the air opening up on the reveal.\n\n### 5 · Storyboard (one continuous move, ~10s)\n\n```\n0–3s · Launch / low (establish scale low to the ground)\nAction: The drone starts low and fast over {{subject}}, close to the\n        surface so speed reads.\nCamera: FPV, ultrawide, committed forward motion.\n\n3–7s · Through (the visceral middle — proximity)\nAction: {{move}} — dive and fly-through {{gap}}, walls/edges rushing past\n        close to the lens. This proximity is the thrill.\nCamera: Continuous, no cut; slight wide distortion, micro-judder on the\n        fastest bit.\nSound:  Wind rush builds.\n\n7–10s · Pull-up reveal (the payoff)\nAction: The drone pulls up and out to reveal {{reveal}} — the scale lands\n        all at once.\nCamera: Smooth climbing reveal, the world opening.\nClose:  No title, no logo, no spin-around hero orbit. Just the vista\n        holding as the drone settles and the wind opens out.\n```\n\n### Negative prompt (Seedance / Kling — paste into the dedicated field)\n```\nblurry, low resolution, watermark, text overlay, subtitles, logo, oversaturated colors, game-engine flythrough, video-game look, plastic CG terrain, 3D render, fake HDR, flat lifeless lighting, warping/melting geometry, rubber-sheet landscape, jarring hard cuts, stutter, frame flicker, ghosting, cheesy lens flare, obvious CG water\n```\n\n---\n\n## Why it's built this way\n\n- **The move is the content.** FPV/aerial isn't about a subject doing\n  something — it's about the flight: scale, speed, proximity. Build the\n  storyboard as one continuous move (launch → through → reveal), not as\n  events.\n- **FPV tool + vocabulary (Rule 2).** \"FPV cinewhoop, ultrawide, dive,\n  fly-through\" anchors the model to real drone footage. \"Aerial shot,\n  cinematic\" gives a generic stock flyover or a game flythrough.\n- **Atmosphere sells the scale and the realism (Rule 5).** Depth haze,\n  dust/spray near surfaces, micro-judder on fast moves. A perfectly clean\n  flythrough reads as a game engine; the haze and judder read as real\n  capture.\n- **Restrained close (Rule 6).** Let the reveal hold, no spin-around hero\n  orbit or title. The vista is the payoff; don't pile on.\n\n**Usage:** generate the *through* beat (3–7s) first — proximity and speed\nare the thrill; if the fly-through reads as real FPV (not a CG flythrough),\nthe launch and reveal frame it. Keep it one continuous move; cuts kill the\nFPV feel.\n\n**Model:** Kling and Seedance handle fast continuous motion well; Veo 3\nand Sora 2 give the best photoreal terrain, depth haze and native wind\naudio. Watch for \"rubber-sheet\" warping on fast low passes — negate it and\nkeep surfaces textured.\n";
+function extractPrompt(md){
+  const lines=md.split("\n");
+  const re=/^#{1,4}\s.*(完整提示词|complete prompt|copy-paste|可直接复制)/i;
+  let s=-1; for(let i=0;i<lines.length;i++){if(re.test(lines[i])){s=i+1;break;}}
+  if(s>=0){let e=lines.length;for(let i=s;i<lines.length;i++){if(/^##\s/.test(lines[i])){e=i;break;}}
+    const r=lines.slice(s,e).join("\n").replace(/^\s*-{3,}\s*$/gm,"").trim();if(r)return r;}
+  const b=[...md.matchAll(/```[^\n]*\n([\s\S]*?)```/g)].map(m=>m[1].trim());
+  return b.length?b.join("\n\n"):md.trim();
+}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('show');
+  clearTimeout(toast._t);toast._t=setTimeout(()=>e.classList.remove('show'),1700);}
+async function cp(t,msg){try{await navigator.clipboard.writeText(t);toast(msg);}catch(e){toast('复制失败');}}
+document.getElementById('copyPrompt').onclick=()=>cp(extractPrompt(RAW),'提示词已复制 · 可直接粘进视频模型');
+document.getElementById('copyAll').onclick=()=>cp(RAW,'全文已复制');
+</script>
+</body>
+</html>
