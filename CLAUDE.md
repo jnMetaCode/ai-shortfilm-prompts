@@ -61,4 +61,6 @@ ships only structured, original documentation.
 ## Releasing
 
 Bump `version` in both `.claude-plugin/plugin.json` and
-`.claude-plugin/marketplace.json`, then tag + `gh release create`. Current: v0.3.1.
+`.claude-plugin/marketplace.json`, then tag + `gh release create`. Current: v0.4.0.
+Log notable changes in `CHANGELOG.md`. When adding/removing a web prompt,
+re-run `python3 scripts/generate_pages.py` (regenerates `docs/p/` + sitemap).

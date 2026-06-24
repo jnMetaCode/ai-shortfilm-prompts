@@ -1,7 +1,7 @@
 {
   "name": "ai-shortfilm-prompts",
-  "description": "AI 短片提示词方法论 + Claude Code Skill。基于 Mx-Shell《丧尸清道夫》5 段式结构，含速查表 / 负向词预制 / 失败案例库，适用于 Seedance 2.0 / 小云雀 / Sora / 可灵 / 即梦等视频模型。",
-  "version": "0.3.1",
+  "description": "电影感 AI 视频提示词:5 段式方法论 + 17 类题材可复制模板库 + Claude Code Skill,适用 Seedance 2.0 / 可灵 / Sora / Veo / 即梦 / Runway。在线库 prompts.aiolaola.com;方法首发自 Mx-Shell《丧尸清道夫》。",
+  "version": "0.4.0",
   "author": {
     "name": "jnMetaCode",
     "url": "https://github.com/jnMetaCode"
@@ -24,6 +24,11 @@
     "doubao",
     "claude-skill",
     "shortfilm",
+    "runway",
+    "asmr",
+    "music-video",
+    "fpv-drone",
+    "fashion-film",
     "mx-shell",
     "丧尸清道夫",
     "中文"
