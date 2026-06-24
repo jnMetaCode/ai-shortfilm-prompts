@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>实战范例 — 汽车广告｜电影感 AI 视频提示词库</title>
+<meta name="description" content="jnMetaCode 原创实战范例（MIT）。把 5 段式结构用在汽车广告—— 这里的功夫全在反光车身、移动的光带扫过，以及汽车广告专用的运镜器 材。区别于 product-commercial.zh.md （台面微距）：这里的主角是一辆运动中的车。 概念：一辆轿跑在黄昏的海岸公路上飞驰，光带掠过车身。…">
+<link rel="canonical" href="https://prompts.aiolaola.com/p/car-commercial.zh">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="zh-CN" href="https://prompts.aiolaola.com/p/car-commercial.zh">
+<link rel="alternate" hreflang="en" href="https://prompts.aiolaola.com/p/car-commercial">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="电影感 AI 视频提示词库">
+<meta property="og:title" content="实战范例 — 汽车广告">
+<meta property="og:description" content="jnMetaCode 原创实战范例（MIT）。把 5 段式结构用在汽车广告—— 这里的功夫全在反光车身、移动的光带扫过，以及汽车广告专用的运镜器 材。区别于 product-commercial.zh.md （台面微距）：这里的主角是一辆运动中的车。 概念：一辆轿跑在黄昏的海岸公路上飞驰，光带掠过车身。…">
+<meta property="og:url" content="https://prompts.aiolaola.com/p/car-commercial.zh">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="实战范例 — 汽车广告">
+<meta name="twitter:description" content="jnMetaCode 原创实战范例（MIT）。把 5 段式结构用在汽车广告—— 这里的功夫全在反光车身、移动的光带扫过，以及汽车广告专用的运镜器 材。区别于 product-commercial.zh.md （台面微距）：这里的主角是一辆运动中的车。 概念：一辆轿跑在黄昏的海岸公路上飞驰，光带掠过车身。…">
+<link rel="stylesheet" href="./page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "实战范例 — 汽车广告",
+  "description": "jnMetaCode 原创实战范例（MIT）。把 5 段式结构用在汽车广告—— 这里的功夫全在反光车身、移动的光带扫过，以及汽车广告专用的运镜器 材。区别于 product-commercial.zh.md （台面微距）：这里的主角是一辆运动中的车。 概念：一辆轿跑在黄昏的海岸公路上飞驰，光带掠过车身。…",
+  "inLanguage": "zh-CN",
+  "url": "https://prompts.aiolaola.com/p/car-commercial.zh",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "电影感 AI 视频提示词库",
+    "url": "https://prompts.aiolaola.com/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "jnMetaCode",
+    "url": "https://github.com/jnMetaCode"
+  },
+  "license": "https://opensource.org/licenses/MIT"
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7LBJRDWYYW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7LBJRDWYYW');</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="back" href="../">← 提示词库</a>
+  <a class="ghlink" href="https://github.com/jnMetaCode/ai-shortfilm-prompts/blob/main/templates/car-commercial.zh.md" target="_blank" rel="noopener">在 GitHub 查看源文件 ↗</a>
+</header>
+<main class="doc">
+  <div class="doc-actions">
+    <button id="copyPrompt">⧉ 复制提示词</button>
+    <button id="copyAll">复制全文</button>
+    <a class="langsw" href="./car-commercial.html">EN</a>
+  </div>
+  <article class="md">
+<h1>实战范例 — 汽车广告</h1>
+<blockquote><p>jnMetaCode 原创实战范例（MIT）。把 5 段式结构用在<strong>汽车广告</strong>—— 这里的功夫全在反光车身、移动的光带扫过，以及汽车广告专用的运镜器 材。区别于 <a href="product-commercial.html">product-commercial.zh.md</a> （台面微距）：这里的主角是一辆运动中的车。</p>
+<p>概念：一辆轿跑在黄昏的海岸公路上飞驰，光带掠过车身。换掉车和路， 把「车身/光线」的纪律保留下来。</p>
+<p><em>延伸阅读（只取灵感、未照搬——全部用我们的结构重写）：商业/产品类 模式见 <a href="https://github.com/LichAmnesia/awesome-ad-video-prompts" target="_blank" rel="noopener">LichAmnesia/awesome-ad-video-prompts</a> （CC BY 4.0）。</em></p>
+<p><strong><a href="car-commercial.html">English →</a></strong></p></blockquote>
+<hr>
+<h2>先定义这些变量</h2>
+<table><thead><tr><th>变量</th><th>本例</th><th>可替换为…</th></tr></thead><tbody><tr><td><code>{{car}}</code></td><td>一辆低趴的哑光灰轿跑</td><td>SUV / 经典敞篷跑车 / 电动车</td></tr><tr><td><code>{{road}}</code></td><td>黄昏的悬崖海岸公路</td><td>湿漉漉的城市街道 / 盐碱滩 / 隧道</td></tr><tr><td><code>{{surface}}</code></td><td>带柔和光泽的哑光漆面</td><td>亮黑 / 拉丝金属 / 珠光白</td></tr><tr><td><code>{{light_sweep}}</code></td><td>一道暖阳光带掠过车身</td><td>霓虹反射 / 影棚弧形光</td></tr><tr><td><code>{{grade}}</code></td><td>暖黄昏金 + 冷调阴影</td><td>高对比夜景 / 去饱和钢灰</td></tr></tbody></table>
+<hr>
+<h2>完整提示词（可直接复制）</h2>
+<h3>1 · 核心主题</h3>
+<p><code>汽车广告 | 运动中的反光车身 | 速度与造型之美 | 移动光带揭示车形 | 写实，不要塑料感 CG 车，不要悬浮在虚空里的渲染图</code></p>
+<h3>2 · 人物与场景</h3>
+<p><strong>主角（这辆车）：</strong> {{car}}，{{surface}}。车身就是主体——它的造型靠 光线如何在表面上游走来揭示。要那种看着「真实」、而非 CG 的瑕疵：下护 板上淡淡的路尘与灰、一颗水珠、引擎盖上的热浪、真实的轮胎胎侧形变与 胎纹、{{road}} 在漆面上滑过的真实倒影。</p>
+<p><strong>场景：</strong> {{road}}，{{grade}}。一个真实环境倒映在车身表面——绝不是 天衣无缝的白棚虚空。</p>
+<h3>3 · 氛围与画质</h3>
+<p>Shot on ARRI Alexa with anamorphic primes，from a camera car / Russian-arm rig（真正的汽车广告器材）。{{grade}}，film grain，真实的 镜面高光与倒影——那种「湿润」/金属质感来自真实环境的反射，而非 CG 辉光。</p>
+<h3>4 · 运镜规则</h3>
+<p>贴地跟拍镜头擦着车身滑过，用一个摇臂运动让 {{light_sweep}} 沿着车形 游走，再来一段与行驶中的车并行的跟拍。</p>
+<ul><li><em>呼吸感：</em> keep it minimal——汽车广告器材都是稳定的；要 a smooth glide，not a handheld float。</li><li><em>声音：</em> No score。Production audio only——引擎声、轮胎在 {{road}} 上的声音、风声、涡轮或电机的呼啸。（若品牌需要音乐垫底，在剪辑里 有意识地加进去——别让模型自己编一段。）</li></ul>
+<h3>5 · 分镜（3 拍，约 10s）</h3>
+<pre><code>0–3s · 车身（在倒影中揭示）
+Action：近乎微距地拍 {{surface}}，{{light_sweep}} 掠过它——车形靠移
+        动的光与倒影读出来，而不是一面平光摆拍。
+Camera：缓慢摇臂沿车身滑行。
+
+3–7s · 运动（车在路上活起来）
+Action：{{car}} 切过 {{road}}，轮胎抓地，环境在漆面上拉成光带，引擎
+        盖上热浪升腾。
+Camera：贴地并行跟拍，世界倒映其上、飞速掠过。
+Sound：引擎 + 轮胎 + 风，同步。
+
+7–10s · 主角定格（克制收尾）
+Action：车缓缓停稳；{{light_sweep}} 的最后一缕滑离车身。
+Camera：定住，缓慢滑行至停。
+Close：No logo slam，no spinning turntable，no lens-flare burst。
+       只是静止的车，和离开表面的光。</code></pre>
+<h3>负面提示词（即梦/可灵——粘进独立负面框）</h3>
+<pre><code>blurry, low resolution, watermark, text overlay, subtitles, logo, oversaturated colors, plastic CG car, glossy unreal render, video-game look, 3D cartoon, floating car in white void, seamless studio infinity backdrop, blown-out highlights, flat even lighting, perfectly clean showroom surfaces, warped reflections, melting/morphing bodywork, wrong wheel rotation, frame flicker, ghosting, spinning turntable, cheesy lens flare</code></pre>
+<hr>
+<h2>为什么这么搭</h2>
+<ul><li><strong>光揭示车形（汽车广告的核心动作）。</strong> 汽车广告不是一面平光的产品 摆拍——车身靠一道光带扫过反光表面来揭示。整个分镜要围绕移动的光与 倒影来搭，而不是一个静止的美姿。</li><li><strong>真实倒影 = 真实感（Rule 5）。</strong> 路尘、一颗水珠、热浪、环境在漆面 上拉成光带。一辆一尘不染、悬浮在白棚虚空里的车就是 CG 的默认长相； 靠倒影和路尘才把它卖成真的。</li><li><strong>汽车广告器材，而非「电影感」（Rule 2）。</strong>「ARRI + anamorphic， camera car / Russian-arm rig，贴地跟拍」把模型锚定到真实的汽车摄影。 「Car driving, cinematic 4K」只会给你一张游戏渲染图。</li><li><strong>克制收尾（Rule 6）。</strong> 车停稳、光离开车身——而不是 logo 砸场或转 盘旋转。高级感是安静的。</li></ul>
+<p><strong>用法</strong>：先生成<em>运动</em>那一拍（3–7s）——如果那里的倒影、轮胎抓地和环 境光带读着真实，车身拍和主角拍就能把它框起来。盯紧扭曲的倒影和反转 的车轮；用负面压掉它们。</p>
+<p><strong>模型</strong>：Veo 3 和 Sora 2 在反光表面和运动真实感上最好；可灵在并行跟 拍上很强。注意高速时车轮反向旋转——把跟拍段做短，或加上车轮方向的负 面词。</p>
+  </article>
+  <footer class="doc-foot">
+    <p>许可 · <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT · 可自由使用</a></p>
+    <p><a href="../">← 回提示词库</a> · <a href="https://www.aiolaola.com/?utm_source=prompts.aiolaola.com&amp;utm_medium=referral&amp;utm_campaign=docpage" target="_blank" rel="noopener">aiOlaOla 学 AI 编程</a></p>
+  </footer>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const RAW = "# 实战范例 — 汽车广告\n\n> jnMetaCode 原创实战范例（MIT）。把 5 段式结构用在**汽车广告**——\n> 这里的功夫全在反光车身、移动的光带扫过，以及汽车广告专用的运镜器\n> 材。区别于 [product-commercial.zh.md](./product-commercial.md)\n> （台面微距）：这里的主角是一辆运动中的车。\n>\n> 概念：一辆轿跑在黄昏的海岸公路上飞驰，光带掠过车身。换掉车和路，\n> 把「车身/光线」的纪律保留下来。\n>\n> *延伸阅读（只取灵感、未照搬——全部用我们的结构重写）：商业/产品类\n> 模式见\n> [LichAmnesia/awesome-ad-video-prompts](https://github.com/LichAmnesia/awesome-ad-video-prompts)\n> （CC BY 4.0）。*\n>\n> **[English →](./car-commercial.md)**\n\n---\n\n## 先定义这些变量\n\n| 变量 | 本例 | 可替换为… |\n|---|---|---|\n| `{{car}}` | 一辆低趴的哑光灰轿跑 | SUV / 经典敞篷跑车 / 电动车 |\n| `{{road}}` | 黄昏的悬崖海岸公路 | 湿漉漉的城市街道 / 盐碱滩 / 隧道 |\n| `{{surface}}` | 带柔和光泽的哑光漆面 | 亮黑 / 拉丝金属 / 珠光白 |\n| `{{light_sweep}}` | 一道暖阳光带掠过车身 | 霓虹反射 / 影棚弧形光 |\n| `{{grade}}` | 暖黄昏金 + 冷调阴影 | 高对比夜景 / 去饱和钢灰 |\n\n---\n\n## 完整提示词（可直接复制）\n\n### 1 · 核心主题\n`汽车广告 | 运动中的反光车身 | 速度与造型之美 | 移动光带揭示车形 | 写实，不要塑料感 CG 车，不要悬浮在虚空里的渲染图`\n\n### 2 · 人物与场景\n\n**主角（这辆车）：** {{car}}，{{surface}}。车身就是主体——它的造型靠\n光线如何在表面上游走来揭示。要那种看着「真实」、而非 CG 的瑕疵：下护\n板上淡淡的路尘与灰、一颗水珠、引擎盖上的热浪、真实的轮胎胎侧形变与\n胎纹、{{road}} 在漆面上滑过的真实倒影。\n\n**场景：** {{road}}，{{grade}}。一个真实环境倒映在车身表面——绝不是\n天衣无缝的白棚虚空。\n\n### 3 · 氛围与画质\nShot on ARRI Alexa with anamorphic primes，from a camera car /\nRussian-arm rig（真正的汽车广告器材）。{{grade}}，film grain，真实的\n镜面高光与倒影——那种「湿润」/金属质感来自真实环境的反射，而非 CG\n辉光。\n\n### 4 · 运镜规则\n贴地跟拍镜头擦着车身滑过，用一个摇臂运动让 {{light_sweep}} 沿着车形\n游走，再来一段与行驶中的车并行的跟拍。\n- *呼吸感：* keep it minimal——汽车广告器材都是稳定的；要 a smooth\n  glide，not a handheld float。\n- *声音：* No score。Production audio only——引擎声、轮胎在 {{road}}\n  上的声音、风声、涡轮或电机的呼啸。（若品牌需要音乐垫底，在剪辑里\n  有意识地加进去——别让模型自己编一段。）\n\n### 5 · 分镜（3 拍，约 10s）\n\n```\n0–3s · 车身（在倒影中揭示）\nAction：近乎微距地拍 {{surface}}，{{light_sweep}} 掠过它——车形靠移\n        动的光与倒影读出来，而不是一面平光摆拍。\nCamera：缓慢摇臂沿车身滑行。\n\n3–7s · 运动（车在路上活起来）\nAction：{{car}} 切过 {{road}}，轮胎抓地，环境在漆面上拉成光带，引擎\n        盖上热浪升腾。\nCamera：贴地并行跟拍，世界倒映其上、飞速掠过。\nSound：引擎 + 轮胎 + 风，同步。\n\n7–10s · 主角定格（克制收尾）\nAction：车缓缓停稳；{{light_sweep}} 的最后一缕滑离车身。\nCamera：定住，缓慢滑行至停。\nClose：No logo slam，no spinning turntable，no lens-flare burst。\n       只是静止的车，和离开表面的光。\n```\n\n### 负面提示词（即梦/可灵——粘进独立负面框）\n```\nblurry, low resolution, watermark, text overlay, subtitles, logo, oversaturated colors, plastic CG car, glossy unreal render, video-game look, 3D cartoon, floating car in white void, seamless studio infinity backdrop, blown-out highlights, flat even lighting, perfectly clean showroom surfaces, warped reflections, melting/morphing bodywork, wrong wheel rotation, frame flicker, ghosting, spinning turntable, cheesy lens flare\n```\n\n---\n\n## 为什么这么搭\n\n- **光揭示车形（汽车广告的核心动作）。** 汽车广告不是一面平光的产品\n  摆拍——车身靠一道光带扫过反光表面来揭示。整个分镜要围绕移动的光与\n  倒影来搭，而不是一个静止的美姿。\n- **真实倒影 = 真实感（Rule 5）。** 路尘、一颗水珠、热浪、环境在漆面\n  上拉成光带。一辆一尘不染、悬浮在白棚虚空里的车就是 CG 的默认长相；\n  靠倒影和路尘才把它卖成真的。\n- **汽车广告器材，而非「电影感」（Rule 2）。**「ARRI + anamorphic，\n  camera car / Russian-arm rig，贴地跟拍」把模型锚定到真实的汽车摄影。\n  「Car driving, cinematic 4K」只会给你一张游戏渲染图。\n- **克制收尾（Rule 6）。** 车停稳、光离开车身——而不是 logo 砸场或转\n  盘旋转。高级感是安静的。\n\n**用法**：先生成*运动*那一拍（3–7s）——如果那里的倒影、轮胎抓地和环\n境光带读着真实，车身拍和主角拍就能把它框起来。盯紧扭曲的倒影和反转\n的车轮；用负面压掉它们。\n\n**模型**：Veo 3 和 Sora 2 在反光表面和运动真实感上最好；可灵在并行跟\n拍上很强。注意高速时车轮反向旋转——把跟拍段做短，或加上车轮方向的负\n面词。\n";
+function extractPrompt(md){
+  const lines=md.split("\n");
+  const re=/^#{1,4}\s.*(完整提示词|complete prompt|copy-paste|可直接复制)/i;
+  let s=-1; for(let i=0;i<lines.length;i++){if(re.test(lines[i])){s=i+1;break;}}
+  if(s>=0){let e=lines.length;for(let i=s;i<lines.length;i++){if(/^##\s/.test(lines[i])){e=i;break;}}
+    const r=lines.slice(s,e).join("\n").replace(/^\s*-{3,}\s*$/gm,"").trim();if(r)return r;}
+  const b=[...md.matchAll(/```[^\n]*\n([\s\S]*?)```/g)].map(m=>m[1].trim());
+  return b.length?b.join("\n\n"):md.trim();
+}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('show');
+  clearTimeout(toast._t);toast._t=setTimeout(()=>e.classList.remove('show'),1700);}
+async function cp(t,msg){try{await navigator.clipboard.writeText(t);toast(msg);}catch(e){toast('复制失败');}}
+document.getElementById('copyPrompt').onclick=()=>cp(extractPrompt(RAW),'提示词已复制 · 可直接粘进视频模型');
+document.getElementById('copyAll').onclick=()=>cp(RAW,'全文已复制');
+</script>
+</body>
+</html>

@@ -174,7 +174,11 @@ ai-shortfilm-prompts/
 │   ├── sports-slowmo.md             ← 实战范例：运动高速慢镜
 │   ├── fashion-film.md              ← 实战范例：时尚大片
 │   ├── travel-vlog.md               ← 实战范例：旅拍 Vlog
-│   └── drone-fpv.md                 ← 实战范例：无人机 / FPV 航拍
+│   ├── drone-fpv.md                 ← 实战范例：无人机 / FPV 航拍
+│   ├── micro-drama.md               ← 实战范例：竖屏短剧(钩子+悬念)
+│   ├── sci-fi-space.md              ← 实战范例：科幻太空 / 失重
+│   ├── car-commercial.md            ← 实战范例：汽车广告
+│   └── dance.md                     ← 实战范例：舞蹈编舞
 │
 ├── assets/                          ← 图示 + README 顶部 demo 提示词
 │   ├── demo-prompt.md               ← Skill 写的可复制 15 秒提示词（顶部片位）

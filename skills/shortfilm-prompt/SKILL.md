@@ -98,6 +98,10 @@ the plugin/repo root.
 | **Fashion film / editorial** (movement-as-subject; no narrative) | `templates/fashion-film.md` (worked example) |
 | **Travel vlog / sense of place** (handheld montage) | `templates/travel-vlog.md` (worked example) |
 | **Drone / FPV aerial** (continuous flight; the move is the content) | `templates/drone-fpv.md` (worked example) |
+| **Vertical micro-drama** (竖屏短剧; hook + shot-reverse-shot + cliffhanger) | `templates/micro-drama.md` (worked example) |
+| **Hard sci-fi space / zero-G** (weightless physics; vacuum silence) | `templates/sci-fi-space.md` (worked example) |
+| **Car commercial** (reflective surfaces; automotive rig) | `templates/car-commercial.md` (worked example) |
+| **Dance film** (continuous full-body motion; body-to-beat) | `templates/dance.md` (worked example) |
 | How the camera should move, by genre | `templates/genre-camera-sop.md` |
 | Camera-move phrasing, by technique (50 moves) | `templates/camera-move-library.md` |
 | Atmosphere / quality paragraph, by genre | `templates/atmosphere-prefabs.md` |

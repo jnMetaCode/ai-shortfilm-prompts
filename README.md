@@ -192,7 +192,11 @@ ai-shortfilm-prompts/
 │   ├── sports-slowmo.md              Worked example: high-speed slow-motion sports
 │   ├── fashion-film.md               Worked example: editorial fashion film
 │   ├── travel-vlog.md                Worked example: travel vlog, sense of place
-│   └── drone-fpv.md                  Worked example: FPV/aerial continuous flight
+│   ├── drone-fpv.md                  Worked example: FPV/aerial continuous flight
+│   ├── micro-drama.md                Worked example: vertical short-drama (hook+cliffhanger)
+│   ├── sci-fi-space.md               Worked example: hard sci-fi space / zero-G
+│   ├── car-commercial.md             Worked example: automotive commercial
+│   └── dance.md                      Worked example: continuous-motion dance film
 │
 ├── assets/                 Diagrams + the README hero-demo prompt.
 │   ├── demo-prompt.md       Copy-paste 15s prompt the Skill wrote (hero slot)
