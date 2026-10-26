@@ -10,7 +10,7 @@
 > 模板解决"怎么写提示词",这门课解决"生成出来的东西能不能上线、能不能卖"。
 > 182 节免费实操课 + 《AI 编程实战三卷书》在线读 + 实战社区 + AI 助教 · **永久免费,登录即学。**
 >
-> 🌟 **姐妹项目**:[agency-agents-zh ⭐21.3k](https://github.com/jnMetaCode/agency-agents-zh) · [superpowers-zh ⭐8.3k](https://github.com/jnMetaCode/superpowers-zh) · [agency-orchestrator ⭐2.3k](https://github.com/jnMetaCode/agency-orchestrator) · [ai-coding-trilogy](https://github.com/jnMetaCode/ai-coding-trilogy) · [ai-coding-guide ⭐542](https://github.com/jnMetaCode/ai-coding-guide) · [openshorts](https://github.com/jnMetaCode/openshorts)
+> 🌟 **姐妹项目**:[agency-agents-zh ⭐21.5k](https://github.com/jnMetaCode/agency-agents-zh) · [superpowers-zh ⭐8.3k](https://github.com/jnMetaCode/superpowers-zh) · [agency-orchestrator ⭐2.4k](https://github.com/jnMetaCode/agency-orchestrator) · [ai-coding-trilogy](https://github.com/jnMetaCode/ai-coding-trilogy) · [ai-coding-guide ⭐549](https://github.com/jnMetaCode/ai-coding-guide) · [openshorts](https://github.com/jnMetaCode/openshorts)
 <!-- aiolaola:end -->
 
 > 🌐 **在线浏览提示词库 → [prompts.aiolaola.com](https://prompts.aiolaola.com)** —— 点开即看任意模板/案例,一键复制,免安装。
